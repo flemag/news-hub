@@ -1,0 +1,68 @@
+[
+  {
+    "id": "2026-09-07-ia-orion",
+    "titre": "Un nouveau modèle open source rivalise avec les ténors propriétaires",
+    "categorie": "IA",
+    "resume": "Des benchmarks indépendants placent ce modèle au niveau des meilleures offres fermées, à une fraction du coût d'inférence.",
+    "contenu": "Détail complet à écrire ici si besoin d'un article long.",
+    "date": "2026-09-07T09:15:00Z",
+    "urgence": "normal",
+    "tags": ["LLM", "open source"],
+    "source_url": "https://example.com"
+  },
+  {
+    "id": "2026-09-07-hack-console",
+    "titre": "Une faille de bootloader ouvre le homebrew sur la dernière console",
+    "categorie": "Hack & Console",
+    "resume": "L'exploit fonctionne sans matériel additionnel et reste réversible via mise à jour officielle.",
+    "contenu": "",
+    "date": "2026-09-07T07:40:00Z",
+    "urgence": "important",
+    "tags": ["homebrew", "exploit"],
+    "source_url": "https://example.com"
+  },
+  {
+    "id": "2026-09-06-web-standard",
+    "titre": "Un nouveau standard CSS simplifie les mises en page conteneurs",
+    "categorie": "Web",
+    "resume": "Le support arrive déjà dans deux moteurs majeurs, le troisième suit en beta.",
+    "contenu": "",
+    "date": "2026-09-06T16:00:00Z",
+    "urgence": "normal",
+    "tags": ["CSS", "navigateurs"],
+    "source_url": "https://example.com"
+  },
+  {
+    "id": "2026-09-06-gaming-sortie",
+    "titre": "Le studio confirme une fenêtre de sortie plus proche que prévu",
+    "categorie": "Gaming",
+    "resume": "Une bande-annonce diffusée ce week-end confirme la date, plus tôt que les rumeurs ne le laissaient penser.",
+    "contenu": "",
+    "date": "2026-09-06T12:00:00Z",
+    "urgence": "normal",
+    "tags": ["sortie", "trailer"],
+    "source_url": "https://example.com"
+  },
+  {
+    "id": "2026-09-06-societe-loi",
+    "titre": "Un texte sur la régulation numérique franchit une étape clé",
+    "categorie": "Société & Politique",
+    "resume": "Le vote en commission ouvre la voie à un examen en séance plénière dans les prochaines semaines.",
+    "contenu": "",
+    "date": "2026-09-06T08:00:00Z",
+    "urgence": "important",
+    "tags": ["régulation"],
+    "source_url": "https://example.com"
+  },
+  {
+    "id": "2026-09-05-dev-astuce",
+    "titre": "Une astuce de terminal qui accélère vraiment le debug quotidien",
+    "categorie": "Astuces",
+    "resume": "Une combinaison d'alias et de raccourcis qui réduit un aller-retour courant à une seule commande.",
+    "contenu": "",
+    "date": "2026-09-05T18:00:00Z",
+    "urgence": "normal",
+    "tags": ["productivité", "cli"],
+    "source_url": "https://example.com"
+  }
+]
