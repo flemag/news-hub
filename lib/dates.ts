@@ -29,12 +29,21 @@ export function formatFullDate(dateIso: string): string {
   });
 }
 
-// Couleur d'accent associée à chaque catégorie — deux familles :
-// cyan pour la sphère "construction" (IA, Web, Dev, Astuces, Nouveautés)
-// magenta pour la sphère "culture & rapport de force" (Gaming, Hack, Société)
-export function categorieAccent(categorie: Categorie): "cyan" | "magenta" {
-  const magentaSet: Categorie[] = ["Gaming", "Hack & Console", "Société & Politique"];
-  return magentaSet.includes(categorie) ? "magenta" : "cyan";
+// Chaque catégorie a sa propre couleur de signal — comme des fréquences
+// distinctes sur un même poste de contrôle.
+export const CATEGORY_COLOR: Record<Categorie, string> = {
+  "IA": "#3DE8FF",
+  "Web": "#8B7CFF",
+  "Gaming": "#FF4FA3",
+  "Hack & Console": "#FF5C5C",
+  "Société & Politique": "#FFB347",
+  "Dev": "#2FD9A5",
+  "Astuces": "#F5D547",
+  "Nouveautés": "#4C8DFF",
+};
+
+export function categorieAccent(categorie: Categorie): string {
+  return CATEGORY_COLOR[categorie] ?? "#3DE8FF";
 }
 
 export const CATEGORIES: Categorie[] = [

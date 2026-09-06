@@ -15,15 +15,23 @@ export default function Header() {
     <header className="border-b border-line">
       <div className="mx-auto max-w-6xl px-6 py-8 flex items-end justify-between gap-6 flex-wrap">
         <div>
-          <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight">
-            Signal<span className="text-cyan">.</span>
-          </h1>
-          <p className="mt-2 text-muted max-w-md">
+          <div className="flex items-center gap-3">
+            <div className="flex items-end gap-[3px] h-6" aria-hidden>
+              <span className="w-[3px] h-2 bg-cyan rounded-sm" />
+              <span className="w-[3px] h-4 bg-cyan rounded-sm" />
+              <span className="w-[3px] h-6 bg-cyan rounded-sm" />
+              <span className="w-[3px] h-3 bg-magenta rounded-sm" />
+            </div>
+            <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight">
+              Signal
+            </h1>
+          </div>
+          <p className="mt-3 text-muted max-w-md">
             Ce qu'il ne fallait pas rater dans les dernières 24 heures — IA, web,
             jeu vidéo, hack, société et développement.
           </p>
         </div>
-        <div className="text-sm text-muted font-body tabular-nums">
+        <div className="text-sm text-muted font-body tabular-nums" suppressHydrationWarning>
           {now
             ? now.toLocaleString("fr-FR", {
                 weekday: "long",

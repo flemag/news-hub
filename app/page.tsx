@@ -5,6 +5,8 @@ import rawArticles from "@/data/articles.json";
 import { Article, Categorie } from "@/lib/types";
 import { isWithinLast24h } from "@/lib/dates";
 import Header from "@/components/Header";
+import Ticker from "@/components/Ticker";
+import Hero from "@/components/Hero";
 import CategoryNav from "@/components/CategoryNav";
 import ArticleCard from "@/components/ArticleCard";
 
@@ -21,15 +23,19 @@ export default function Home() {
     []
   );
 
+  const heroArticle = sorted.find((a) => a.urgence === "breaking") ?? sorted[0];
+
   const last24h = useMemo(
-    () => sorted.filter((a) => isWithinLast24h(a.date)),
-    [sorted]
+    () => sorted.filter((a) => isWithinLast24h(a.date) && a.id !== heroArticle?.id),
+    [sorted, heroArticle]
   );
 
   const filtered = useMemo(
     () =>
-      active === "Tout" ? sorted : sorted.filter((a) => a.categorie === active),
-    [sorted, active]
+      (active === "Tout" ? sorted : sorted.filter((a) => a.categorie === active)).filter(
+        (a) => a.id !== heroArticle?.id
+      ),
+    [sorted, active, heroArticle]
   );
 
   const counts = useMemo(() => {
@@ -41,9 +47,16 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Header />
+      <Ticker articles={sorted} />
       <CategoryNav active={active} onChange={setActive} counts={counts} />
 
       <div className="mx-auto max-w-6xl px-6">
+        {active === "Tout" && heroArticle && (
+          <section className="pt-10">
+            <Hero article={heroArticle} />
+          </section>
+        )}
+
         {active === "Tout" && last24h.length > 0 && (
           <section className="pt-10">
             <h2 className="font-display text-sm text-muted mb-4">
@@ -65,7 +78,7 @@ export default function Home() {
 
           {filtered.length === 0 ? (
             <p className="text-muted py-12">
-              Rien dans cette catégorie pour l'instant.
+              Rien dans cette catégorie pour l'instant — reviens un peu plus tard.
             </p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -78,9 +91,12 @@ export default function Home() {
       </div>
 
       <footer className="border-t border-line">
-        <div className="mx-auto max-w-6xl px-6 py-8 text-xs text-muted">
-          Mis à jour à chaque publication — les articles sont ajoutés dans{" "}
-          <code className="text-ink/80">data/articles.json</code>.
+        <div className="mx-auto max-w-6xl px-6 py-8 text-xs text-muted flex flex-wrap gap-x-6 gap-y-2 justify-between">
+          <span>
+            Mis à jour à chaque publication — les articles sont ajoutés dans{" "}
+            <code className="text-ink/80">data/articles.json</code>.
+          </span>
+          <span>Signal — veille indépendante, sans tracker.</span>
         </div>
       </footer>
     </main>

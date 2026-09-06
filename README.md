@@ -67,6 +67,16 @@ besoin de terminal du tout si tu préfères.
 À partir de là, chaque `git push` déclenche un rebuild automatique
 (20 à 60 secondes) et le site en ligne se met à jour tout seul.
 
+## Mettre à jour l'URL du site (une fois, après le premier déploiement)
+
+Trois fichiers contiennent `https://news-hub.vercel.app` comme URL par
+défaut, utilisée pour les métadonnées de partage (réseaux sociaux) et le
+sitemap. Une fois ton site en ligne, remplace cette URL par la tienne dans :
+
+- `app/layout.tsx` (`metadataBase`)
+- `app/sitemap.ts`
+- `app/robots.ts`
+
 ## Développement local
 
 ```bash

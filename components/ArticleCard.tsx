@@ -2,6 +2,7 @@
 
 import { Article } from "@/lib/types";
 import { categorieAccent, formatFullDate, formatRelative } from "@/lib/dates";
+import { CATEGORY_ICON } from "@/lib/icons";
 
 const urgenceLabel: Record<Article["urgence"], string> = {
   normal: "",
@@ -17,27 +18,22 @@ export default function ArticleCard({
   featured?: boolean;
 }) {
   const accent = categorieAccent(article.categorie);
-  const accentClass = accent === "cyan" ? "text-cyan" : "text-magenta";
-  const accentBorder = accent === "cyan" ? "border-cyan/40" : "border-magenta/40";
+  const Icon = CATEGORY_ICON[article.categorie];
 
   const content = (
     <article
       className={[
         "group flex flex-col gap-3 rounded-sm border bg-panel p-5 h-full",
         "border-line hover:border-white/20 transition-colors",
-        featured ? `md:w-96 shrink-0 border-l-2 ${accentBorder}` : "",
+        featured ? "md:w-96 shrink-0 border-l-2" : "",
       ].join(" ")}
+      style={featured ? { borderLeftColor: accent } : undefined}
     >
-      <div className="flex items-center gap-3 text-xs">
-        <span className={accentClass}>{article.categorie}</span>
+      <div className="flex items-center gap-2 text-xs">
+        <Icon size={13} style={{ color: accent }} aria-hidden />
+        <span style={{ color: accent }}>{article.categorie}</span>
         {article.urgence !== "normal" && (
-          <span
-            className={
-              article.urgence === "breaking"
-                ? "text-amber"
-                : "text-muted"
-            }
-          >
+          <span className={article.urgence === "breaking" ? "text-amber" : "text-muted"}>
             {urgenceLabel[article.urgence]}
           </span>
         )}
@@ -48,11 +44,13 @@ export default function ArticleCard({
 
       <h3
         className={[
-          "font-display font-medium leading-snug group-hover:text-cyan transition-colors",
+          "font-display font-medium leading-snug transition-colors",
           featured ? "text-xl" : "text-base",
         ].join(" ")}
       >
-        {article.titre}
+        <span className="group-hover:underline decoration-1 underline-offset-2">
+          {article.titre}
+        </span>
       </h3>
 
       <p className="text-sm text-muted leading-relaxed">{article.resume}</p>
@@ -76,6 +74,7 @@ export default function ArticleCard({
         target="_blank"
         rel="noopener noreferrer"
         className={featured ? "md:w-96 shrink-0" : ""}
+        aria-label={`${article.titre} — ${article.categorie}`}
       >
         {content}
       </a>

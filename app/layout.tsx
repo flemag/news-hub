@@ -14,10 +14,28 @@ const body = IBM_Plex_Sans({
   weight: ["400", "500", "600"],
 });
 
+const description =
+  "IA, Web, Gaming, Hack & Console, Société, Dev — ce qu'il ne fallait pas rater dans les dernières 24 heures.";
+
 export const metadata: Metadata = {
-  title: "Signal — l'essentiel des dernières 24h",
-  description:
-    "IA, Web, Gaming, Hack & Console, Société, Dev — ce qu'il ne fallait pas rater.",
+  metadataBase: new URL("https://news-hub.vercel.app"),
+  title: {
+    default: "Signal — l'essentiel des dernières 24h",
+    template: "%s · Signal",
+  },
+  description,
+  themeColor: "#0B0E1A",
+  openGraph: {
+    title: "Signal — l'essentiel des dernières 24h",
+    description,
+    type: "website",
+    locale: "fr_FR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Signal — l'essentiel des dernières 24h",
+    description,
+  },
 };
 
 export default function RootLayout({
