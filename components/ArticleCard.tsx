@@ -44,7 +44,7 @@ export default function ArticleCard({
 
       <h3
         className={[
-          "font-display font-medium leading-snug transition-colors",
+          "font-display font-medium leading-snug transition-colors text-ink",
           featured ? "text-xl" : "text-base",
         ].join(" ")}
       >
