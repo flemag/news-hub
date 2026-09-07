@@ -32,7 +32,7 @@ export default function Hero({ article }: { article: Article }) {
           </span>
         </div>
 
-        <h2 className="font-display text-2xl md:text-4xl font-bold leading-tight group-hover:opacity-90 transition-opacity">
+        <h2 className="font-display text-2xl md:text-4xl font-bold leading-tight text-ink group-hover:opacity-90 transition-opacity">
           {article.titre}
         </h2>
 
