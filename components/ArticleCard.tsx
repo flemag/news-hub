@@ -73,7 +73,7 @@ export default function ArticleCard({
         href={article.source_url}
         target="_blank"
         rel="noopener noreferrer"
-        className={featured ? "md:w-96 shrink-0" : ""}
+        className={["text-ink no-underline", featured ? "md:w-96 shrink-0" : ""].join(" ")}
         aria-label={`${article.titre} — ${article.categorie}`}
       >
         {content}
