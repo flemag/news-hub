@@ -13,7 +13,7 @@ export default function Hero({ article }: { article: Article }) {
       href={article.source_url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block relative overflow-hidden rounded-sm border border-line"
+      className="group block relative overflow-hidden rounded-sm border border-line text-ink no-underline"
       style={{
         background: `radial-gradient(1100px 320px at 15% 0%, ${accent}1f, transparent 60%), #12162A`,
       }}
