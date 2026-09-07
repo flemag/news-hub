@@ -1,16 +1,5 @@
 [
   {
-    "id": "2026-09-02-ia-nvidia-hf",
-    "titre": "Nvidia proche du rachat de Hugging Face pour 13 milliards de dollars",
-    "categorie": "IA",
-    "resume": "Selon Le Figaro, le fabricant de puces serait sur le point d'acquérir la start-up française spécialisée dans l'open source, fondée en 2016 par trois Français.",
-    "contenu": "",
-    "date": "2026-09-02T08:00:00Z",
-    "urgence": "breaking",
-    "tags": ["Nvidia", "Hugging Face", "rachat"],
-    "source_url": "https://www.pressmonitor.fr/fr/5-actualites-cles-l-intelligence-artificielle-decideurs-20260901"
-  },
-  {
     "id": "2026-09-07-ia-astra",
     "titre": "OpenAI classe son prochain modèle « Astra » comme premier système critique",
     "categorie": "IA",
@@ -20,105 +9,6 @@
     "urgence": "important",
     "tags": ["OpenAI", "cybersécurité"],
     "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
-  },
-  {
-    "id": "2026-09-02-ia-gemini-flash",
-    "titre": "Google déploie Gemini 3.8 Flash dans son Mode IA de recherche",
-    "categorie": "IA",
-    "resume": "Disponible mondialement pour les abonnés Google AI Pro et Ultra, ce modèle progresse en ingénierie logicielle et en raisonnement multi-étapes, trois semaines seulement après la version précédente.",
-    "contenu": "",
-    "date": "2026-09-02T10:00:00Z",
-    "urgence": "normal",
-    "tags": ["Google", "recherche"],
-    "source_url": "https://www.optimize360.fr/blog/ia-intelligence-artificielle/actualite-seo-geo-ia-ce-quil-faut-retenir/"
-  },
-  {
-    "id": "2026-09-05-web-parisweb",
-    "titre": "Paris Web revient pour sa 21e édition du 24 au 26 septembre",
-    "categorie": "Web",
-    "resume": "Le rendez-vous incontournable des professionnels du web francophone combine conférences et ateliers autour des standards, de l'accessibilité et des bonnes pratiques front-end.",
-    "contenu": "",
-    "date": "2026-09-05T09:00:00Z",
-    "urgence": "normal",
-    "tags": ["conférence", "front-end"],
-    "source_url": "https://www.alsacreations.com/"
-  },
-  {
-    "id": "2026-09-04-web-css",
-    "titre": "Dix nouveautés CSS qui changent vraiment le quotidien en 2026",
-    "categorie": "Web",
-    "resume": "if(), @scope et les animations pilotées par le défilement sont désormais utilisables sans JavaScript dans la plupart des navigateurs modernes, selon ce tour d'horizon.",
-    "contenu": "",
-    "date": "2026-09-04T14:00:00Z",
-    "urgence": "normal",
-    "tags": ["CSS", "navigateurs"],
-    "source_url": "https://blog.crea-troyes.fr/7052/10-nouveautes-css-a-connaitre-absolument-en-2026/"
-  },
-  {
-    "id": "2026-09-06-gaming-wolverine",
-    "titre": "Marvel's Wolverine confirme sa sortie sur PS5 le 15 septembre",
-    "categorie": "Gaming",
-    "resume": "Une nouvelle bande-annonce diffusée à la D23 confirme la date du jeu d'action développé par Insomniac Games pour Sony.",
-    "contenu": "",
-    "date": "2026-09-06T11:00:00Z",
-    "urgence": "normal",
-    "tags": ["PS5", "Insomniac"],
-    "source_url": "https://www.sortiraparis.com/loisirs/gaming/guides/259122-les-sorties-jeux-video-de-septembre-2026-quels-jeux-suivre-ce-mois-ci"
-  },
-  {
-    "id": "2026-09-03-gaming-onimusha",
-    "titre": "Onimusha: Way of the Sword avance sa date de sortie",
-    "categorie": "Gaming",
-    "resume": "Le retour de la licence de Capcom sur PC, PS5, Xbox Series et Switch 2 est désormais attendu plus tôt que prévu initialement, à l'occasion de la Paris Games Week.",
-    "contenu": "",
-    "date": "2026-09-03T15:00:00Z",
-    "urgence": "normal",
-    "tags": ["Capcom", "action"],
-    "source_url": "https://www.sortiraparis.com/loisirs/gaming/guides/259122-les-sorties-jeux-video-de-septembre-2026-quels-jeux-suivre-ce-mois-ci"
-  },
-  {
-    "id": "2026-09-03-gaming-dawnwalker",
-    "titre": "The Blood of Dawnwalker, le cousin vampirique de The Witcher, est disponible",
-    "categorie": "Gaming",
-    "resume": "Développé par d'anciens vétérans de CD Projekt Red, ce RPG sombre marque l'un des lancements les plus attendus de cette rentrée vidéoludique historiquement chargée.",
-    "contenu": "",
-    "date": "2026-09-03T09:00:00Z",
-    "urgence": "normal",
-    "tags": ["RPG", "sortie"],
-    "source_url": "https://www.gameblog.fr/jeu-video/ed/news/sorties-jeux-video-septembre-2026-721992"
-  },
-  {
-    "id": "2026-09-06-hack-xboxone",
-    "titre": "L'Xbox One « fat » enfin piratée après treize ans de sécurité intacte",
-    "categorie": "Hack & Console",
-    "resume": "Présenté à la conférence RE//Verse, l'exploit repose sur une faille matérielle du boot ROM, indétectable et impossible à corriger par une simple mise à jour Microsoft.",
-    "contenu": "",
-    "date": "2026-09-06T13:00:00Z",
-    "urgence": "important",
-    "tags": ["Xbox One", "boot ROM"],
-    "source_url": "https://tech.sportskeeda.com/gaming-news/xbox-one-finally-hacked-why-breaking-unhackable-console-huge-win-game-preservation"
-  },
-  {
-    "id": "2026-09-05-hack-ps5",
-    "titre": "Une vulnérabilité PS5 compatible firmware 13.60 attise la scène",
-    "categorie": "Hack & Console",
-    "resume": "Deux failles de type Use-After-Free ont été signalées à HackerOne ; aucune chaîne d'exploitation complète n'est publique pour l'instant, mais la piste est jugée prometteuse.",
-    "contenu": "",
-    "date": "2026-09-05T10:00:00Z",
-    "urgence": "normal",
-    "tags": ["PS5", "UAF"],
-    "source_url": "https://www.logic-sunrise.com/"
-  },
-  {
-    "id": "2026-09-01-hack-ps4",
-    "titre": "Un nouvel exploit WebKit ouvre le jailbreak PS4 jusqu'au firmware 11.02",
-    "categorie": "Hack & Console",
-    "resume": "CSSFontFace-Exploit, basé sur une faille de gestion des polices CSS, permet désormais de jailbreaker les consoles équipées d'un firmware compris entre 6.00 et 11.02.",
-    "contenu": "",
-    "date": "2026-09-01T12:00:00Z",
-    "urgence": "normal",
-    "tags": ["PS4", "WebKit"],
-    "source_url": "https://www.logic-sunrise.com/news-1222207-ps4ps5-un-nouvel-exploit-webkit-permet-le-jailbreak-de-la-ps4-jusquau-firmware-1102.html"
   },
   {
     "id": "2026-09-07-societe-police",
@@ -132,15 +22,114 @@
     "source_url": "https://www.franceinfo.fr/politique/"
   },
   {
-    "id": "2026-09-02-dev-nextjs",
-    "titre": "Next.js 16 et React 19 deviennent le duo dominant du web en 2026",
-    "categorie": "Dev",
-    "resume": "Cette association représenterait désormais 44% des nouveaux projets front-end, portée par les Server Components et un écosystème arrivé à maturité.",
+    "id": "2026-09-07-nouveautes-iphone",
+    "titre": "Le premier iPhone pliant attendu le 18 septembre, autour de 1 727 €",
+    "categorie": "Nouveautés",
+    "resume": "Selon Yanko Design, l'iPhone Ultra s'attaquerait au défaut le plus visible du format pliable : la pliure visible au centre de l'écran.",
     "contenu": "",
-    "date": "2026-09-02T16:00:00Z",
+    "date": "2026-09-07T06:00:00Z",
     "urgence": "normal",
-    "tags": ["Next.js", "React"],
-    "source_url": "https://krearise.com/blog/meilleures-technologies-developpement-web-2026"
+    "tags": ["Apple", "pliable"],
+    "source_url": "https://www.plare.fr/les-8-meilleurs-gadgets-high-tech-a-acheter-en-septembre-2026-avec-prix-en-euros/"
+  },
+  {
+    "id": "2026-09-06-hack-xboxone",
+    "titre": "L'Xbox One « fat » enfin piratée après treize ans de sécurité intacte",
+    "categorie": "Hack & Console",
+    "resume": "Présenté à la conférence RE//Verse, l'exploit repose sur une faille matérielle du boot ROM, indétectable et impossible à corriger par une simple mise à jour Microsoft.",
+    "contenu": "",
+    "date": "2026-09-06T13:00:00Z",
+    "urgence": "important",
+    "tags": ["Xbox One", "boot ROM"],
+    "source_url": "https://tech.sportskeeda.com/gaming-news/xbox-one-finally-hacked-why-breaking-unhackable-console-huge-win-game-preservation"
+  },
+  {
+    "id": "2026-09-06-gaming-wolverine",
+    "titre": "Marvel's Wolverine confirme sa sortie sur PS5 le 15 septembre",
+    "categorie": "Gaming",
+    "resume": "Une nouvelle bande-annonce diffusée à la D23 confirme la date du jeu d'action développé par Insomniac Games pour Sony.",
+    "contenu": "",
+    "date": "2026-09-06T11:00:00Z",
+    "urgence": "normal",
+    "tags": ["PS5", "Insomniac"],
+    "source_url": "https://www.sortiraparis.com/loisirs/gaming/guides/259122-les-sorties-jeux-video-de-septembre-2026-quels-jeux-suivre-ce-mois-ci"
+  },
+  {
+    "id": "2026-09-06-gaming-nhl27",
+    "titre": "NHL 27 et Train Sim World 7 rejoignent la deuxième dizaine de septembre",
+    "categorie": "Gaming",
+    "resume": "La rentrée vidéoludique continue sur sa lancée avec plusieurs simulations sportives et ferroviaires attendues cette semaine, dans un mois record en nombre de sorties.",
+    "contenu": "",
+    "date": "2026-09-06T08:00:00Z",
+    "urgence": "normal",
+    "tags": ["simulation", "sortie"],
+    "source_url": "https://www.gameblog.fr/jeu-video/ed/news/sorties-jeux-video-septembre-2026-721992"
+  },
+  {
+    "id": "2026-09-05-web-idor",
+    "titre": "IDOR : la faille discrète qui expose vos objets sans autorisation",
+    "categorie": "Web",
+    "resume": "Derrière ce nom un peu pompeux se cache une vulnérabilité web très répandue, qui permet d'accéder aux données d'autrui simplement en modifiant un identifiant dans une requête.",
+    "contenu": "",
+    "date": "2026-09-05T13:00:00Z",
+    "urgence": "normal",
+    "tags": ["sécurité web", "vulnérabilité"],
+    "source_url": "https://www.alsacreations.com/"
+  },
+  {
+    "id": "2026-09-05-hack-ps5",
+    "titre": "Une vulnérabilité PS5 compatible firmware 13.60 attise la scène",
+    "categorie": "Hack & Console",
+    "resume": "Deux failles de type Use-After-Free ont été signalées à HackerOne ; aucune chaîne d'exploitation complète n'est publique pour l'instant, mais la piste est jugée prometteuse.",
+    "contenu": "",
+    "date": "2026-09-05T10:00:00Z",
+    "urgence": "normal",
+    "tags": ["PS5", "UAF"],
+    "source_url": "https://www.logic-sunrise.com/"
+  },
+  {
+    "id": "2026-09-05-web-parisweb",
+    "titre": "Paris Web revient pour sa 21e édition du 24 au 26 septembre",
+    "categorie": "Web",
+    "resume": "Le rendez-vous incontournable des professionnels du web francophone combine conférences et ateliers autour des standards, de l'accessibilité et des bonnes pratiques front-end.",
+    "contenu": "",
+    "date": "2026-09-05T09:00:00Z",
+    "urgence": "normal",
+    "tags": ["conférence", "front-end"],
+    "source_url": "https://www.alsacreations.com/"
+  },
+  {
+    "id": "2026-09-04-hack-linuxloader",
+    "titre": "PS5 Linux Loader v2.5 étend son support au firmware 7.0x",
+    "categorie": "Hack & Console",
+    "resume": "TheFloW publie une mise à jour de son loader qui élargit la compatibilité avec les firmwares récents de la PS5, sans nouvel exploit majeur à ce stade.",
+    "contenu": "",
+    "date": "2026-09-05T07:00:00Z",
+    "urgence": "normal",
+    "tags": ["PS5", "Linux"],
+    "source_url": "https://www.logic-sunrise.com/"
+  },
+  {
+    "id": "2026-09-04-web-css",
+    "titre": "Dix nouveautés CSS qui changent vraiment le quotidien en 2026",
+    "categorie": "Web",
+    "resume": "if(), @scope et les animations pilotées par le défilement sont désormais utilisables sans JavaScript dans la plupart des navigateurs modernes, selon ce tour d'horizon.",
+    "contenu": "",
+    "date": "2026-09-04T14:00:00Z",
+    "urgence": "normal",
+    "tags": ["CSS", "navigateurs"],
+    "source_url": "https://blog.crea-troyes.fr/7052/10-nouveautes-css-a-connaitre-absolument-en-2026/"
+  },
+  {
+    "id": "2026-09-04-societe-bollore",
+    "titre": "Lagardère News, propriété de Bolloré, entre au capital du média Frontières",
+    "categorie": "Société & Politique",
+    "resume": "Le groupe qui détient déjà le JDD investit dans ce média identitaire, une nouvelle étape dans la recomposition du paysage médiatique français.",
+    "contenu": "",
+    "date": "2026-09-04T12:00:00Z",
+    "urgence": "normal",
+    "tags": ["médias"],
+    "source_url": "https://www.titrespresse.com/20307632603/bfm-politique-dimanche"
   },
   {
     "id": "2026-09-04-dev-tailwind",
@@ -154,6 +143,138 @@
     "source_url": "https://krearise.com/blog/meilleures-technologies-developpement-web-2026"
   },
   {
+    "id": "2026-09-03-gaming-onimusha",
+    "titre": "Onimusha: Way of the Sword avance sa date de sortie",
+    "categorie": "Gaming",
+    "resume": "Le retour de la licence de Capcom sur PC, PS5, Xbox Series et Switch 2 est désormais attendu plus tôt que prévu initialement, à l'occasion de la Paris Games Week.",
+    "contenu": "",
+    "date": "2026-09-03T15:00:00Z",
+    "urgence": "normal",
+    "tags": ["Capcom", "action"],
+    "source_url": "https://www.sortiraparis.com/loisirs/gaming/guides/259122-les-sorties-jeux-video-de-septembre-2026-quels-jeux-suivre-ce-mois-ci"
+  },
+  {
+    "id": "2026-09-03-astuces-centrage",
+    "titre": "Le centrage vertical en CSS n'est (enfin) plus un problème",
+    "categorie": "Astuces",
+    "resume": "Longtemps sujet de plaisanterie classique chez les développeurs, la difficulté historique du centrage vertical trouve désormais des solutions natives simples à mettre en œuvre.",
+    "contenu": "",
+    "date": "2026-09-03T14:00:00Z",
+    "urgence": "normal",
+    "tags": ["CSS", "astuce"],
+    "source_url": "https://www.alsacreations.com/"
+  },
+  {
+    "id": "2026-08-02-societe-mention-ia",
+    "titre": "La mention « généré par IA » devient obligatoire dans l'UE",
+    "categorie": "Société & Politique",
+    "resume": "La législation européenne sur l'intelligence artificielle commence à s'appliquer concrètement, avec cette nouvelle obligation de transparence envers le public.",
+    "contenu": "",
+    "date": "2026-09-03T10:00:00Z",
+    "urgence": "normal",
+    "tags": ["AI Act", "UE"],
+    "source_url": "https://www.optimize360.fr/blog/ia-intelligence-artificielle/actualite-seo-geo-ia-ce-quil-faut-retenir/"
+  },
+  {
+    "id": "2026-09-03-gaming-dawnwalker",
+    "titre": "The Blood of Dawnwalker, le cousin vampirique de The Witcher, est disponible",
+    "categorie": "Gaming",
+    "resume": "Développé par d'anciens vétérans de CD Projekt Red, ce RPG sombre marque l'un des lancements les plus attendus de cette rentrée vidéoludique historiquement chargée.",
+    "contenu": "",
+    "date": "2026-09-03T09:00:00Z",
+    "urgence": "normal",
+    "tags": ["RPG", "sortie"],
+    "source_url": "https://www.gameblog.fr/jeu-video/ed/news/sorties-jeux-video-septembre-2026-721992"
+  },
+  {
+    "id": "2026-09-02-dev-nextjs",
+    "titre": "Next.js 16 et React 19 deviennent le duo dominant du web en 2026",
+    "categorie": "Dev",
+    "resume": "Cette association représenterait désormais 44% des nouveaux projets front-end, portée par les Server Components et un écosystème arrivé à maturité.",
+    "contenu": "",
+    "date": "2026-09-02T16:00:00Z",
+    "urgence": "normal",
+    "tags": ["Next.js", "React"],
+    "source_url": "https://krearise.com/blog/meilleures-technologies-developpement-web-2026"
+  },
+  {
+    "id": "2026-09-02-dev-adobeslack",
+    "titre": "Adobe débarque dans Slack avec plus de 70 outils créatifs",
+    "categorie": "Dev",
+    "resume": "Les équipes abonnées aux formules Business+ peuvent désormais accéder aux outils Adobe directement depuis le Slackbot, sans changer d'application.",
+    "contenu": "",
+    "date": "2026-09-02T15:00:00Z",
+    "urgence": "normal",
+    "tags": ["Adobe", "Slack"],
+    "source_url": "https://www.blogdumoderateur.com/tech/"
+  },
+  {
+    "id": "2026-09-02-hack-anssi-wifi",
+    "titre": "L'ANSSI publie une vingtaine de recommandations pour sécuriser le Wi-Fi en entreprise",
+    "categorie": "Hack & Console",
+    "resume": "Du collaborateur en déplacement à l'administrateur réseau, l'agence détaille les bonnes pratiques pour limiter les risques d'intrusion sur les réseaux sans fil professionnels.",
+    "contenu": "",
+    "date": "2026-09-02T11:00:00Z",
+    "urgence": "normal",
+    "tags": ["ANSSI", "réseau"],
+    "source_url": "https://www.blogdumoderateur.com/tech/"
+  },
+  {
+    "id": "2026-09-02-ia-gemini-flash",
+    "titre": "Google déploie Gemini 3.8 Flash dans son Mode IA de recherche",
+    "categorie": "IA",
+    "resume": "Disponible mondialement pour les abonnés Google AI Pro et Ultra, ce modèle progresse en ingénierie logicielle et en raisonnement multi-étapes, trois semaines seulement après la version précédente.",
+    "contenu": "",
+    "date": "2026-09-02T10:00:00Z",
+    "urgence": "normal",
+    "tags": ["Google", "recherche"],
+    "source_url": "https://www.optimize360.fr/blog/ia-intelligence-artificielle/actualite-seo-geo-ia-ce-quil-faut-retenir/"
+  },
+  {
+    "id": "2026-09-02-ia-cnil",
+    "titre": "La CNIL met à jour son démonstrateur de traçabilité des modèles d'IA",
+    "categorie": "IA",
+    "resume": "Genmod, l'outil du régulateur consacré à la traçabilité des modèles open source, devient plus rapide et alimenté chaque semaine pour mieux étudier la propagation des modèles.",
+    "contenu": "",
+    "date": "2026-09-02T09:00:00Z",
+    "urgence": "normal",
+    "tags": ["CNIL", "régulation"],
+    "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
+  },
+  {
+    "id": "2026-09-02-ia-nvidia-hf",
+    "titre": "Nvidia proche du rachat de Hugging Face pour 13 milliards de dollars",
+    "categorie": "IA",
+    "resume": "Selon Le Figaro, le fabricant de puces serait sur le point d'acquérir la start-up française spécialisée dans l'open source, fondée en 2016 par trois Français.",
+    "contenu": "",
+    "date": "2026-09-02T08:00:00Z",
+    "urgence": "breaking",
+    "tags": ["Nvidia", "Hugging Face", "rachat"],
+    "source_url": "https://www.pressmonitor.fr/fr/5-actualites-cles-l-intelligence-artificielle-decideurs-20260901"
+  },
+  {
+    "id": "2026-08-27-nouveautes-watch",
+    "titre": "Apple prépare l'Apple Watch Series 12 pour sa rentrée",
+    "categorie": "Nouveautés",
+    "resume": "La nouvelle génération de montre connectée est attendue aux côtés des prochains iPhone, dans un calendrier automnal habituel pour la marque.",
+    "contenu": "",
+    "date": "2026-09-02T07:00:00Z",
+    "urgence": "normal",
+    "tags": ["Apple", "montre connectée"],
+    "source_url": "https://www.blogdumoderateur.com/tech/"
+  },
+  {
+    "id": "2026-09-01-hack-ps4",
+    "titre": "Un nouvel exploit WebKit ouvre le jailbreak PS4 jusqu'au firmware 11.02",
+    "categorie": "Hack & Console",
+    "resume": "CSSFontFace-Exploit, basé sur une faille de gestion des polices CSS, permet désormais de jailbreaker les consoles équipées d'un firmware compris entre 6.00 et 11.02.",
+    "contenu": "",
+    "date": "2026-09-01T12:00:00Z",
+    "urgence": "normal",
+    "tags": ["PS4", "WebKit"],
+    "source_url": "https://www.logic-sunrise.com/news-1222207-ps4ps5-un-nouvel-exploit-webkit-permet-le-jailbreak-de-la-ps4-jusquau-firmware-1102.html"
+  },
+  {
     "id": "2026-09-01-astuces-pass",
     "titre": "Un générateur de phrases de passe robustes et mémorisables",
     "categorie": "Astuces",
@@ -165,15 +286,26 @@
     "source_url": "https://www.alsacreations.com/"
   },
   {
-    "id": "2026-09-07-nouveautes-iphone",
-    "titre": "Le premier iPhone pliant attendu le 18 septembre, autour de 1 727 €",
+    "id": "2026-08-27-nouveautes-photoshop",
+    "titre": "Photoshop teste la retouche par simple description texte",
     "categorie": "Nouveautés",
-    "resume": "Selon Yanko Design, l'iPhone Ultra s'attaquerait au défaut le plus visible du format pliable : la pliure visible au centre de l'écran.",
+    "resume": "Adobe ajoute un espace de travail en bêta permettant de retoucher une image à partir d'un prompt, sans renoncer aux outils de précision existants.",
     "contenu": "",
-    "date": "2026-09-07T06:00:00Z",
+    "date": "2026-09-01T10:00:00Z",
     "urgence": "normal",
-    "tags": ["Apple", "pliable"],
-    "source_url": "https://www.plare.fr/les-8-meilleurs-gadgets-high-tech-a-acheter-en-septembre-2026-avec-prix-en-euros/"
+    "tags": ["Adobe", "Photoshop"],
+    "source_url": "https://www.blogdumoderateur.com/tech/"
+  },
+  {
+    "id": "2026-09-01-ia-cerebras",
+    "titre": "Cerebras construit un data center IA de 165 MW en Finlande",
+    "categorie": "IA",
+    "resume": "Un investissement estimé jusqu'à 1,7 milliard d'euros qui confirme les ambitions européennes du fabricant de puces spécialisé dans l'IA.",
+    "contenu": "",
+    "date": "2026-09-01T09:00:00Z",
+    "urgence": "normal",
+    "tags": ["Cerebras", "data center"],
+    "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
   },
   {
     "id": "2026-09-01-nouveautes-seestar",
