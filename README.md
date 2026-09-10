@@ -4,9 +4,17 @@ Site Next.js qui affiche des articles depuis un seul fichier de données :
 `data/articles.json`. Chaque push sur GitHub redéploie automatiquement le
 site sur Vercel.
 
-## 1. Ajouter des articles (le seul geste répété au quotidien)
+## Navigation
 
-Ouvre `data/articles.json` et ajoute un objet dans le tableau, sur ce modèle :
+- **Accueil** : flux, hero, filtres par catégorie.
+- **Clic sur un article** → page interne `/article/[id]` avec :
+  - résumé (et `contenu` si renseigné),
+  - **Perspective** (avis / mise en contexte pour relativiser),
+  - lien **source** en bas de page (pas d'ouverture forcée au clic sur la carte).
+
+## 1. Ajouter des articles
+
+Ouvre `data/articles.json` et ajoute un objet dans le tableau :
 
 ```json
 {
@@ -15,6 +23,7 @@ Ouvre `data/articles.json` et ajoute un objet dans le tableau, sur ce modèle :
   "categorie": "IA",
   "resume": "Deux phrases maximum, l'essentiel de la news.",
   "contenu": "",
+  "perspective": "Optionnel : ton point de vue pour relativiser le sujet.",
   "date": "2026-09-08T10:00:00Z",
   "urgence": "normal",
   "tags": ["mot-clé"],
@@ -24,43 +33,18 @@ Ouvre `data/articles.json` et ajoute un objet dans le tableau, sur ce modèle :
 ```
 
 Points importants :
-- `categorie` doit être exactement l'une de : `IA`, `Web`, `Gaming`,
-  `Hack & Console`, `Société & Politique`, `Dev`, `Astuces`, `Nouveautés`.
+- `categorie` : `IA`, `Web`, `Gaming`, `Hack & Console`, `Société & Politique`, `Dev`, `Astuces`, `Nouveautés`.
 - `urgence` : `normal`, `important` ou `breaking`.
-- `date` au format ISO avec l'heure UTC (le `Z` à la fin) — c'est ce qui
-  permet au site de calculer automatiquement ce qui a moins de 24h.
-- `id` doit être unique ; le plus simple est `date-categorie-mot-clé`.
-- `image` (optionnel) : chemin vers une vignette dans `public/`.
-  Si absent, le site utilise automatiquement la vignette de la catégorie
-  (`/vignettes/cat-ia.svg`, `cat-gaming.svg`, etc.).
-- N'oublie pas la virgule entre deux articles (JSON est strict là-dessus).
+- `date` : ISO UTC (avec `Z`).
+- `id` unique (ex. `date-categorie-mot-clé`).
+- `perspective` (optionnel) : texte affiché dans le bloc « Perspective » de la page article. S'il est absent, un texte de repli par catégorie est utilisé.
+- `image` (optionnel) : sinon vignette auto selon la catégorie.
 
 ## Vignettes
 
-Les cartes d'articles affichent une vignette 16:9 en haut.
-
-Fichiers livrés dans `public/vignettes/` :
-- `cat-ia.svg`, `cat-web.svg`, `cat-gaming.svg`, `cat-hack.svg`
-- `cat-societe.svg`, `cat-dev.svg`, `cat-astuces.svg`, `cat-nouveautes.svg`
-
-Pour une image custom : place le fichier dans `public/` (ou
-`public/vignettes/`) et renseigne le champ `image` de l'article.
+Fichiers dans `public/vignettes/` : `cat-ia.svg`, `cat-web.svg`, `cat-gaming.svg`, `cat-hack.svg`, `cat-societe.svg`, `cat-dev.svg`, `cat-astuces.svg`, `cat-nouveautes.svg`.
 
 ## 2. Envoyer sur GitHub
-
-La première fois :
-
-```bash
-cd news-hub
-git init
-git add .
-git commit -m "Site initial"
-git branch -M main
-git remote add origin https://github.com/TON-PSEUDO/TON-REPO.git
-git push -u origin main
-```
-
-Ensuite, à chaque ajout d'article, seulement :
 
 ```bash
 git add data/articles.json
@@ -68,29 +52,11 @@ git commit -m "Nouveaux articles du jour"
 git push
 ```
 
-Tu peux aussi éditer `articles.json` directement dans l'interface web de
-GitHub (bouton crayon sur le fichier) et cliquer "Commit changes" — pas
-besoin de terminal du tout si tu préfères.
+Ou édition directe sur GitHub (bouton crayon → Commit).
 
-## 3. Brancher Vercel (une seule fois)
+## 3. Vercel
 
-1. Va sur vercel.com, connecte ton compte GitHub.
-2. "Add New Project" → sélectionne ce repo.
-3. Vercel détecte Next.js automatiquement, laisse les réglages par défaut.
-4. "Deploy".
-
-À partir de là, chaque `git push` déclenche un rebuild automatique
-(20 à 60 secondes) et le site en ligne se met à jour tout seul.
-
-## Mettre à jour l'URL du site (une fois, après le premier déploiement)
-
-Trois fichiers contiennent `https://news-hub.vercel.app` comme URL par
-défaut, utilisée pour les métadonnées de partage (réseaux sociaux) et le
-sitemap. Une fois ton site en ligne, remplace cette URL par la tienne dans :
-
-- `app/layout.tsx` (`metadataBase`)
-- `app/sitemap.ts`
-- `app/robots.ts`
+Chaque `git push` redéploie le site. Après le premier déploiement, mets à jour l'URL dans `app/layout.tsx`, `app/sitemap.ts` et `app/robots.ts` si besoin.
 
 ## Développement local
 
@@ -99,4 +65,4 @@ npm install
 npm run dev
 ```
 
-Site disponible sur http://localhost:3000
+http://localhost:3000 — les articles s'ouvrent sur `/article/...`
