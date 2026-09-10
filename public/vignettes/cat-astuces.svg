@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="640" y2="360"><stop offset="0%" stop-color="#0B1224"/><stop offset="100%" stop-color="#12162A"/></linearGradient>
+    <radialGradient id="r" cx="28%" cy="18%" r="70%"><stop offset="0%" stop-color="#F5D547" stop-opacity="0.35"/><stop offset="100%" stop-color="#F5D547" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/><rect width="640" height="360" fill="url(#r)"/>
+  <rect x="0" y="0" width="6" height="360" fill="#F5D547"/>
+  <g transform="translate(52,120)" stroke="#F5D547" stroke-width="2.5" fill="none">
+    <path d="M24 4 L28 18 L42 18 L30 28 L36 44 L24 34 L12 44 L18 28 L6 18 L20 18 Z" fill="#F5D547" fill-opacity="0.15"/>
+  </g>
+  <text x="130" y="155" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="600" fill="#E8ECF7">Astuces</text>
+  <text x="130" y="190" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" fill="#8B93B0">Tips &amp; bonnes pratiques</text>
+</svg>

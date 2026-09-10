@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="640" y2="360"><stop offset="0%" stop-color="#0B1224"/><stop offset="100%" stop-color="#12162A"/></linearGradient>
+    <radialGradient id="r" cx="28%" cy="18%" r="70%"><stop offset="0%" stop-color="#FF5C5C" stop-opacity="0.35"/><stop offset="100%" stop-color="#FF5C5C" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/><rect width="640" height="360" fill="url(#r)"/>
+  <rect x="0" y="0" width="6" height="360" fill="#FF5C5C"/>
+  <g transform="translate(48,115)" stroke="#FF5C5C" stroke-width="2.5" fill="none">
+    <path d="M28 4 L52 16 V36 C52 52 28 62 28 62 C28 62 4 52 4 36 V16 Z"/>
+    <path d="M18 34 L26 42 L40 26" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="130" y="155" font-family="ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="600" fill="#E8ECF7">Hack &amp; Console</text>
+  <text x="130" y="190" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" fill="#8B93B0">Sécurité &amp; exploits</text>
+</svg>

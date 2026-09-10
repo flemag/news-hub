@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="640" y2="360"><stop offset="0%" stop-color="#0B1224"/><stop offset="100%" stop-color="#12162A"/></linearGradient>
+    <radialGradient id="r" cx="25%" cy="15%" r="70%"><stop offset="0%" stop-color="#8B7CFF" stop-opacity="0.35"/><stop offset="100%" stop-color="#8B7CFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/><rect width="640" height="360" fill="url(#r)"/>
+  <rect x="0" y="0" width="6" height="360" fill="#8B7CFF"/>
+  <g transform="translate(48,115)" stroke="#8B7CFF" stroke-width="2.5" fill="none">
+    <circle cx="28" cy="40" r="28"/>
+    <ellipse cx="28" cy="40" rx="12" ry="28"/>
+    <path d="M0 40 H56 M4 24 H52 M4 56 H52" stroke-linecap="round"/>
+  </g>
+  <text x="130" y="155" font-family="ui-sans-serif,system-ui,sans-serif" font-size="28" font-weight="600" fill="#E8ECF7">Web</text>
+  <text x="130" y="190" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" fill="#8B93B0">Standards &amp; front-end</text>
+</svg>

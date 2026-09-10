@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="640" y2="360"><stop offset="0%" stop-color="#0B1224"/><stop offset="100%" stop-color="#12162A"/></linearGradient>
+    <radialGradient id="r" cx="30%" cy="20%" r="70%"><stop offset="0%" stop-color="#FFB347" stop-opacity="0.35"/><stop offset="100%" stop-color="#FFB347" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/><rect width="640" height="360" fill="url(#r)"/>
+  <rect x="0" y="0" width="6" height="360" fill="#FFB347"/>
+  <g transform="translate(48,120)" stroke="#FFB347" stroke-width="2.5" fill="none">
+    <path d="M8 56 V24 L28 8 L48 24 V56"/>
+    <rect x="20" y="36" width="16" height="20"/>
+    <path d="M14 32 H22 M34 32 H42 M14 44 H22"/>
+  </g>
+  <text x="130" y="155" font-family="ui-sans-serif,system-ui,sans-serif" font-size="24" font-weight="600" fill="#E8ECF7">Société &amp; Politique</text>
+  <text x="130" y="190" font-family="ui-sans-serif,system-ui,sans-serif" font-size="16" fill="#8B93B0">Actualité française</text>
+</svg>
