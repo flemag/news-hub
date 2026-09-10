@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import {
   articles,
   getArticleById,
+  resolveAnalyse,
   resolvePerspective,
 } from "@/lib/articles";
 import {
@@ -43,12 +44,15 @@ export default function ArticlePage({ params }: Props) {
   const Icon = CATEGORY_ICON[article.categorie];
   const vignette = resolveVignette(article.categorie, article.image);
   const perspective = resolvePerspective(article);
+  const analyse = resolveAnalyse(article);
+  const hasLongContenu =
+    Boolean(article.contenu && article.contenu.trim().length > 40);
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-base">
       <Header />
 
-      <div className="mx-auto max-w-3xl px-6 py-8">
+      <article className="mx-auto max-w-3xl px-6 py-8 md:py-10">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-sm text-muted hover:text-cyan transition-colors mb-8"
@@ -56,28 +60,32 @@ export default function ArticlePage({ params }: Props) {
           <span aria-hidden>←</span> Retour au flux
         </Link>
 
-        <div className="flex items-center gap-2 text-xs mb-4">
-          <Icon size={14} style={{ color: accent }} aria-hidden />
-          <span style={{ color: accent }}>{article.categorie}</span>
+        <div className="flex flex-wrap items-center gap-2 text-sm mb-4">
+          <Icon size={15} style={{ color: accent }} aria-hidden />
+          <span className="font-medium" style={{ color: accent }}>
+            {article.categorie}
+          </span>
           {article.urgence !== "normal" && (
             <span
               className={
-                article.urgence === "breaking" ? "text-amber" : "text-muted"
+                article.urgence === "breaking"
+                  ? "text-amber font-medium"
+                  : "text-ink/80"
               }
             >
-              {urgenceLabel[article.urgence]}
+              · {urgenceLabel[article.urgence]}
             </span>
           )}
-          <span className="text-muted ml-auto" title={formatFullDate(article.date)}>
+          <span className="text-muted ml-auto text-xs md:text-sm">
             {formatRelative(article.date)} · {formatFullDate(article.date)}
           </span>
         </div>
 
-        <h1 className="font-display text-3xl md:text-4xl font-bold leading-tight text-ink">
+        <h1 className="font-display text-3xl md:text-[2.5rem] font-bold leading-tight text-ink tracking-tight">
           {article.titre}
         </h1>
 
-        <div className="mt-6 relative aspect-[16/9] w-full overflow-hidden rounded-sm border border-line bg-[#0B1224]">
+        <div className="mt-6 relative aspect-[16/9] w-full overflow-hidden rounded-sm border border-line bg-panel">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={vignette}
@@ -85,34 +93,86 @@ export default function ArticlePage({ params }: Props) {
             className="h-full w-full object-cover"
           />
           <div
-            className="absolute left-0 top-0 bottom-0 w-1"
+            className="absolute left-0 top-0 bottom-0 w-1.5"
             style={{ backgroundColor: accent }}
             aria-hidden
           />
         </div>
 
-        <section className="mt-8">
-          <h2 className="font-display text-sm text-muted mb-3 tracking-wide uppercase">
-            Résumé
+        {/* Résumé */}
+        <section className="mt-10 prose-signal">
+          <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
+            En bref
           </h2>
-          <p className="text-base text-ink leading-relaxed">{article.resume}</p>
-          {article.contenu && article.contenu.trim().length > 0 && (
-            <div className="mt-4 text-base text-ink/90 leading-relaxed whitespace-pre-wrap">
-              {article.contenu}
+          <p className="text-lg text-ink leading-relaxed font-medium">
+            {article.resume}
+          </p>
+        </section>
+
+        {/* Analyse */}
+        <section className="mt-10">
+          <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-4">
+            Analyse
+          </h2>
+
+          {hasLongContenu ? (
+            <div className="rounded-sm border border-line bg-panel p-5 md:p-6 space-y-4">
+              <p className="text-base text-ink leading-[1.75] whitespace-pre-wrap">
+                {article.contenu}
+              </p>
+            </div>
+          ) : (
+            <div className="space-y-5">
+              <div className="rounded-sm border border-line bg-panel p-5 md:p-6">
+                <h3 className="text-sm font-medium text-ink mb-2">Contexte</h3>
+                <p className="text-base text-ink/95 leading-[1.75]">
+                  {analyse.contexte}
+                </p>
+              </div>
+
+              {analyse.points.length > 0 && (
+                <div className="rounded-sm border border-line bg-panel p-5 md:p-6">
+                  <h3 className="text-sm font-medium text-ink mb-3">
+                    Points à retenir
+                  </h3>
+                  <ul className="space-y-3">
+                    {analyse.points.map((p) => (
+                      <li
+                        key={p}
+                        className="flex gap-3 text-base text-ink/95 leading-relaxed"
+                      >
+                        <span
+                          className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full"
+                          style={{ backgroundColor: accent }}
+                          aria-hidden
+                        />
+                        <span>{p}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           )}
         </section>
 
+        {/* Perspective */}
         <section
-          className="mt-10 rounded-sm border border-line bg-panel p-5 md:p-6"
-          style={{ borderLeftWidth: 3, borderLeftColor: accent }}
+          className="mt-10 rounded-sm border bg-panelAlt p-5 md:p-6"
+          style={{ borderColor: accent + "66", borderLeftWidth: 4, borderLeftColor: accent }}
         >
-          <h2 className="font-display text-sm mb-3 tracking-wide uppercase" style={{ color: accent }}>
-            Perspective
+          <h2
+            className="font-display text-xs uppercase tracking-[0.12em] mb-3"
+            style={{ color: accent }}
+          >
+            Perspective — pour relativiser
           </h2>
-          <p className="text-sm md:text-base text-ink/90 leading-relaxed">
-            {perspective}
-          </p>
+          <p className="text-base text-ink leading-[1.75]">{perspective}</p>
+          {!hasLongContenu && analyse.vigilance !== perspective && (
+            <p className="mt-4 text-base text-ink/90 leading-[1.75]">
+              {analyse.vigilance}
+            </p>
+          )}
         </section>
 
         {article.tags?.length > 0 && (
@@ -120,7 +180,7 @@ export default function ArticlePage({ params }: Props) {
             {article.tags.map((tag) => (
               <li
                 key={tag}
-                className="text-xs text-muted border border-line rounded-sm px-2 py-0.5"
+                className="text-sm text-ink/80 border border-line rounded-sm px-2.5 py-1 bg-panel"
               >
                 {tag}
               </li>
@@ -130,25 +190,29 @@ export default function ArticlePage({ params }: Props) {
 
         {article.source_url && (
           <section className="mt-12 pt-8 border-t border-line">
-            <p className="text-sm text-muted mb-3">
-              Pour aller plus loin, consulter la source d'origine :
+            <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
+              Source
+            </h2>
+            <p className="text-base text-ink/90 mb-4 leading-relaxed">
+              Les éléments ci-dessus synthétisent le signal. Pour le détail
+              factuel d'origine (chiffres exacts, citations, suite) :
             </p>
             <a
               href={article.source_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm px-4 py-2.5 rounded-sm border border-line hover:border-cyan/50 hover:text-cyan transition-colors break-all"
+              className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2.5 rounded-sm border border-cyan/40 text-cyan hover:bg-cyan/10 transition-colors"
             >
               Ouvrir la source
-              <span aria-hidden className="text-cyan">↗</span>
+              <span aria-hidden>↗</span>
             </a>
-            <p className="mt-2 text-xs text-muted break-all opacity-70">
+            <p className="mt-3 text-xs text-muted break-all">
               {article.source_url}
             </p>
           </section>
         )}
 
-        <div className="mt-12 mb-8">
+        <div className="mt-12 mb-10">
           <Link
             href="/"
             className="text-sm text-muted hover:text-cyan transition-colors"
@@ -156,7 +220,7 @@ export default function ArticlePage({ params }: Props) {
             ← Retour au flux
           </Link>
         </div>
-      </div>
+      </article>
     </main>
   );
 }

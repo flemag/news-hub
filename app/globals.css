@@ -11,19 +11,30 @@
 }
 
 ::selection {
-  background: #3de8ff33;
-  color: #e8ecf7;
+  background: #5eebff44;
+  color: #f1f4fc;
+}
+
+/* Lisibilité page article */
+.prose-signal p {
+  color: #e8edf8;
+  line-height: 1.75;
+  font-size: 1.05rem;
+}
+.prose-signal h2 {
+  color: #f1f4fc;
+  letter-spacing: 0.04em;
 }
 
 .hscroll {
   scrollbar-width: thin;
-  scrollbar-color: #242b4a transparent;
+  scrollbar-color: #2e3658 transparent;
 }
 .hscroll::-webkit-scrollbar {
   height: 6px;
 }
 .hscroll::-webkit-scrollbar-thumb {
-  background: #242b4a;
+  background: #2e3658;
   border-radius: 4px;
 }
 
@@ -43,4 +54,3 @@
     animation: none;
   }
 }
-

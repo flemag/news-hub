@@ -9,14 +9,14 @@ const config: Config = {
     extend: {
       colors: {
         base: "#0B0E1A",
-        panel: "#12162A",
-        panelAlt: "#171C33",
-        line: "#242B4A",
-        ink: "#E8ECF7",
-        muted: "#8891B0",
-        cyan: "#3DE8FF",
-        magenta: "#FF4FA3",
-        amber: "#FFB347",
+        panel: "#151B32",
+        panelAlt: "#1A213A",
+        line: "#2E3658",
+        ink: "#F1F4FC",
+        muted: "#A8B0CC",
+        cyan: "#5EEBFF",
+        magenta: "#FF6BB5",
+        amber: "#FFC45C",
       },
       fontFamily: {
         display: ["var(--font-display)"],
