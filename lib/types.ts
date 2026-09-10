@@ -20,4 +20,6 @@ export interface Article {
   urgence: Urgence;
   tags: string[];
   source_url?: string;
+  /** Chemin public optionnel, ex: /vignettes/cat-ia.svg */
+  image?: string;
 }
