@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Article } from "@/lib/types";
 import { categorieAccent, formatRelative } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
@@ -11,10 +12,8 @@ export default function Hero({ article }: { article: Article }) {
   const vignette = resolveVignette(article.categorie, article.image);
 
   return (
-    <a
-      href={article.source_url}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Link
+      href={`/article/${article.id}`}
       className="group block relative overflow-hidden rounded-sm border border-line text-ink no-underline"
       style={{
         background: `radial-gradient(1100px 320px at 15% 0%, ${accent}1f, transparent 60%), #12162A`,
@@ -55,6 +54,8 @@ export default function Hero({ article }: { article: Article }) {
               ))}
             </ul>
           )}
+
+          <p className="mt-6 text-sm text-cyan/90">Lire la perspective →</p>
         </div>
 
         <div className="relative hidden md:block min-h-[220px] overflow-hidden">
@@ -76,6 +77,6 @@ export default function Hero({ article }: { article: Article }) {
         style={{ backgroundColor: accent }}
         aria-hidden
       />
-    </a>
+    </Link>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Article } from "@/lib/types";
 import { categorieAccent, formatFullDate, formatRelative } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
@@ -70,7 +71,7 @@ export default function ArticleCard({
           </span>
         </h3>
 
-        <p className="text-sm text-muted leading-relaxed">{article.resume}</p>
+        <p className="text-sm text-muted leading-relaxed line-clamp-3">{article.resume}</p>
 
         {article.tags?.length > 0 && (
           <ul className="flex flex-wrap gap-2 mt-auto pt-2">
@@ -85,19 +86,13 @@ export default function ArticleCard({
     </article>
   );
 
-  if (article.source_url) {
-    return (
-      <a
-        href={article.source_url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={["text-ink no-underline", featured ? "md:w-96 shrink-0" : ""].join(" ")}
-        aria-label={`${article.titre} — ${article.categorie}`}
-      >
-        {content}
-      </a>
-    );
-  }
-
-  return content;
+  return (
+    <Link
+      href={`/article/${article.id}`}
+      className={["text-ink no-underline", featured ? "md:w-96 shrink-0" : ""].join(" ")}
+      aria-label={`${article.titre} — ${article.categorie}`}
+    >
+      {content}
+    </Link>
+  );
 }

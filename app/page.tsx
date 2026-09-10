@@ -1,9 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import rawArticles from "@/data/articles.json";
 import { Article, Categorie } from "@/lib/types";
 import { isWithinLast24h } from "@/lib/dates";
+import { articles as rawArticles } from "@/lib/articles";
 import Header from "@/components/Header";
 import Ticker from "@/components/Ticker";
 import Hero from "@/components/Hero";
@@ -93,8 +93,7 @@ export default function Home() {
       <footer className="border-t border-line">
         <div className="mx-auto max-w-6xl px-6 py-8 text-xs text-muted flex flex-wrap gap-x-6 gap-y-2 justify-between">
           <span>
-            Mis à jour à chaque publication — les articles sont ajoutés dans{" "}
-            <code className="text-ink/80">data/articles.json</code>.
+            Clique un article pour lire le résumé et la perspective — source en bas de page.
           </span>
           <span>Signal — veille indépendante, sans tracker.</span>
         </div>

@@ -15,7 +15,10 @@ export interface Article {
   titre: string;
   categorie: Categorie;
   resume: string;
+  /** Texte long optionnel (détail). */
   contenu?: string;
+  /** Point de vue / mise en perspective pour relativiser le sujet. */
+  perspective?: string;
   date: string;
   urgence: Urgence;
   tags: string[];
