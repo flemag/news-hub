@@ -1,7 +1,7 @@
-import rawArticles from "@/data/articles.json";
+import { allArticles } from "@/data/articles";
 import { Article, Categorie } from "./types";
 
-export const articles = rawArticles as Article[];
+export const articles = allArticles as Article[];
 
 export function getArticleById(id: string): Article | undefined {
   return articles.find((a) => a.id === id);
@@ -40,7 +40,6 @@ export function resolveAnalyse(article: Article): {
   vigilance: string;
 } {
   if (article.contenu && article.contenu.trim().length > 40) {
-    // Contenu libre fourni : on le traite comme bloc unique côté UI
     return {
       contexte: article.contenu.trim(),
       points: [],

@@ -1,68 +1,72 @@
 # Signal — site d'actu 24h
 
-Site Next.js qui affiche des articles depuis un seul fichier de données :
-`data/articles.json`. Chaque push sur GitHub redéploie automatiquement le
-site sur Vercel.
+Site Next.js alimenté par des fichiers JSON mensuels dans `data/articles/`.
+Chaque push sur GitHub redéploie le site sur Vercel.
+
+## Organisation des données
+
+```
+data/articles/
+  index.ts       # fusionne tous les mois
+  2026-09.json   # un fichier = un mois
+```
+
+- **Écrire** uniquement dans le fichier du mois courant.
+- Au 1er du mois suivant : créer `YYYY-MM.json` + l'importer dans `index.ts`.
+- Détails : [docs/DATA.md](docs/DATA.md).
 
 ## Navigation
 
-- **Accueil** : flux, hero, filtres par catégorie.
-- **Clic sur un article** → page interne `/article/[id]` avec :
-  - résumé (et `contenu` si renseigné),
-  - **Perspective** (avis / mise en contexte pour relativiser),
-  - lien **source** en bas de page (pas d'ouverture forcée au clic sur la carte).
+- Accueil : flux, hero, filtres.
+- Clic article → `/article/[id]` : résumé, analyse, perspective, source en bas.
 
-## 1. Ajouter des articles
+## Ajouter un article (manuel)
 
-Ouvre `data/articles.json` et ajoute un objet dans le tableau :
+Édite `data/articles/2026-09.json` (mois en cours) :
 
 ```json
 {
-  "id": "2026-09-08-ia-exemple",
-  "titre": "Titre court et clair",
+  "id": "2026-09-11-ia-exemple",
+  "titre": "Titre court",
   "categorie": "IA",
-  "resume": "Deux phrases maximum, l'essentiel de la news.",
-  "contenu": "",
-  "perspective": "Optionnel : ton point de vue pour relativiser le sujet.",
-  "date": "2026-09-08T10:00:00Z",
+  "resume": "L'essentiel en 2 phrases.",
+  "contenu": "Analyse détaillée…",
+  "perspective": "Pour relativiser…",
+  "date": "2026-09-11T08:00:00Z",
   "urgence": "normal",
-  "tags": ["mot-clé"],
-  "source_url": "https://...",
-  "image": "/vignettes/cat-ia.svg"
+  "tags": ["tag"],
+  "source_url": "https://…"
 }
 ```
 
-Points importants :
-- `categorie` : `IA`, `Web`, `Gaming`, `Hack & Console`, `Société & Politique`, `Dev`, `Astuces`, `Nouveautés`.
-- `urgence` : `normal`, `important` ou `breaking`.
-- `date` : ISO UTC (avec `Z`).
-- `id` unique (ex. `date-categorie-mot-clé`).
-- `perspective` (optionnel) : texte affiché dans le bloc « Perspective » de la page article. S'il est absent, un texte de repli par catégorie est utilisé.
-- `image` (optionnel) : sinon vignette auto selon la catégorie.
-
-## Vignettes
-
-Fichiers dans `public/vignettes/` : `cat-ia.svg`, `cat-web.svg`, `cat-gaming.svg`, `cat-hack.svg`, `cat-societe.svg`, `cat-dev.svg`, `cat-astuces.svg`, `cat-nouveautes.svg`.
-
-## 2. Envoyer sur GitHub
+Puis :
 
 ```bash
-git add data/articles.json
-git commit -m "Nouveaux articles du jour"
+git add data/articles/2026-09.json
+git commit -m "Articles du jour"
 git push
 ```
 
-Ou édition directe sur GitHub (bouton crayon → Commit).
+## Automatisation quotidienne Grok
 
-## 3. Vercel
+Tu peux planifier une tâche Grok (Automations) qui, chaque matin :
 
-Chaque `git push` redéploie le site. Après le premier déploiement, mets à jour l'URL dans `app/layout.tsx`, `app/sitemap.ts` et `app/robots.ts` si besoin.
+1. Recherche l'actu tech FR des 24h (IA, Web, Gaming, Hack, Société, Dev, Nouveautés)
+2. Lit le JSON du mois sur `github.com/flemag/news-hub`
+3. Ajoute 3–8 articles **nouveaux** avec `contenu` + `perspective`
+4. Push sur `main` → Vercel redéploie
 
-## Développement local
+Le prompt type est fourni via l'automation « Signal — veille quotidienne ».
+
+## Vignettes
+
+`public/vignettes/cat-*.svg` — fallback auto par catégorie si pas de champ `image`.
+
+## Dev local
 
 ```bash
 npm install
 npm run dev
 ```
 
-http://localhost:3000 — les articles s'ouvrent sur `/article/...`
+http://localhost:3000
