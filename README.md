@@ -18,7 +18,8 @@ Ouvre `data/articles.json` et ajoute un objet dans le tableau, sur ce modèle :
   "date": "2026-09-08T10:00:00Z",
   "urgence": "normal",
   "tags": ["mot-clé"],
-  "source_url": "https://..."
+  "source_url": "https://...",
+  "image": "/vignettes/cat-ia.svg"
 }
 ```
 
@@ -29,7 +30,21 @@ Points importants :
 - `date` au format ISO avec l'heure UTC (le `Z` à la fin) — c'est ce qui
   permet au site de calculer automatiquement ce qui a moins de 24h.
 - `id` doit être unique ; le plus simple est `date-categorie-mot-clé`.
+- `image` (optionnel) : chemin vers une vignette dans `public/`.
+  Si absent, le site utilise automatiquement la vignette de la catégorie
+  (`/vignettes/cat-ia.svg`, `cat-gaming.svg`, etc.).
 - N'oublie pas la virgule entre deux articles (JSON est strict là-dessus).
+
+## Vignettes
+
+Les cartes d'articles affichent une vignette 16:9 en haut.
+
+Fichiers livrés dans `public/vignettes/` :
+- `cat-ia.svg`, `cat-web.svg`, `cat-gaming.svg`, `cat-hack.svg`
+- `cat-societe.svg`, `cat-dev.svg`, `cat-astuces.svg`, `cat-nouveautes.svg`
+
+Pour une image custom : place le fichier dans `public/` (ou
+`public/vignettes/`) et renseigne le champ `image` de l'article.
 
 ## 2. Envoyer sur GitHub
 
