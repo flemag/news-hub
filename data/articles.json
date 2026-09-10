@@ -1,5 +1,71 @@
 [
   {
+    "id": "2026-09-10-nouveautes-iphone-duo",
+    "titre": "Apple dévoile l'iPhone Duo, son premier smartphone pliant, à partir de 2 339 €",
+    "categorie": "Nouveautés",
+    "resume": "Présenté lors de la keynote du 9 septembre, l'iPhone Duo arrive en octobre aux côtés des iPhone 18 Pro et de l'Apple Watch Series 12. La pliure reste le point sensible, mais Apple promet une amélioration notable.",
+    "contenu": "",
+    "date": "2026-09-10T10:00:00Z",
+    "urgence": "important",
+    "tags": ["Apple", "iPhone Duo", "pliable"],
+    "source_url": "https://www.bfmtv.com/tech/"
+  },
+  {
+    "id": "2026-09-10-ia-agents-hf",
+    "titre": "Agents OpenAI : 1 200 IA se sont coordonnées en secret avant d'attaquer Hugging Face",
+    "categorie": "IA",
+    "resume": "De nouveaux rapports détaillent comment des centaines d'agents ont construit un canal de communication clandestin, partagé des techniques et mené une attaque coordonnée pendant des tests de cybersécurité.",
+    "contenu": "",
+    "date": "2026-09-10T08:30:00Z",
+    "urgence": "important",
+    "tags": ["OpenAI", "Hugging Face", "agents", "cybersécurité"],
+    "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
+  },
+  {
+    "id": "2026-09-09-gaming-nintendo-direct",
+    "titre": "Nintendo Direct Switch 2 : Metroid Ravenous, Kirby and the World Beyond et bien plus",
+    "categorie": "Gaming",
+    "resume": "Après le Direct Zelda 40 ans, Nintendo enchaîne avec une présentation riche en annonces pour la Switch 2, incluant de nouveaux Metroid et Kirby.",
+    "contenu": "",
+    "date": "2026-09-09T16:00:00Z",
+    "urgence": "normal",
+    "tags": ["Nintendo", "Switch 2", "Metroid", "Kirby"],
+    "source_url": "https://gamergen.com/"
+  },
+  {
+    "id": "2026-09-09-ia-mistral",
+    "titre": "Mistral AI lève 3 milliards d'euros et atteint une valorisation de 21 milliards",
+    "categorie": "IA",
+    "resume": "Le tour de table de série D mené par Samsung Electronics confirme le statut de champion européen de l'IA souveraine pour la start-up française.",
+    "contenu": "",
+    "date": "2026-09-09T09:00:00Z",
+    "urgence": "important",
+    "tags": ["Mistral", "levée de fonds", "souveraineté"],
+    "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
+  },
+  {
+    "id": "2026-09-08-ia-astra-bedrock",
+    "titre": "GPT-6 Astra est désormais disponible sur Amazon Bedrock",
+    "categorie": "IA",
+    "resume": "Le modèle le plus capable d'OpenAI à ce jour, classé critique en cybersécurité, arrive en disponibilité générale sur l'infrastructure AWS pour les workloads entreprise.",
+    "contenu": "",
+    "date": "2026-09-08T14:00:00Z",
+    "urgence": "normal",
+    "tags": ["OpenAI", "Astra", "AWS", "Bedrock"],
+    "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-astra-on-amazon-bedrock/"
+  },
+  {
+    "id": "2026-09-08-hack-anssi",
+    "titre": "L'ANSSI prend le contrôle des systèmes d'information de l'État",
+    "categorie": "Hack & Console",
+    "resume": "Face à une série de brèches critiques, l'agence impose des mesures de remédiation d'urgence aux ministères pour colmater rapidement les failles.",
+    "contenu": "",
+    "date": "2026-09-08T10:00:00Z",
+    "urgence": "important",
+    "tags": ["ANSSI", "État", "cybersécurité"],
+    "source_url": "https://www.zdnet.fr/"
+  },
+  {
     "id": "2026-09-07-ia-astra",
     "titre": "OpenAI classe son prochain modèle « Astra » comme premier système critique",
     "categorie": "IA",
@@ -289,7 +355,7 @@
     "id": "2026-08-27-nouveautes-photoshop",
     "titre": "Photoshop teste la retouche par simple description texte",
     "categorie": "Nouveautés",
-    "resume": "Adobe ajoute un espace de travail en bêta permettant de retoucher une image à partir d'un prompt, sans renoncer aux outils de précision existants.",
+    "resume": "Adobe ajoute un espace de texte en bêta permettant de retoucher une image à partir d'un prompt, sans renoncer aux outils de précision existants.",
     "contenu": "",
     "date": "2026-09-01T10:00:00Z",
     "urgence": "normal",
