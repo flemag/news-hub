@@ -36,21 +36,46 @@ data/
 }
 ```
 
-Catégories autorisées : `IA`, `Web`, `Gaming`, `Hack & Console`, `Société & Politique`, `Dev`, `Astuces`, `Nouveautés`.  
+Catégories : `IA`, `Web`, `Gaming`, `Hack & Console`, `Société & Politique`, `Dev`, `Astuces`, `Nouveautés`.  
 Urgence : `normal` | `important` | `breaking`.
 
 ### Nouveau mois
 
 1. Créer `data/articles/2026-10.json` avec `[]`
-2. Dans `data/articles/index.ts` : `import month202610 from "./2026-10.json"` et l'ajouter dans `MONTH_FILES`
+2. Dans `data/articles/index.ts` : importer le mois et l'ajouter à `MONTH_FILES`
 3. Commit + push
 
-### Automatisation quotidienne (Grok)
+---
 
-Une automation Grok peut :
-1. Chercher l'actu des dernières 24h (sources FR/tech)
-2. Lire `data/articles/YYYY-MM.json` sur GitHub
-3. Ajouter 3–8 articles **nouveaux** (id unique, contenu + perspective)
-4. Pousser uniquement ce fichier sur `main`
+## Veille idéale (automation quotidienne 08:00 Europe/Paris)
 
-Voir le prompt d'automation dans le README.
+### Piliers scannés chaque jour
+
+| Pilier | Exemples de sources |
+|--------|---------------------|
+| **Labs IA** | OpenAI, Anthropic, DeepMind, Meta, xAI, Mistral, HF, Microsoft, AWS, Apple ML |
+| **Recherche** | arXiv (`cs.AI`, `cs.LG`, `cs.CL`, `cs.CV`, `cs.CR`), HF Daily Papers, Papers With Code |
+| **Presse FR** | Usine Digitale, Numerama, BFMTV Tech, ZDNet, Next INpact, BdM |
+| **Presse EN** | Verge, Ars, TechCrunch, MIT TR, Bloomberg (si signal majeur) |
+| **Sécurité** | ANSSI, CERT-FR, CVE critiques, scène console (Logic-Sunrise…) |
+| **Gaming** | Nintendo / Sony / MS, Gameblog, GamerGen |
+| **Web & Dev** | Standards, frameworks, blogs ingénierie |
+| **Société** | AI Act, CNIL, géopolitique puces/cloud |
+| **Hardware** | Apple, Samsung, Google, gadgets à impact |
+
+### Filtre arXiv (anti-bruit)
+
+Un papier n'est retenu que s'il coche **au moins un** critère :
+
+1. Lab / auteur de premier plan, **ou**
+2. Code public + claim vérifiable, **ou**
+3. SOTA / changement de pratique (agents, safety, efficiency…), **ou**
+4. Déjà relayé par la presse ou la communauté (HN, HF, chercheurs)
+
+Rédaction : problème + idée centrale + **pourquoi le lecteur Signal s'en soucie** (pas un abstract traduit).
+
+### Volume
+
+- 4–10 articles / jour (idéal 6–8)
+- Qualité > quantité
+- Rapport de fin de run : ce qui a été ajouté **et** ce qui a été vu mais écarté
