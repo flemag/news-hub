@@ -23,7 +23,23 @@ export default function Home() {
     []
   );
 
-  const heroArticle = sorted.find((a) => a.urgence === "breaking") ?? sorted[0];
+  /**
+   * Hero = vrai breaking des dernières 24h, sinon important < 24h,
+   * sinon l'article le plus récent. Évite qu'un vieux « breaking »
+   * monopolise la une pendant des jours.
+   */
+  const heroArticle = useMemo(() => {
+    if (!sorted.length) return undefined;
+    const breaking24 = sorted.find(
+      (a) => a.urgence === "breaking" && isWithinLast24h(a.date)
+    );
+    if (breaking24) return breaking24;
+    const important24 = sorted.find(
+      (a) => a.urgence === "important" && isWithinLast24h(a.date)
+    );
+    if (important24) return important24;
+    return sorted[0];
+  }, [sorted]);
 
   const last24h = useMemo(
     () =>
