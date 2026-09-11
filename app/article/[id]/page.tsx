@@ -24,7 +24,8 @@ const urgenceLabel: Record<string, string> = {
 type Props = { params: { id: string } };
 
 export function generateStaticParams() {
-  return articles.map((a) => ({ id: a.id }));
+  const list = Array.isArray(articles) ? articles : [];
+  return list.map((a) => ({ id: a.id }));
 }
 
 export function generateMetadata({ params }: Props): Metadata {
@@ -99,7 +100,6 @@ export default function ArticlePage({ params }: Props) {
           />
         </div>
 
-        {/* Résumé */}
         <section className="mt-10 prose-signal">
           <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
             En bref
@@ -109,7 +109,6 @@ export default function ArticlePage({ params }: Props) {
           </p>
         </section>
 
-        {/* Analyse */}
         <section className="mt-10">
           <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-4">
             Analyse
@@ -156,10 +155,13 @@ export default function ArticlePage({ params }: Props) {
           )}
         </section>
 
-        {/* Perspective */}
         <section
           className="mt-10 rounded-sm border bg-panelAlt p-5 md:p-6"
-          style={{ borderColor: accent + "66", borderLeftWidth: 4, borderLeftColor: accent }}
+          style={{
+            borderColor: accent + "66",
+            borderLeftWidth: 4,
+            borderLeftColor: accent,
+          }}
         >
           <h2
             className="font-display text-xs uppercase tracking-[0.12em] mb-3"
