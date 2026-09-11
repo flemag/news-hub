@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Article } from "@/lib/types";
-import { categorieAccent, formatRelative } from "@/lib/dates";
+import { categorieAccent, formatRelative, isWithinLast24h } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
 import { resolveVignette } from "@/lib/vignettes";
 
@@ -10,6 +10,8 @@ export default function Hero({ article }: { article: Article }) {
   const accent = categorieAccent(article.categorie);
   const Icon = CATEGORY_ICON[article.categorie];
   const vignette = resolveVignette(article.categorie, article.image);
+  const showBreaking =
+    article.urgence === "breaking" && isWithinLast24h(article.date);
 
   return (
     <Link
@@ -24,10 +26,13 @@ export default function Hero({ article }: { article: Article }) {
           <div className="flex items-center gap-2 mb-3 md:mb-5 text-[11px] sm:text-xs">
             <Icon size={13} style={{ color: accent }} aria-hidden />
             <span style={{ color: accent }}>{article.categorie}</span>
-            {article.urgence === "breaking" && (
+            {showBreaking && (
               <span className="ml-1 px-1.5 py-0.5 rounded-sm bg-amber/15 text-amber tracking-wide text-[10px] sm:text-xs">
                 Dernière minute
               </span>
+            )}
+            {!showBreaking && article.urgence === "important" && isWithinLast24h(article.date) && (
+              <span className="ml-1 text-muted">Important</span>
             )}
             <span className="text-muted ml-auto md:ml-4">
               {formatRelative(article.date)}

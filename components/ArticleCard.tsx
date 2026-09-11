@@ -2,15 +2,28 @@
 
 import Link from "next/link";
 import { Article } from "@/lib/types";
-import { categorieAccent, formatFullDate, formatRelative } from "@/lib/dates";
+import {
+  categorieAccent,
+  formatFullDate,
+  formatRelative,
+  isWithinLast24h,
+} from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
 import { resolveVignette } from "@/lib/vignettes";
 
-const urgenceLabel: Record<Article["urgence"], string> = {
-  normal: "",
-  important: "Important",
-  breaking: "Dernière minute",
-};
+function urgenceDisplay(article: Article): { label: string; className: string } | null {
+  if (article.urgence === "breaking" && isWithinLast24h(article.date)) {
+    return { label: "Dernière minute", className: "text-amber" };
+  }
+  if (article.urgence === "breaking") {
+    // Vieux breaking : afficher comme important, pas dernière minute
+    return { label: "Important", className: "text-muted" };
+  }
+  if (article.urgence === "important") {
+    return { label: "Important", className: "text-muted" };
+  }
+  return null;
+}
 
 export default function ArticleCard({
   article,
@@ -22,8 +35,8 @@ export default function ArticleCard({
   const accent = categorieAccent(article.categorie);
   const Icon = CATEGORY_ICON[article.categorie];
   const vignette = resolveVignette(article.categorie, article.image);
+  const urg = urgenceDisplay(article);
 
-  /* ——— Carte « dernières 24h » (carousel) ——— */
   if (featured) {
     const content = (
       <article
@@ -47,15 +60,7 @@ export default function ArticleCard({
           <div className="flex items-center gap-1.5 text-[11px] md:text-xs">
             <Icon size={12} style={{ color: accent }} aria-hidden />
             <span style={{ color: accent }}>{article.categorie}</span>
-            {article.urgence !== "normal" && (
-              <span
-                className={
-                  article.urgence === "breaking" ? "text-amber" : "text-muted"
-                }
-              >
-                {urgenceLabel[article.urgence]}
-              </span>
-            )}
+            {urg && <span className={urg.className}>{urg.label}</span>}
             <span
               className="text-muted ml-auto"
               title={formatFullDate(article.date)}
@@ -86,12 +91,8 @@ export default function ArticleCard({
     );
   }
 
-  /* ——— Carte flux : horizontal mobile, vertical desktop ——— */
   const content = (
-    <article
-      className="group flex flex-row md:flex-col rounded-sm border border-line bg-panel overflow-hidden h-full hover:border-white/20 transition-colors"
-    >
-      {/* Vignette : bandeau vertical à gauche sur mobile */}
+    <article className="group flex flex-row md:flex-col rounded-sm border border-line bg-panel overflow-hidden h-full hover:border-white/20 transition-colors">
       <div className="relative w-[104px] sm:w-[120px] shrink-0 md:w-full md:aspect-[16/9] overflow-hidden bg-[#0B1224]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -113,15 +114,7 @@ export default function ArticleCard({
           <span className="truncate" style={{ color: accent }}>
             {article.categorie}
           </span>
-          {article.urgence !== "normal" && (
-            <span
-              className={
-                article.urgence === "breaking" ? "text-amber" : "text-muted"
-              }
-            >
-              {urgenceLabel[article.urgence]}
-            </span>
-          )}
+          {urg && <span className={urg.className}>{urg.label}</span>}
           <span
             className="text-muted ml-auto shrink-0"
             title={formatFullDate(article.date)}
