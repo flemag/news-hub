@@ -20,12 +20,12 @@ export default function Hero({ article }: { article: Article }) {
       }}
     >
       <div className="grid md:grid-cols-[1.2fr_1fr] gap-0 items-stretch">
-        <div className="relative px-6 py-10 md:px-10 md:py-14 max-w-3xl">
-          <div className="flex items-center gap-2 mb-5 text-xs">
-            <Icon size={14} style={{ color: accent }} aria-hidden />
+        <div className="relative px-4 py-5 sm:px-6 sm:py-8 md:px-10 md:py-14 max-w-3xl">
+          <div className="flex items-center gap-2 mb-3 md:mb-5 text-[11px] sm:text-xs">
+            <Icon size={13} style={{ color: accent }} aria-hidden />
             <span style={{ color: accent }}>{article.categorie}</span>
             {article.urgence === "breaking" && (
-              <span className="ml-2 px-2 py-0.5 rounded-sm bg-amber/15 text-amber tracking-wide">
+              <span className="ml-1 px-1.5 py-0.5 rounded-sm bg-amber/15 text-amber tracking-wide text-[10px] sm:text-xs">
                 Dernière minute
               </span>
             )}
@@ -34,16 +34,16 @@ export default function Hero({ article }: { article: Article }) {
             </span>
           </div>
 
-          <h2 className="font-display text-2xl md:text-4xl font-bold leading-tight text-ink group-hover:opacity-90 transition-opacity">
+          <h2 className="font-display text-xl sm:text-2xl md:text-4xl font-bold leading-snug md:leading-tight text-ink group-hover:opacity-90 transition-opacity">
             {article.titre}
           </h2>
 
-          <p className="mt-4 text-muted leading-relaxed max-w-xl">
+          <p className="mt-2.5 md:mt-4 text-sm md:text-base text-muted leading-relaxed max-w-xl line-clamp-3 md:line-clamp-none">
             {article.resume}
           </p>
 
           {article.tags?.length > 0 && (
-            <ul className="flex flex-wrap gap-2 mt-6">
+            <ul className="hidden sm:flex flex-wrap gap-2 mt-4 md:mt-6">
               {article.tags.map((tag) => (
                 <li
                   key={tag}
@@ -55,7 +55,9 @@ export default function Hero({ article }: { article: Article }) {
             </ul>
           )}
 
-          <p className="mt-6 text-sm text-cyan/90">Lire la perspective →</p>
+          <p className="mt-3 md:mt-6 text-xs sm:text-sm text-cyan/90">
+            Lire la perspective →
+          </p>
         </div>
 
         <div className="relative hidden md:block min-h-[220px] overflow-hidden">

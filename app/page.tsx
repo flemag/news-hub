@@ -26,15 +26,19 @@ export default function Home() {
   const heroArticle = sorted.find((a) => a.urgence === "breaking") ?? sorted[0];
 
   const last24h = useMemo(
-    () => sorted.filter((a) => isWithinLast24h(a.date) && a.id !== heroArticle?.id),
+    () =>
+      sorted.filter(
+        (a) => isWithinLast24h(a.date) && a.id !== heroArticle?.id
+      ),
     [sorted, heroArticle]
   );
 
   const filtered = useMemo(
     () =>
-      (active === "Tout" ? sorted : sorted.filter((a) => a.categorie === active)).filter(
-        (a) => a.id !== heroArticle?.id
-      ),
+      (active === "Tout"
+        ? sorted
+        : sorted.filter((a) => a.categorie === active)
+      ).filter((a) => a.id !== heroArticle?.id),
     [sorted, active, heroArticle]
   );
 
@@ -50,20 +54,20 @@ export default function Home() {
       <Ticker articles={sorted} />
       <CategoryNav active={active} onChange={setActive} counts={counts} />
 
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {active === "Tout" && heroArticle && (
-          <section className="pt-10">
+          <section className="pt-5 sm:pt-8 md:pt-10">
             <Hero article={heroArticle} />
           </section>
         )}
 
         {active === "Tout" && last24h.length > 0 && (
-          <section className="pt-10">
-            <h2 className="font-display text-sm text-muted mb-4">
+          <section className="pt-6 sm:pt-8 md:pt-10">
+            <h2 className="font-display text-xs sm:text-sm text-muted mb-3 sm:mb-4">
               Dernières 24 heures — {last24h.length} article
               {last24h.length > 1 ? "s" : ""}
             </h2>
-            <div className="flex gap-4 overflow-x-auto hscroll pb-4 -mx-1 px-1">
+            <div className="flex gap-3 sm:gap-4 overflow-x-auto hscroll pb-3 -mx-1 px-1">
               {last24h.map((a) => (
                 <ArticleCard key={a.id} article={a} featured />
               ))}
@@ -71,17 +75,18 @@ export default function Home() {
           </section>
         )}
 
-        <section className="py-10">
-          <h2 className="font-display text-sm text-muted mb-4">
+        <section className="py-6 sm:py-8 md:py-10">
+          <h2 className="font-display text-xs sm:text-sm text-muted mb-3 sm:mb-4">
             {active === "Tout" ? "Tout le flux" : active}
           </h2>
 
           {filtered.length === 0 ? (
-            <p className="text-muted py-12">
-              Rien dans cette catégorie pour l'instant — reviens un peu plus tard.
+            <p className="text-muted py-12 text-sm">
+              Rien dans cette catégorie pour l'instant — reviens un peu plus
+              tard.
             </p>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-3 md:gap-4">
               {filtered.map((a) => (
                 <ArticleCard key={a.id} article={a} />
               ))}
@@ -91,9 +96,10 @@ export default function Home() {
       </div>
 
       <footer className="border-t border-line">
-        <div className="mx-auto max-w-6xl px-6 py-8 text-xs text-muted flex flex-wrap gap-x-6 gap-y-2 justify-between">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 py-6 sm:py-8 text-[11px] sm:text-xs text-muted flex flex-wrap gap-x-6 gap-y-2 justify-between">
           <span>
-            Clique un article pour lire le résumé et la perspective — source en bas de page.
+            Clique un article pour lire le résumé et la perspective — source en
+            bas de page.
           </span>
           <span>Signal — veille indépendante, sans tracker.</span>
         </div>
