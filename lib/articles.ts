@@ -1,4 +1,4 @@
-import { allArticles } from "@/data/articles";
+import { allArticles } from "@/data/articles/index";
 import { Article, Categorie } from "./types";
 
 export const articles = allArticles as Article[];
