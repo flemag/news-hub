@@ -1,0 +1,106 @@
+[
+  {
+    "id": "2026-09-09-gaming-nintendo-direct",
+    "titre": "Nintendo Direct Switch 2 : Metroid Ravenous, Kirby and the World Beyond et bien plus",
+    "categorie": "Gaming",
+    "resume": "Après le Direct Zelda 40 ans, Nintendo enchaîne avec une présentation riche en annonces pour la Switch 2, incluant de nouveaux Metroid et Kirby.",
+    "contenu": "Nintendo a enchaîné, après un Direct centré Zelda 40 ans, une présentation large Switch 2 avec notamment du Metroid (Ravenous) et Kirby (and the World Beyond), parmi d'autres annonces de catalogue. L'objectif est de densifier la feuille de route de la nouvelle console.\n\nComme souvent chez Nintendo, le Direct fixe le narratif et les fenêtres de sortie plus que le verdict qualité. Les dates et formats se confirmeront au fil des mois.",
+    "perspective": "Un Direct réussi vend de l'envie, pas une garantie de backlog sain. Filtrer selon le temps de jeu réel et le budget console+jeux évite de tout précommander sous émotion. Les licences Metroid et Kirby ont des bases solides ; le reste du line-up mérite d'attendre gameplay long et prix définitifs.",
+    "date": "2026-09-09T16:00:00Z",
+    "urgence": "normal",
+    "tags": ["Nintendo", "Switch 2", "Metroid", "Kirby"],
+    "source_url": "https://gamergen.com/"
+  },
+  {
+    "id": "2026-09-09-ia-mistral",
+    "titre": "Mistral AI lève 3 milliards d'euros et atteint une valorisation de 21 milliards",
+    "categorie": "IA",
+    "resume": "Le tour de table de série D mené par Samsung Electronics confirme le statut de champion européen de l'IA souveraine pour la start-up française.",
+    "contenu": "Mistral AI a annoncé une levée de série D d'environ 3 milliards d'euros, mené notamment avec Samsung Electronics, portant sa valorisation autour de 21 milliards d'euros. Objectif : consolider une offre d'IA européenne face aux géants américains.\n\nUne valorisation de ce niveau place Mistral parmi les pépites tech européennes les mieux capitalisées, mais ne résout pas à elle seule la dépendance aux GPU, aux data centers et aux talents.",
+    "perspective": "Souveraineté ne se décrète pas par un tour de table. Elle se mesure à la part de charge réellement hébergée en Europe et à l'indépendance des chaînes d'approvisionnement. Mistral a la visibilité et le capital ; le test sera l'adoption enterprise hors storytelling.",
+    "date": "2026-09-09T09:00:00Z",
+    "urgence": "important",
+    "tags": ["Mistral", "levée de fonds", "souveraineté"],
+    "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
+  },
+  {
+    "id": "2026-09-08-ia-astra-bedrock",
+    "titre": "GPT-6 Astra est désormais disponible sur Amazon Bedrock",
+    "categorie": "IA",
+    "resume": "Le modèle le plus capable d'OpenAI à ce jour, classé critique en cybersécurité, arrive en disponibilité générale sur l'infrastructure AWS pour les workloads entreprise.",
+    "contenu": "GPT-6 Astra d'OpenAI est disponible en general availability sur Amazon Bedrock. Le modèle est présenté comme state-of-the-art sur usage ordinateur, browsing, ingénierie logicielle et cybersécurité, avec un classement interne critique. Bedrock permet de l'appeler via les API AWS avec les contrôles enterprise (IAM, logs, réseaux).\n\nPour les organisations déjà sur AWS, cela réduit la friction. En contrepartie, un modèle à haut potentiel offensif impose politiques d'accès strictes et supervision des agents.",
+    "perspective": "La dispo cloud n'est pas un feu vert sécurité. Astra sur Bedrock doit être traité comme une capacité sensible : least privilege, journalisation, interdiction d'outils réseau non maîtrisés. La performance benchmark ne remplace pas une analyse de risque métier.",
+    "date": "2026-09-08T14:00:00Z",
+    "urgence": "normal",
+    "tags": ["OpenAI", "Astra", "AWS", "Bedrock"],
+    "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-astra-on-amazon-bedrock/"
+  },
+  {
+    "id": "2026-09-08-hack-anssi",
+    "titre": "L'ANSSI prend le contrôle des systèmes d'information de l'État",
+    "categorie": "Hack & Console",
+    "resume": "Face à une série de brèches critiques, l'agence impose des mesures de remédiation d'urgence aux ministères pour colmater rapidement les failles.",
+    "contenu": "L'ANSSI a pris des mesures renforcées sur les SI de l'État face à une série de brèches. Le signal est opérationnel : au-delà des guides, l'agence impose un rythme de remédiation aux ministères.\n\nCe type d'intervention rappelle que la dette de patch et l'hétérogénéité des SI publics restent des vulnérabilités structurelles.",
+    "perspective": "Quand l'autorité nationale reprend la main sur les SI, c'est rarement pour la forme. Anticiper des exigences de sécurisation plus strictes (prestataires, cloud, identité) est rationnel pour les acteurs qui travaillent avec le public.",
+    "date": "2026-09-08T10:00:00Z",
+    "urgence": "important",
+    "tags": ["ANSSI", "État", "cybersécurité"],
+    "source_url": "https://www.zdnet.fr/"
+  },
+  {
+    "id": "2026-09-07-ia-astra",
+    "titre": "OpenAI classe son prochain modèle « Astra » comme premier système critique",
+    "categorie": "IA",
+    "resume": "Le modèle serait capable de découvrir seul des failles inconnues et de construire des chaînes d'exploitation contre des systèmes très sécurisés — une première pour l'entreprise.",
+    "contenu": "OpenAI a classé GPT-6 Astra au niveau critique de son Preparedness Framework en cybersécurité : capacité à découvrir des failles non documentées et à enchaîner des exploits, avec moins de guidage humain. Le déploiement s'accompagne de mécanismes de surveillance et d'interruption d'actions non autorisées.\n\nCe classement est une auto-évaluation de l'éditeur, utile comme signal d'alerte, mais ce n'est pas une certification indépendante.",
+    "perspective": "Critique veut dire : ne pas brancher ce modèle sur des outils d'exploitation ou des réseaux sensibles sans cadre. Les entreprises devraient exiger des contrôles contractuels autant que des démos de perf.",
+    "date": "2026-09-07T08:30:00Z",
+    "urgence": "important",
+    "tags": ["OpenAI", "cybersécurité"],
+    "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
+  },
+  {
+    "id": "2026-09-07-societe-police",
+    "titre": "Les syndicats de police menacent d'une mobilisation le 15 septembre",
+    "categorie": "Société & Politique",
+    "resume": "Reçus par le ministre de l'Intérieur sur des questions budgétaires, les représentants policiers sont ressortis insatisfaits de l'échange.",
+    "contenu": "",
+    "date": "2026-09-07T07:00:00Z",
+    "urgence": "important",
+    "tags": ["police", "budget"],
+    "source_url": "https://www.franceinfo.fr/politique/"
+  },
+  {
+    "id": "2026-09-06-hack-xboxone",
+    "titre": "L'Xbox One « fat » enfin piratée après treize ans de sécurité intacte",
+    "categorie": "Hack & Console",
+    "resume": "Présenté à la conférence RE//Verse, l'exploit repose sur une faille matérielle du boot ROM, indétectable et impossible à corriger par une simple mise à jour Microsoft.",
+    "contenu": "",
+    "date": "2026-09-06T13:00:00Z",
+    "urgence": "important",
+    "tags": ["Xbox One", "boot ROM"],
+    "source_url": "https://tech.sportskeeda.com/gaming-news/xbox-one-finally-hacked-why-breaking-unhackable-console-huge-win-game-preservation"
+  },
+  {
+    "id": "2026-09-06-gaming-wolverine",
+    "titre": "Marvel's Wolverine confirme sa sortie sur PS5 le 15 septembre",
+    "categorie": "Gaming",
+    "resume": "Une nouvelle bande-annonce diffusée à la D23 confirme la date du jeu d'action développé par Insomniac Games pour Sony.",
+    "contenu": "",
+    "date": "2026-09-06T11:00:00Z",
+    "urgence": "normal",
+    "tags": ["PS5", "Insomniac"],
+    "source_url": "https://www.sortiraparis.com/loisirs/gaming/guides/259122-les-sorties-jeux-video-de-septembre-2026-quels-jeux-suivre-ce-mois-ci"
+  },
+  {
+    "id": "2026-09-02-ia-nvidia-hf",
+    "titre": "Nvidia proche du rachat de Hugging Face pour 13 milliards de dollars",
+    "categorie": "IA",
+    "resume": "Selon Le Figaro, le fabricant de puces serait sur le point d'acquérir la start-up française spécialisée dans l'open source, fondée en 2016 par trois Français.",
+    "contenu": "",
+    "date": "2026-09-02T08:00:00Z",
+    "urgence": "important",
+    "tags": ["Nvidia", "Hugging Face", "rachat"],
+    "source_url": "https://www.pressmonitor.fr/fr/5-actualites-cles-l-intelligence-artificielle-decideurs-20260901"
+  }
+]
