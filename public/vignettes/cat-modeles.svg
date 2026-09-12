@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="640" y2="360">
+      <stop offset="0%" stop-color="#0B1224"/>
+      <stop offset="100%" stop-color="#12162A"/>
+    </linearGradient>
+    <radialGradient id="r" cx="30%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/>
+  <rect width="640" height="360" fill="url(#r)"/>
+  <rect x="0" y="0" width="6" height="360" fill="#A78BFA"/>
+  <g transform="translate(48,110)" stroke="#A78BFA" stroke-width="2.5" fill="none">
+    <circle cx="28" cy="40" r="22"/>
+    <circle cx="28" cy="40" r="8"/>
+    <path d="M28 18 v-10 M28 62 v10 M10 40 h-10 M46 40 h10" stroke-linecap="round"/>
+    <path d="M14 26 L6 18 M42 26 L50 18 M14 54 L6 62 M42 54 L50 62" stroke-linecap="round"/>
+  </g>
+  <text x="130" y="145" font-family="ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="600" fill="#E8ECF7">Modèles IA</text>
+  <text x="130" y="180" font-family="ui-sans-serif,system-ui,sans-serif" font-size="15" fill="#8B93B0">Sorties · enjeux · potentiel</text>
+  <circle cx="560" cy="80" r="40" stroke="#A78BFA" stroke-opacity="0.25" stroke-width="1"/>
+  <circle cx="560" cy="80" r="24" stroke="#A78BFA" stroke-opacity="0.4" stroke-width="1"/>
+</svg>

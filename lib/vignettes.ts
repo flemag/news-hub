@@ -3,6 +3,7 @@ import { Categorie } from "./types";
 /** Vignettes SVG par défaut (une par catégorie). */
 export const CATEGORY_VIGNETTE: Record<Categorie, string> = {
   IA: "/vignettes/cat-ia.svg",
+  "Modèles IA": "/vignettes/cat-modeles.svg",
   Web: "/vignettes/cat-web.svg",
   Gaming: "/vignettes/cat-gaming.svg",
   "Hack & Console": "/vignettes/cat-hack.svg",

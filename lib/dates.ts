@@ -29,17 +29,16 @@ export function formatFullDate(dateIso: string): string {
   });
 }
 
-// Chaque catégorie a sa propre couleur de signal — comme des fréquences
-// distinctes sur un même poste de contrôle.
 export const CATEGORY_COLOR: Record<Categorie, string> = {
-  "IA": "#3DE8FF",
-  "Web": "#8B7CFF",
-  "Gaming": "#FF4FA3",
+  IA: "#3DE8FF",
+  "Modèles IA": "#A78BFA",
+  Web: "#8B7CFF",
+  Gaming: "#FF4FA3",
   "Hack & Console": "#FF5C5C",
   "Société & Politique": "#FFB347",
-  "Dev": "#2FD9A5",
-  "Astuces": "#F5D547",
-  "Nouveautés": "#4C8DFF",
+  Dev: "#2FD9A5",
+  Astuces: "#F5D547",
+  Nouveautés: "#4C8DFF",
 };
 
 export function categorieAccent(categorie: Categorie): string {
@@ -48,6 +47,7 @@ export function categorieAccent(categorie: Categorie): string {
 
 export const CATEGORIES: Categorie[] = [
   "IA",
+  "Modèles IA",
   "Web",
   "Gaming",
   "Hack & Console",
