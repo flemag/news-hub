@@ -6,6 +6,8 @@ import {
   getArticleById,
   resolveAnalyse,
   resolvePerspective,
+  resolvePotentielBusiness,
+  resolvePotentielPerso,
 } from "@/lib/articles";
 import {
   categorieAccent,
@@ -46,14 +48,17 @@ export default function ArticlePage({ params }: Props) {
   const vignette = resolveVignette(article.categorie, article.image);
   const perspective = resolvePerspective(article);
   const analyse = resolveAnalyse(article);
+  const business = resolvePotentielBusiness(article);
+  const perso = resolvePotentielPerso(article);
   const hasLongContenu =
     Boolean(article.contenu && article.contenu.trim().length > 40);
+  const isModele = article.categorie === "Modèles IA";
 
   return (
     <main className="min-h-screen bg-base">
       <Header />
 
-      <article className="mx-auto max-w-3xl px-6 py-8 md:py-10">
+      <article className="mx-auto max-w-3xl px-4 sm:px-6 py-8 md:py-10">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-sm text-muted hover:text-cyan transition-colors mb-8"
@@ -82,17 +87,13 @@ export default function ArticlePage({ params }: Props) {
           </span>
         </div>
 
-        <h1 className="font-display text-3xl md:text-[2.5rem] font-bold leading-tight text-ink tracking-tight">
+        <h1 className="font-display text-2xl sm:text-3xl md:text-[2.5rem] font-bold leading-tight text-ink tracking-tight">
           {article.titre}
         </h1>
 
         <div className="mt-6 relative aspect-[16/9] w-full overflow-hidden rounded-sm border border-line bg-panel">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={vignette}
-            alt=""
-            className="h-full w-full object-cover"
-          />
+          <img src={vignette} alt="" className="h-full w-full object-cover" />
           <div
             className="absolute left-0 top-0 bottom-0 w-1.5"
             style={{ backgroundColor: accent }}
@@ -104,7 +105,7 @@ export default function ArticlePage({ params }: Props) {
           <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
             En bref
           </h2>
-          <p className="text-lg text-ink leading-relaxed font-medium">
+          <p className="text-base sm:text-lg text-ink leading-relaxed font-medium">
             {article.resume}
           </p>
         </section>
@@ -155,6 +156,32 @@ export default function ArticlePage({ params }: Props) {
           )}
         </section>
 
+        {isModele && article.modele_enjeu && (
+          <section className="mt-10 rounded-sm border border-line bg-panel p-5 md:p-6">
+            <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
+              Enjeu du modèle
+            </h2>
+            <p className="text-base text-ink leading-[1.75] whitespace-pre-wrap">
+              {article.modele_enjeu}
+            </p>
+          </section>
+        )}
+
+        <section className="mt-10 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-sm border border-line bg-panel p-5">
+            <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
+              Potentiel business
+            </h2>
+            <p className="text-sm sm:text-base text-ink/95 leading-[1.7]">{business}</p>
+          </div>
+          <div className="rounded-sm border border-line bg-panel p-5">
+            <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
+              Conception perso / pro
+            </h2>
+            <p className="text-sm sm:text-base text-ink/95 leading-[1.7]">{perso}</p>
+          </div>
+        </section>
+
         <section
           className="mt-10 rounded-sm border bg-panelAlt p-5 md:p-6"
           style={{
@@ -170,11 +197,6 @@ export default function ArticlePage({ params }: Props) {
             Perspective — pour relativiser
           </h2>
           <p className="text-base text-ink leading-[1.75]">{perspective}</p>
-          {!hasLongContenu && analyse.vigilance !== perspective && (
-            <p className="mt-4 text-base text-ink/90 leading-[1.75]">
-              {analyse.vigilance}
-            </p>
-          )}
         </section>
 
         {article.tags?.length > 0 && (
@@ -196,8 +218,7 @@ export default function ArticlePage({ params }: Props) {
               Source
             </h2>
             <p className="text-base text-ink/90 mb-4 leading-relaxed">
-              Les éléments ci-dessus synthétisent le signal. Pour le détail
-              factuel d'origine (chiffres exacts, citations, suite) :
+              Synthèse Signal. Pour le détail factuel d&apos;origine :
             </p>
             <a
               href={article.source_url}
@@ -208,9 +229,7 @@ export default function ArticlePage({ params }: Props) {
               Ouvrir la source
               <span aria-hidden>↗</span>
             </a>
-            <p className="mt-3 text-xs text-muted break-all">
-              {article.source_url}
-            </p>
+            <p className="mt-3 text-xs text-muted break-all">{article.source_url}</p>
           </section>
         )}
 
