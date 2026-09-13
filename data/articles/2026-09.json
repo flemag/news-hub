@@ -1,1 +1,16 @@
-see-artifacts
+[
+{
+"id": "2026-09-13-societe-amodei-pace-frontier",
+"titre": "Amodei veut rythmer la frontiere ; Altman recule l IPO OpenAI a 2027",
+"categorie": "Societe & Politique",
+"resume": "Dans l essai We Must Pace the Frontier, Dario Amodei propose d integrer des evaluateurs tiers. Sam Altman dit qu OpenAI fera de meme et que 2026 n est pas le moment d une IPO.",
+"contenu": "Le 12 septembre, le PDG d Anthropic a publie We Must Pace the Frontier. Plan en trois etapes : acces permanent pour des evaluateurs independants type METR ; extension industrie ; accords internationaux. Amodei met en garde contre un essaim d agents capable de prendre le controle d Internet en 6 a 12 mois. Quelques heures plus tard, Altman indique qu OpenAI accordera le meme acces et ecarte une IPO 2026 dans Fortune. Musk a commente Dario is right. Aucun calendrier commun de sortie de modele n a ete annonce.",
+"potentiel_business": "Un report d IPO change le calendrier de liquidite des fonds, pas encore les capex GPU. Les cabinets d evaluation deviennent un marche annexe.",
+"potentiel_perso": "Rien n oblige a ralentir ses prototypes. Documenter les journaux d agents devient un argument si les labs institutionnalisent l audit externe.",
+"perspective": "Deux PDG qui promettent d ouvrir leurs racks, ce n est pas un traite. Le slowdown reste un essai et un tweet tant qu il n y a ni quota compute ni date coordonnee.",
+"date": "2026-09-13T06:30:00Z",
+"urgence": "important",
+"tags": ["Anthropic", "OpenAI", "surete", "IPO"],
+"source_url": "https://www.npr.org/2026/09/12/nx-s1-5950588/openai-anthropic-ai-safety-researchers-hacks"
+}
+]
