@@ -1,16 +1,16 @@
 /**
- * Index des fichiers mensuels d'articles.
- * Convention : data/articles/YYYY-MM.json (+ compléments a/b/c si besoin).
- * L'automation écrit dans le fichier principal du mois et DOIT fusionner
- * (lire → prepend → conserver existants). Jamais écraser.
+ * Index des fichiers d'articles.
+ * L'automation DOIT fusionner (lire → prepend → conserver). Jamais écraser.
  */
 import month202609 from "./2026-09.json";
 import month202609b from "./2026-09-b.json";
 import month202609c from "./2026-09-c.json";
+import month202609d from "./2026-09-d.json";
 
 import type { Article } from "@/lib/types";
 
 const MONTH_FILES: Article[][] = [
+  month202609d as Article[],
   month202609c as Article[],
   month202609 as Article[],
   month202609b as Article[],
