@@ -1,1 +1,14 @@
-[{"id":"2026-09-15-modeles-atria-dawn","titre":"Atria Dawn Preview : le lab de Shanghai ouvre une preview frontière","categorie":"Modèles IA"}]
+[
+  {
+    "id": "2026-09-14-ia-anthropic-rum-group",
+    "titre": "Anthropic identifié comme client GPU à 13,7 Md$ chez Rum Group (Géorgie)",
+    "categorie": "IA",
+    "resume": "The Information désigne Anthropic comme le locataire jusqu’ici anonyme d’un contrat compute de six ans avec Rum Group, à Maysville (Géorgie), en trois tranches d’environ 4,57 Md$. Le site est encore en construction.",
+    "contenu": "Le contrat de 13,7 milliards de dollars sur six ans relie Anthropic à l’infrastructure Rum Group.",
+    "perspective": "Un contrat signé n’est pas un cluster allumé.",
+    "date": "2026-09-14T06:10:00Z",
+    "urgence": "important",
+    "tags": ["Anthropic", "Rum Group", "compute", "data center"],
+    "source_url": "https://aiweekly.co/ai-news-today"
+  }
+]
