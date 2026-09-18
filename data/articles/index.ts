@@ -11,10 +11,12 @@ import month202609e from "./2026-09-e.json";
 import month202609f from "./2026-09-f.json";
 import month202609g from "./2026-09-g.json";
 import month202609h from "./2026-09-h.json";
+import month202609i from "./2026-09-i.json";
 
 import type { Article } from "@/lib/types";
 
 const MONTH_FILES: Article[][] = [
+  month202609i as Article[],
   month202609h as Article[],
   month202609g as Article[],
   month202609f as Article[],
