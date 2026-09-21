@@ -14,10 +14,12 @@ import month202609h from "./2026-09-h.json";
 import month202609i from "./2026-09-i.json";
 import month202609j from "./2026-09-j.json";
 import month202609k from "./2026-09-k.json";
+import month202609l from "./2026-09-l.json";
 
 import type { Article } from "@/lib/types";
 
 const MONTH_FILES: Article[][] = [
+  month202609l as Article[],
   month202609k as Article[],
   month202609j as Article[],
   month202609i as Article[],
