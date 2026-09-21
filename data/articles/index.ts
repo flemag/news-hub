@@ -1,46 +1,56 @@
 /**
- * Index articles. Automation : TOUJOURS écrire dans un fichier du jour
- * (ex. 2026-09-g.json) et l’ajouter ici. Ne JAMAIS remplacer un fichier
- * existant par un seul article.
+ * Chargement automatique de TOUS les fichiers *.json du dossier.
+ *
+ * La veille quotidienne n'a plus qu'à CRÉER un nouveau fichier
+ *   data/articles/YYYY-MM-DD.json
+ * (ou 2026-09-m.json, etc.) — SANS modifier ce fichier index.ts.
+ *
+ * - Ignore les fichiers vides / PLACEHOLDER / JSON invalide
+ * - Déduplique par `id` (premier fichier lu gagne ; tri anti-chrono sur le nom)
+ * - Compatible avec l'historique (2026-09.json, 2026-09-b.json, …)
  */
-import month202609 from "./2026-09.json";
-import month202609b from "./2026-09-b.json";
-import month202609c from "./2026-09-c.json";
-import month202609d from "./2026-09-d.json";
-import month202609e from "./2026-09-e.json";
-import month202609f from "./2026-09-f.json";
-import month202609g from "./2026-09-g.json";
-import month202609h from "./2026-09-h.json";
-import month202609i from "./2026-09-i.json";
-import month202609j from "./2026-09-j.json";
-import month202609k from "./2026-09-k.json";
-import month202609l from "./2026-09-l.json";
-
+import fs from "fs";
+import path from "path";
 import type { Article } from "@/lib/types";
 
-const MONTH_FILES: Article[][] = [
-  month202609l as Article[],
-  month202609k as Article[],
-  month202609j as Article[],
-  month202609i as Article[],
-  month202609h as Article[],
-  month202609g as Article[],
-  month202609f as Article[],
-  month202609d as Article[],
-  month202609c as Article[],
-  month202609 as Article[],
-  month202609e as Article[],
-  month202609b as Article[],
-];
+function loadAllArticles(): Article[] {
+  const dir = path.join(process.cwd(), "data", "articles");
+  if (!fs.existsSync(dir)) return [];
 
-export const allArticles: Article[] = (() => {
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    // Noms les plus récents d'abord (YYYY-MM-DD > 2026-09-z > 2026-09-a)
+    .sort((a, b) => b.localeCompare(a));
+
   const byId = new Map<string, Article>();
-  for (const month of MONTH_FILES) {
-    for (const article of month) {
-      if (!byId.has(article.id)) byId.set(article.id, article);
+
+  for (const file of files) {
+    try {
+      const raw = fs.readFileSync(path.join(dir, file), "utf8");
+      const trimmed = raw.trim();
+      if (!trimmed || trimmed === "[]") continue;
+      if (/PLACEHOLDER/i.test(trimmed)) continue;
+
+      const data = JSON.parse(trimmed);
+      if (!Array.isArray(data)) continue;
+
+      for (const item of data) {
+        if (!item || typeof item !== "object") continue;
+        const id = (item as Article).id;
+        if (typeof id !== "string" || id.length === 0) continue;
+        if (!byId.has(id)) {
+          byId.set(id, item as Article);
+        }
+      }
+    } catch {
+      // Fichier corrompu : on ignore pour ne pas casser le build
+      continue;
     }
   }
-  return Array.from(byId.values());
-})();
 
+  return Array.from(byId.values());
+}
+
+export const allArticles: Article[] = loadAllArticles();
 export default allArticles;
