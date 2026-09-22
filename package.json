@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "prebuild": "node scripts/generate-articles-index.mjs",
+    "dev": "node scripts/generate-articles-index.mjs && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gen:articles": "node scripts/generate-articles-index.mjs"
   },
   "dependencies": {
     "next": "14.2.15",
