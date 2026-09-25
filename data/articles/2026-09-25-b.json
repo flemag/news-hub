@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2026-09-25-hack-muse-filesystem",
+    "titre": "Muse livre son système de fichiers : 6,8 Go pour une phrase",
+    "categorie": "Hack & Console",
+    "resume": "Deux développeurs ont obtenu de l’agent Meta Muse une archive de sa machine virtuelle Linux — documentation interne, journaux et clés SSH. Meta nie une faille d’infrastructure et parle d’un simple export de session.",
+    "contenu": "Peter James puis Jonny L. Saunders ont montré, indépendamment, qu’une consigne banale suffit : Muse compresse le système de fichiers de sa session et l’envoie, par exemple vers Google Drive. L’archive décompressée pèse environ 6,8 Go : Ubuntu, documentation interne (noms de code Hatch), modèles d’applications, journaux de sous-agents, fichiers de mémoire, et des clés SSH. James décrit une résistance quasi nulle à l’injection de consignes. Meta répond que chaque utilisateur a une machine virtuelle persistante, « comme un ordinateur portable », et que l’export n’ouvre pas l’infra ni les données d’autrui.\n\nTechniquement, Meta a raison sur le cloisonnement annoncé. Produit, c’est autre chose : un agent grand public qui zippe son monde interne, y compris des secrets de session, dès qu’on le lui demande. Les fichiers révèlent aussi des choix d’outillage (un Codex CLI dans l’image, selon l’analyse de James).\n\nPour une équipe française qui connecte Muse à Drive, Slack ou un CRM, la leçon est simple. Tout ce que l’agent « voit » peut partir. Il faut des connecteurs lecture seule, interdire l’export massif, et traiter la VM persistante comme un poste non maîtrisé.\n\nNe pas y voir un « hack de Meta ». Y voir un rappel : un agent avec disque et outils est un système d’exploitation, pas un chatbot.",
+    "perspective": "Exporter sa propre machine virtuelle n’est pas forcément une intrusion. Laisser un agent le faire sans friction ni journal, si.",
+    "potentiel_business": "Revues de sandbox d’agents, politiques de prévention de fuite sur les connecteurs, formation concrète sur ce que l’agent peut emporter.",
+    "potentiel_perso": "Ne pas lier Drive ou messagerie pro à Muse tant que vous n’avez pas testé ce qu’il accepte d’exporter.",
+    "date": "2026-09-24T17:14:00Z",
+    "urgence": "important",
+    "tags": ["Meta", "Muse", "sandbox", "fuite", "agents"],
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem"
+  },
+  {
+    "id": "2026-09-25-gaming-horizon-create",
+    "titre": "Horizon Create : des jeux 2D/3D générés depuis le téléphone, jouables dans Instagram",
+    "categorie": "Gaming",
+    "resume": "À Connect, Meta ouvre l’accès anticipé à Horizon Create (mobile) et Horizon Studio (navigateur) : un moteur agentique produit un jeu jouable, publiable dans Facebook, Instagram et Horizon.",
+    "contenu": "Meta a ouvert les listes d’attente d’Horizon Create et Horizon Studio, deux outils bâtis sur le Meta Horizon Engine. Create tient dans le téléphone : une phrase, un modèle, puis itération par consignes. Studio, dans le navigateur, offre plus de contrôle. L’annonce insiste sur progression, difficulté, direction artistique et multijoueur. Une fois publié, le jeu peut apparaître dans les fils Facebook et Instagram : un extrait se lance sans télécharger d’application.\n\nC’est la relance d’Horizon Worlds par le flux social, face à Roblox. La création « une phrase » réduit la barrière ; elle industrialise aussi le contenu jetable. Meta autorise l’import d’assets, ce qui évite le tout-généré — à condition que les créateurs s’en servent.\n\nEn France, deux sujets. Droits : qui possède un niveau généré, et que faire des assets ressemblant à une licence tierce ? Protection des mineurs : un jeu lancé depuis Instagram hérite des règles du réseau, pas d’un store console avec PEGI clair. Un studio indépendant peut y tester un prototype, pas y construire une propriété durable sans contrat.\n\nS’inscrire à l’accès anticipé pour juger la qualité réelle. Ne pas engager de budget marketing avant d’avoir mesuré rétention et outillage anti-copie.",
+    "perspective": "Jouable dans le fil n’égale pas un métier. Roblox a mis des années à doter les créateurs d’une économie et d’une modération.",
+    "potentiel_business": "Prototypes sociaux, activations de marque, formation « game designer non codeur ». Risque réputation si le jeu généré copie une IP.",
+    "potentiel_perso": "Amusant pour bricoler un mini-jeu entre amis. Peu pertinent si vous visez Steam, un store mobile classique ou une sortie console.",
+    "date": "2026-09-24T19:52:00Z",
+    "urgence": "normal",
+    "tags": ["Meta", "Horizon", "jeux", "Instagram", "création"],
+    "source_url": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games"
+  }
+]
