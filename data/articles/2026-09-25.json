@@ -27,5 +27,33 @@
     "urgence": "important",
     "tags": ["Google", "Gemini", "Live Avatar", "voix", "vidéo"],
     "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/"
+  },
+  {
+    "id": "2026-09-25-web-bnp-gemini",
+    "titre": "BNP Paribas signe cinq ans avec Google Cloud pour l’IA agentique",
+    "categorie": "Web",
+    "resume": "La banque française élargit son partenariat Google Cloud : infrastructure, modèles Gemini et Gemini Enterprise au service d’une stratégie d’agents sur l’ensemble des métiers, pour cinq ans.",
+    "contenu": "Le 24 septembre, BNP Paribas et Google Cloud ont annoncé un accord de cinq ans. Il ne s’agit pas d’une première arrivée de Google dans la banque, mais d’un élargissement au cœur de la stratégie « IA agentique » : modèles Gemini, Gemini Enterprise, infrastructure. L’ambition affichée est de transformer plusieurs métiers du groupe, pas seulement un chatbot vitrine.\n\nUne banque systémique qui industrialise des agents touche le crédit, la conformité, la relation client. Le choix d’un hyperscaler américain, même avec des régions européennes, reste un arbitrage de souveraineté. Il coexiste avec d’autres initiatives du secteur (Mistral côté ESA le même jour) et avec la pression de l’ACPR sur la gouvernance des modèles.\n\nPour un éditeur fintech ou un prestataire qui travaille avec BNP, l’interface va bouger : plus d’API internes « agent-ready », plus d’exigences de journalisation. Pour un indépendant, le signal est que le gros du budget IA bancaire français passera par des piles déjà choisies, pas par un prototype isolé.\n\nÀ lire dans le détail : localisation des traitements, droit de regard sur les logs prompts, et clause de réversibilité au bout des cinq ans.",
+    "perspective": "Cinq ans, c’est un mariage d’infrastructure. Ce n’est pas une preuve que les agents tiendront les engagements de conformité.",
+    "potentiel_business": "Intégrateurs autour de Gemini Enterprise, revues AI Act pour cas d’usage bancaires, couches d’orchestration « au-dessus » de l’accord cadre.",
+    "potentiel_perso": "Client de la banque : exiger la mention quand un agent répond. Salarié : suivre la DSI sur les outils autorisés, ne pas coller un Gemini perso sur des dossiers clients.",
+    "date": "2026-09-24T12:00:00Z",
+    "urgence": "normal",
+    "tags": ["BNP Paribas", "Google Cloud", "Gemini", "banque", "agents"],
+    "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
+  },
+  {
+    "id": "2026-09-25-nouveautes-softbank-openai",
+    "titre": "SoftBank lève 11,1 milliards de dollars d’obligations pour OpenAI",
+    "categorie": "Nouveautés",
+    "resume": "SoftBank a calé une émission obligataire record d’environ 11,1 milliards de dollars, taux allant jusqu’à 9,75 %, pour payer la prochaine tranche de son investissement dans OpenAI, porté à 64,6 milliards.",
+    "contenu": "Le 24 septembre, SoftBank Group a arrêté les conditions d’une émission d’obligations senior en devises d’environ 11,1 milliards de dollars (1 763 milliards de yens). C’est présentée comme la plus importante émission à haut rendement depuis une décennie, avec des coupons pouvant atteindre 9,75 %. L’argent sert à honorer la tranche suivante de l’investissement dans OpenAI, désormais chiffré à 64,6 milliards de dollars.\n\nFinancer de l’intelligence artificielle par de la dette chère dit deux choses. Le capital-risque classique ne suffit plus à l’échelle Stargate. Et le coût du capital des labs n’est plus abstrait : il se paie en intérêts. Si les revenus d’API et d’abonnements retardent, la pression sur les prix — déjà visible avec Sol, Luna et Opus 5.5 — s’accentuera.\n\nPour un acheteur français, cela n’impose pas de changer d’outil demain. Cela recommande de ne pas lier un produit critique à une seule API dont le tarif peut bouger pour servir une dette. La diversification (un frontier, un modèle UE, un local) n’est plus seulement idéologique.\n\nSuivre le calendrier des tranches SoftBank et les communications d’OpenAI sur la rentabilité réelle, pas seulement le nombre d’utilisateurs.",
+    "perspective": "Une obligation à 9,75 % n’est pas de l’enthousiasme : c’est le prix pour rester à la table. Les clients finiront par le voir dans la facture.",
+    "potentiel_business": "Négocier des plafonds pluriannuels, prévoir un plan B modèle, conseiller les comités d’investissement sur le risque de concentration labs.",
+    "potentiel_perso": "Aucun geste urgent pour un usage personnel. Éviter toutefois de construire toute une activité sur une seule clé OpenAI.",
+    "date": "2026-09-24T14:00:00Z",
+    "urgence": "normal",
+    "tags": ["SoftBank", "OpenAI", "investissement", "dette"],
+    "source_url": "https://www.zdnet.fr/openai-6670q.htm"
   }
 ]
