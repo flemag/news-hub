@@ -26,5 +26,33 @@
     "urgence": "normal",
     "tags": ["Meta", "Horizon", "jeux", "Instagram", "création"],
     "source_url": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games"
+  },
+  {
+    "id": "2026-09-25-dev-unity-gateway-cli",
+    "titre": "Databricks unifie Claude Code, Codex et Gemini derrière une commande",
+    "categorie": "Dev",
+    "resume": "Databricks publie la CLI Unity Gateway (`ug`) : elle configure Codex, Claude Code, Gemini CLI, OpenCode, Copilot CLI et Pi pour passer par la gouvernance Unity Catalog de l’espace de travail.",
+    "contenu": "Databricks a poussé Unity Gateway en outil en ligne de commande. La commande `ug` installe et configure les agents de code les plus utilisés, les authentifie sur un espace Databricks, et peut enregistrer des serveurs MCP. L’idée : plus de clés API éparpillées dans les postes, un point de passage unique avec permissions, plafonds et journaux Unity Catalog.\n\nLe contexte est la semaine où Opus 5.5 allonge les sessions de Claude Code et où les équipes mixent trois labs. Guillermo Rauch a d’ailleurs publié deux mois de dépenses AI Gateway chez Vercel : Anthropic recule en part, OpenAI et des modèles chinois montent. Sans passerelle, le coût et le secret se volatilisent.\n\nPour une ESN ou une scale-up française, c’est le bon réflexe d’architecture — à condition que les prompts et extraits de dépôt restent dans une région UE et que le contrat Databricks le garantisse. Brancher Claude Code « parce que c’est plus simple » sans journal, c’est offrir le code source au lab.\n\nCommencer par un seul agent (`ug claude` ou `ug codex`), mesurer tokens et fuites de chemins sensibles, puis élargir.",
+    "perspective": "Une CLI n’est pas une politique. Sans règles Unity (qui a le droit d’appeler quel modèle), ce n’est qu’un lanceur pratique.",
+    "potentiel_business": "Mise en place de passerelles, formation agents gouvernés, audit de clés orphelines. Offre packagée pour DSI qui ont déjà Databricks.",
+    "potentiel_perso": "Si vous codez seul, une passerelle cloud est lourde. Un fichier d’environnement et un plafond mensuel suffisent souvent.",
+    "date": "2026-09-24T18:00:00Z",
+    "urgence": "normal",
+    "tags": ["Databricks", "Claude Code", "Codex", "gouvernance", "CLI"],
+    "source_url": "https://github.com/databricks/unity-gateway/blob/main/README.md"
+  },
+  {
+    "id": "2026-09-25-ia-opus-sessions-longues",
+    "titre": "Anthropic lie le tarif d’Opus 5.5 à des sessions de code de plus en plus longues",
+    "categorie": "IA",
+    "resume": "Anthropic explique que les sessions Claude Code s’allongent et consomment plus de contexte. Le tarif d’Opus 5.5 est pensé pour ce travail continu, pas pour l’échange court d’une seule question.",
+    "contenu": "Le 24 septembre, Anthropic a détaillé un constat interne : depuis six mois, les sessions Claude Code durent plus longtemps et emportent davantage de contexte. Opus 5.5, lancé en début de semaine à un tarif inférieur à Opus 5, est présenté comme adapté à ces boucles — lire le dépôt, patcher, relancer les tests — plutôt qu’à la question isolée.\n\nC’est cohérent avec le basculement du métier : moins d’écriture ligne à ligne, plus de supervision. Gergely Orosz le rappelait le même jour : la part « écrire le code » d’une semaine de développeur est déjà minoritaire ; le risque, documenté chez Cortex, c’est la hausse des échecs au déploiement quand on cesse de relire.\n\nEn France, une session de trois heures sur un dépôt client pose RGPD et secret des affaires. Il faut un espace isolé, un masquage des secrets, et un budget tokens écrit. Le tarif « 40 % moins cher » d’Opus 5.5 disparaît si le modèle relit dix fois le monorepo.\n\nInstrumenter la durée moyenne de session et le taux de correctifs humains avant d’en faire l’outil par défaut.",
+    "perspective": "Une session longue n’est pas un développeur senior. C’est un stagiaire infatigable qu’il faut encore relire avant de fusionner.",
+    "potentiel_business": "Packs Claude Code avec plafonds de tokens, revues de demandes de fusion assistées, formation à vérifier plutôt qu’accepter le diff.",
+    "potentiel_perso": "Utile sur un projet perso borné. Dangereux de le laisser tourner la nuit sur un dépôt professionnel sans journal.",
+    "date": "2026-09-24T15:00:00Z",
+    "urgence": "normal",
+    "tags": ["Anthropic", "Opus 5.5", "Claude Code", "coût"],
+    "source_url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-september-24-2026/"
   }
 ]
