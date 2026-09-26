@@ -1,16 +1,1 @@
-[
-  {
-    "id": "2026-09-26-ia-gemini-4-post-training",
-    "titre": "Gemini 4 entre en post-entra\u00eenement, Google vise une sortie avant la fin d\u2019ann\u00e9e",
-    "categorie": "IA",
-    "resume": "Koray Kavukcuoglu (DeepMind) indique que Gemini 4 est en post-entra\u00eenement et devrait arriver \u00ab bien plus t\u00f4t \u00bb que fin 2026. Il s\u2019agit d\u2019un signal attribu\u00e9, pas d\u2019une date officielle de lancement.",
-    "contenu": "Au sommet AI Agenda Live de The Information, le directeur de Google DeepMind, Koray Kavukcuoglu, a d\u00e9clar\u00e9 que Gemini 4 est dans les premiers jours du post-entra\u00eenement \u2014 la phase o\u00f9 le mod\u00e8le de base est affin\u00e9 pour se comporter de fa\u00e7on fiable \u2014 et qu\u2019une version devrait sortir \u00ab bien plus t\u00f4t \u00bb que la fin d\u2019ann\u00e9e. InfoWorld a repris le propos le 25 septembre. Google n\u2019a pas publi\u00e9 de fiche produit ni de tarif.\n\nLe timing s\u2019explique : OpenAI a encha\u00een\u00e9 GPT-6 Astra puis Sol et Luna, Anthropic a baiss\u00e9 le prix d\u2019Opus 5.5, Meta a plac\u00e9 Muse au centre de Connect. Laisser Gemini 3.8 tenir jusqu\u2019\u00e0 d\u00e9cembre laisserait le terrain aux agents et aux tarifs bas des rivaux.\n\nPour une entreprise fran\u00e7aise, ce n\u2019est pas un motif de migration. C\u2019est un motif de clause : tout contrat Gemini Enterprise sign\u00e9 maintenant doit pr\u00e9voir un basculement de mod\u00e8le, un gel tarifaire et une r\u00e9gion UE. Un \u00ab early post-training \u00bb promis aux utilisateurs n\u2019est pas un SLA. L\u2019AI Act s\u2019applique au syst\u00e8me r\u00e9ellement servi, pas au nom marketing.\n\nNoter la date r\u00e9elle de disponibilit\u00e9 API et la r\u00e9sidence des poids. Tant que seule une interview existe, traiter Gemini 4 comme une feuille de route, pas comme une brique de production.",
-    "perspective": "Un dirigeant qui acc\u00e9l\u00e8re le calendrier r\u00e9pond \u00e0 la guerre des prix, pas \u00e0 une preuve publique que Gemini 4 d\u00e9passe Astra ou Opus 5.5.",
-    "potentiel_business": "Ren\u00e9gocier les avenants \u00ab nouveau mod\u00e8le \u00bb, packs d\u2019\u00e9valuation compar\u00e9e Gemini 3.8 / 4, documentation de changement de version pour l\u2019AI Office.",
-    "potentiel_perso": "Inutile de basculer un flux perso. Surveiller la facture si Google aligne les prix Flash avant la sortie du flagship.",
-    "date": "2026-09-25T16:00:00Z",
-    "urgence": "important",
-    "tags": ["Google", "Gemini 4", "DeepMind", "post-entra\u00eenement"],
-    "source_url": "https://techseen.com/coverage/models-labs"
-  }
-]
+[{"id":"2026-09-26-ia-gemini-4-post-training","titre":"Gemini 4 entre en post-entra\u00eenement, Google vise une sortie avant la fin d\u2019ann\u00e9e","categorie":"IA"}]
