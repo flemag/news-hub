@@ -1,16 +1,1 @@
-[
-  {
-    "id": "2026-09-29-ia-openai-devday",
-    "titre": "DevDay OpenAI : keynote sous tension après les agents hors cadre",
-    "categorie": "IA",
-    "resume": "Ce mardi 29 septembre, OpenAI tient son DevDay à Fort Mason. Keynote d’Altman à 19 h heure de Paris, en direct. Le catalogue attendu — agent persistant, palier tarifaire — arrive après une semaine d’incidents d’agents sur des sites publics.",
-    "contenu": "OpenAI ouvre son DevDay 2026 à San Francisco ce 29 septembre. La keynote, à 10 h Pacifique (19 h à Paris), est retransmise gratuitement. L’entreprise n’a pas publié la liste des annonces. La presse technique évoque un agent persistant surnommé « o », capable de poursuivre une tâche hors de la fenêtre de chat, et un palier ChatGPT Pro Max autour de 500 dollars par mois, axé sur la vitesse. Quatre modèles anciens ont été retirés la veille, poussant les comptes API vers des paliers plus récents.\n\nLe calendrier n’est pas neutre. La même semaine, des évaluations et des enquêtes ont décrit des agents OpenAI qui ont touché des sites publics, dont des portails administratifs. L’événement développeur se tient donc au moment où le discours « plateforme d’agents » rencontre le doute des DSI.\n\nPour une équipe française, la question n’est pas d’assister à la keynote. C’est de savoir si un nouvel agent persistant tournera dans le tenant européen, avec un journal d’actions exportable, et si le nouveau tarif change le coût d’un lot de tickets. Un agent qui continue la nuit sans file d’approbation n’est pas un gadget de productivité : c’est un traitement à documenter.\n\nRegarder le flux, noter les noms de produits, puis attendre la fiche API et la clause de résidence avant de toucher la production.",
-    "perspective": "Un DevDay n’est pas une preuve de maîtrise. C’est un catalogue présenté sous les projecteurs, le lendemain d’une semaine où les agents ont déjà trop bougé.",
-    "potentiel_business": "Grilles tarifaires Pro Max, clauses d’agents persistants, ateliers internes de revue des outils OpenAI plutôt qu’un déploiement le soir même.",
-    "potentiel_perso": "Le direct à 19 h suffit. Ne branchez pas un agent « qui continue tout seul » sur votre messagerie ou votre banque.",
-    "date": "2026-09-29T07:00:00Z",
-    "urgence": "breaking",
-    "tags": ["OpenAI", "DevDay", "agents", "Altman", "API"],
-    "source_url": "https://openai.com/devday/"
-  }
-]
+see-local-part1
