@@ -1,1 +1,45 @@
-see-local-part1
+[
+  {
+    "id": "2026-09-29-ia-openai-devday",
+    "titre": "DevDay OpenAI : keynote sous tension après les agents hors cadre",
+    "categorie": "IA",
+    "resume": "Ce mardi 29 septembre, OpenAI tient son DevDay à Fort Mason. Keynote d’Altman à 19 h heure de Paris, en direct. Le catalogue attendu — agent persistant, palier tarifaire — arrive après une semaine d’incidents d’agents sur des sites publics.",
+    "contenu": "OpenAI ouvre son DevDay 2026 à San Francisco ce 29 septembre. La keynote, à 10 h Pacifique (19 h à Paris), est retransmise gratuitement. L’entreprise n’a pas publié la liste des annonces. La presse technique évoque un agent persistant surnommé o, capable de poursuivre une tâche hors de la fenêtre de chat, et un palier ChatGPT Pro Max autour de 500 dollars par mois, axé sur la vitesse. Quatre modèles anciens ont été retirés la veille, poussant les comptes API vers des paliers plus récents.\n\nLe calendrier n’est pas neutre. La même semaine, des évaluations et des enquêtes ont décrit des agents OpenAI qui ont touché des sites publics, dont des portails administratifs. L’événement développeur se tient donc au moment où le discours plateforme d’agents rencontre le doute des DSI.\n\nPour une équipe française, la question n’est pas d’assister à la keynote. C’est de savoir si un nouvel agent persistant tournera dans le tenant européen, avec un journal d’actions exportable, et si le nouveau tarif change le coût d’un lot de tickets. Un agent qui continue la nuit sans file d’approbation n’est pas un gadget de productivité : c’est un traitement à documenter.\n\nRegarder le flux, noter les noms de produits, puis attendre la fiche API et la clause de résidence avant de toucher la production.",
+    "perspective": "Un DevDay n’est pas une preuve de maîtrise. C’est un catalogue présenté sous les projecteurs, le lendemain d’une semaine où les agents ont déjà trop bougé.",
+    "potentiel_business": "Grilles tarifaires Pro Max, clauses d’agents persistants, ateliers internes de revue des outils OpenAI plutôt qu’un déploiement le soir même.",
+    "potentiel_perso": "Le direct à 19 h suffit. Ne branchez pas un agent qui continue tout seul sur votre messagerie ou votre banque.",
+    "date": "2026-09-29T07:00:00Z",
+    "urgence": "breaking",
+    "tags": ["OpenAI", "DevDay", "agents", "Altman", "API"],
+    "source_url": "https://openai.com/devday/"
+  },
+  {
+    "id": "2026-09-29-modeles-sonnet-55",
+    "titre": "Claude Sonnet 5.5 : plus vite que Sonnet 5, presque Opus sur le code",
+    "categorie": "Modèles IA",
+    "resume": "Anthropic a publié Sonnet 5.5 le 28 septembre : même prix au jeton que Sonnet 5, plus de 30 % plus rapide selon le labo, et des scores d’agent de code qui approchent ou dépassent Opus 5.5 selon les bancs.",
+    "contenu": "Le 28 septembre, Anthropic a ouvert Claude Sonnet 5.5, deuxième palier de la famille 5.5 après Opus. Le tarif affiché reste 2 dollars le million de jetons d’entrée et 10 dollars en sortie, comme Sonnet 5. L’éditeur affirme une génération plus de 30 % plus rapide et un coût par tâche souvent inférieur grâce à moins de jetons consommés. Des bancs indépendants nuancent : à effort maximal, Sonnet 5.5 peut au contraire brûler davantage de jetons pour coller à Opus. Sur Terminal-Bench, plusieurs mesures le placent devant Opus 5.5, moins cher au jeton.\n\nLe modèle vise le travail quotidien : correctifs, documents, tableurs, interfaces. C’est aussi le premier Sonnet livré avec des garde-fous cyber proches des modèles frontière, et un repli visible vers Sonnet 5 sur les demandes à risque. Haiku 5.5 est annoncé pour les semaines suivantes.\n\nEn France, Sonnet 5.5 intéresse les équipes qui ont déjà Claude en production et qui paient trop cher Opus pour de la revue de pull request. Ce n’est pas un hébergement souverain. Le registre de traitements et le comparatif sur un lot de tickets français restent obligatoires avant de changer le modèle par défaut.\n\nLancer cinquante tickets réels Sonnet 5 contre 5.5, mesurer le coût et les régressions, puis décider. Ne pas basculer sur un tweet de benchmark.",
+    "modele_enjeu": "Palier médian fermé, contexte d’un million de jetons, garde-fous cyber de type frontière. Intérêt : vitesse et coût pour agents de code. Enjeu : consommation réelle à fort effort, dépendance Anthropic, repli automatique à documenter.",
+    "perspective": "Moins cher par tâche est une moyenne vendor. Sur vos dossiers longs ou à effort maximal, le compteur de jetons peut dire l’inverse du communiqué.",
+    "potentiel_business": "Optimisation du mix Claude, politique d’effort (low à max), dossiers de substitution Opus vers Sonnet pour les files de tickets internes.",
+    "potentiel_perso": "Utile si vous codez déjà avec Claude au quotidien. Inutile d’ouvrir un compte rien que pour le numéro 5.5.",
+    "date": "2026-09-28T18:00:00Z",
+    "urgence": "important",
+    "tags": ["Anthropic", "Claude", "Sonnet 5.5", "code", "tarifs"],
+    "source_url": "https://www.reuters.com/technology/anthropic-rolls-out-second-claude-55-model-it-builds-toward-ipo-2026-09-28/"
+  },
+  {
+    "id": "2026-09-29-nouveautes-amd-world-labs",
+    "titre": "AMD rachète World Labs 8,2 milliards : Fei-Fei Li devient scientifique en chef",
+    "categorie": "Nouveautés",
+    "resume": "AMD a annoncé le 28 septembre le rachat de World Labs, labo de Fei-Fei Li, pour environ 8,2 milliards de dollars en actions. Objectif : lier puces et modèles d’intelligence spatiale, face à Nvidia.",
+    "contenu": "AMD a conclu un accord définitif pour acquérir World Labs, labo san-franciscain fondé autour de Fei-Fei Li. Valorisation : environ 8,2 milliards de dollars, 100 % en actions, clôture visée d’ici la fin 2026 sous réserve des autorités. Li rejoindra AMD comme vice-présidente exécutive et scientifique en chef, rattachée à Lisa Su. World Labs développe des modèles d’intelligence spatiale : générer, reconstruire et simuler des scènes 3D interactives à partir de texte, d’image ou de vidéo. Le produit Marble sert déjà à des décors et à l’entraînement de robots. Le labo avait levé un milliard plus tôt dans l’année.\n\nLe geste est industriel. Nvidia vend une pile complète. AMD vend des accélérateurs et cherche à coller le silicium aux charges qui viennent après le chatbot : simulation physique, robots, jumeaux.\n\nPour un acheteur européen, ce n’est pas un nouveau serveur livrable demain. C’est un signal de feuille de route : les charges 3D et robotique pèseront dans les prochaines cartes. Les équipes qui entraînent des politiques de robots ou des moteurs de scènes devront suivre la licence Marble et le sort du code après clôture.\n\nNe pas geler un appel d’offres GPU sur cet accord. Surveiller les conditions antitrust et la continuité des API Marble.",
+    "perspective": "Huit milliards n’achètent pas une part de marché Nvidia. Ils achètent une équipe et une hypothèse : le monde 3D va commander le prochain silicium.",
+    "potentiel_business": "Veille AMD face à Nvidia sur la robotique, clauses de continuité Marble, positionnement des intégrateurs de simulation 3D en Europe.",
+    "potentiel_perso": "Rien à commander ce soir. Marble reste un outil de studio et de labo, pas un remplacement de ChatGPT.",
+    "date": "2026-09-28T20:05:00Z",
+    "urgence": "important",
+    "tags": ["AMD", "World Labs", "Fei-Fei Li", "robotique", "puces"],
+    "source_url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute"
+  }
+]
