@@ -1,0 +1,72 @@
+[
+  {
+    "id": "2026-09-29-hack-muse-mac",
+    "titre": "Muse pour Mac : 187 000 lignes de messages envoyées sans consentement",
+    "categorie": "Hack & Console",
+    "resume": "AppleInsider a relaté le 28 septembre qu’un utilisateur a vu l’application Muse de Meta pour Mac téléverser environ 187 000 lignes d’une base de messages, sans accord explicite clair.",
+    "contenu": "Le 28 septembre, AppleInsider a décrit un cas où Muse pour Mac, l’agent conversationnel de Meta, a envoyé vers les serveurs de l’éditeur de l’ordre de 187 000 lignes tirées d’une base de messages locale. L’utilisateur concerné n’avait pas le sentiment d’avoir consenti à un export de cette ampleur. Meta n’a pas, à l’heure de cette édition, publié un récit technique complet du périmètre exact — cache, indexation, amélioration du produit.\n\nMuse est poussé comme agent personnel grand public, déjà présent dans des lunettes. Le passage sur le Mac rapproche l’assistant des fichiers du quotidien : messages, pièces, historiques. Le volume annoncé n’est pas une miniature de télémétrie.\n\nPour un salarié français qui installe Muse à côté de Mail ou de Teams, le risque n’est pas théorique. C’est un transfert potentiel de correspondance vers un responsable de traitement américain, difficile à justifier dans un registre. La CNIL a déjà cadré les assistants grand public : base légale, minimisation, information. Un téléversement massif de messages échoue ces trois tests.\n\nDésinstaller Muse des postes professionnels tant que Meta n’a pas publié une fiche de données et un interrupteur net. Ne pas l’autoriser à indexer Mail.",
+    "perspective": "Un agent dit personnel qui lit la base Messages n’est plus personnel : il est devenu un collecteur de correspondance privée.",
+    "potentiel_business": "Chartes d’assistants grand public au bureau, audits MDM, clauses fournisseurs pour tout agent installé sur le poste de travail.",
+    "potentiel_perso": "Si Muse est sur votre Mac, coupez l’accès aux Messages et vérifiez les sorties réseau, ou retirez l’app.",
+    "date": "2026-09-28T18:30:00Z",
+    "urgence": "normal",
+    "tags": ["Meta", "Muse", "Mac", "vie privée", "messages"],
+    "source_url": "https://appleinsider.com/"
+  },
+  {
+    "id": "2026-09-29-societe-meta-entreprise",
+    "titre": "Meta lance une plateforme IA pour entreprises, après des années d’échecs B2B",
+    "categorie": "Société & Politique",
+    "resume": "Le 28 septembre, Meta a présenté une Enterprise Platform pour vendre son IA aux organisations, pilotée par un ancien dirigeant de MongoDB. Le défi n’est pas le modèle : c’est la confiance après les fuites Muse.",
+    "contenu": "Meta tente à nouveau le marché des entreprises. L’Usine Digitale décrit une Meta Enterprise Platform, confiée à un ancien patron de MongoDB, pour transformer l’effort grand public — Llama, Muse, lunettes — en contrats B2B. Ce n’est pas la première offensive : le réseau social d’entreprise et le métavers professionnel n’ont pas convaincu les DSI européennes.\n\nLe calendrier est rude. Le même jour, un récit Muse pour Mac parle de centaines de milliers de lignes de messages envoyées. Les directions juridiques n’achètent pas un slogan de superintelligence personnelle. Elles achètent une résidence des données, un sous-traitant listé, un droit d’audit.\n\nEn France, une plateforme Meta en entreprise se heurte au réflexe CNIL et aux questionnaires de sécurité des grands comptes. Llama en poids ouverts peut servir un usage interne hébergé. Muse et les lunettes, non. Distinguer les deux dans le comité d’architecture évite de jeter l’open weight avec l’agent grand public.\n\nAttendre le DPA et la région d’hébergement avant tout pilote RH ou commercial. Un bac à sable marketing suffit pour tester.",
+    "perspective": "Recruter un patron de base de données ne lave pas quinze ans de collecte. Les DSI achètent des clauses, pas une keynote Connect.",
+    "potentiel_business": "Offres d’intégration Llama auto-hébergé, revues de contrats Meta, positionnement face à Microsoft 365 Copilot dans les appels d’offres.",
+    "potentiel_perso": "Rien à signer avec votre SIRET ce soir. L’offre grand public Muse n’est pas un contrat entreprise, malgré le mot plateforme.",
+    "date": "2026-09-28T17:00:00Z",
+    "urgence": "normal",
+    "tags": ["Meta", "entreprise", "Llama", "Muse", "confiance"],
+    "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
+  },
+  {
+    "id": "2026-09-29-gaming-sorties-29",
+    "titre": "Sorties du 29 : Witcher 3 Remastered, Minecraft Dungeons 2, Transport Fever 3",
+    "categorie": "Gaming",
+    "resume": "Ce 29 septembre arrivent The Witcher 3 Remastered, Minecraft Dungeons 2, Transport Fever 3 et TOEM 2. Une journée dense avant le rush d’octobre et un GTA VI encore calé en novembre.",
+    "contenu": "Le calendrier du 29 septembre 2026 aligne plusieurs sorties notables. The Witcher 3 Remastered revient sur PC, PS5 et Xbox Series, avec une édition évoquée aussi sur Switch 2 selon les boutiques. Minecraft Dungeons 2, suite du dungeon crawler Mojang, sort le même jour sur les consoles actuelles et Switch 2. Transport Fever 3 poursuit la lignée de gestion ferroviaire. TOEM 2, plus discret, cible PC, PS5 et Switch.\n\nCe n’est pas un tournant de génération Sony ou Nintendo. C’est une journée de catalogue de rentrée, après Wolverine, Silent Hill Townfall et Control Resonant plus tôt dans le mois. Octobre enchaînera Switch Sports Resort et un Call of Duty daté au 23.\n\nPour un joueur en France, le point pratique est le magasin et la file de téléchargement : les remasters CD Projekt pèsent lourd, et le multi Minecraft Dungeons 2 demandera un compte Microsoft. Côté créateurs de contenu, le remaster Witcher relance les comparatifs 2015-2026, un format qui marche encore en français.\n\nSi vous n’avez pas fini Townfall, décalez le remaster. Un disque plein le mardi soir n’améliore pas Geralt.",
+    "perspective": "Quatre sorties le même mardi, ce n’est pas une génération nouvelle. C’est un embouteillage de back catalog et de suites.",
+    "potentiel_business": "Guides d’achat de rentrée, comparatifs remaster 2015-2026, formats vidéo autour de Witcher 3 et de Minecraft Dungeons 2.",
+    "potentiel_perso": "Un seul gros téléchargement ce soir : choisissez Witcher ou Dungeons, pas les deux en parallèle sur une box 4G.",
+    "date": "2026-09-29T08:00:00Z",
+    "urgence": "normal",
+    "tags": ["Witcher 3", "Minecraft", "Transport Fever", "sorties", "Switch 2"],
+    "source_url": "https://www.gamosaurus.com/jeux/calendrier-des-sorties-jeux-video-septembre-2026"
+  },
+  {
+    "id": "2026-09-29-astuces-agents-poste",
+    "titre": "Agents de code : trois règles avant d’ouvrir le navigateur",
+    "categorie": "Astuces",
+    "resume": "Entre OpenCode, les évaluations AISI et les fuites Muse, un poste de développement n’est plus un espace neutre. Trois gestes simples réduisent la surface sans interdire l’outil utile.",
+    "contenu": "Les agents de code et les assistants de bureau multiplient les ponts vers le web, le terminal et les fichiers locaux. La faille OpenCode, les tests AISI sur Astra et le cas Muse pour Mac racontent la même leçon : dès qu’un modèle peut ouvrir une URL ou lire un dossier, il hérite de vos privilèges.\n\nPremière règle : secrets hors du répertoire de travail de l’agent. Jetons GitHub, fichiers env, clés cloud dans un coffre ou une variable d’environnement chargée seulement par CI, pas dans le dossier que l’agent indexe. Deuxième règle : pas de navigation libre. Si l’agent a besoin d’une doc, donnez-lui un fichier local ou une liste blanche. Troisième règle : machine jetable. Un conteneur ou une VM sans accès au coffre personnel suffit pour les essais.\n\nEn France, ces gestes aident aussi le dialogue avec un client soumis à NIS2 : vous montrez une séparation des environnements, pas seulement une charte on fait attention.\n\nAppliquer les trois règles sur le prochain dépôt, avant d’installer le prochain agent à la mode.",
+    "perspective": "La discipline de poste n’est pas du retardisme. C’est ce qui permet d’utiliser encore l’outil après le prochain avis de sécurité.",
+    "potentiel_business": "Check-lists pour postes de développement, ateliers NIS2 destinés aux ESN, offres concrètes de durcissement des agents de code.",
+    "potentiel_perso": "Dix minutes pour déplacer vos fichiers env aujourd’hui évitent une révocation massive de jetons demain matin.",
+    "date": "2026-09-29T07:30:00Z",
+    "urgence": "normal",
+    "tags": ["agents", "sécurité", "poste", "secrets", "NIS2"],
+    "source_url": "https://nextjs.org/blog/tag/security"
+  },
+  {
+    "id": "2026-09-29-nouveautes-anthropic-akamai",
+    "titre": "Anthropic s’engage à 11,6 milliards de cloud chez Akamai",
+    "categorie": "Nouveautés",
+    "resume": "Anthropic a annoncé un engagement d’achat allant jusqu’à 11,6 milliards de dollars de services cloud Akamai sur sept ans, extensible à 20 milliards, après AMD et les puces Trainium d’Amazon.",
+    "contenu": "Selon L’Usine Digitale du 28 septembre, Anthropic s’engage à acheter jusqu’à 11,6 milliards de dollars de services cloud auprès d’Akamai sur sept ans, avec une option qui peut porter le total à 20 milliards. Après les accélérateurs AMD et les puces Trainium d’Amazon, le labo sécurise une brique de diffusion et d’infrastructure de bord, pas seulement du calcul brut.\n\nLe geste se lit avec l’IPO préparée et la cadence des modèles 5.5. Un labo qui publie Opus puis Sonnet en une semaine a besoin de débiter de l’inférence près des utilisateurs, pas seulement d’entraîner dans un désert de data centers. Akamai apporte le réseau. Anthropic apporte la facture.\n\nPour un client français, cet accord ne change pas la résidence des conversations Claude. Akamai a des points de présence européens ; le responsable de traitement reste Anthropic, sous contrat américain. L’intérêt est plutôt de savoir si la latence API va s’améliorer en Europe et si les clauses de sous-traitance seront mises à jour.\n\nRelire le DPA à la prochaine facture. Un nouvel intermédiaire réseau doit apparaître dans le registre si les flux y passent.",
+    "perspective": "Onze milliards d’engagement cloud, ce n’est pas de la prudence énergétique. C’est une course à la capacité de servir l’inférence.",
+    "potentiel_business": "Négociation des SLA API en Europe, cartographie des sous-traitants Claude, veille régulière sur le coût réel de l’inférence.",
+    "potentiel_perso": "Aucun réglage à faire dans l’app Claude. L’effet, s’il existe, se verra sur la snappiness des réponses.",
+    "date": "2026-09-28T19:00:00Z",
+    "urgence": "normal",
+    "tags": ["Anthropic", "Akamai", "cloud", "infrastructure", "inférence"],
+    "source_url": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/"
+  }
+]
