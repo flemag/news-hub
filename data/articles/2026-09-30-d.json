@@ -1,0 +1,44 @@
+[
+  {
+    "id": "2026-09-30-dev-openssl-avis-29",
+    "titre": "OpenSSL : avis de sécurité publié le 29 septembre, patch à caler",
+    "categorie": "Dev",
+    "resume": "L’équipe OpenSSL a publié un avis de sécurité le 29 septembre. Dans la même journée, Apache MINA SSHD a documenté deux failles d’authentification. Les stacks TLS et SSH des CI doivent être inventoriées sans attendre le lundi.",
+    "contenu": "Le 29 septembre, Tomas Mraz a publié l’avis de sécurité OpenSSL daté du jour. Le même fil oss-sec a porté deux CVE Apache MINA SSHD : un contournement possible de la vérification de signature en authentification asynchrone, et un contournement de politique de clé publique répétée côté serveur. Ce n’est pas une panique Heartbleed. C’est le rythme habituel d’une pile dont dépendent presque tous les dépôts, les reverse proxy et les images Docker oubliées.\n\nLes équipes qui pinent une version « parce qu’elle compile » découvrent ces avis avec deux sprints de retard. Les images CI qui embarquent une libssl système d’une distribution LTS ancienne sont le cas le plus fréquent. MINA SSHD touche surtout les passerelles Java qui parlent SFTP ou git+ssh dans des usines logicielles.\n\nEn France, le bon réflexe n’est pas un fil Slack « on verra lundi ». C’est un inventaire : version OpenSSL des reverse proxy, des sidecars, des images de build, et version MINA SSHD si un service Java expose SSH. Les critères d’hébergeurs et de clients régulés demandent déjà cette traçabilité.\n\nLire l’avis officiel, croiser avec les paquets Debian/Ubuntu/RHEL réellement déployés, planifier le rebuild des images. Ne pas se fier au seul Dependabot s’il ignore les bibliothèques système.",
+    "perspective": "Un avis OpenSSL n’est spectaculaire que lorsqu’on l’a ignoré. Le risque réel est la flotte oubliée, pas le communiqué du jour.",
+    "potentiel_business": "Patch window TLS/SSH, clause de délai dans les contrats d’infogérance, audit des images Docker internes encore sur une 3.0.x oubliée.",
+    "potentiel_perso": "Si vous maintenez un VPS : apt/yum update et vérifier la version openssl. Si ce n’est pas votre métier, laissez l’hébergeur appliquer le correctif.",
+    "date": "2026-09-29T16:30:00Z",
+    "urgence": "important",
+    "tags": ["OpenSSL", "MINA SSHD", "CVE", "TLS", "CI"],
+    "source_url": "https://seclists.org/oss-sec/2026/q3/"
+  },
+  {
+    "id": "2026-09-30-astuces-applecare-ia",
+    "titre": "AppleCare : l’IA décroche aux États-Unis, comment garder un humain",
+    "categorie": "Astuces",
+    "resume": "Aux États-Unis et au Canada, le 1-800-APL-CARE bascule d’abord vers un assistant génératif. Apple a gelé un projet de 5 000 suppressions. En France, le réflexe utile est de savoir forcer l’humain et de ne pas dicter de secrets au robot.",
+    "contenu": "Selon Bloomberg, Apple a envisagé de remplacer environ 5 000 conseillers AppleCare par des agents téléphoniques et web, puis a gelé le plan. Parallèlement, aux États-Unis et au Canada, le numéro historique route désormais vers un assistant génératif capable de poser un diagnostic pas à pas et de transférer à un humain sur demande. Ce n’est plus le standard vocal basique d’autrefois.\n\nLe gel des suppressions dit une chose simple : le robot ne tient pas encore le long de la file — batteries gonflées, sinistres, comptes iCloud litigieux. Le déploiement dit une autre chose : le premier contact n’est plus un salarié.\n\nEn France, le numéro et le parcours Apple Support évoluent avec retard par rapport aux États-Unis, mais le même schéma arrivera. Concrètement : demandez dès la première phrase à parler à un conseiller ; n’énoncez pas de code de déverrouillage, de réponse secrète ou de détails bancaires tant que vous n’avez pas un matricule humain ; pour une panne matérielle, préparez le numéro de série avant l’appel afin de raccourcir le script.\n\nGardez l’application Assistance Apple et la prise de rendez-vous Genius comme voie parallèle. Un chat qui tourne en boucle n’est pas une preuve que votre dossier est « hors garantie ».",
+    "perspective": "Un robot d’accueil n’est pas une suppression du droit à l’humain. C’est une file d’attente habillée de phrases fluides et calmes.",
+    "potentiel_business": "Scripts internes d’assistance produit, formation des équipes qui gèrent le parc Apple, clause « accès humain » dans les contrats AppleCare for Enterprise.",
+    "potentiel_perso": "Dites « conseiller » tout de suite. Ne lisez jamais un code à un standard dont vous ne savez pas s’il est enregistré.",
+    "date": "2026-09-29T17:30:00Z",
+    "urgence": "normal",
+    "tags": ["AppleCare", "support", "IA", "Apple", "astuce"],
+    "source_url": "https://www.macrumors.com/2026/09/29/apple-reportedly-planned-5000-applecare-layoffs/"
+  },
+  {
+    "id": "2026-09-30-nouveautes-meta-muse-tpe",
+    "titre": "Muse pour TPE : Meta branche l’agent sur Shopify, QuickBooks et Stripe",
+    "categorie": "Nouveautés",
+    "resume": "Le 29 septembre, Meta a ouvert Muse for Small Business : l’agent se connecte à une quinzaine d’outils, dont Shopify, QuickBooks, Stripe, Slack et les comptes pubs Instagram et Facebook. Gratuit avec plafond, abonnement au-delà.",
+    "contenu": "Meta élargit Muse, son agent personnel, aux petites entreprises. L’annonce liste des connecteurs : Asana, Box, Canva, Dropbox, Figma, QuickBooks, Klaviyo, Notion, Shopify, Slack, Stripe, Zoom, plus les pages Facebook, les comptes Instagram professionnels et les comptes publicitaires Meta. L’utilisateur donne un objectif — trouver des clients, relire un mois comptable — et l’agent s’appuie sur ces sources. Meta affirme que Muse ne publie pas, n’envoie pas de message et n’achète pas sans validation. L’usage courant est gratuit ; un abonnement ouvre davantage de volume.\n\nLe timing est industriel. La veille, Meta lançait une unité entreprise. Le même jour, OpenAI montrait Dots. La bataille n’est plus le chatbot : c’est qui s’installe dans la caisse, la boutique et la pub.\n\nPour une TPE française déjà sur Instagram et Shopify, la tentation est réelle. Le risque aussi : un agent américain qui lit QuickBooks et la messagerie pose un transfert de données hors UE, un registre de traitements et une question de secret commercial. « Gratuit avec plafond » veut dire que le modèle économique viendra de l’abonnement et de la pub mieux ciblée.\n\nNe connectez pas la comptabilité le jour de l’annonce. Commencez par un compte pub isolé, lisez les permissions, et tenez un journal de ce que l’agent a le droit de faire.",
+    "perspective": "Meta ne « aide pas les commerçants ». Meta s’installe dans le système d’exploitation de la boutique, là où se trouvent les tickets et les cartes bancaires.",
+    "potentiel_business": "Offre d’accompagnement TPE (permissions, RGPD, double validation), alternative européenne si le client refuse Meta comme pivot comptable.",
+    "potentiel_perso": "Utile pour un artisan déjà dans l’écosystème Instagram. Dangereux si vous y collez le logiciel de caisse sans filtre.",
+    "date": "2026-09-29T15:30:00Z",
+    "urgence": "normal",
+    "tags": ["Meta", "Muse", "TPE", "Shopify", "RGPD"],
+    "source_url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/"
+  }
+]
