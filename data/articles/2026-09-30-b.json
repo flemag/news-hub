@@ -1,0 +1,45 @@
+[
+  {
+    "id": "2026-09-30-modeles-gpt61-sol",
+    "titre": "GPT-6.1 Sol : proche d’Astra sur le papier, au tarif de Sonnet 5.5",
+    "categorie": "Modèles IA",
+    "resume": "OpenAI positionne GPT-6.1 Sol à 2 / 10 dollars le million de jetons, avec un rabais annoncé sur le cache. Le labo affirme une intelligence proche d’Astra sur le code et les dossiers métier, sans livrer Astra lui-même.",
+    "contenu": "GPT-6.1 Sol est le modèle que le DevDay a réellement mis en production. OpenAI le vend comme un palier médian : performances « proches » de GPT-6 Astra sur le code, l’usage de l’ordinateur et les tâches professionnelles, pour un cinquième du prix au jeton. Les tarifs affichés — 2 dollars en entrée, 10 dollars en sortie — collent à ceux de Claude Sonnet 5.5. Un rabais sur les lectures de cache a été mis en avant pour les agents qui relisent le même dépôt.\n\nLe contexte compte. Astra reste retenu. Sol arrive donc comme substitut commercial : assez bon pour Codex et ChatGPT Work, assez cheap pour tenir face à Anthropic après une semaine où les agents OpenAI ont fait la une pour de mauvaises raisons. La disponibilité le jour même sur Bedrock accélère l’arrivée chez les clients déjà chez AWS.\n\nEn France, Sol n’est pas un modèle souverain. L’intérêt est le coût par ticket si vous êtes déjà dans l’écosystème OpenAI. Le risque est de basculer le modèle par défaut sans mesurer les régressions sur des dossiers français — contrats, tickets métier, code interne. Le rabais cache n’existe que si votre architecture relit vraiment le même contexte.\n\nLancer un A/B Sol contre Sonnet 5.5 et contre votre modèle actuel sur cinquante tickets réels. Publier le coût et le taux de reprise humaine avant de changer le défaut.",
+    "modele_enjeu": "Palier médian fermé, substitut d’un Astra non livré. Enjeu : prix agressif contre Sonnet, dépendance OpenAI, écart réel Astra/Sol non vérifiable hors bancs internes, résidence et journal d’agent à exiger.",
+    "perspective": "« Proche d’Astra » est une phrase marketing tant qu’Astra n’est pas public. Le chiffre qui compte est le coût et la reprise humaine sur vos dossiers.",
+    "potentiel_business": "Négociation API, mix Sol contre Sonnet 5.5, politique de cache, dossiers de substitution pour les files Codex internes déjà en production.",
+    "potentiel_perso": "Utile si vous payez déjà ChatGPT Plus ou Pro. Inutile d’ouvrir un compte seulement pour un numéro de version.",
+    "date": "2026-09-29T17:00:00Z",
+    "urgence": "important",
+    "tags": ["OpenAI", "GPT-6.1 Sol", "tarifs", "Bedrock", "Codex"],
+    "source_url": "https://techcrunch.com/2026/09/29/"
+  },
+  {
+    "id": "2026-09-30-web-google-dma-appel",
+    "titre": "Google attaque à Luxembourg les ordres DMA sur Android et la recherche",
+    "categorie": "Web",
+    "resume": "Le 29 septembre, Google a saisi le Tribunal de l’UE contre deux décisions de juillet : ouvrir Android aux assistants rivaux de Gemini et partager des données de recherche dès janvier 2027. L’appel n’est pas suspensif.",
+    "contenu": "Google a déposé un recours devant le Tribunal de l’Union européenne contre deux décisions de la Commission prises en juillet au titre du règlement sur les marchés numériques. La première impose, d’ici juillet 2027, que les assistants d’IA concurrents puissent réveiller le téléphone à la voix et accéder aux mêmes leviers qu’Gemini sur Android. La seconde oblige à partager des données de recherche avec des moteurs rivaux à partir de janvier 2027. Oliver Bethell, chez Google, parle d’historiques trop personnels transmis sans anonymisation suffisante et de protections Android affaiblies.\n\nBruxelles répond que le DMA vise à rééquilibrer le terrain. Un recours n’interrompt pas les délais, sauf sursis exceptionnel. En juillet, Google a aussi écopé d’une amende de 890 millions d’euros dans un autre dossier DMA.\n\nPour un éditeur ou un assistant français, l’enjeu n’est pas juridique abstrait. Si les délais tiennent, 2027 ouvre une fenêtre : assistant vocal alternatif sur Android européen, éventuellement un accès à des signaux de recherche aujourd’hui fermés. Si Google obtient un sursis, le calendrier glisse et les intégrateurs qui avaient budgété l’interopérabilité devront attendre.\n\nSuivre le sursis, pas seulement le communiqué. Ne pas promettre à un client une bascule Android « l’an prochain » tant que le Tribunal n’a pas statué sur l’exécution.",
+    "perspective": "Google joue la vie privée parce que c’est l’argument le plus audible. Le fond du dossier reste le contrôle de la porte d’entrée Android et de la requête.",
+    "potentiel_business": "Veille DMA pour les assistants européens, clauses de calendrier dans les projets Android, opportunité DuckDuckGo et moteurs spécialisés si le partage tient.",
+    "potentiel_perso": "Rien à régler dans les paramètres ce soir. Le choix d’assistant par défaut sur Android UE, s’il arrive, se jouera en 2027.",
+    "date": "2026-09-29T09:00:00Z",
+    "urgence": "important",
+    "tags": ["Google", "DMA", "Android", "recherche", "Commission"],
+    "source_url": "https://www.euronews.com/2026/09/29/google-appeals-eu-data-sharing-order-warns-of-irreversible-harm"
+  },
+  {
+    "id": "2026-09-30-gaming-witcher3-remaster",
+    "titre": "The Witcher 3 Remastered : gratuit pour les possesseurs, aussi sur Switch 2",
+    "categorie": "Gaming",
+    "resume": "CD Projekt a livré le 29 septembre une édition remastérisée gratuite de The Witcher 3 pour les propriétaires existants, avec une version Switch 2. Le titre a battu son record de joueurs simultanés sur Steam.",
+    "contenu": "Le 29 septembre, CD Projekt a déployé The Witcher 3: Wild Hunt — Remastered sur PC, PlayStation 5, Xbox et Switch 2. Les joueurs qui possèdent déjà le jeu et ses extensions reçoivent la mise à jour sans frais. L’éditeur promet des visuels repris, des ajustements de jouabilité, et sur Switch 2 le support de la souris, du gyroscope et de l’écran tactile. Sur Steam, le jeu a atteint un plus haut historique de joueurs simultanés au moment de la bascule.\n\nLe geste n’est pas anodin. The Witcher 3 a plus de dix ans. Un remaster gratuit fidélise le catalogue avant les gros tickets de fin d’année et teste la Switch 2 comme machine de catalogue, pas seulement de nouveautés Nintendo. Minecraft Dungeons II et Transport Fever 3 sortaient le même jour : le créneau « rentrée » est saturé.\n\nEn France, l’intérêt concret est simple. Si la copie est déjà dans la bibliothèque Steam, PlayStation ou Xbox, télécharger le remaster ne coûte rien. Sur Switch 2, c’est un argument d’achat de catalogue si la machine est déjà là. Les performances portables et la taille du téléchargement restent à vérifier sur les machines les plus modestes.\n\nVérifier que le compte a bien les deux extensions avant de crier au miracle. Sur PC, lancer une fois le jeu pour laisser le shader compiler hors des heures de pointe réseau.",
+    "perspective": "Un remaster gratuit est une opération de catalogue, pas une renaissance de saga. Le record Steam dit surtout que le jeu était déjà là, en soldes mentales.",
+    "potentiel_business": "Vitrine Switch 2 pour les éditeurs de back-catalogue, bundles Game Pass / PS Plus à surveiller, leçon de fidélisation avant un éventuel Witcher 4.",
+    "potentiel_perso": "Si vous avez déjà le jeu, installez la mise à jour. Si vous le découvrez, attendez une promo : le remaster ne justifie pas le prix plein à lui seul.",
+    "date": "2026-09-29T16:00:00Z",
+    "urgence": "normal",
+    "tags": ["CD Projekt", "Witcher 3", "Switch 2", "Steam", "remaster"],
+    "source_url": "https://www.eurogamer.net/everything-announced-nintendo-direct-september-2026"
+  }
+]
