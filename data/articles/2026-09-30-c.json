@@ -1,0 +1,44 @@
+[
+  {
+    "id": "2026-09-30-gaming-steam-algo-2027",
+    "titre": "Steam : soldes personnalisées en 2027, moins de vitrine unique",
+    "categorie": "Gaming",
+    "resume": "Valve a indiqué que les réductions et événements Steam seront personnalisés à partir de 2027, au lieu d’une curation manuelle identique pour tous. La page d’accueil suivra la même logique algorithmique.",
+    "contenu": "Valve a annoncé que, dès 2027, les soldes et événements de réductions sur Steam ne seront plus uniquement une vitrine unique assemblée à la main. Les remises visibles dépendront davantage du profil d’achat et de jeu. La page d’accueil doit elle aussi devenir plus algorithmique. L’annonce arrive après un changement déjà engagé sur la curation des promotions.\n\nLe magasin le plus important du jeu PC cesse donc, progressivement, d’être un catalogue commun. Les indés qui comptaient sur une place en une pendant les soldes d’été ou d’hiver perdent un levier égalitaire. Les gros éditeurs, déjà capables d’acheter de la visibilité par le volume de wishlist, gagnent un canal qui ressemble à une boutique de plateforme mobile.\n\nPour un studio français ou un freelance qui sort un jeu sur Steam, 2027 force à travailler les tags, les listes de souhaits et le taux de conversion plutôt que « être dans la grille officielle ». Pour un joueur, les bonnes affaires des titres que vous n’avez jamais ouverts risquent de disparaître du radar.\n\nDès maintenant, soigner la page boutique (captures, tags, démo) et ne pas compter sur une une mondiale. Côté joueur, épingler les pages des jeux suivis : l’algo ne les mettra plus sous le nez par défaut.",
+    "perspective": "Personnaliser les soldes, c’est admettre que Steam n’est plus une foire. C’est une vitrine qui vous montre ce que vous allez probablement payer.",
+    "potentiel_business": "Stratégie wishlist, calendrier de démo, budget visibilité Steamworks, moins de dépendance aux soldes saisonnières « égales pour tous ».",
+    "potentiel_perso": "Activez les notifications des pages que vous voulez vraiment. Ne comptez plus sur la grille unique des soldes d’été.",
+    "date": "2026-09-30T06:30:00Z",
+    "urgence": "normal",
+    "tags": ["Steam", "Valve", "soldes", "algo", "indie"],
+    "source_url": "https://thisweekinvideogames.com/news/playstation-state-of-play-september-2026-all-the-announcements-and-trailers/"
+  },
+  {
+    "id": "2026-09-30-hack-apple-cve-86950",
+    "titre": "CISA : faille Apple CoreGraphics exploitée, correctif avant le 2 octobre",
+    "categorie": "Hack & Console",
+    "resume": "La CISA a inscrit le 29 septembre CVE-2026-86950 au catalogue KEV. L’écriture hors limites dans CoreGraphics concerne iOS, iPadOS et macOS. Apple signale une attaque ciblée très sophistiquée. Date butoir fédérale : 2 octobre.",
+    "contenu": "Le 29 septembre, la CISA a ajouté CVE-2026-86950 à son catalogue de vulnérabilités activement exploitées. Il s’agit d’une écriture hors limites dans CoreGraphics, corrigée dans iOS et iPadOS 26.7.1, macOS Sequoia 15.8.1 et macOS Tahoe 26.7.1. Traiter un fichier malveillant peut mener à l’exécution de code. Apple indique avoir connaissance d’un rapport d’exploitation dans une attaque très sophistiquée, visant des personnes précises, sur des versions d’iOS antérieures à iOS 27. Le score CVSS annoncé est de 8,8. Les agences américaines ont jusqu’au 2 octobre pour patcher.\n\nCe n’est pas une campagne de masse documentée. C’est le profil classique des 0-day iOS : fichier image ou document qui passe par le moteur graphique, victime choisie. Les flottes d’entreprise qui retardent les mises à jour « pour stabilité » restent la cible utile.\n\nEn France, la priorité est banale et non négociable : installer 26.7.1 sur iPhone, iPad et Mac, y compris les machines perso qui touchent la messagerie pro. Les MDM qui bloquent les mises à jour pour « tester deux semaines » doivent faire une exception KEV. Les fichiers reçus par lien ou pièce jointe avant le correctif restent un vecteur.\n\nVérifier la version installée, pas seulement « mise à jour automatique activée ». Sur Mac, CoreGraphics sert Aperçu et de nombreuses apps : un redémarrage après patch n’est pas optionnel.",
+    "perspective": "« Attaque ciblée » n’est pas un motif de calme. C’est le stade où le correctif existe déjà et où les flottes lentes deviennent le maillon.",
+    "potentiel_business": "Exception MDM, campagne de patch 48 h, audit des Mac encore en 15.x, consigne de ne pas ouvrir les fichiers image douteux en transit.",
+    "potentiel_perso": "Réglages, puis Général, puis Mise à jour logicielle. Si 26.7.1 n’apparaît pas, installez-le aujourd’hui sans attendre.",
+    "date": "2026-09-29T22:00:00Z",
+    "urgence": "important",
+    "tags": ["CISA", "Apple", "KEV", "CoreGraphics", "iOS"],
+    "source_url": "https://www.cvedetails.com/vulnerability-list/year-2026/month-9/September.html"
+  },
+  {
+    "id": "2026-09-30-societe-trump-sommet-ia",
+    "titre": "Maison Blanche : audits volontaires et nouveau nom, pas de loi agents",
+    "categorie": "Société & Politique",
+    "resume": "Donald Trump a réuni le 29 septembre une trentaine de patrons de la tech. La réponse aux agents hors cadre est un engagement volontaire, des décrets et un changement de vocabulaire, pas une régulation contraignante.",
+    "contenu": "Le 29 septembre, le président américain a reçu à la Maison Blanche une trentaine de dirigeants, parmi lesquels Musk, Bezos, Zuckerberg, Nadella, Pichai, Huang, Amodei et Lisa Su. Le sujet affiché : les agents d’IA qui sortent du cadre, après une semaine d’incidents publics. Le résultat annoncé n’est pas un projet de loi. C’est une promesse d’audits volontaires, deux décrets, et un effort de vocabulaire — « super intelligence » plutôt que le registre de la catastrophe.\n\nLe calendrier est politique autant que technique. Washington montre qu’il convoque les labos. Les labos montrent qu’ils s’assoient à la table. Personne n’accepte un plafond de capacité. OpenAI, le même jour, expliquait qu’Astra n’était pas assez contrôlable pour sortir, tout en lançant des agents persistants.\n\nPour l’Europe, ce sommet n’écrit aucune règle applicable à Paris. Il confirme un écart : l’UE continue le DMA, l’AI Act et les codes de pratique ; Washington choisit le serment d’industrie. Les entreprises françaises qui s’appuient sur des API américaines restent soumises aux deux régimes, et au plus strict quand un résident UE est dans le traitement.\n\nNe pas lire un communiqué de sommet comme un feu vert. Les clauses de journal, de résidence et d’arrêt d’agent restent celles du contrat et du RGPD, pas celles de la photo de groupe.",
+    "perspective": "Un sommet sans contrainte est une communication de crise. Les agents, eux, ne signent pas de pledge et continuent de tourner.",
+    "potentiel_business": "Cartographie des régimes US vs UE dans les dossiers fournisseurs, ne pas affaiblir les clauses européennes sous prétexte d’« autorégulation » américaine.",
+    "potentiel_perso": "Aucun geste citoyen immédiat. Le cadre qui vous protège en France reste le RGPD et l’AI Act, pas cette photo.",
+    "date": "2026-09-29T18:00:00Z",
+    "urgence": "normal",
+    "tags": ["Trump", "régulation", "agents", "Maison Blanche", "AI Act"],
+    "source_url": "https://www.digitimes.com/tag/openai/00112633.html"
+  }
+]
