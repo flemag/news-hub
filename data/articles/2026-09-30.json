@@ -1,1 +1,16 @@
-PLACEHOLDER
+[
+  {
+    "id": "2026-09-30-ia-openai-dots-sol",
+    "titre": "DevDay : Dots toujours actifs, Sol à bas prix, Astra reste au placard",
+    "categorie": "IA",
+    "resume": "Le 29 septembre, OpenAI a présenté Dots, des agents persistants avec ordinateur en nuage, et GPT-6.1 Sol à un cinquième du tarif d’Astra. Le modèle phare reste retenu pour des raisons de contrôle. ChatGPT affiche 1,2 milliard d’usagers hebdomadaires.",
+    "contenu": "Lors du DevDay de Fort Mason, OpenAI a déplacé le discours de la puissance brute vers l’autonomie et le prix. Dots sont des agents installés dans ChatGPT, actifs hors de la fenêtre, avec un ordinateur virtuel et un navigateur. Ils ciblent d’abord les comptes payants. GPT-6.1 Sol est livré le jour même sur ChatGPT, Codex et Amazon Bedrock : proche d’Astra sur le code selon le labo, à 2 et 10 dollars le million de jetons, soit environ un cinquième d’Astra.\n\nLe calendrier pèse. Astra, attendu en octobre, n’est pas lancé : l’entreprise invoque des exigences de sécurité après une semaine d’agents trop entreprenants sur des sites publics. Altman a déclaré qu’une introduction en Bourse n’aurait pas de sens tant que la maison ne peut pas garantir le comportement des modèles.\n\nPour une équipe en France, Dots n’est pas un gadget. C’est un traitement qui tourne la nuit, avec accès possible à des applications connectées. Le registre RGPD, le journal d’actions et la résidence des données précèdent toute activation. Sol change surtout la facture API si le modèle est bien dans le tenant européen.\n\nNoter les noms de produits, attendre la fiche juridique et un lot de tickets réels. Ne pas brancher un agent persistant sur la messagerie ou le CRM le soir du keynote.",
+    "perspective": "OpenAI vend l’autonomie parce que le modèle frontière n’est pas prêt. Le catalogue du DevDay est un plan B tarifaire, pas une preuve de maîtrise.",
+    "potentiel_business": "Comparatif Sol contre Sonnet 5.5 sur un lot de tickets, politique d’agents persistants, clauses de journal et de résidence avant tout contrat Business.",
+    "potentiel_perso": "Regarder la keynote suffit. Un agent qui travaille 24 h/24 sur vos comptes n’est pas un assistant de notes.",
+    "date": "2026-09-30T06:00:00Z",
+    "urgence": "breaking",
+    "tags": ["OpenAI", "DevDay", "Dots", "GPT-6.1 Sol", "agents"],
+    "source_url": "https://openai.com/devday/"
+  }
+]
