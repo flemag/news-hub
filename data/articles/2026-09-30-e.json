@@ -1,0 +1,30 @@
+[
+  {
+    "id": "2026-09-30-societe-apple-5000-applecare",
+    "titre": "Apple gèle 5 000 suppressions AppleCare malgré l’IA déjà au standard",
+    "categorie": "Société & Politique",
+    "resume": "Mark Gurman (Bloomberg) indique qu’Apple a envisagé de remplacer quelque 5 000 conseillers AppleCare par des agents, puis a suspendu le plan. Le standard américain, lui, route déjà vers un robot génératif.",
+    "contenu": "Apple a examiné cet été un plan de réduction d’environ 5 000 postes AppleCare, au motif que des agents téléphoniques et web pourraient absorber une partie des diagnostics. Selon Gurman, le projet est aujourd’hui gelé « pour une durée indéterminée ». Quelques postes de direction ont malgré tout été coupés. Le contexte interne a changé le 1er septembre avec l’arrivée de John Ternus à la tête de l’entreprise.\n\nLe gel n’annule pas le déploiement. Aux États-Unis et au Canada, le numéro AppleCare bascule d’abord vers un assistant génératif. La contradiction n’est qu’apparente : l’entreprise automatise le premier contact sans encore oser supprimer le second. C’est le schéma déjà vu dans les banques et les opérateurs : le robot prend la file, l’humain reste la soupape, jusqu’au prochain plan d’économies.\n\nEn France, AppleCare emploie des conseillers et des partenaires. Un gel américain n’est pas une garantie d’emploi local, mais il donne un argument aux équipes et aux syndicats : même Apple juge que l’agent ne tient pas le dossier compliqué. Les directions qui copient « on remplace le support par un LLM » devraient exiger les taux de résolution au premier contact et de réouverture, pas un communiqué.\n\nDocumenter la qualité réelle du robot avant toute bascule RH. Un gel n’est pas une doctrine.",
+    "perspective": "Geler 5 000 suppressions tout en robotisant le standard, c’est choisir le rythme du plan, pas abandonner le principe de fond.",
+    "potentiel_business": "Audit des projets « agent de support » dans les ESN et les DSI, indicateurs de réouverture, maintien d’une voie humaine contractuelle.",
+    "potentiel_perso": "Si vous travaillez dans le support, le signal est mixte : l’emploi n’est pas supprimé en masse, le premier appel l’est déjà.",
+    "date": "2026-09-29T16:10:00Z",
+    "urgence": "normal",
+    "tags": ["Apple", "emploi", "AppleCare", "IA", "Ternus"],
+    "source_url": "https://www.macrumors.com/2026/09/29/apple-reportedly-planned-5000-applecare-layoffs/"
+  },
+  {
+    "id": "2026-09-30-dev-deep-rock-survivor-consoles",
+    "titre": "Deep Rock Galactic: Survivor débarque le 7 octobre sur PS5 et Switch 2",
+    "categorie": "Nouveautés",
+    "resume": "Ghost Ship et Funday Games sortiront le 7 octobre le survivor-like Deep Rock Galactic: Survivor sur PlayStation 5, Switch et Switch 2, après le PC. Même créneau qu’une vague de ports de catalogue vers les consoles Nintendo.",
+    "contenu": "Deep Rock Galactic: Survivor, déjà installé sur PC, sera publié le 7 octobre sur PlayStation 5, Switch et Switch 2. Le jeu est un auto-shooter solo dérivé de l’extraction coopérative Deep Rock Galactic : on creuse, on tire tout seul, la difficulté monte par vagues. Ghost Ship Publishing accompagne aussi d’autres indés du catalogue vers les machines Nintendo dans la même fenêtre.\n\nLe mouvement est celui de 2026 : les hits PC à budget contenu cherchent un second souffle sur Switch 2, où l’écran et la session courte collent au genre survivor. Ce n’est pas une refonte. C’est un port qui doit tenir soixante images en portable et un prix inférieur à un AAA de Noël.\n\nPour un joueur en France, la question est le service de souscription et la manette. Sur PS5, le jeu concurrencera d’autres sessions courtes déjà dans le catalogue. Sur Switch 2, il devient un candidat de trajet si le dock n’est pas obligatoire pour lire les essaims. Vérifier le cloud save cross-plateforme avant d’acheter deux fois.\n\nAttendre les tests de stabilité portable le 7 octobre plutôt que précommander à l’aveugle. Le jeu PC dit déjà si le genre vous convient.",
+    "perspective": "Un port console d’un hit PC n’est une nouvelle que pour ceux qui n’allument plus Steam. Pour les autres, c’est une question de canapé.",
+    "potentiel_business": "Calendrier de ports Switch 2 pour studios français déjà sortis sur Steam, prix sous 30 euros, démo avant la date de lancement.",
+    "potentiel_perso": "Si Survivor tourne déjà sur votre PC, passez votre chemin. Si vous ne jouez que sur canapé, attendez un avis sur la version portable.",
+    "date": "2026-09-29T18:00:00Z",
+    "urgence": "normal",
+    "tags": ["Deep Rock", "Switch 2", "PS5", "indie", "Survivor"],
+    "source_url": "https://www.gematsu.com/"
+  }
+]
