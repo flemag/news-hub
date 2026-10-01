@@ -1,0 +1,44 @@
+[
+  {
+    "id": "2026-10-01-nouveautes-elevenlabs-22b",
+    "titre": "ElevenLabs : 22 milliards de dollars et 15 millions de conversations par semaine",
+    "categorie": "Nouveautés",
+    "resume": "La société de voix de synthèse a clos un tender salariés de 300 millions de dollars valorisant l’entreprise 22 milliards, le double de février. L’usage entreprise pèse désormais 55 % du chiffre.",
+    "contenu": "Le 30 septembre, TechCrunch et The Neuron ont confirmé un tender salariés de 300 millions de dollars mené notamment par Wellington et T. Rowe Price, portant ElevenLabs à 22 milliards de dollars de valorisation, contre environ la moitié en février. L’entreprise affirme que les clients entreprise représentent 55 % des revenus et que ses agents traitent près de 15 millions de conversations par semaine.\n\nCe n’est plus une start-up de clonage vocal pour créateurs. C’est une infrastructure d’agents vocaux : support, standard, assistants. La valorisation double en quelques mois dit surtout que le marché paie l’interface voix, pas seulement le modèle de texte.\n\nEn France, la voix de synthèse est déjà dans le viseur des fraudes (l’affaire Fideuram en Italie l’a rappelé). Un centre de contact qui déploie ElevenLabs doit documenter l’information des appelants, le consentement d’enregistrement et l’interdiction d’imiter un humain nommé sans base légale. La CNIL a déjà un corpus sur la biométrie vocale ; l’agent conversationnel n’y échappe pas.\n\nAvant d’acheter, exiger une option « voix non clonée sur des personnes réelles » et un journal des appels exportable. Tester la détection de deepfake sur vos propres procédures de callback.",
+    "perspective": "Une valorisation qui double en quelques mois ne mesure pas la sûreté de la voix synthétique. Elle mesure l’appétit à remplacer le standard téléphonique.",
+    "potentiel_business": "Intégration de centres d’appels, conformité vocale CNIL, offres anti-fraude en vis-à-vis des agents vocaux d’entreprise.",
+    "potentiel_perso": "Pratique pour du contenu audio. Dangereux si un inconnu clone votre voix à partir d’un podcast ou d’une réunion publique.",
+    "date": "2026-09-30T17:00:00Z",
+    "urgence": "normal",
+    "tags": ["ElevenLabs", "voix", "agents", "valorisation", "entreprise"],
+    "source_url": "https://techcrunch.com/"
+  },
+  {
+    "id": "2026-10-01-ia-synthid-bio",
+    "titre": "DeepMind tatoue les protéines conçues par IA",
+    "categorie": "IA",
+    "resume": "Google DeepMind publie SynthID Bio dans Nature : des filigranes sur séquences et structures de protéines générées, détectables à très bas faux positif sans dégrader la liaison mesurée sur plusieurs cibles.",
+    "contenu": "The Neuron relaie le 30 septembre un article Nature de DeepMind : SynthID Bio, une famille de filigranes pour protéines et structures conçues par IA. La méthode séquence, inspirée d’un échantillonnage type ProteinMPNN, a produit des liants tatoués pour SC2RBD, VEGF-A et PD-L1 dont la liaison reste statistiquement indiscernable des dessins non marqués, avec une détection à 100 % pour 0,1 % de faux positifs. La méthode structure affine AlphaFold 3 pour cacher une marque imperceptible, détectée à plus de 99,8 % au même seuil.\n\nL’enjeu n’est pas un gadget de blog. C’est la traçabilité d’un objet biologique conçu par un modèle, au moment où les labos et les régulateurs parlent de risques en sciences de la vie. Un filigrane n’empêche pas un usage malveillant ; il permet, en principe, de dire « cette séquence porte une signature d’outil ».\n\nPour un chercheur ou une biotech européenne, la question concrète est l’adoption : le marqueur survit-il aux cycles de conception maison, aux dépôts de brevets, aux exigences de l’EMA ? Sans standard inter-labos, SynthID Bio reste un outil Google, pas encore une norme.\n\nSuivre si d’autres acteurs (Université, start-up UE) publient des détecteurs interopérables. Ne pas prendre un filigrane propriétaire pour une autorisation de mise sur le marché.",
+    "perspective": "Marquer une protéine conçue par un modèle est plus facile que décider qui a le droit de la concevoir et dans quel cadre légal.",
+    "potentiel_business": "Outils de provenance pour biotech, audits de pipelines génératifs, conseil réglementaire auprès des équipes sciences de la vie.",
+    "potentiel_perso": "Lecture utile si vous suivez la biologie computationnelle. Aucun bouton à activer dans l’application Gemini grand public.",
+    "date": "2026-09-30T16:00:00Z",
+    "urgence": "normal",
+    "tags": ["DeepMind", "SynthID", "protéines", "Nature", "traçabilité"],
+    "source_url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-september-30-2026/"
+  },
+  {
+    "id": "2026-10-01-gaming-sorties-1er-octobre",
+    "titre": "1er octobre : Ace Combat 8, End of Abyss et le remaster Dynasty Warriors 3",
+    "categorie": "Gaming",
+    "resume": "Le calendrier d’octobre s’ouvre sur Ace Combat 8: Wings of Theve, le survival horror End of Abyss et le remaster Complet de Dynasty Warriors 3, avant Gears E-Day et Modern Warfare 4 plus tard dans le mois.",
+    "contenu": "Ce 1er octobre, plusieurs éditeurs alignent des sorties physiques et numériques. Ace Combat 8: Wings of Theve arrive sur PS5, Xbox Series et PC. End of Abyss, souvent décrit comme un labyrinthe façon Resident Evil croisé Little Nightmares, sort sur les mêmes machines. Dynasty Warriors 3: Complete Edition Remastered couvre aussi Switch 2. Ghost of Yotei reçoit un volet Echoes of Sekigahara sur PS5 selon les calendriers VGC.\n\nOctobre 2026 est chargé ensuite : Gears of War: E-Day le 6 (exclusivité Xbox console), Nintendo Switch Sports Resort le 22, Modern Warfare 4 le 23, Phantom Blade Zero et The Wolf Among Us Remastered en fin de mois. Le 1er n’est pas le « plus gros » jour ; c’est le premier étage d’une file qui va saturer les disques et les abonnements.\n\nPour un joueur en France, le point pratique reste le magasin : prix euro, cross-save, et l’espace disque PS5 déjà occupé par les mises de septembre. End of Abyss vise un public horreur ; Ace Combat reste un simulateur arcade exigeant une manette décente.\n\nVérifier les démos et les préchargements avant d’acheter les trois le même soir. Le mois sera long.",
+    "perspective": "Trois sorties le même jour, ce n’est pas une révolution du jeu. C’est un rayon qui se remplit avant les locomotives de fin octobre.",
+    "potentiel_business": "Mise en avant retail et boutiques numériques françaises, bundles manette, couverture presse spécialisée sur trois cibles distinctes.",
+    "potentiel_perso": "Choisissez un titre, pas trois le même soir. La file des jeux « un jour » n’a pas besoin d’un quatrième étage.",
+    "date": "2026-10-01T00:00:00Z",
+    "urgence": "normal",
+    "tags": ["Ace Combat 8", "End of Abyss", "Dynasty Warriors", "PS5", "octobre"],
+    "source_url": "https://screenrant.com/october-2026-video-games-releases-schedule-lineup/"
+  }
+]
