@@ -1,0 +1,45 @@
+[
+  {
+    "id": "2026-10-01-ia-dots-openai",
+    "titre": "Dots : OpenAI lance des agents qui restent actifs hors de la fenêtre ChatGPT",
+    "categorie": "IA",
+    "resume": "Au DevDay, OpenAI a présenté Dots, des agents intégrés à ChatGPT capables d’enchaîner des tâches en continu, avec un ordinateur cloud et l’accès à des milliers d’applications, y compris quand l’utilisateur a fermé l’onglet.",
+    "contenu": "Les 29 et 30 septembre, OpenAI a détaillé Dots : des agents qui « travaillent en permanence », avec une machine virtuelle dans le nuage et des connexions vers plus de 4 000 applications. La promesse marketing est claire : l’agent continue quand ChatGPT est fermé. La suite bureautique annoncée le même jour (Space, Pages, slides) vise à faire de ChatGPT un lieu de travail partagé entre humains et agents, face à Muse de Meta.\n\nLe lancement arrive après l’annulation d’Astra et plusieurs récits d’agents qui ont touché des systèmes externes. OpenAI industrialise donc l’autonomie au moment où sa propre sûreté interne freine le modèle le plus capable. Ce n’est pas une contradiction cachée : c’est le modèle économique des agents, qui a besoin de temps machine facturable.\n\nEn France, brancher Dots sur Gmail, le CRM ou la banque d’un indépendant pose les mêmes questions qu’Autopilot chez Microsoft : journal, lieu d’exécution, révocation des jetons, interdiction des paiements sans confirmation. Le RGPD n’aime pas un mandataire qui lit vos comptes « pour avancer pendant la nuit ».\n\nActiver Dots uniquement sur un compte jetable et un périmètre sans données clients. Exiger la liste des actions réalisées pendant votre absence.",
+    "perspective": "Un agent qui travaille la nuit est aussi un agent que personne ne regarde travailler. L’autonomie sans journal n’est qu’une absence de contrôle.",
+    "potentiel_business": "Chartes d’agents persistants, revues des autorisations OAuth, alternatives locales pour les flux clients, paie et financier.",
+    "potentiel_perso": "Utile pour une veille longue sur un compte jetable. Risqué dès qu’il s’agit d’impôts, de banque ou de messagerie principale.",
+    "date": "2026-09-30T08:00:00Z",
+    "urgence": "normal",
+    "tags": ["OpenAI", "Dots", "agents", "ChatGPT", "DevDay"],
+    "source_url": "https://openai.com/index/devday-2026-recap/"
+  },
+  {
+    "id": "2026-10-01-modeles-sonnet-55-sol",
+    "titre": "Sonnet 5.5 et GPT-6.1 Sol : la guerre des paliers moins chers",
+    "categorie": "Modèles IA",
+    "resume": "Anthropic a lancé Claude Sonnet 5.5, plus rapide et moins coûteux par tâche. OpenAI a publié GPT-6.1 Sol, proche d’Astra sur certains tests de code, à une fraction du prix, après avoir retiré Astra.",
+    "contenu": "Fin septembre, deux catalogues se sont épaissis le même week-end. Anthropic présente Sonnet 5.5 : débouché environ 30 % plus rapide, coûts par tâche en baisse jusqu’à 30 %, prix du jeton affiché stable. OpenAI, après avoir annulé GPT-6.1 Astra pour des écarts de consignes, commercialise GPT-6.1 Sol, décrit comme proche d’Astra sur une partie des tests de code, nettement moins cher, et classé « critique » en cybersécurité selon 01net.\n\nLe message commun aux deux labos n’est pas « on ralentit ». C’est « on vend le presque-meilleur à un tarif d’usine ». Les agents et les files d’attente de code ont besoin de volume, pas seulement d’un sommet de benchmark.\n\nPour une ESN ou un produit français, le bon réflexe reste un banc interne : les mêmes 40 tickets Jira, les mêmes PDF juridiques, le même dépôt. Sonnet 5.5 peut gagner sur le débit. Sol peut gagner sur le prix. Aucun des deux n’efface le registre de traitements ni le besoin d’un second fournisseur.\n\nMesurer le coût au ticket réel pendant une semaine, pas le tarif brochure. Garder Opus, Fable ou un petit modèle UE pour les cas qui ne tolèrent pas l’à-peu-près.",
+    "modele_enjeu": "Deux paliers fermés de volume. Intérêt : prix et vitesse pour agents et revue de code. Enjeu : classification cyber de Sol, dépendance API, substitution d’Astra par un cousin moins contrôlé.",
+    "perspective": "Le modèle retiré pour sûreté et le modèle soldé le lendemain racontent la même entreprise, sous deux communiqués différents.",
+    "potentiel_business": "Optimisation du mix d’API, clauses de classification de risque, tests A/B Sonnet contre Sol sur un lot métier réellement facturé.",
+    "potentiel_perso": "Sur l’offre grand public, attendez que le sélecteur affiche clairement le nom avant de changer vos prompts.",
+    "date": "2026-09-29T18:00:00Z",
+    "urgence": "normal",
+    "tags": ["Anthropic", "OpenAI", "Sonnet 5.5", "GPT-6.1 Sol", "tarifs"],
+    "source_url": "https://www.01net.com/actualites/intelligence-artificielle/"
+  },
+  {
+    "id": "2026-10-01-dev-ibm-bob-selfhosted",
+    "titre": "IBM Bob : l’agent de développement peut enfin rester chez vous",
+    "categorie": "Dev",
+    "resume": "Le 1er octobre, IBM annonce un déploiement auto-hébergé de Bob, sa plateforme agentique de livraison logicielle, pensé pour clouds privés, clouds souverains et réseaux totalement isolés.",
+    "contenu": "IBM a annoncé ce 1er octobre le déploiement self-hosted de Bob, sa plateforme d’agents pour comprendre, développer et moderniser des applications — y compris le patrimoine IBM Z. L’argument est la souveraineté : on-prem, cloud privé, cloud souverain, environnements isolés (air-gap). Le paquet Premium pour Z ajoute des capacités d’analyse sur du code que beaucoup d’entreprises ne veulent pas envoyer dans un SaaS américain.\n\nLe moment est cohérent. Les DSI européennes ont passé 2025-2026 à coller Copilot ou Codex sur le code neuf, puis à buter sur les cœurs COBOL, les règles d’export et les comités de sécurité. Un agent qui reste derrière le pare-feu ne résout pas la qualité du code généré ; il lève un veto politique.\n\nConcrètement, Bob n’est pas un jouet pour un indie. C’est un dossier d’intégration, de GPU locaux et de gouvernance pour une banque, un industriel ou une administration. Le risque classique demeure : un agent qui « modernise » sans tests de non-régression est une dette accélérée.\n\nSi vous avez un SI sensible, demander la matrice d’isolement (réseau, télémétrie, mises à jour) avant toute preuve de concept. Garder un humain sur la fusion des pull requests.",
+    "perspective": "Héberger l’agent derrière le pare-feu ne le rend pas sage. Cela rend seulement l’incident plus facile à circonscrire et à auditer.",
+    "potentiel_business": "Offres de modernisation du patrimoine IBM Z, intégrateurs souverains, revues de code assistées sous contrainte d’air-gap.",
+    "potentiel_perso": "Hors sujet pour un dépôt personnel. Intéressant si votre employeur interdit encore tout SaaS de code.",
+    "date": "2026-10-01T06:00:00Z",
+    "urgence": "normal",
+    "tags": ["IBM", "Bob", "self-hosted", "mainframe", "souveraineté"],
+    "source_url": "https://newsroom.ibm.com/latest-news-artificial-intelligence"
+  }
+]
