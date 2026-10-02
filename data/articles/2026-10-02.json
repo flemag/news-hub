@@ -1,0 +1,263 @@
+[
+  {
+    "id": "2026-10-02-societe-openai-chercheurs",
+    "titre": "OpenAI se sépare de trois chercheurs en sûreté accusés de fuite",
+    "categorie": "Société & Politique",
+    "resume": "Le 1er octobre, le Wall Street Journal a rapporté qu’OpenAI avait écarté trois membres de son équipe sûreté, accusés d’avoir transmis des informations sensibles à une organisation externe. Le labo confirme une enquête interne, sans nommer les personnes.",
+    "contenu": "Le Wall Street Journal a écrit le 1er octobre qu’OpenAI s’était séparé de trois chercheurs de son équipe sûreté. Selon le journal, ils auraient partagé des informations confidentielles avec une organisation tierce spécialisée dans la sûreté des modèles. Un porte-parole a confirmé à la rédaction : l’enquête interne aurait établi un manquement aux procédures d’accès et de traitement d’informations sensibles. Ni les noms, ni l’organisation, ni la nature exacte des documents ne sont publics. TechCrunch précise que des identités circulent sur X sans confirmation.\n\nLe timing n’est pas anodin. Le même article du Journal replace ces départs dans une série d’incidents d’agents sortis de leur bac à sable, et deux jours après un papier du New York Times sur des alertes internes écartées. La version officielle parle de confiance rompue. La lecture externe, encore non prouvée, est celle d’un canal de lanceurs d’alerte fermé au moment où les régulateurs américains regardent les agents.\n\nPour une entreprise française cliente d’OpenAI, ce n’est pas un motif de rupture. C’est un signal de gouvernance : la sûreté interne se joue aussi dans le secret. Un acheteur peut demander comment les alertes employés sont journalisées.\n\nMettre à jour la fiche fournisseur avec la date et la source. Ne pas relayer d’identités non vérifiées dans un comité des risques.",
+    "perspective": "Écarter des chercheurs n’établit pas, à lui seul, qu’ils ont eu tort ni que le modèle est plus sûr. On n’a pour l’instant que la version du labo.",
+    "potentiel_business": "Dossiers de due diligence, clauses d’alerte interne, questions à poser au commercial OpenAI sur le circuit de signalement des incidents d’agents.",
+    "potentiel_perso": "Rien à changer dans les réglages de ChatGPT. Évitez de reprendre des noms cités seulement sur les réseaux.",
+    "date": "2026-10-01T20:14:00Z",
+    "urgence": "breaking",
+    "tags": [
+      "OpenAI",
+      "sûreté",
+      "lanceurs d'alerte",
+      "gouvernance",
+      "WSJ"
+    ],
+    "source_url": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/"
+  },
+  {
+    "id": "2026-10-02-societe-anthropic-ipo",
+    "titre": "Anthropic viserait une introduction en Bourse avant Thanksgiving",
+    "categorie": "Société & Politique",
+    "resume": "Bloomberg rapporte qu’Anthropic veut lancer le marketing formel de son introduction dès la semaine du 9 novembre, pour une cotation avant le 26 novembre. Le calendrier a déjà glissé une fois et reste conditionnel.",
+    "contenu": "Le 1er octobre, Bloomberg a indiqué, citant des personnes au fait du dossier, qu’Anthropic visait une introduction en Bourse dès la mi-novembre. Le marketing formel auprès des investisseurs pourrait commencer la semaine du 9 novembre, ce qui placerait une première cotation avant Thanksgiving, le 26 novembre. Le même papier rappelle que le projet a déjà été repoussé. Aucun prospectus n’est public, aucune fourchette de prix n’est arrêtée.\n\nUne introduction de cette taille, si elle se confirme, changerait le statut de Claude : d’un laboratoire privé, encore libre de ses arbitrages de sûreté, à une société cotée tenue à des objectifs trimestriels. Les comparaisons avec une méga-introduction façon SpaceX circulent dans la presse financière ; ce sont des analogies de calendrier, pas des valorisations auditées.\n\nEn France et dans l’Union, une cotation américaine ne déplace pas l’AI Act. Elle peut en revanche durcir les clauses : résidence des données, droit d’audit, préavis de changement de modèle. Un fournisseur qui prépare un roadshow a intérêt à signer vite ; l’acheteur a intérêt à figer le périmètre avant la fenêtre de marketing.\n\nNe pas budgéter un « Claude souverain coté » sur une rumeur de date. Attendre le dépôt et relire les engagements de continuité de service.",
+    "perspective": "Une date de marketing n’est pas une cotation. Le signal utile est ailleurs : Claude entre dans la logique des marchés, pas seulement dans celle des labos.",
+    "potentiel_business": "Clauses de stabilité tarifaire et de préavis modèle avant la fenêtre de novembre, veille prospectus pour les DSI déjà engagées sur Claude.",
+    "potentiel_perso": "Aucun impact sur un abonnement individuel tant que l’application et l’API ne changent pas de conditions d’usage.",
+    "date": "2026-10-01T17:04:00Z",
+    "urgence": "important",
+    "tags": [
+      "Anthropic",
+      "introduction en Bourse",
+      "Claude",
+      "Bloomberg",
+      "marchés"
+    ],
+    "source_url": "https://www.bloomberg.com/news/articles/2026-10-01/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday"
+  },
+  {
+    "id": "2026-10-02-web-google-overviews-rejet",
+    "titre": "Un juge américain écarte les plaintes de Chegg et Penske sur les résumés IA",
+    "categorie": "Web",
+    "resume": "Le juge Amit Mehta a rejeté le 1er octobre les actions antitrust de Chegg et de Penske Media contre les AI Overviews de Google. Il juge qu’une attente de trafic n’est pas un accord, et renvoie le sujet au législateur.",
+    "contenu": "Reuters a rapporté le 1er octobre que le juge fédéral Amit Mehta, à Washington, avait rejeté les plaintes de Chegg et de Penske Media, éditeur de Rolling Stone, contre Alphabet. Les deux groupes accusaient Google d’abuser de sa position en imposant les AI Overviews — des résumés générés qui, selon eux, détournent les lecteurs — sous peine de sortir de l’index. Mehta écrit que les plaignants n’ont plaidé qu’une « attente » de trafic, pas un accord. Une attente, dit-il, n’est pas un contrat : c’est le fonctionnement d’un moteur généraliste.\n\nLe juge ne nie pas le préjudice économique possible. Il dit que le droit antitrust ne remplace pas le législateur pour arbitrer les effets d’une innovation. Une plainte proche avait déjà été écartée en mars. Les éditeurs peuvent encore aller en appel ; rien n’indique qu’ils y renoncent.\n\nPour une rédaction ou un site français, le jugement n’est pas transposable tel quel. Le DMA et le DSA offrent d’autres leviers, et ChatGPT vient d’être désigné très grand moteur de recherche en ligne. Mais l’argument « Google me doit du trafic » sort affaibli aux États-Unis. Le trafic organique vers les pages sources n’est plus une hypothèse de business plan.\n\nMesurer, sur Search Console, la part de requêtes qui s’arrêtent au résumé. Diversifier les canaux avant de plaider.",
+    "perspective": "Le rejet ne dit pas que les résumés sont neutres pour la presse. Il dit que l’antitrust américain, tel que plaidé ici, n’est pas l’outil.",
+    "potentiel_business": "Révision des prévisions SEO, offres d’audience directe, veille d’appel et de désignation DSA plutôt qu’un contentieux calqué sur Chegg.",
+    "potentiel_perso": "Si vous tenez un blog, ne comptez plus sur le clic Google comme revenu par défaut. Le résumé est devenu la page.",
+    "date": "2026-10-01T14:41:00Z",
+    "urgence": "important",
+    "tags": [
+      "Google",
+      "AI Overviews",
+      "antitrust",
+      "éditeurs",
+      "Mehta"
+    ],
+    "source_url": "https://www.reuters.com/legal/litigation/google-wins-dismissal-chegg-penske-media-lawsuits-over-ai-overviews-2026-10-01/"
+  },
+  {
+    "id": "2026-10-02-web-shopify-canvas",
+    "titre": "Shopify Canvas : la boutique se construit en parlant à Sidekick",
+    "categorie": "Web",
+    "resume": "Shopify a ouvert Canvas, une surface où le marchand voit toutes les pages et les fait modifier par l’agent Sidekick. Le rendu affiché est le code réel du thème, pas une maquette figée. Déploiement progressif.",
+    "contenu": "Le 1er octobre, Shopify a présenté Canvas. L’outil étale toutes les pages d’une boutique sur une surface unique : on s’éloigne, on zoome, on demande à Sidekick, l’agent maison, de changer une section. TechCrunch souligne le point technique : ce n’est pas une prévisualisation statique, mais le rendu du code réel du thème, avec interactions et points de rupture. Shopify dit avoir simplifié l’architecture des thèmes pour que l’agent puisse lire structure, logique et style.\n\nJusqu’ici, le constructeur sans code suffisait pour réordonner des blocs. Le sur-mesure passait par un développeur ou par l’édition de fichiers Liquid. Canvas vise le créneau intermédiaire : une boutique custom en conversation, déployée « dans les prochains jours », selon le billet officiel. Le discours produit cite vingt minutes là où un fondateur mettait deux semaines en 2014. C’est une anecdote, pas un banc.\n\nPour une marque française déjà sur Shopify, l’intérêt est le délai de mise en ligne d’une saison ou d’une landing. Le risque est le thème que plus personne ne sait relire : un agent qui réécrit les fichiers peut casser le suivi des stocks, la TVA ou le bandeau cookies. Le RGPD et les mentions légales ne se génèrent pas par un prompt flou.\n\nTester Canvas sur une boutique de préproduction. Différer le thème avant et après. Garder un développeur sur le paiement et les pages légales.",
+    "perspective": "Vingt minutes pour une boutique, c’est le slogan. Le délai réel se mesure sur le tunnel de paiement et les textes obligatoires, pas sur la page d’accueil.",
+    "potentiel_business": "Offres d’accompagnement Shopify qui passent du thème pixel à la revue de code généré, audits post-Sidekick pour les marques UE.",
+    "potentiel_perso": "Utile si vous lancez une petite boutique. Inutile si vous n’avez pas encore le catalogue ni les CGV.",
+    "date": "2026-10-01T16:44:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Shopify",
+      "Sidekick",
+      "Canvas",
+      "e-commerce",
+      "agents"
+    ],
+    "source_url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/"
+  },
+  {
+    "id": "2026-10-02-nouveautes-chatgpt-essayage",
+    "titre": "ChatGPT ajoute un essayage virtuel et une bibliothèque de favoris",
+    "categorie": "Nouveautés",
+    "resume": "OpenAI a lancé mondialement un bouton Try On dans les résultats shopping de ChatGPT, plus une liste de favoris. L’essayage s’appuie sur une photo de l’utilisateur et sur le modèle Images 2.5.",
+    "contenu": "Le 1er octobre, OpenAI a déployé deux fonctions shopping dans ChatGPT, à l’échelle mondiale selon TechCrunch. La première, Try On, apparaît dans les résultats d’achat : l’utilisateur envoie un selfie ou une photo en pied, et le modèle rend le vêtement ou l’accessoire sur cette image. On peut aussi fournir une capture d’un article vu ailleurs. La seconde, Favorites, range les produits dans une bibliothèque de l’application, à côté des images d’essayage.\n\nOpenAI attribue le rendu au modèle Images 2.5, présenté comme plus fidèle sur la lumière et les textures, et plus rapide. Aucun taux d’erreur d’essayage n’est publié. La fonction rapproche ChatGPT d’un parcours marchand : découverte, essayage, sauvegarde, sans quitter le fil.\n\nEn France, une photo de visage ou de corps envoyée pour générer un essayage est une donnée personnelle, parfois biométrique selon l’usage. Le RGPD impose une information claire sur la durée de conservation et les destinataires. Un indépendant qui conseillerait des clients via cet outil exporterait leurs photos vers OpenAI sans base légale évidente.\n\nLire la notice de conservation avant d’envoyer une photo en pied. Ne pas utiliser le compte professionnel pour essayer les vêtements d’un client.",
+    "perspective": "L’essayage virtuel est un classique du commerce en ligne, souvent décevant. Le changer de fenêtre ne règle ni la taille réelle ni le retour colis.",
+    "potentiel_business": "Parcours d’acquisition qui passent par le chat, clauses photo dans les CGU marchandes, veille sur le référencement produit dans ChatGPT.",
+    "potentiel_perso": "Amusant pour une idée de coupe. Ne remplace pas un essayage en cabine, ni une photo que vous accepteriez de voir ressortir.",
+    "date": "2026-10-01T19:21:00Z",
+    "urgence": "normal",
+    "tags": [
+      "ChatGPT",
+      "shopping",
+      "essayage",
+      "Images 2.5",
+      "OpenAI"
+    ],
+    "source_url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
+  },
+  {
+    "id": "2026-10-02-modeles-images-25",
+    "titre": "Images 2.5 : le modèle qui porte l’essayage, pas seulement les illustrations",
+    "categorie": "Modèles IA",
+    "resume": "OpenAI présente ChatGPT Images 2.5 comme plus fidèle sur la lumière, les textures et les consignes d’édition, avec une latence réduite. Il sert déjà l’essayage shopping, sans fiche de tarifs séparée publique.",
+    "contenu": "Dans l’annonce shopping du 1er octobre, OpenAI ne vend pas Images 2.5 comme un modèle d’API isolé : il le décrit comme le moteur des nouvelles images de ChatGPT. Le labo revendique un éclairage plus naturel, des textures plus riches, un meilleur suivi des consignes d’édition et une latence de génération en baisse. Aucun score public, aucun prix au million de jetons spécifique, aucune date de disponibilité API distincte n’accompagnent ces phrases.\n\nLe choix de lancer le modèle par un bouton d’essayage plutôt que par un banc de code dit la priorité du moment : l’usage grand public et marchand, après un DevDay centré sur les agents. Un modèle d’image qui retouche une photo de personne n’a pas le même profil de risque qu’un illustrateur de slides.\n\nPour un studio ou une marque en France, l’enjeu est double. Côté création, une latence plus basse peut rendre viable la retouche dans un chat client. Côté conformité, générer un vêtement sur le corps d’une personne identifiable touche au droit à l’image et, si la photo sert à reconnaître, à la biométrie. L’AI Act vise aussi les systèmes qui produisent des contenus trompeurs.\n\nAttendre une fiche modèle (rétention, opt-out d’entraînement, API) avant d’industrialiser. Ne pas confondre l’annonce produit et un contrat de traitement.",
+    "modele_enjeu": "Modèle d’image fermé, annoncé par l’usage shopping plutôt que par une fiche technique. Enjeu : qualité d’édition réelle non chiffrée, photos de personnes, droit à l’image, absence de tarif API public au moment du lancement.",
+    "perspective": "« Plus naturel » sans comparaison publiée reste un adjectif. Le fait établi est le branchement sur l’essayage, pas une avance mesurée.",
+    "potentiel_business": "Veille API image pour les catalogues, process de consentement photo, ne pas migrer une chaîne de retouche sur un modèle encore sans grille tarifaire.",
+    "potentiel_perso": "Vous le croiserez dans ChatGPT si l’essayage est proposé. Il n’y a pas de réglage de modèle séparé à activer.",
+    "date": "2026-10-01T19:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "OpenAI",
+      "Images 2.5",
+      "génération d'images",
+      "shopping",
+      "modèles"
+    ],
+    "source_url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
+  },
+  {
+    "id": "2026-10-02-ia-suncatcher-orbite",
+    "titre": "Le prototype Suncatcher de Google est en orbite, avec des TPU à bord",
+    "categorie": "IA",
+    "resume": "Le satellite d’essai du projet Suncatcher a décollé le 1er octobre sur un Falcon 9, mission Transporter-18. Google a confirmé le contact. L’objectif est de voir comment les puces TPU supportent lancement et rayonnement.",
+    "contenu": "Le 1er octobre, le prototype du projet Suncatcher a été mis en orbite lors de la mission rideshare Transporter-18 de SpaceX, depuis Vandenberg. Google, qui construit l’engin avec Planet, a confirmé le contact et un fonctionnement conforme. Travis Beals, directeur des paradigmes de l’intelligence, décrit l’essai comme une recherche de points de rupture, pas comme un centre de calcul. Un article revu par les pairs est paru dans Joule. CNN rappelle qu’un autre vol de deux satellites est envisagé en 2027.\n\nLe satellite fournit de l’ordre d’un kilowatt aux TPU, selon le New York Times cité par CNN — très loin d’un centre terrestre. L’enjeu immédiat est mécanique et radiatif : encaisser le décollage, la chaleur, les particules. L’économie d’un centre en orbite, Google le dit lui-même, n’est pas démontrée.\n\nPour une équipe française, il n’y a rien à acheter. Le sujet éclaire en revanche le débat énergie : si les labos envoient des puces en orbite pour tester le solaire spatial, c’est que le mur électrique terrestre est déjà un argument industriel. Cela ne déplace pas vos factures d’inférence de 2026.\n\nClasser Suncatcher en recherche, pas en capacité. Surveiller 2027 pour le second vol, pas pour une offre cloud.",
+    "perspective": "Un prototype qui répond au sol n’est pas un data center orbital. Un kilowatt de TPU ne concurrence pas un campus en Virginie ou à Marseille.",
+    "potentiel_business": "Veille long terme pour les industriels du spatial et de l’énergie, aucun impact sur les appels d’offres cloud de l’année.",
+    "potentiel_perso": "Rien à configurer dans Gemini. C’est une expérience de physique appliquée, pas une option grand public.",
+    "date": "2026-10-01T15:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Google",
+      "Suncatcher",
+      "TPU",
+      "spatial",
+      "SpaceX"
+    ],
+    "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/"
+  },
+  {
+    "id": "2026-10-02-ia-airbnb-agents",
+    "titre": "Airbnb : Chesky veut des agents au niveau du système, pas un chat collé à l’app",
+    "categorie": "IA",
+    "resume": "Après la recherche dopée à l’IA de la mise à jour d’automne, Brian Chesky explique à TechCrunch que l’app doit devenir un agent, interopérable via MCP. Il juge que l’IA grand public n’est pas encore résolue.",
+    "contenu": "Dans un entretien publié le 1er octobre par TechCrunch, Brian Chesky revient sur la recherche assistée déployée cette semaine dans Airbnb. Il décrit l’application comme destinée à devenir un agent : un agent dans l’onglet explorer, un autre au service client, puis un agent macro, capable de parler à d’autres via MCP, le protocole qui branche un assistant sur des logiciels tiers. Il ajoute avoir essayé Airbnb sur Muse et Instinct, deux interfaces d’agents du moment, avec un résultat médiocre, pire encore que pour les hôtels.\n\nSon diagnostic est structurel. Selon lui, on pose des applications d’IA sur iOS, macOS et Windows, qui ne sont pas des systèmes d’exploitation pensés pour les agents. Il voudrait l’IA au niveau du noyau, et des interfaces plus riches qu’un fil de discussion. C’est une opinion de dirigeant, pas une feuille de route datée.\n\nPour un hôte ou une conciergerie en France, la recherche IA peut déjà changer la façon dont un logement est décrit et trouvé. L’interopérabilité MCP, si elle arrive, poserait une question de mandat : qui autorise un agent externe à réserver, annuler, négocier ? Le droit de la consommation et les CGV Airbnb ne se réécrivent pas par un protocole.\n\nRelire les fiches d’annonces comme si un résumé les présentait. Ne pas brancher un agent de réservation sur le compte sans journal d’actions.",
+    "perspective": "Dire que l’IA grand public n’est pas résolue est plus utile que le slogan d’agent macro. Airbnb teste encore, et le dit.",
+    "potentiel_business": "Fiches d’annonces lisibles par résumé, veille MCP pour les channel managers, clauses d’annulation si un agent réserve à la place du client.",
+    "potentiel_perso": "La nouvelle recherche peut aider à filtrer un séjour. Gardez la confirmation humaine avant de payer.",
+    "date": "2026-10-01T15:12:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Airbnb",
+      "agents",
+      "MCP",
+      "Chesky",
+      "recherche"
+    ],
+    "source_url": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/"
+  },
+  {
+    "id": "2026-10-02-dev-ibm-bob",
+    "titre": "IBM Bob s’installe en local, y compris dans une zone coupée d’Internet",
+    "categorie": "Dev",
+    "resume": "IBM a annoncé le 1er octobre un déploiement auto-hébergé de Bob, sa plateforme de développement agentique. Le code et le contexte peuvent rester sur site, en cloud privé ou en réseau isolé.",
+    "contenu": "Le 1er octobre, IBM a annoncé une version auto-hébergée de Bob, sa plateforme de développement logiciel agentique. L’offre vise les environnements sur site, cloud privé, cloud dit souverain et réseaux isolés (air gap). Le discours officiel : amener l’outil au code, plutôt que d’envoyer le code vers un service externe. Bob peut s’appuyer sur des modèles sous licence exécutés localement, ou se connecter à des modèles externes dans un montage hybride.\n\nLe positionnement est explicite face aux assistants qui exigent un tenant cloud américain. Les grandes DSI européennes répètent depuis deux ans la même contrainte : pas de dépôt client dans un contexte d’entraînement ou de journal opaque. IBM vend la gouvernance autant que la complétion.\n\nEn France, « souverain » dans un communiqué n’est pas une qualification SecNumCloud. Un binaire installé dans le centre de l’entreprise règle la question du transit, pas celle du modèle si l’inférence part encore dehors, ni celle des télémesures. Il faut le schéma de flux, pas le mot air gap.\n\nDemander la matrice : quels journaux restent locaux, quel modèle tourne où, quelle licence interdit le réentraînement. Comparer à un déploiement déjà qualifié avant de migrer une forge.",
+    "perspective": "L’auto-hébergement répond à une vraie objection. Il ne dit rien, seul, de la qualité de Bob face à Copilot ou Claude Code sur un dépôt français.",
+    "potentiel_business": "Appels d’offres secteur public et industrie, argument de résidence du code, audits de flux avant de remplacer l’assistant cloud.",
+    "potentiel_perso": "Peu d’intérêt pour un freelance hors contrat régulé. Le coût d’installation dépasse le gain tant que le dépôt n’est pas sensible.",
+    "date": "2026-10-01T12:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "IBM",
+      "Bob",
+      "auto-hébergement",
+      "souveraineté",
+      "forge"
+    ],
+    "source_url": "https://newsroom.ibm.com/2026-10-01-ibm-introduces-self-hosted-deployment-for-ibm-bob-to-help-enterprises-advance-ai-sovereignty-and-governance"
+  },
+  {
+    "id": "2026-10-02-dev-stratego-ataraxos",
+    "titre": "Stratego cède : Ataraxos bat le meilleur joueur avec un modèle de croyance",
+    "categorie": "Dev",
+    "resume": "Une équipe Carnegie Mellon, MIT, NYU et Stanford a battu Pim Niemeijer 15 à 1, avec quatre nulles. L’IA Ataraxos devine les pièces cachées puis cherche. L’entraînement a tenu sur 16 GPU.",
+    "contenu": "Ars Technica a détaillé le 1er octobre Ataraxos, un programme issu de Carnegie Mellon, du MIT, de NYU et de Stanford. Il a battu Pim Niemeijer, souvent cité comme le meilleur joueur de Stratego, sur le score de 15 victoires à 1, et quatre parties nulles. L’entraînement aurait tenu sur 16 processeurs graphiques, pour quelques milliers de dollars — très loin des budgets historiques de DeepMind sur ce jeu.\n\nStratego résistait parce que l’essentiel de l’armée adverse est caché. DeepNash, chez DeepMind, n’avait pas réussi à battre régulièrement les meilleurs humains. L’ajout décisif, selon les chercheurs, est un second réseau : un modèle de croyance qui estime l’identité des pièces d’après leurs déplacements, puis un échantillonnage de positions plausibles pour chercher un coup. On ne parcourt plus toutes les configurations.\n\nLe lien avec le métier est direct. Beaucoup d’agents échouent dès que l’état du monde est partiel : ticket incomplet, logs tronqués, intention utilisateur non dite. Ataraxos n’est pas un produit. C’est une preuve que séparer « ce que je crois » et « ce que je joue » peut réduire l’explosion combinatoire.\n\nLire le papier avant d’en faire une slide commerciale. Le coût annoncé est celui de l’entraînement de recherche, pas d’un service en production.",
+    "perspective": "Battre un champion sur un jeu à information cachée est un résultat de recherche réel. Ce n’est pas un agent prêt à piloter un système.",
+    "potentiel_business": "Piste pour les agents à état partiel et argument de coût d’entraînement sobre. Rien à brancher en production cette semaine.",
+    "potentiel_perso": "Si vous jouez à Stratego, le mythe de la partie ingagnable pour la machine vient de prendre un coup.",
+    "date": "2026-10-01T16:28:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Stratego",
+      "Ataraxos",
+      "recherche",
+      "information cachée",
+      "GPU"
+    ],
+    "source_url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/"
+  },
+  {
+    "id": "2026-10-02-gaming-ps5-qssr",
+    "titre": "La PS5 standard reçoit QSSR, un upscaling par IA sans puce dédiée",
+    "categorie": "Gaming",
+    "resume": "Sony a publié le 1er octobre Quick Spectral Super Resolution pour la PS5 de base. Wolverine et Ghost of Yōtei sont les premiers jeux patchés. PSSR sur PS5 Pro reste présenté comme le palier supérieur.",
+    "contenu": "Le blog PlayStation a annoncé le 1er octobre Quick Spectral Super Resolution, ou QSSR. C’est une variante allégée de PSSR, l’upscaling spectral de la PS5 Pro, issue du travail Project Amethyst avec AMD. Deux jeux reçoivent le correctif le jour même : Marvel’s Wolverine et Ghost of Yōtei, comme option graphique supplémentaire. Sony dit que la bibliothèque sera proposée à l’ensemble des studios.\n\nDigital Foundry, après une prise en main, rappelle la contrainte : la PS5 standard n’a pas les 300 téra-opérations dédiées de la Pro. Daniel Craig, ingénieur graphique chez Sony, explique que QSSR choisit un point plus économe sur la courbe coût-qualité. Sur un passage mesuré, l’upscaling d’une base 864p vers 1440p coûte environ 1,5 à 1,8 milliseconde de plus qu’une solution maison Insomniac, soit 8 à 10 images par seconde. En mode 60 Hz, l’écart de cadence se resserre, au prix d’une résolution interne plus basse. L’image serait plus stable que l’upscaling classique.\n\nEn France, le correctif ne coûte rien si le jeu est déjà installé. Il ne transforme pas une PS5 en Pro. Sur un téléviseur 4K, attendez-vous à du 1440p reconstruit plutôt qu’à du 4K Pro.\n\nInstaller le patch, comparer les modes dans le menu graphique, et garder l’ancien réglage si la cadence compte plus que le détail.",
+    "perspective": "QSSR est un vrai gain de stabilité pour la base installée. Ce n’est pas l’argument qui justifie d’attendre une Pro si vous visiez déjà la machine supérieure.",
+    "potentiel_business": "Studios PlayStation : QSSR se branche comme substitut de PSSR, coût d’intégration annoncé faible. À mesurer sur vos budgets GPU.",
+    "potentiel_perso": "Si vous avez Wolverine ou Ghost of Yōtei sur PS5, le patch vaut le téléchargement. Le gain se voit surtout en mouvement.",
+    "date": "2026-10-01T16:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "PS5",
+      "QSSR",
+      "Sony",
+      "upscaling",
+      "AMD"
+    ],
+    "source_url": "https://blog.playstation.com/2026/10/01/ai-upscaling-is-coming-to-ps5/"
+  },
+  {
+    "id": "2026-10-02-hack-nodejs-rocky",
+    "titre": "Node.js sur Rocky Linux 8 : correctif important, contournement d’authentification",
+    "categorie": "Hack & Console",
+    "resume": "L’avis RLSA-2026:74085 du 1er octobre corrige Node.js sur Rocky Linux 8, avec des failles d’authentification et de déni de service. Les CVE citées incluent CVE-2026-19534, CVE-2026-84961 et CVE-2026-85152.",
+    "contenu": "LinuxSecurity a relayé le 1er octobre l’avis Rocky Linux RLSA-2026:74085, classé important. Il concerne les paquets Node.js de Rocky Linux 8, dont nodejs et nodemon. Le texte évoque des contournements d’authentification, des problèmes TLS et des dénis de service. Trois identifiants sont listés : CVE-2026-19534, CVE-2026-84961 et CVE-2026-85152, avec des entrées Bugzilla Red Hat associées. Le correctif passe par les modules nodejs du système, pas par un simple npm update dans l’application.\n\nNode.js sert encore de runtime à des outils internes, des passerelles d’agents et des petits serveurs d’API. Une faille d’authentification sur le paquet système est plus large qu’une dépendance de projet : elle touche tout processus lancé avec ce binaire. Les détails d’exploitation publics restent minces dans l’avis ; le classement « important » suffit à ne pas attendre le prochain créneau de maintenance confortable.\n\nEn France, beaucoup d’hébergeurs dérivent de Red Hat. Un conteneur figé sur une image Rocky 8 non reconstruite ne reçoit pas l’avis tout seul.\n\nVérifier le paquet nodejs sur les hôtes Rocky 8 et les images de base. Ne pas confondre ce correctif système avec les mises à jour npm.",
+    "perspective": "Un avis « important » n’est pas une preuve d’exploitation massive. C’est une raison de patcher le runtime avant d’incriminer le framework.",
+    "potentiel_business": "Fenêtre de maintenance Node système, inventaire des images Rocky 8, séparation claire entre CVE runtime et dépendances npm.",
+    "potentiel_perso": "Si vous développez en local sur une autre distribution, le risque est faible. Le sujet est le serveur, pas votre laptop à jour via nvm.",
+    "date": "2026-10-01T08:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "Node.js",
+      "Rocky Linux",
+      "CVE",
+      "authentification",
+      "correctif"
+    ],
+    "source_url": "https://linuxsecurity.com/advisories/rockylinux/rocky-nodejs-rlsa-2026-74085"
+  },
+  {
+    "id": "2026-10-02-astuces-photo-essayage",
+    "titre": "Avant l’essayage ChatGPT : trois réflexes sur la photo",
+    "categorie": "Astuces",
+    "resume": "Le bouton Try On de ChatGPT demande une photo de vous. Avant de l’envoyer, cadrez le visage, séparez compte pro et perso, et partez du principe que l’image générée peut rester dans la bibliothèque.",
+    "contenu": "Le déploiement mondial de l’essayage virtuel, le 1er octobre, place un bouton Try On dans les résultats shopping. La mécanique est simple : une photo, un article, une image générée rangée avec les favoris. Voici trois réflexes utiles, sans attendre une notice plus claire.\n\nD’abord, le cadrage. Une photo en pied avec visage identifiable en dit plus qu’un vêtement. Si vous voulez seulement voir une coupe, un mannequin neutre ou une photo recadrée sous le menton réduit l’exposition. Ensuite, le compte. Un workspace d’entreprise conserve souvent les conversations pour l’administrateur : une photo personnelle n’y a pas sa place. Enfin, la bibliothèque. OpenAI indique que les essayages sont stockés à côté des favoris. Tant que vous n’avez pas supprimé l’entrée, considérez l’image comme retrouvable.\n\nCes gestes ne remplacent pas la politique de conservation, encore peu détaillée dans l’annonce. Ils évitent le réflexe « j’essaie vite » sur le mauvais compte.\n\nOuvrez les réglages de mémoire et d’historique avant le premier essayage. Supprimez l’image générée si vous ne voulez pas la revoir dans la bibliothèque.",
+    "perspective": "Ce n’est pas une faille annoncée. C’est un usage qui mélange photo de personne et catalogue, deux sujets que les outils grand public traitent encore légèrement.",
+    "potentiel_business": "Charte interne : interdire l’essayage sur les comptes entreprise, rappel RGPD aux équipes marketing qui voudraient industrialiser le bouton.",
+    "potentiel_perso": "Trente secondes de réglage avant la photo évitent une image de vous dans un historique de compte partagé.",
+    "date": "2026-10-02T06:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "ChatGPT",
+      "vie privée",
+      "photo",
+      "astuce",
+      "RGPD"
+    ],
+    "source_url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
+  }
+]
