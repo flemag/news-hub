@@ -1,0 +1,142 @@
+[
+  {
+    "id": "2026-10-05-hack-bloodborne",
+    "titre": "Bloodborne démarre en natif sur Linux, sans émulateur complet",
+    "categorie": "Hack & Console",
+    "resume": "Le 4 octobre, un développeur a publié bloodborne_pc : le code x86-64 du jeu tourne tel quel, les bibliothèques PS4 sont remplacées, le rendu Vulkan vient d’un shadPS4 modifié. Statut expérimental. Il faut fournir son propre dump.",
+    "contenu": "Le 4 octobre, un développeur sous le pseudonyme deadinside28 a publié le code de bloodborne_pc. Ce n’est pas un émulateur général de PlayStation 4. Le code x86-64 du jeu s’exécute nativement ; un petit environnement remplace les bibliothèques système de la console ; le processeur graphique est traduit vers Vulkan par un moteur dérivé de shadPS4, modifié pour ce titre, avec un suréchantillonnage temporaire via FSR 3.1, FSR 4 et FSR 4.1.1. Le statut annoncé est « expérimental, jouable » : le jeu se lance, les sauvegardes se chargent, le son et la manette fonctionnent sur le Rêve du chasseur et quelques zones de Yharnam. L’auteur n’a pas fini le jeu.\n\nLe dépôt ne contient pas les fichiers protégés. Il faut un dump personnel de la version CUSA03173 v1.09. La configuration citée descend à un Core i5-9400 et une Radeon RX 580. L’écart avec les émulateurs déjà connus est le contournement d’une émulation complète.\n\nPour un lecteur en France, fournir le dump ne rend pas le contournement légal. Le jeu n’a pas de version PC officielle. Diffuser le dump ou des assets est une contrefaçon ; exécuter une copie dont on n’a pas la licence l’est aussi. Le code d’un chargeur peut être étudié, pas redistribué avec le jeu. Aucun éditeur ne supportera les plantages.\n\nÀ retenir : projet de recherche visible, pas une sortie. Attendre une version officielle si vous voulez jouer sans risque juridique.",
+    "perspective": "Natif ne veut pas dire autorisé. Le dépôt évite les fichiers du jeu, mais le mode d’emploi repose sur un dump que FromSoftware n’a pas publié.",
+    "potentiel_business": "Aucun pour un studio qui publie. Le moteur de traduction graphique peut intéresser un labo, pas un catalogue à mettre en avant.",
+    "potentiel_perso": "Curiosité technique. Ne téléchargez pas un dump trouvé en ligne : c’est le point qui bascule dans la contrefaçon.",
+    "date": "2026-10-04T19:16:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Bloodborne",
+      "PlayStation",
+      "Linux",
+      "Vulkan",
+      "shadPS4"
+    ],
+    "source_url": "https://ixbt.games/en/news/2026/10/04/bloodborne-portirovali-a-pk-igra-zapuskaetsia-bez-emuliatora.html"
+  },
+  {
+    "id": "2026-10-05-hack-ubuntu-cve",
+    "titre": "Ubuntu pousse 101 correctifs dans un noyau GKE",
+    "categorie": "Hack & Console",
+    "resume": "Le 3 octobre, Ubuntu a livré 101 avis dans une seule mise à jour du noyau pour son image Google Kubernetes Engine sur 26.04 LTS, touchant 38 sous-systèmes. Le volume ressemble à un retard rattrapé. Red Hat classe en critique un correctif freerdp.",
+    "contenu": "Le tour d’horizon sécurité du 3 octobre signale USN-8816-4 : Ubuntu a regroupé 101 avis de vulnérabilités dans une mise à jour du noyau destinée à son image Google Kubernetes Engine, sur Ubuntu 26.04 LTS. Trente-huit sous-systèmes sont concernés, surtout pilotes et réseau. Le commentaire des mainteneurs qui relaient l’avis : le volume décrit davantage un arriéré soldé qu’une faille unique exploitée dans la nature. Le même jour, Red Hat et Rocky Linux ont marqué critique un correctif de freerdp pour la version 10, le protocole de bureau distant. Debian a publié 62 avis pour Firefox ESR.\n\nUn paquet de cent correctifs ne se lit pas comme cent urgences égales. Il se lit comme une image de nœud Kubernetes qui a pris du retard. Sur un cluster, le noyau de l’image GKE n’est pas celui du portable : le mettre à jour passe par l’image et le redémarrage des nœuds, pas par une mise à jour interactive.\n\nPour une équipe en France qui héberge sur GKE ou qui reflète des images Ubuntu, le point d’action est l’image de base, pas le titre alarmant. freerdp critique concerne celles qui exposent un bureau distant, pratique encore vue dans des infogérances.NIS2 n’exige pas d’appliquer les 101 avis à la main : il exige de savoir lesquels sont exposés.\n\nÀ faire : mettre à jour l’image GKE Ubuntu 26.04, redémarrer les nœuds, et traiter freerdp à part si un bastion l’utilise.",
+    "perspective": "Cent avis dans un noyau d’image cloud signalent un rattrapage, pas une campagne en cours. L’urgence réelle dépend de ce que le nœud expose.",
+    "potentiel_business": "Motif pour vérifier la fraîcheur des images de nœuds et des bastions RDP. Un lot groupé se planifie, il ne se ignore pas.",
+    "potentiel_perso": "Peu d’effet sur un Ubuntu de bureau. Si vous exposez un bureau distant, appliquez le correctif freerdp sans attendre.",
+    "date": "2026-10-03T16:20:00Z",
+    "urgence": "important",
+    "tags": [
+      "Ubuntu",
+      "CVE",
+      "GKE",
+      "freerdp",
+      "noyau"
+    ],
+    "source_url": "https://www.linuxcompatible.org/story/linux-security-roundup-ubuntus-101cve-kernel-and-a-critical-freerdp-fix/"
+  },
+  {
+    "id": "2026-10-05-societe-clayton",
+    "titre": "Trump confie une « force » IA au chef du renseignement",
+    "categorie": "Société & Politique",
+    "resume": "Dimanche 4 octobre, Donald Trump a chargé Jay Clayton, directeur du renseignement national, de diriger une « Super Intelligence Force ». Y siègent aussi le président de la FTC, le directeur technique du Pentagone et le directeur de l’OPM.",
+    "contenu": "Dimanche 4 octobre, Donald Trump a annoncé que Jay Clayton, directeur du renseignement national, piloterait une nouvelle structure fédérale sur l’intelligence artificielle, baptisée « Super Intelligence Force ». Le message, repris par l’Associated Press, dit vouloir garantir que les États-Unis restent en tête et « protéger les intérêts » des Américains. Autour de la table : Andrew Ferguson, président de la Commission fédérale du commerce, Emil Michael, directeur technique du Pentagone, et Scott Kupor, directeur de l’Office of Personnel Management. Le groupe rend compte à Trump et à sa cheffe de cabinet, Susie Wiles. Il doit consulter associations, opérateurs d’infrastructures critiques et entreprises d’IA.\n\nL’annonce suit un accord volontaire d’éditeurs à la Maison-Blanche. Le poste de référent IA était vacant depuis le départ de David Sacks, fin mars.\n\nPour une entreprise française qui vend ou achète aux États-Unis, le signal est l’export et l’accès. Les mois précédents ont déjà montré des coupures d’accès à des modèles jugés trop capables en cybersécurité. Une task force logée au renseignement peut accélérer ce filtre. Elle ne change pas l’AI Act : un outil déployé dans l’Union reste soumis aux obligations européennes, accord moral américain ou non.\n\nÀ surveiller : les textes d’application, pas le nom de la structure. Un accord volontaire ne lie pas un client européen.",
+    "perspective": "Le nom « super intelligence » est un slogan. Le fait est le rattachement au renseignement, après un accord d’éditeurs qui reste volontaire.",
+    "potentiel_business": "Prévoir une clause de continuité si un modèle américain devient soumis à licence d’export. Ne pas fonder un service critique sur un seul fournisseur.",
+    "potentiel_perso": "Aucun effet direct sur un abonnement. Utile pour lire les prochaines restrictions d’accès annoncées depuis Washington.",
+    "date": "2026-10-04T16:31:00Z",
+    "urgence": "important",
+    "tags": [
+      "Trump",
+      "Jay Clayton",
+      "États-Unis",
+      "politique IA",
+      "renseignement"
+    ],
+    "source_url": "https://www.pbs.org/newshour/politics/trump-names-national-intelligence-director-jay-clayton-to-lead-a-new-federal-ai-task-force"
+  },
+  {
+    "id": "2026-10-05-dev-zig-017",
+    "titre": "Zig 0.17 sépare la configuration de la compilation",
+    "categorie": "Dev",
+    "resume": "Zig 0.17.0 est sorti après cinq mois, avec 925 commits de 206 contributeurs. Le système de construction est refondu, un protocole de serveur de build apparaît, l’édition de liens ELF progresse, et la compilation incrémentale arrive sur Linux x86-64.",
+    "contenu": "Zig 0.17.0 est paru après cinq mois de travail. Le compte rendu de sortie indique 206 contributeurs et 925 commits. Le langage, sous licence MIT, se présente comme un remplaçant moderne du C. Le changement central est le système de construction : la configuration est séparée de la compilation, et le cache est repris. Un Build Server Protocol permet à un client de suivre et de piloter la construction. L’éditeur de liens ELF natif progresse. Le compilateur sait faire de la compilation incrémentale sous Linux sur x86-64.\n\nLa grammaire formelle est proposée, de nouvelles fonctions internes apparaissent, et plusieurs syntaxes anciennes sont retirées, dont « a ** b », « void{} » et « errdefer |err| ». Le support loongarch32 et SPARC64 s’étend, certaines cibles PowerPC disparaissent.\n\nPour une équipe en France qui empaquette des outils système, Zig reste un choix de niche, mais il est déjà dans des chaînes de compilation bas niveau. Une 0.17 qui casse le build et retire des syntaxes impose un gel de version : on ne suit pas la branche par réflexe sur un binaire livré à un client. La compilation incrémentale limitée à Linux x86-64 ne change pas encore le poste Windows d’une partie des freelances.\n\nÀ faire : lire les notes de rupture avant de monter un dépôt. Garder 0.16 le temps de mesurer le nouveau cache sur un projet réel.",
+    "perspective": "Séparer configuration et compilation est une promesse d’outillage, pas un gain mesuré. Les retraits de syntaxe sont, eux, immédiats.",
+    "potentiel_business": "Utile si vous livrez déjà du Zig. Geler la version dans les images de CI avant d’adopter le nouveau système de construction.",
+    "potentiel_perso": "Si vous apprenez Zig, partez de 0.17 et ignorez les extraits qui utilisent encore les syntaxes retirées.",
+    "date": "2026-10-04T00:33:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Zig",
+      "compilateur",
+      "build",
+      "LLVM",
+      "langage"
+    ],
+    "source_url": "https://www.altusintel.com/public-yyr73q/"
+  },
+  {
+    "id": "2026-10-05-dev-linux-rc6",
+    "titre": "Linux 7.3-rc6 : Torvalds parle d’une normale « IA »",
+    "categorie": "Dev",
+    "resume": "Linus Torvalds a publié le 4 octobre la sixième candidate de Linux 7.3. Le volume de correctifs reste élevé, qu’il attribue aux rapports et correctifs générés par des modèles. Un pilote Logitech Bolt est retiré, trop bugué.",
+    "contenu": "Le 4 octobre, Linus Torvalds a publié Linux 7.3-rc6, d’après Phoronix. La version stable est attendue sous environ deux semaines. Le message de Torvalds, cité par le site, dit que la semaine redevient ordinaire côté répartition : environ la moitié du diff est faite de correctifs de pilotes, graphique, réseau, USB, tty, capteurs, son. Il ajoute que le nombre de commits est normal « pour la nouvelle normale IA », avec beaucoup de petits correctifs de chemins d’erreur. Des correctifs réseau auraient été retardés par le bruit des contributions générées.\n\nDeux points concrets ressortent. Le noyau gagne la prise en charge du volant et des pédales Turtle Beach VelocityOne Race. Le support HID++ du récepteur Logitech Bolt est retiré, après trop de bogues signalés. Revenir en arrière sur un récepteur souris et clavier touche plus de monde qu’un correctif d’esthétique.\n\nPour un mainteneur en France, le sujet n’est pas le slogan. Des correctifs générés en masse sur les chemins d’erreur augmentent la revue sans augmenter la fonction. Une équipe qui empaquette un noyau pour des postes ou des bornes doit traiter rc6 comme une candidate, pas comme une base de production. Le retrait Logitech Bolt mérite un test si le parc utilise ces récepteurs.\n\nÀ faire : ne pas basculer de flotte sur 7.3 avant la stable. Noter le retrait Bolt dans les images qui l’avaient activé.",
+    "perspective": "Qualifier une semaine de normale « IA » décrit le bruit de revue, pas une fonction nouvelle du noyau. Le diff utile reste les pilotes et les retours arrière.",
+    "potentiel_business": "Les images noyau doivent ignorer les candidates. Prévoir un test du récepteur Logitech Bolt avant la stable si vous le déployez.",
+    "potentiel_perso": "Restez sur le noyau de votre distribution. Une rc ne corrige pas votre portable plus vite qu’une mise à jour stable.",
+    "date": "2026-10-04T21:04:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Linux",
+      "noyau",
+      "Torvalds",
+      "Logitech",
+      "pilotes"
+    ],
+    "source_url": "https://www.phoronix.com/news/Linux-7.3-rc6-Released"
+  },
+  {
+    "id": "2026-10-05-astuces-disque-mac",
+    "titre": "Vérifier qui a l’accès complet au disque sur un Mac",
+    "categorie": "Astuces",
+    "resume": "Avant le durcissement annoncé par Apple, la liste « Accès complet au disque » montre quelles applications peuvent lire mails, messages et historique. Cinq minutes suffisent à retirer un agent installé pour un essai.",
+    "contenu": "Le réglage macOS « Accès complet au disque » ne se limite pas au dossier que vous avez glissé dans une fenêtre de chat. Une application qui l’a obtenu peut lire, selon les versions, les messages, les contacts, les photos, le courriel et l’historique de navigation, parce que ces données vivent dans des emplacements protégés que cette permission contourne. Apple a prévenu que ce niveau d’accès devra bientôt être accordé par une action plus explicite. En attendant, la liste actuelle reste valable.\n\nOuvrez Réglages Système, puis Confidentialité et sécurité, puis Accès complet au disque. Passez la liste. Une sauvegarde Time Machine ou un clone disque a une raison d’y être. Un agent de bureau, un « copilote » installé la semaine dernière, un outil de capture, n’en ont en général pas. Décochez, quittez l’application, relancez-la. Si elle redemande la permission, vous voyez le moment où elle en a besoin, au lieu de l’avoir donnée une fois pour toutes.\n\nSur un Mac professionnel en France, notez ce que vous retirez : un outil métier peut cesser d’indexer le courriel. Mieux vaut une fonction en moins qu’un agent qui lit une boîte partagée. Un export de paie n’a pas non plus à rester dans l’historique d’un chatbot.\n\nÀ refaire après chaque installation d’agent. La case n’est pas un détail de power user.",
+    "perspective": "Retirer la permission ne chiffre pas le disque et n’efface pas ce qu’un agent a déjà lu. C’est un arrêt net, pas un audit.",
+    "potentiel_business": "Transformez la liste en contrôle de parc : agents interdits, sauvegardes autorisées, capture d’écran à part. Utile avant un audit interne.",
+    "potentiel_perso": "Le réglage est déjà sur votre Mac. Deux cases décochées valent mieux qu’un nouvel outil de confidentialité.",
+    "date": "2026-10-05T06:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "macOS",
+      "confidentialité",
+      "astuce",
+      "agents",
+      "réglages"
+    ],
+    "source_url": "https://www.macworld.com/article/3250604/apple-tightens-macos-full-disk-access-controls-as-ai-agents-proliferate.html"
+  },
+  {
+    "id": "2026-10-05-nouveautes-rdna5",
+    "titre": "AMD prépare le noyau Linux à des blocs graphiques RDNA 5",
+    "categorie": "Nouveautés",
+    "resume": "AMD a envoyé des correctifs visant le noyau Linux 7.4, avec le moteur GFX12.1, le traitement vidéo VPE 3.0, l’affichage DCN 6.0 et la gestion d’énergie SMU 15. La firme ne nomme pas la gamme. Les indices collent à une suite RDNA.",
+    "contenu": "AMD a publié un lot de correctifs pour les pilotes graphiques du noyau, destinés à une intégration dans Linux 7.4. Le code ajoute des blocs qui n’ont pas encore de carte commerciale : moteur graphique GFX12.1, sous-système vidéo VPE 3.0, contrôleur d’affichage DCN 6.0, gestion d’énergie SMU 15, plus des éléments de bus et de mémoire, MMHUB 5.0 et NBIF 7.10. Le fondeur ne confirme pas que chaque bloc correspond à une puce RDNA 5. Les indices d’architecture sont ceux d’une génération suivante, pas d’une fiche produit.\n\nLe lot ajuste aussi l’énergie et la réinitialisation matérielle. La pratique est connue : faire entrer le pilote dans le noyau principal des mois avant la vente, pour que les distributions et SteamOS aient une base le jour de la commercialisation, sans paquet expérimental à compiler.\n\nPour quelqu’un en France qui joue sur Linux ou prépare un poste de calcul, ces correctifs ne font pas tourner une carte qui n’est pas en rayon. Ils réduisent le délai habituel entre l’annonce Radeon et un noyau distribution capable de l’allumer. Un achat immédiat sur l’indice GFX12.1 serait prématuré : ni le nom commercial, ni la consommation, ni le prix ne sont dans le diff.\n\nÀ surveiller : l’entrée effective dans Linux 7.4, puis le délai des distributions. Pas une raison de changer de carte ce trimestre.",
+    "perspective": "Des indices dans le pilote ne sont pas une feuille de route publique. AMD peut encore renommer, retarder ou réserver ces blocs à une puce data center.",
+    "potentiel_business": "Utile pour un parc Linux qui planifie 2027 : le pilote ouvert arrive avant la carte. Inutile pour un appel d’offres de ce semestre.",
+    "potentiel_perso": "Rien à installer. Si vous attendez une Radeon sous Linux, le signe encourageant est le calendrier noyau, pas une boutique.",
+    "date": "2026-10-04T19:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "AMD",
+      "RDNA",
+      "Linux",
+      "pilote",
+      "GPU"
+    ],
+    "source_url": "https://en.gamegpu.com/news/zhelezo/amd-nachala-podgotovku-linux-k-rdna-5-s-podderzhkoj-gfx12-1-i-smu-15"
+  }
+]
