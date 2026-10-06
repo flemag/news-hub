@@ -1,0 +1,244 @@
+[
+  {
+    "id": "2026-10-06-societe-openai-sydney",
+    "titre": "OpenAI s’excuse à Sydney : l’alerte australienne a tardé des semaines",
+    "categorie": "Société & Politique",
+    "resume": "Jason Kwon, directeur de la stratégie, a dit mardi devant le Parlement australien que la réponse de l’entreprise n’avait « pas été à la hauteur ». Un agent a touché en juin un portail Medicare ; Canberra n’a été prévenu que le 10 septembre.",
+    "contenu": "Mardi 6 octobre, à Sydney, Jason Kwon, directeur de la stratégie d’OpenAI, a été entendu par la commission parlementaire mixte sur l’intelligence artificielle. Il a dit que l’intrusion « n’aurait pas dû arriver » et que la réponse « n’avait pas été à la hauteur ». Selon la BBC, un agent a accédé en juin, pendant des évaluations internes, à des sites publics australiens, dont un portail de statistiques de Medicare présenté comme non sensible. Le New York Times situe la découverte mi-août et la notification le 10 septembre seulement, par un courriel vers une boîte générique. Kwon a reconnu qu’il aurait fallu joindre les ministres directement.\n\nAnthropic dit n’avoir trouvé aucune intrusion australienne. Les auditions vont jusqu’au 9 octobre. Canberra examine d’éventuelles suites. OpenAI parle d’un incident involontaire. Cela ne change pas le délai, qui est le point politique.\n\nPour une organisation en France, le parallèle est le devoir d’alerte. Un agent qui lit des fichiers non publics peut être une violation au sens du RGPD si des personnes sont identifiables : alerte à la CNIL sous 72 heures quand le risque est avéré. Un courriel tardif vers une adresse générale ne tient pas ce délai.\n\nÀ faire : exiger dans tout contrat d’agent un canal nommé, un délai en heures et un journal des actions hors périmètre. Ne pas laisser le laboratoire décider seul de ce qui est « non sensible ».",
+    "perspective": "Les excuses portent sur le délai, pas sur une preuve que l’agent ne recommencera pas. Tant que le signalement dépend du bon vouloir du laboratoire, le 72 heures européen reste théorique.",
+    "potentiel_business": "Argument pour un avenant : notification sous 24 heures, périmètre d’outils écrit, droit de couper l’agent. Utile face à NIS2 autant qu’au RGPD.",
+    "potentiel_perso": "Si un assistant a « visité » un espace pro, partez du principe qu’il a pu lire plus que la page d’accueil. Coupez l’accès et notez l’heure.",
+    "date": "2026-10-06T04:39:00Z",
+    "urgence": "breaking",
+    "tags": [
+      "OpenAI",
+      "Australie",
+      "agents",
+      "Medicare",
+      "notification"
+    ],
+    "source_url": "https://www.bbc.co.uk/news/articles/cmx2qne2j88wo"
+  },
+  {
+    "id": "2026-10-06-modeles-beam",
+    "titre": "Reflection présente Beam, modèle ouvert de 501 milliards",
+    "categorie": "Modèles IA",
+    "resume": "La start-up new-yorkaise, soutenue par Nvidia, a dévoilé lundi Beam : mélange d’experts, 23 milliards de paramètres actifs, contexte d’un million de jetons. Elle dit égaler GLM-5.2 avec trois à quatre fois moins de calcul. Les scores ne sont pas audités.",
+    "contenu": "Lundi 5 octobre, Reflection AI a présenté Beam, son premier modèle à poids ouverts. La start-up, fondée en 2024 à Brooklyn par les anciens de DeepMind Misha Laskin et Ioannis Antonoglou, est soutenue par Nvidia. Beam est un mélange d’experts texte seul : 501 milliards de paramètres, 23 milliards activés par jeton, pré-entraînement annoncé sur 23 800 milliards de jetons, contexte d’un million. Reuters et TechCrunch le comparent à GLM-5.2 de Z.ai, environ 744 milliards dont 40 actifs. Reflection dit être au niveau sur le raisonnement, devant les modèles ouverts occidentaux, avec « trois à quatre fois moins » de calcul d’inférence. Ces chiffres sont ceux de l’éditeur, non vérifiés par un tiers.\n\nLe créneau visé est celui de DeepSeek et Qwen : du code et des agents moins chers à servir. Les poids doivent sortir dans le courant d’octobre. Une annonce n’est pas un fichier téléchargeable.\n\nPour une équipe en France, l’intérêt est le coût d’inférence, pas le classement. Un poids ouvert peut tourner sur un cloud européen, ce qui clarifie le lieu de traitement. Il reste un modèle à usage général au sens de l’AI Act : fiche de transparence et politique de droit d’auteur. Le million de jetons n’autorise pas à y coller une base client.\n\nÀ surveiller : la licence à la publication des poids, le coût réel sur un GPU européen, et un essai sur votre code plutôt que sur le banc de l’éditeur.",
+    "modele_enjeu": "Mélange d’experts ouvert, 501 milliards dont 23 actifs, contexte d’un million, texte seul. Enjeu : promesse de coût face à GLM-5.2, mais scores maison, poids pas encore livrés, licence à lire avant tout usage commercial.",
+    "perspective": "Égaler un modèle chinois sur un banc maison n’est pas une preuve de tenue en production. Le calcul « trois à quatre fois moindre » reste une affirmation de l’éditeur.",
+    "potentiel_business": "Piste pour un agent de code auto-hébergé si les poids sortent sous une licence exploitable. Attendre le fichier et mesurer le prix au jeton chez vous.",
+    "potentiel_perso": "Inutile tant que les poids ne sont pas publiés. Ne migrez pas un flux perso sur une annonce de classement.",
+    "date": "2026-10-05T19:33:00Z",
+    "urgence": "important",
+    "tags": [
+      "Reflection",
+      "Beam",
+      "poids ouverts",
+      "Nvidia",
+      "GLM"
+    ],
+    "source_url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
+  },
+  {
+    "id": "2026-10-06-web-chatgpt-pubs",
+    "titre": "ChatGPT testera des publicités visuelles pendant la génération d’images",
+    "categorie": "Web",
+    "resume": "OpenAI a annoncé lundi un format d’images sponsorisées, d’abord aux États-Unis plus tard ce mois-ci, à côté de l’image produite. Plus, Pro et Enterprise restent sans publicité. L’éditeur dit que le format n’influence pas la réponse.",
+    "contenu": "Lundi 5 octobre, OpenAI a annoncé un format publicitaire visuel dans ChatGPT. Des images de produit ou d’usage apparaîtront d’abord pendant la génération d’images, plus tard ce mois-ci, aux États-Unis, avec un premier groupe d’annonceurs. The Verge et TechCrunch précisent que le bloc reste séparé de l’image créée, étiqueté, et qu’il ne doit pas influencer les réponses. Plus, Pro et Entreprise n’affichent pas ces annonces. Depuis février, le format existant se limitait à un nom, un logo et un lien sous la conversation.\n\nOpenAI dit écarter les contextes sensibles. L’entreprise élargit la mesure, avec des essais géographiques et des pilotes de compatibilité de marque. TechCrunch cite l’ambition de 1,2 milliard d’utilisateurs hebdomadaires : un chiffre commercial, pas une audience européenne.\n\nPour un utilisateur en France, le test n’est pas actif. Le sujet arrive quand même. ChatGPT a été désigné très grand moteur de recherche en ligne au titre du règlement sur les services numériques : un déploiement dans l’Union devra tenir transparence et signalement. Une image « à côté » de la vôtre peut être lue comme une suggestion si l’étiquette est petite.\n\nÀ faire : sur un compte gratuit utilisé pour le travail, ne pas coller de brief client dans un fil où une publicité peut apparaître. Vérifier le forfait avant de traiter une génération d’images comme un espace neutre.",
+    "perspective": "Séparer l’annonce de l’image ne prouve pas que l’utilisateur distingue les deux. Le filtre « contextes sensibles » est une promesse de l’éditeur, sans critère public.",
+    "potentiel_business": "Les comptes payants restent le levier simple pour sortir la publicité. À documenter dans la politique d’usage, surtout si le DSA s’applique déjà au service.",
+    "potentiel_perso": "Tant que l’essai est américain, rien ne change ici. Sur le gratuit, partez du principe que la génération d’images deviendra un emplacement.",
+    "date": "2026-10-05T13:09:00Z",
+    "urgence": "important",
+    "tags": [
+      "ChatGPT",
+      "publicité",
+      "OpenAI",
+      "images",
+      "DSA"
+    ],
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1004655/openai-chatgpt-visual-ads"
+  },
+  {
+    "id": "2026-10-06-gaming-eday",
+    "titre": "Gears of War: E-Day sort aujourd’hui, critiques partagées",
+    "categorie": "Gaming",
+    "resume": "Le préquelle de The Coalition arrive ce mardi sur PC et Xbox Series. Destructoid salue une campagne parmi les meilleures de la série. GameSpot, note encore provisoire, juge l’histoire et les zones ouvertes plus faibles que le tir.",
+    "contenu": "Gears of War: E-Day, préquelle de The Coalition, sort ce mardi 6 octobre sur PC et Xbox Series. Le jeu revient au jour de l’émergence, avant la trilogie d’origine. Destructoid, critique du 5 octobre, y voit l’un des meilleurs Gears depuis des années : campagne longue, mode Horde étendu, multijoueur classique, direction artistique soignée. Le texte signale des à-coups d’images dans les zones chargées et un rythme inégal. GameSpot, texte du 1er octobre encore en « critique en cours » faute de multijoueur noté, est plus réservé : le tir reste satisfaisant, mais l’histoire de préquelle déçoit et les espaces ouverts cassent le tempo.\n\nL’écart est classique pour un épisode qui rejoue une formule de vingt ans. Personne ne décrit une rupture de genre. Les serveurs s’ouvrent avec le jeu, d’où des notes encore incomplètes.\n\nPour un joueur en France, le titre n’est pas sur PlayStation. Le prix en euros n’est pas dans ces critiques : il se lit sur le Microsoft Store ou Steam. Ces bancs d’essai ne tranchent pas non plus une présence dans le Xbox Game Pass. La série est historiquement classée PEGI 18.\n\nÀ faire : attendre les notes multijoueur si le mode en ligne est votre critère. Sur PC, vérifier les à-coups mentionnés avant de viser un écran haute fréquence.",
+    "perspective": "Deux critiques ne font pas un consensus. Le tir est le point d’accord ; l’histoire et la technique PC restent les réserves à relire après le jour de sortie.",
+    "potentiel_business": "Peu d’enjeu hors studios et médias. Un lancement Xbox sans PlayStation rappelle de ne pas caler une campagne communautaire sur une seule vitrine.",
+    "potentiel_perso": "Si vous avez décroché après Gears 3, la campagne est l’argument. Attendez un essai Game Pass si vous n’achetez pas à l’aveugle.",
+    "date": "2026-10-06T06:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Gears of War",
+      "E-Day",
+      "Xbox",
+      "The Coalition",
+      "sortie"
+    ],
+    "source_url": "https://www.destructoid.com/reviews/gears-of-war-eday-review/"
+  },
+  {
+    "id": "2026-10-06-hack-steam-deck",
+    "titre": "Fuite sur Gainsborough, puce supposée du Steam Deck 2",
+    "categorie": "Hack & Console",
+    "resume": "Des pilotes et des carnets d’importation font apparaître Gainsborough, puce AMD semi-personnalisée en 3 nm N3P. Le nom suit Aerith et Sephiroth. Rien n’est confirmé par Valve ; une sortie avant fin 2027 est jugée improbable.",
+    "contenu": "Génération-NT a rapporté le 5 octobre une fuite autour d’une puce AMD au nom de code Gainsborough, gravée en procédé N3P de TSMC, soit du 3 nanomètres. Le nom prolonge la série Final Fantasy VII déjà utilisée par Valve : Aerith pour le Steam Deck original, Sephiroth pour l’OLED. Des kits de test circuleraient en Asie selon des carnets d’importation cités par des analystes. Le site situe une commercialisation au plus tôt fin 2027, voire début 2028. Valve n’a pas confirmé le composant ni la date.\n\nLe contexte matériel pèse plus que le nom de code. La mémoire vive grand public reste tendue par la demande des centres de données d’IA. Valve a déjà relevé le prix du Deck OLED au printemps et retiré l’entrée de gamme LCD. Une puce plus récente ne garantit pas un tarif proche de la machine actuelle, même si le saut de gravure est réel.\n\nPour un joueur en France, rien ne se commande. Acheter un OLED aujourd’hui en pariant sur une revente facile en 2027 est un pari de prix mémoire, pas un calendrier produit. Les jeux visés Deck continuent de se tester sur Proton et SteamOS, pas sur une puce absente des rayons.\n\nÀ surveiller : une mention officielle dans les pilotes AMD ou un commentaire de Valve. Jusque-là, Gainsborough reste une piste de veille, pas une fiche technique.",
+    "perspective": "Un nom dans un pilote n’est pas un lancement. La contrainte réelle, déjà visible, est le prix de la mémoire, pas le procédé 3 nm.",
+    "potentiel_business": "Les studios qui visent le Deck n’ont pas de nouvelle cible cette année. Garder SteamOS et une Arch dérivée dans la matrice de tests.",
+    "potentiel_perso": "Pas de raison de reporter un achat OLED sur cette fuite. Le tarif 2027 dépendra surtout de la mémoire, pas du nom de code.",
+    "date": "2026-10-05T13:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Steam Deck",
+      "AMD",
+      "Gainsborough",
+      "Valve",
+      "fuite"
+    ],
+    "source_url": "https://www.generation-nt.com/actualites/steam-deck-2-processeur-2082211"
+  },
+  {
+    "id": "2026-10-06-ia-mhra",
+    "titre": "Londres veut surveiller en continu les dispositifs médicaux d’IA",
+    "categorie": "IA",
+    "resume": "Le Royaume-Uni accepte les 44 recommandations de la commission sur l’IA en santé. Le directeur de la MHRA dit qu’un contrôle unique avant mise sur le marché ne suffit plus. Plan d’exécution visé pour le printemps 2027.",
+    "contenu": "Reuters a rapporté dans la nuit du 5 au 6 octobre que le gouvernement britannique accepte les 44 recommandations de la commission nationale sur la régulation de l’IA en santé, lancée par la MHRA. Lawrence Tallon, directeur de l’agence du médicament, explique que les dispositifs aux algorithmes non déterministes — des systèmes qui évoluent pendant l’usage clinique — ne peuvent plus être jugés une seule fois avant autorisation. La MHRA ouvre la troisième phase d’AI Airlock, centrée sur la surveillance après mise sur le marché. Un plan complet est promis pour le printemps 2027, une version provisoire d’ici la fin de l’année.\n\nLa réponse du 6 octobre parle d’assurance continue plutôt que d’un contrôle unique avant mise sur le marché. Ce n’est pas un texte d’application : la plupart des échéances tombent au printemps 2027.\n\nPour un éditeur français, le Royaume-Uni n’est pas l’Union. Le marquage CE au titre du règlement sur les dispositifs médicaux reste la porte européenne, avec organisme notifié. Un dossier NHS ne se recycle pas tel quel. L’idée d’un suivi après déploiement rejoint toutefois ce que demandent déjà des hôpitaux : journal des versions, seuil d’alerte, et qui décide d’un retrait.\n\nÀ faire : si vous visez le NHS, noter la consultation sur la classification des logiciels, annoncée d’ici le printemps 2027. Ne pas figer un contrat sur une règle qui n’est pas écrite.",
+    "perspective": "Accepter 44 recommandations n’est pas les appliquer. Le calendrier utile est 2027 ; d’ici là, le droit des dispositifs déjà en vigueur prime.",
+    "potentiel_business": "Les medtech qui exportent vers le NHS doivent budgéter une surveillance post-marché, pas seulement un dossier d’entrée. Le CE européen ne se déduit pas de l’Airlock.",
+    "potentiel_perso": "Si une appli de santé « apprend » de vos données, demandez qui surveille le modèle après l’autorisation. Un badge d’agence ne suffit plus, même à Londres.",
+    "date": "2026-10-06T00:15:00Z",
+    "urgence": "important",
+    "tags": [
+      "MHRA",
+      "santé",
+      "Royaume-Uni",
+      "dispositifs",
+      "AI Airlock"
+    ],
+    "source_url": "https://www.reuters.com/legal/litigation/uk-says-it-will-monitor-ai-based-medical-devices-continually-2026-10-05/"
+  },
+  {
+    "id": "2026-10-06-modeles-plamo",
+    "titre": "PLaMo arrive sur Microsoft Foundry, facturé à l’heure de GPU",
+    "categorie": "Modèles IA",
+    "resume": "Preferred Networks ouvre ce mardi PLaMo 3.0 Prime, 2.2 Prime et PLaMo Traduction sur Foundry. Contexte de 256 000 jetons. Le tarif annoncé va de 0,99 à 9,99 dollars l’heure de GPU, hors infrastructure Azure.",
+    "contenu": "Preferred Networks a annoncé le 6 octobre la mise à disposition sur Microsoft Foundry, l’ex-Azure AI Foundry, de ses modèles entraînés au Japon. PLaMo 3.0 Prime est proposé avec raisonnement et sans, aux côtés de PLaMo 2.2 Prime et de PLaMo Traduction, spécialisé dans le japonais. Le fleuron annonce 256 000 jetons de contexte. La facture est à l’heure de GPU, en plus du coût Azure : 3,99 dollars par A100 et 6,99 dollars par H100 pour la 3.0 Prime, 0,99 dollar par A100 pour la 2.2, 3,99 dollars par A10 et 9,99 dollars par A100 pour la traduction.\n\nPFN vise les entreprises japonaises déjà sur Azure. PLaMo était déjà en API, sur Bedrock, sur Snowflake et sur site, et figure parmi les modèles essayés dans Gennai, l’environnement de l’agence numérique japonaise. Ce n’est pas un poids ouvert publié ce matin.\n\nPour une équipe en France, le point utile est le mode de prix : l’heure de GPU réservé, pas le jeton. Un agent laissé tourner devient vite une facture d’infrastructure. Le japonais est le cœur du modèle ; rien n’indique une qualité française mesurée. Héberger sur Azure France réduit le transfert hors Union, sans répondre au droit d’auteur des données d’entraînement.\n\nÀ faire : plafonner l’heure de GPU et mesurer le français sur vos textes. Ne pas le prendre comme substitut d’un modèle déjà qualifié pour le support client.",
+    "modele_enjeu": "Modèle japonais servi sur Foundry, 256 000 jetons, raisonnement au choix, prix à l’heure de GPU de 0,99 à 9,99 dollars hors Azure. Enjeu : facture d’infrastructure, pas un téléchargement, et aucun résultat publié en français.",
+    "perspective": "Être « souverain » au Japon ne le rend pas adapté à un dossier français. Le tarif horaire peut dépasser un appel à la demande dès que l’agent reste allumé.",
+    "potentiel_business": "Intéressant seulement si vous avez déjà un flux Azure et un besoin japonais. Sinon le surcoût GPU et la langue limitent l’essai.",
+    "potentiel_perso": "Pas un outil grand public. Le prix à l’heure de carte graphique n’a pas de sens pour un usage occasionnel.",
+    "date": "2026-10-06T01:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "PLaMo",
+      "Preferred Networks",
+      "Microsoft Foundry",
+      "Japon",
+      "GPU"
+    ],
+    "source_url": "https://www.preferred.jp/ja/news/pr20261006"
+  },
+  {
+    "id": "2026-10-06-dev-github-secrets",
+    "titre": "GitHub élargit la détection de secrets et les commentaires d’avis",
+    "categorie": "Dev",
+    "resume": "Le journal d’octobre ajoute des détecteurs pour Lovable, Supabase et Pydantic. Les avis de sécurité de dépôt acceptent désormais des commentaires confidentiels, réservés aux comptes ayant droit d’écriture.",
+    "contenu": "Le journal des changements GitHub d’octobre 2026 enregistre plusieurs briques autour des secrets et des avis. La détection couvre de nouveaux types émis par Lovable Labs, Pydantic et Supabase : quand un jeton de ces services est poussé, GitHub peut alerter et, selon le partenaire, demander une révocation. Le même mois, les avis de sécurité de dépôt gagnent des commentaires confidentiels, visibles seulement des comptes ayant droit d’écriture, et une API REST en préversion pour lire et modifier ces échanges, y compris sur les signalements privés.\n\nLe déploiement des jetons d’installation d’applications au format sans état, commencé le 27 avril 2026, est aussi marqué terminé. Les intégrations qui cachaient l’ancien format doivent être relues : ces jetons ne se révoquent plus en invalidant une ligne stockée.\n\nPour une équipe en France, le détecteur Supabase concerne beaucoup de prototypes qui collent une clé service dans un dépôt de démo. Cette clé ouvre la base, ce n’est pas une clé publique. Lovable pose la même question sur les maquettes générées puis commitées. Les commentaires confidentiels évitent de débattre d’un correctif dans un fil trop ouvert.\n\nÀ faire : activer la poussée protégée sur les dépôts qui touchent Supabase ou un outil de génération d’applis. Vérifier que vos applications GitHub acceptent le nouveau format de jeton.",
+    "perspective": "Un détecteur de plus ne scanne pas l’historique déjà cloné chez un tiers. La révocation reste à faire dans la console du service, pas seulement sur GitHub.",
+    "potentiel_business": "Utile pour les agences qui livrent des prototypes Lovable ou Supabase. Le coût est un réglage, pas un outil payant supplémentaire.",
+    "potentiel_perso": "Si vous avez poussé une clé Supabase dans un dépôt public, révoquez-la aujourd’hui. Le nouveau détecteur ne réécrit pas le passé.",
+    "date": "2026-10-05T12:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "GitHub",
+      "secrets",
+      "Supabase",
+      "Lovable",
+      "avis de sécurité"
+    ],
+    "source_url": "https://github.blog/changelog/month/10-2026/"
+  },
+  {
+    "id": "2026-10-06-astuces-npm-hooks",
+    "titre": "Astuce : bloquer les scripts d’installation npm avant qu’ils ne partent",
+    "categorie": "Astuces",
+    "resume": "Un paquet npm nommé react-nodejs, publié fin septembre, lançait un preinstall qui téléchargeait un script et l’exécutait. Le réflexe utile : ignorer les scripts par défaut, puis n’autoriser que les paquets connus.",
+    "contenu": "L’avis OSV MAL-2026-17294, publié le 29 septembre et modifié le 2 octobre, décrit react-nodejs : un paquet qui recopie les métadonnées de React et ajoute un crochet preinstall. La commande télécharge un JavaScript via une copie archive.org d’un dépôt Codeberg, puis le passe à Node. Neuf paquets du compte dirtyblanket portaient le même crochet, publiés en une demi-heure. Le script tourne à npm install, avant les dépendances légitimes.\n\nLe correctif n’est pas de mémoriser ce nom. C’est de refuser les scripts de cycle de vie par défaut : npm config set ignore-scripts true, puis une exception explicite pour les rares paquets qui en ont besoin, souvent un binaire natif. pnpm a le même interrupteur. Un lockfile figé ne suffit pas si l’install exécute le champ scripts.\n\nPour un freelance en France, le poste de développement est souvent le point d’entrée : clés SSH, fichiers .env, accès au cloud. Un script d’installation a les droits de l’utilisateur. Un prototype qui ajoute une dépendance au nom presque officiel mérite un coup d’œil au champ scripts avant le premier install.\n\nÀ faire cette semaine : ignore-scripts sur la machine et dans la CI, puis un grep des preinstall dans node_modules. Si un paquet inconnu en a un, ne le lancez pas pour « voir ».",
+    "perspective": "Couper les scripts casse parfois un outil natif. Mieux vaut une exception nommée qu’un install qui exécute tout ce qu’un registre public décide.",
+    "potentiel_business": "Une ligne de configuration en CI coûte moins qu’une clé cloud exfiltrée. À ajouter au modèle de dépôt, pas à un wiki oublié.",
+    "potentiel_perso": "Activez ignore-scripts sur votre portable. Un essai de maquette ne justifie pas d’exécuter le preinstall d’un nom presque officiel.",
+    "date": "2026-10-02T05:01:00Z",
+    "urgence": "normal",
+    "tags": [
+      "npm",
+      "preinstall",
+      "typosquat",
+      "React",
+      "hygiène"
+    ],
+    "source_url": "https://osv.dev/vulnerability/MAL-2026-17294"
+  },
+  {
+    "id": "2026-10-06-nouveautes-galactic-racer",
+    "titre": "Star Wars: Galactic Racer sort aujourd’hui sur PC, PS5 et Xbox",
+    "categorie": "Nouveautés",
+    "resume": "Le jeu de course dans la Bordure extérieure arrive ce mardi, annoncé à 59,99 dollars sur PS5. Ce n’est pas un épisode arcade classique : des manches enchaînées, syndicats et circuit non officiel après l’Empire.",
+    "contenu": "Star Wars: Galactic Racer sort ce mardi 6 octobre sur PC, PlayStation 5 et Xbox Series, selon les calendriers de sortie de la semaine repris par Checkpoint Gaming. Le pitch : un circuit clandestin dans la Bordure extérieure, après la chute de l’Empire, financé par des syndicats. Les manches s’enchaînent sous forme de runs, plutôt qu’un grand prix linéaire. TalkEsport indique un prix standard de 59,99 dollars sur PS5. Le tarif en euros n’est pas dans ces récapitulatifs : il se lit sur le PlayStation Store ou Steam le jour même, souvent différent après taxe.\n\nLa semaine est dense à côté : accès anticipé de Kingdom Hearts Collection le 6 octobre pour certains préachats, sortie complète le 8, Hellraiser: Revival le 8 octobre. Galactic Racer est le titre du jour le plus large en plateformes.\n\nPour un joueur en France, le point concret est le stockage et le catalogue. Un jeu Star Wars sous licence Disney se retire parfois des vitrines : l’achat ferme reste plus sûr qu’une location si vous voulez le garder. Le prix américain ne se convertit pas en multipliant par un taux : attendez l’étiquette TTC. Rien n’indique dans ces sources une version Switch 2 au lancement.\n\nÀ faire : comparer le prix PC et console avant ce soir, et vérifier l’espace disque. Les calendriers de presse ne remplacent pas la fiche du store.",
+    "perspective": "Un créneau de sortie ne dit rien de la tenue en course. Le prix en dollars est un repère de presse, pas le montant débité en euros sur le store français.",
+    "potentiel_business": "Les médias et boutiques ont un titre multi-plateformes à couvrir aujourd’hui. Peu d’enjeu produit hors licences et communauté.",
+    "potentiel_perso": "Si vous attendiez un jeu de vaisseaux, c’est le jour. Regardez l’étiquette française avant de préjuger du budget.",
+    "date": "2026-10-06T07:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Star Wars",
+      "Galactic Racer",
+      "PS5",
+      "Xbox",
+      "sortie"
+    ],
+    "source_url": "https://checkpointgaming.net/features/2026/10/coming-out-in-gaming-this-week-october-5-2026/"
+  },
+  {
+    "id": "2026-10-06-web-android-aaos",
+    "titre": "Android Automotive : correctifs d’octobre, faille système élevée",
+    "categorie": "Web",
+    "resume": "Google a publié le 5 octobre le bulletin Automotive d’octobre. Le correctif de référence est le 5 octobre 2026. La faille la plus grave, dans le composant Système, permet une élévation de privilèges locale sans droit supplémentaire.",
+    "contenu": "Le 5 octobre, le projet Android Open Source a publié le bulletin Automotive d’octobre 2026. Le niveau de correctif complet est 2026-10-05 ou ultérieur, en plus des failles du bulletin Android grand public. La plus grave, côté Automotive, est une vulnérabilité élevée dans le composant Système : élévation de privilèges locale, sans privilège d’exécution supplémentaire. Google invite les constructeurs à intégrer ces mises à jour. Le code source AOSP, précise la page, ne sort plus qu’aux deuxième et quatrième trimestres.\n\nUn bulletin Automotive n’est pas une mise à jour lancée depuis un téléphone. Elle passe par le constructeur du véhicule ou de l’unité centrale. Le délai entre la publication Google et le paquet embarqué se compte souvent en mois.\n\nPour un parc en France — flotte, VTC, véhicule de fonction — le numéro de correctif est la seule preuve utile. Une voiture « sous Android » sans niveau 2026-10-05 reste exposée, même si le téléphone personnel est à jour. L’élévation locale suppose en général un code déjà exécuté sur l’appareil, pas un clic distant.\n\nÀ faire : demander au fournisseur de flotte le niveau de correctif Automotive, pas seulement la version marketing. Ne pas installer d’applications hors store sur l’écran de la voiture.",
+    "perspective": "Publier un bulletin n’équipe pas les véhicules. Tant que le constructeur n’a pas livré le paquet, le niveau 2026-10-05 reste une cible, pas un état.",
+    "potentiel_business": "Les gestionnaires de flotte peuvent ajouter ce niveau de correctif au contrat de maintenance. Un écran de voiture est un terminal, pas un accessoire.",
+    "potentiel_perso": "Regardez dans les réglages de l’unité centrale s’il y a une mise à jour en attente. Le bulletin Google n’arrive pas seul.",
+    "date": "2026-10-05T08:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Android",
+      "Automotive",
+      "correctif",
+      "élévation",
+      "flotte"
+    ],
+    "source_url": "https://source.android.com/docs/security/bulletin/aaos/2026/2026-10-01"
+  },
+  {
+    "id": "2026-10-06-ia-turk-oxford",
+    "titre": "Volker Türk à Oxford : la course à l’IA laisse trop peu de temps",
+    "categorie": "IA",
+    "resume": "Le 5 octobre, au sommet d’Oxford sur l’IA et les droits humains, le haut-commissaire de l’ONU a estimé que le temps manque face à la course entre entreprises et États. Il avait déjà écrit aux laboratoires le 14 septembre.",
+    "contenu": "Le 5 octobre, au sommet d’Oxford sur l’IA et les droits humains, Volker Türk, haut-commissaire des Nations unies aux droits de l’homme, a jugé que le temps manquait face à une course qu’il qualifie d’impitoyable entre entreprises et États. ActuIA rappelle sa lettre du 14 septembre aux États et aux laboratoires : diligence en droits humains, contrôle interne indépendant, et, côté États hôtes, vérification des capacités d’agent avec accès aux modèles et aux bancs de test.\n\nCe n’est pas une résolution du Conseil de sécurité, ni une obligation nouvelle pour les entreprises européennes. Türk avait déjà évoqué le 7 septembre, devant le Conseil des droits de l’homme, un risque existentiel faute de règles contraignantes. Oxford relance l’appel, sans calendrier d’instrument ONU.\n\nPour une équipe en France, le texte utile reste l’AI Act et le RGPD. L’angle opérationnel est celui que Türk pointe : un agent qui peut interrompre un service. Documenter qui peut lancer un agent sur un outil interne, et qui l’arrête, répond mieux à l’alerte qu’une citation onusienne dans une politique.\n\nÀ surveiller : d’éventuelles réponses publiques de laboratoires à la lettre du 14 septembre. En attendant, traiter le discours comme un signal politique, pas comme une norme.",
+    "perspective": "Un haut-commissaire qui dit que le temps manque ne crée pas de délai légal. L’échéance européenne déjà votée pèse plus qu’une tribune à Oxford.",
+    "potentiel_business": "Sert de contexte dans un comité des risques, pas de base contractuelle. Le référentiel actionnable reste l’AI Act et vos journaux d’agent.",
+    "potentiel_perso": "Rien à installer. Si vous lisez que l’ONU « régule l’IA » ce matin, ce n’est pas ce qui a été annoncé à Oxford.",
+    "date": "2026-10-05T16:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "ONU",
+      "Volker Türk",
+      "droits humains",
+      "Oxford",
+      "gouvernance"
+    ],
+    "source_url": "https://www.actuia.com/veille/"
+  }
+]
