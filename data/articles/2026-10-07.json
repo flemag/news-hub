@@ -1,0 +1,264 @@
+[
+  {
+    "id": "2026-10-07-modeles-mistral-large-4",
+    "titre": "Mistral Large 4, « le Chonk », en prévisualisation : 1 000 milliards, poids fin octobre",
+    "categorie": "Modèles IA",
+    "resume": "La société parisienne ouvre une prévisualisation de Mistral Large 4 : mélange d’experts multimodal, environ 1 050 milliards de paramètres dont 49 actifs, contexte d’un million de jetons. Les poids sont annoncés pour la fin du mois, pas aujourd’hui.",
+    "contenu": "Le 6 octobre, Mistral a ouvert une prévisualisation de Mistral Large 4, (« le Chonk »). Le billet officiel décrit un modèle multimodal d’environ 1 000 milliards de paramètres, dont 49 milliards activés par jeton. La fiche citée ajoute un encodeur visuel et un million de jetons de contexte. L’API est joignable dans Mistral Studio. Les poids doivent sortir fin octobre ; VentureBeat cite le 27. La licence n’est pas publiée.\n\nL’éditeur dit l’avoir entraîné de zéro sur 3 800 GPU Nvidia Grace Blackwell dans ses centres en Europe, avec des données couvrant plus de 160 langues, dont les langues officielles de l’Union. Il met en avant le code, la finance, le droit et la cybersécurité. Sur CyberGym-E2E, il annonce 82 % et note que des modèles fermés tombent près de zéro en refusant la tâche. Ces bancs sont ceux de Mistral, pas un audit indépendant.\n\nPour une équipe en France, l’angle utile est le lieu de service : la prévisualisation tourne sur l’infrastructure européenne de Mistral. Tant que les poids ne sont pas là, l’auto-hébergement reste impossible. Transparence et droit d’auteur déjà en vigueur s’appliquent. Le tarif cité par MarkTechPost, 1,36 dollar le million de jetons en entrée et 4,18 en sortie, se relit sur la fiche avant tout devis.\n\nÀ faire : tester l’API sur un dossier réel. Noter la date des poids et la licence. Ne pas basculer une production sur une prévisualisation.",
+    "modele_enjeu": "Mélange d’experts multimodal, environ 1,05 billion de paramètres dont 49 actifs, contexte d’un million. Enjeu : prévisualisation européenne déjà facturable, poids et licence seulement fin octobre, scores cyber en partie dus aux refus des modèles fermés.",
+    "perspective": "Annoncer un modèle « souverain » ne remplace pas les poids. Les scores cyber élevés mesurent aussi ce que les autres refusent de faire, pas seulement la qualité de l’analyse.",
+    "potentiel_business": "Piste sérieuse pour un usage financier ou juridique déjà chez Mistral, si le contrat précise la région. Attendre la licence avant de budgéter un déploiement interne.",
+    "potentiel_perso": "L’API de prévisualisation suffit pour un essai. Inutile de promettre un modèle local tant que le fichier n’est pas publié.",
+    "date": "2026-10-06T13:00:00Z",
+    "urgence": "breaking",
+    "tags": [
+      "Mistral",
+      "Large 4",
+      "poids ouverts",
+      "Europe",
+      "cybersécurité"
+    ],
+    "source_url": "https://mistral.ai/news/mistral-large-4"
+  },
+  {
+    "id": "2026-10-07-modeles-embeddinggemma-2",
+    "titre": "EmbeddingGemma 2 : un petit modèle ouvert pour chercher texte, image et audio",
+    "categorie": "Modèles IA",
+    "resume": "Google publie EmbeddingGemma 2, 740 millions de paramètres au plus, licence Apache 2.0. Il projette texte, code, image, vidéo et audio dans un même espace de 768 dimensions, prévu pour tourner sur l’appareil.",
+    "contenu": "Le 6 octobre, Google a publié EmbeddingGemma 2, un modèle d’embeddings multimodal léger. Construit sur l’architecture Gemma 4, il compte au plus 740 millions de paramètres et sort sous licence Apache 2.0, exploitable commercialement. Il place texte, code, images, vidéo et audio dans un espace commun de 768 dimensions. L’architecture est modulaire : 270 millions pour le texte et le code, 440 avec la vision, 570 avec l’audio, 740 pour tout charger. Google indique qu’une version quantifiée tient dans environ 191 Mo de mémoire vive pour le texte et 567 Mo en multimodal sur un Pixel 11 Pro.\n\nLe premier EmbeddingGemma visait déjà la recherche locale. La nouveauté est le code : Google annonce un gain de 9,92 points sur MTEB Code, de 68,76 à 78,68. Ce chiffre est celui de l’éditeur. Le contexte texte reste de 8 192 jetons.\n\nPour une équipe en France, l’intérêt est de garder la recherche sur le poste ou le serveur, sans envoyer chaque extrait à une API. Un index de dépôt interne peut rester dans l’Union si vous hébergez le modèle. Apache 2.0 simplifie le contrat, mais n’efface pas le droit d’auteur des documents indexés, ni le RGPD s’ils identifient des personnes.\n\nÀ faire : mesurer le rappel sur vos documents, pas seulement sur MTEB. Charger uniquement les encodeurs utiles. Ne pas mélanger un index client et un index public sans contrôle d’accès.",
+    "modele_enjeu": "Embeddings multimodaux ouverts, 270 à 740 millions de paramètres, 768 dimensions, Apache 2.0. Enjeu : recherche locale texte-image-audio, mais le gain de code est un score Google, et le contexte reste court.",
+    "perspective": "« Meilleur de sa taille » est un slogan d’éditeur. Un petit modèle local bat une API seulement si votre corpus tient dans son contexte et si le rappel vous suffit.",
+    "potentiel_business": "Utile pour un moteur de recherche interne sans sortie de données. Le coût est le calcul local, pas le jeton facturé à l’appel.",
+    "potentiel_perso": "Correct pour indexer notes et photos sur une machine personnelle. Inutile si vous n’avez pas de corpus à chercher hors ligne.",
+    "date": "2026-10-06T15:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "Google",
+      "EmbeddingGemma",
+      "embeddings",
+      "Apache",
+      "recherche"
+    ],
+    "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
+  },
+  {
+    "id": "2026-10-07-ia-rocm-101",
+    "titre": "ROCm 10.1 : AMD vise le transfert des données, pas seulement le calcul",
+    "categorie": "IA",
+    "resume": "AMD a publié ROCm 10.1 le 5 octobre. La pièce centrale, Infinity Storage, envoie les fichiers vers le GPU sans passer par la mémoire du processeur. Le cycle annoncé est de six semaines.",
+    "contenu": "AMD a sorti ROCm 10.1 le 5 octobre, six semaines après la 10.0 du 27 août, dans le rythme fixé en juillet. Le message n’est pas un nouveau pic de calcul : le goulot décrit est le déplacement des données. Infinity Storage doit faire circuler les fichiers entre le stockage et la mémoire du GPU sans les faire transiter par la mémoire vive du processeur. Trois briques hipFILE accompagnent le tout : un chemin asynchrone sur un flux HIP, une API de lectures groupées, et des statistiques d’entrées-sorties dans les outils de profilage.\n\nLa livraison ajoute une allocation mémoire consciente de la topologie NUMA, une prise en charge de WSL2, un compilateur adossé à LLVM 24, et des outils orientés agents, dont une interface en ligne de commande ROCm. Ce sont des annonces d’AMD, pas un banc indépendant publié avec la note.\n\nPour une équipe en France qui entraîne ou sert un modèle sur Instinct, le point concret est le prix de l’attente. Si le GPU attend le disque, ajouter des cartes ne change rien. Un chemin direct stockage-GPU peut réduire cette attente, à condition que le système de fichiers et les pilotes suivent. WSL2 élargit les essais sous Windows, mais un déploiement de production reste en général un Linux nu.\n\nÀ surveiller : le comportement sur votre jeu de données. Mesurer si la charge est limitée par le calcul, la mémoire ou le disque avant de changer d’architecture.",
+    "perspective": "Contourner la mémoire du processeur n’accélère que les charges déjà limitées par le disque. Sur un petit modèle qui tient en mémoire, l’effet peut être nul.",
+    "potentiel_business": "Argument pour un cluster AMD déjà en place, si le profilage montre une attente disque. Pas une raison de migrer depuis CUDA sur une seule note de version.",
+    "potentiel_perso": "Peu d’usage hors machine dédiée. Un poste grand public n’a pas besoin de ce chemin direct vers le GPU.",
+    "date": "2026-10-05T07:03:00Z",
+    "urgence": "normal",
+    "tags": [
+      "AMD",
+      "ROCm",
+      "GPU",
+      "stockage",
+      "entraînement"
+    ],
+    "source_url": "https://www.linuxcompatible.org/story/amd-rocm-101-released-and-targets-the-ai-datamovement-bottleneck/"
+  },
+  {
+    "id": "2026-10-07-web-meta-muse",
+    "titre": "Muse, l’agent de Meta, déclare collecter 31 types de données",
+    "categorie": "Web",
+    "resume": "Une analyse Surfshark du 28 septembre place Muse juste derrière Meta AI : 31 des 35 catégories listées par Apple, dont la localisation et des informations sensibles. L’appli a atteint 5 millions de téléchargements aux États-Unis en 22 jours.",
+    "contenu": "Muse, l’agent mobile de Meta, est encore jeune, mais sa fiche de confidentialité est déjà large. Une analyse Surfshark du 28 septembre, reprise hier, compte 31 des 35 types de données listés par Apple. Seule Meta AI, autre appli du groupe, en déclare davantage, 33. Gemini et ChatGPT sont derrière. Muse figure parmi les trois seules applis du comparatif à déclarer des informations sensibles, avec Meta AI et Gemini. La localisation est aussi dans la liste.\n\nSelon The Neuron, citant Sensor Tower repris par 9to5Mac, Muse a atteint 5 millions de téléchargements aux États-Unis en 22 jours, plus vite que ChatGPT, Grok ou Claude à leur lancement mobile. Sensor Tower lie cette courbe à une forte campagne publicitaire. Un créateur, Matt Robb, a dit que Muse avait transmis son adresse à un acheteur sur Facebook Marketplace sans nouvelle confirmation. C’est un témoignage, pas une mesure d’incident.\n\nPour un utilisateur en France, la fiche Apple n’est pas le registre RGPD, mais elle indique l’appétit du produit. Un agent qui agit sur Marketplace ou Messenger touche des messages et des adresses. Un compte Meta relie déjà Instagram, Facebook et la publicité : l’agent ajoute des actions, pas seulement de la lecture.\n\nÀ faire : lire les autorisations avant de connecter une boîte. Ne pas lui laisser écrire à un client sans relecture. Sur un téléphone pro, un profil séparé limite le mélange.",
+    "perspective": "Déclarer 31 catégories n’est pas la preuve qu’elles sont toutes collectées à chaque session. C’est en revanche le plafond que Meta s’autorise dans la fiche.",
+    "potentiel_business": "À écarter des flux clients tant que le lieu de traitement et les actions automatiques ne sont pas écrits. Le gain de temps ne couvre pas une adresse envoyée par erreur.",
+    "potentiel_perso": "Utile seulement si vous acceptez le graphe Meta. Sinon, un assistant sans compte publicitaire reste plus simple à circonscrire.",
+    "date": "2026-10-06T08:47:00Z",
+    "urgence": "important",
+    "tags": [
+      "Meta",
+      "Muse",
+      "confidentialité",
+      "Apple",
+      "agents"
+    ],
+    "source_url": "https://www.esecurityplanet.com/cybersecurity/news-meta-muse-ai-app-data-collection-comparison/"
+  },
+  {
+    "id": "2026-10-07-gaming-driver-617",
+    "titre": "Pilote Nvidia 617.42 : Modern Warfare 4 au lancement, correctif Shadows",
+    "categorie": "Gaming",
+    "resume": "Nvidia a publié le 6 octobre son troisième pilote Game Ready en six semaines. Il prépare Call of Duty: Modern Warfare 4 et corrige un plantage d’Assassin’s Creed Shadows. Le reste de la note est mince.",
+    "contenu": "Nvidia a livré le 6 octobre le pilote GeForce Game Ready 617.42, troisième note en environ six semaines. L’annonce vise Call of Duty: Modern Warfare 4 et Star Wars: Galactic Racer. Le jeu de titres optimisés en compte cinq : Modern Warfare 4, Dragon’s Dogma 2: Dark Arisen, le Sim Update 7 de Microsoft Flight Simulator 2024, Galactic Racer et Valor Mortis. Gears of War: E-Day apparaît dans certaines listes d’accompagnement, pas dans le résumé du fil de retours de Nvidia.\n\nLe correctif le plus concret concerne Assassin’s Creed Shadows : un plantage vers le bureau suivi sous le numéro 6685219. Nvidia parle aussi d’optimisations pour des jeux en DLSS 4.5. La note ne détaille pas de nouveau réglage majeur hors ces lancements.\n\nPour un joueur en France, le pilote est le même canal mondial, via GeForce Experience ou un installateur direct. Un jour de sortie, le pilote « prêt » réduit souvent les plantages connus, sans garantir les performances sur une carte ancienne. Modern Warfare 4 n’est pas encore un banc européen public dans cette note : le prix et le pegi se lisent sur le store, pas dans le fichier du pilote.\n\nÀ faire : installer 617.42 si Shadows plante ou si vous lancez Modern Warfare 4 aujourd’hui. Sinon, attendre quelques jours de retours sur les régressions, fréquentes sur une note courte.",
+    "perspective": "Un pilote de lancement corrige le titre mis en avant, pas l’ensemble du catalogue. Trois notes en six semaines signalent aussi un calendrier de sorties serré, pas une refonte.",
+    "potentiel_business": "Les salles et les bancs d’essai qui captent des sessions doivent figer ce pilote dans la fiche machine, surtout si Modern Warfare 4 sert de démo.",
+    "potentiel_perso": "Utile si Shadows quitte le bureau. Inutile de mettre à jour le jour même si votre jeu actuel est stable.",
+    "date": "2026-10-06T15:04:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Nvidia",
+      "pilote",
+      "Call of Duty",
+      "Assassin's Creed",
+      "DLSS"
+    ],
+    "source_url": "https://www.ntcompatible.com/story/nvidia-geforce-game-ready-driver-61742-released-fixes-assassins-creed-shadows-crash-adds-call-of-duty/"
+  },
+  {
+    "id": "2026-10-07-hack-atlassian-21589",
+    "titre": "Atlassian corrige une lecture de fichiers sans authentification sur ses Data Center",
+    "categorie": "Hack & Console",
+    "resume": "CVE-2026-21589, notée 9,3 en CVSS 4.0, permet de lire un fichier connu dans la racine web de Jira, Confluence, Bitbucket et d’autres produits auto-hébergés. Il faut le chemin exact. Les correctifs sont sortis le 6 octobre.",
+    "contenu": "Atlassian a publié le 6 octobre des correctifs pour CVE-2026-21589, une lecture de fichiers sans authentification notée 9,3 en CVSS 4.0. La faille touche les éditions Data Center de Bitbucket, Confluence, Jira Software, Jira Service Management, Bamboo et Crowd, ainsi que Crucible et Fisheye. Un attaquant distant peut lire un fichier précis dans le répertoire racine de l’application web. Il doit déjà connaître le nom et le chemin : la faille ne liste pas le dossier. Atlassian dit que certaines configurations y laissent des fichiers sensibles, sans préciser lesquels.\n\nLe code fautif est ancien : la fiche remonte à Jira Software 7.1.0 et Confluence 5.10.0. Les versions corrigées incluent Bitbucket 9.4.26, 10.2.8 et 10.5.1, Confluence 9.2.26 et 10.2.19, Jira Software 9.12.40, 10.3.26 et 11.3.12. Les branches Server en fin de vie n’ont pas de correctif cité.\n\nPour une équipe en France qui auto-héberge Jira ou Confluence, le cloud Atlassian n’est pas le sujet. Un fichier de configuration dans la racine web devient lisible si le chemin est deviné. Le correctif ne remplace pas un inventaire des fichiers réellement présents.\n\nÀ faire : appliquer la version corrigée, puis vérifier que l’instance n’est pas exposée sans contrôle. Si la mise à jour attend, restreindre la surface réseau.",
+    "perspective": "L’absence de liste de répertoire baisse le confort de l’attaquant, pas le score. Un chemin standard de configuration reste une cible.",
+    "potentiel_business": "Priorité pour tout Jira ou Confluence exposé. Le coût est une fenêtre de maintenance, pas un projet de migration complet.",
+    "potentiel_perso": "Sans instance auto-hébergée, rien à patcher. Si vous administrez celle d’une association, le même correctif s’applique.",
+    "date": "2026-10-06T11:34:00Z",
+    "urgence": "important",
+    "tags": [
+      "Atlassian",
+      "Jira",
+      "Confluence",
+      "CVE-2026-21589",
+      "Data Center"
+    ],
+    "source_url": "https://www.cyberkendra.com/2026/10/cve-2026-21589-atlassian-data-center-file-access.html"
+  },
+  {
+    "id": "2026-10-07-hack-exchange-96940",
+    "titre": "Microsoft publie un correctif anticipé Exchange, CVE-2026-96940",
+    "categorie": "Hack & Console",
+    "resume": "Le guide MSRC du 7 octobre ne contient qu’une faille : CVE-2026-96940 sur Exchange Server, score 8,8. Un utilisateur authentifié du même locataire peut viser confidentialité et intégrité. L’exploitation est jugée « plus probable ».",
+    "contenu": "Microsoft a publié le 7 octobre une mise à jour de sécurité anticipée, hors le mardi habituel. Le guide MSRC ne liste qu’une entrée : CVE-2026-96940, Microsoft Exchange Server, score de base 8,8. Le vecteur indique un accès réseau, une complexité faible, un privilège faible et aucune interaction. Confidentialité, intégrité et disponibilité sont hautes. L’exploitation est marquée « plus probable ». Aucun contournement ni mesure d’atténuation n’est indiqué, seulement le correctif.\n\nLe résumé du jour du Cyberfeed décrit un accès aux boîtes par un utilisateur déjà authentifié dans le même locataire, sur les serveurs locaux. Ce détail n’est pas recopié mot pour mot dans le tableau MSRC : il sert de lecture, pas de citation officielle. Il n’y a pas, dans ces pages, de preuve d’exploitation active au moment de la publication.\n\nPour une organisation en France qui garde Exchange sur site, le point est le calendrier. Un correctif anticipé, avec une exploitation jugée plus probable, ne s’aligne pas sur le mardi suivant. Le cloud Microsoft 365 n’est pas nommé dans cette note. Les serveurs hybrides qui relaient encore vers une boîte locale restent dans le périmètre à vérifier.\n\nÀ faire : identifier les serveurs Exchange encore en production, appliquer la mise à jour du 7 octobre, puis contrôler les journaux d’accès inhabituels entre boîtes. Ne pas attendre le cycle mensuel.",
+    "perspective": "« Plus probable » n’est pas « déjà exploité ». L’absence de contournement, en revanche, ne laisse que le correctif comme réponse documentée.",
+    "potentiel_business": "Fenêtre courte pour les équipes messagerie. Un Exchange local non tenu à jour devient un sujet de notification si des boîtes sont lues.",
+    "potentiel_perso": "Sans serveur Exchange à la maison, pas d’action. Si vous administrez la messagerie d’une petite structure, demandez si le correctif du 7 octobre est passé.",
+    "date": "2026-10-07T06:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "Microsoft",
+      "Exchange",
+      "CVE-2026-96940",
+      "correctif",
+      "messagerie"
+    ],
+    "source_url": "https://msrc.microsoft.com/update-guide/releaseNote/2026-Oct"
+  },
+  {
+    "id": "2026-10-07-societe-skydance",
+    "titre": "Paramount boucle le rachat de Warner : le groupe s’appelle Skydance",
+    "categorie": "Société & Politique",
+    "resume": "La fusion à 111 milliards de dollars est close après le rejet d’un dernier recours. Le nouvel ensemble réunit Paramount+, HBO Max, CBS et CNN. La Commission européenne avait déjà autorisé l’opération.",
+    "contenu": "Paramount Skydance a finalisé le 6 octobre sa fusion avec Warner Bros. Discovery, à 111 milliards de dollars selon Ars Technica. The Wrap parle de 110 milliards. Le groupe prend le nom Skydance. Il réunit deux studios, Paramount+ et HBO Max, CBS, CNN, TNT Sports et un catalogue qui va de Harry Potter à DC et Game of Thrones.\n\nUn recours de la Californie et de onze autres États avait retardé la clôture. En juillet, une juge fédérale avait estimé que l’ensemble réduirait sans doute la concurrence. La juge Kagan, à la Cour suprême, a rejeté la dernière tentative de blocage. Le ministère de la Justice américain avait approuvé l’opération en juin. The Wrap ajoute un accord avec douze procureurs d’État : 1,5 milliard de dollars de production nationale sur cinq ans et au moins 30 films en salles par an.\n\nPour un spectateur en France, la Commission européenne et l’autorité britannique avaient déjà donné leur feu vert, parmi 68 juridictions citées par The Wrap. Le changement visible sera le catalogue et les offres groupées. Un abonnement HBO Max et un abonnement Paramount+ peuvent se retrouver sous la même maison. Rien de tout cela n’est encore tarifé en euros.\n\nÀ surveiller : les conditions d’abonnement en France et le sort des accords de diffusion, que l’accord américain demande de négocier séparément.",
+    "perspective": "La clôture américaine ne dit pas le prix européen. L’autorisation de Bruxelles était déjà acquise : le sujet devient commercial, plus politique.",
+    "potentiel_business": "Les ayants droit et les plateformes qui licenciaient Warner ou Paramount ont un seul interlocuteur de plus en plus concentré. Relire les clauses de changement de contrôle.",
+    "potentiel_perso": "Pas d’action immédiate. Avant de prendre un an d’avance sur Max ou Paramount+, attendre de voir si les offres fusionnent.",
+    "date": "2026-10-06T17:33:00Z",
+    "urgence": "important",
+    "tags": [
+      "Skydance",
+      "Warner",
+      "Paramount",
+      "fusion",
+      "streaming"
+    ],
+    "source_url": "https://arstechnica.com/tech-policy/2026/10/paramount-completes-111b-warner-merger-creating-skydance-behemoth/"
+  },
+  {
+    "id": "2026-10-07-societe-ai-act-decembre",
+    "titre": "AI Act : rien de neuf le 6 octobre, prochaine échéance le 2 décembre",
+    "categorie": "Société & Politique",
+    "resume": "ActuIA rappelle qu’interdictions, culture de l’IA et transparence s’appliquent déjà. Le règlement 2026/1744 a repoussé le haut risque au 2 décembre 2027. Le 2 décembre 2026 vise le marquage et deux nouvelles interdictions.",
+    "contenu": "Au 6 octobre 2026, aucune obligation nouvelle de l’AI Act n’est entrée en vigueur dans le mois, selon le point d’ActuIA. Trois blocs s’appliquent déjà : les pratiques interdites et la culture de l’IA depuis le 2 février 2025, les modèles à usage général depuis le 2 août 2025, la transparence de l’article 50 depuis le 2 août 2026. Le règlement 2026/1744, dit omnibus, a décalé le haut risque de l’annexe III au 2 décembre 2027, et celui des produits réglementés au 2 août 2028.\n\nLa prochaine date est le 2 décembre 2026. Les fournisseurs de systèmes génératifs déjà sur le marché avant le 2 août devront marquer leurs sorties dans un format lisible par machine. Deux interdictions s’ajoutent : images intimes non consenties, et production de contenus pédopornographiques. Côté français, le projet d’adaptation n’a, au 6 octobre, ni rapport ni texte adopté en commission à l’Assemblée.\n\nPour une entreprise en France, le report du haut risque n’efface pas le reste. Un chatbot doit dire qu’il est une machine, un détournement publié doit être signalé, et le personnel qui utilise un outil génératif doit être formé. L’article 4, réécrit, demande des mesures de soutien, plus une garantie de niveau.\n\nÀ faire : lister les outils génératifs déjà en service et vérifier le marquage d’ici le 2 décembre. Ne pas attendre 2027 pour la transparence.",
+    "perspective": "Le décalage du haut risque est réel, justifié par l’absence de normes. Il ne couvre ni les interdictions ni le devoir de dire qu’un contenu est généré.",
+    "potentiel_business": "Le 2 décembre est une date de conformité produit, pas un horizon RH. Un générateur d’images grand public doit montrer que ses filtres tiennent.",
+    "potentiel_perso": "Si vous publiez une vidéo générée, le signalement vous incombe déjà quand vous la diffusez. Le marquage machine, lui, vise d’abord le fournisseur.",
+    "date": "2026-10-06T15:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "AI Act",
+      "omnibus",
+      "transparence",
+      "CNIL",
+      "2 décembre"
+    ],
+    "source_url": "https://www.actuia.com/en/news/ai-act-obligations-in-force-and-delays-under-omnibus-2026-1744/"
+  },
+  {
+    "id": "2026-10-07-dev-github-stacks",
+    "titre": "GitHub généralise les demandes de tirage empilées",
+    "categorie": "Dev",
+    "resume": "Les stacked pull requests sortent de prévisualisation le 6 octobre, sur tous les plans github.com. GitHub dit mesurer 9 % de code fusionné en plus dans les dépôts qui les utilisent. Enterprise Server suivra.",
+    "contenu": "GitHub a annoncé le 6 octobre la disponibilité générale des demandes de tirage empilées. Le principe : découper un gros changement en plusieurs demandes plus courtes, relues chacune, puis fusionnées ensemble. Depuis la prévisualisation, GitHub dit que les dépôts qui s’en servent fusionnent 9 % de code de plus que leurs pairs, et que plus des deux tiers du premier pourcent de dépôts les utilisent, avec 5 % de temps de fusion en moins. Ces pourcentages sont ceux de GitHub.\n\nLa version générale aligne les droits de contournement sur la demande la plus basse non fusionnée, fait entrer la pile dans la file comme un seul groupe, et crée un commit de fusion par demande quand cette méthode est choisie. Si la branche de base disparaît, la pile est redirigée au lieu d’être fermée. La fusion automatique des piles doit arriver dans les prochaines semaines. C’est ouvert sur tous les plans github.com. Enterprise Server suivra, sans date.\n\nPour une équipe en France, le gain est la relecture. Une pile courte se relit mieux qu’une demande de 2 000 lignes, à condition que chaque étage reste compilable. Les règles de protection de branche s’appliquent au groupe : à tester sur un dépôt pilote. Les forges Enterprise Server n’ont pas encore la fonction.\n\nÀ faire : l’essayer sur un changement déjà découpé. Ne pas empiler si les étages ne peuvent pas être relus seuls.",
+    "perspective": "Les 9 % viennent de GitHub, sur des dépôts qui ont choisi l’outil. Ce n’est pas un essai contrôlé, et le temps de relecture humain n’est pas le temps de fusion.",
+    "potentiel_business": "Utile dès maintenant sur github.com. Pour une forge Enterprise Server, le noter dans la prochaine montée de version, pas dans le processus de cette semaine.",
+    "potentiel_perso": "Pratique pour une contribution open source longue. Inutile sur un correctif d’une dizaine de lignes.",
+    "date": "2026-10-06T20:16:00Z",
+    "urgence": "normal",
+    "tags": [
+      "GitHub",
+      "pull requests",
+      "relecture",
+      "Enterprise Server",
+      "fusion"
+    ],
+    "source_url": "https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available/"
+  },
+  {
+    "id": "2026-10-07-dev-openssh-106",
+    "titre": "OpenSSH 10.6 retire un codeur de compression et normalise une signature post-quantique",
+    "categorie": "Dev",
+    "resume": "La 10.6 désactive le codeur de dictionnaire LZ77 pour couper un canal auxiliaire, « Crossing the Streams ». Les clés expérimentales ssh-mldsa44-ed25519 avec le suffixe @openssh.com doivent être régénérées.",
+    "contenu": "OpenSSH 10.6 est sorti le 6 octobre. L’équipe désactive le codeur de dictionnaire LZ77 dans le client et le serveur pour limiter « Crossing the Streams », décrit comme la première attaque par canal auxiliaire visant la compression SSH. La compression reste possible, mais moins efficace. La version rend aussi standard la signature hybride ssh-mldsa44-ed25519. Le suffixe expérimental @openssh.com disparaît : les clés créées avec l’ancien nom ne fonctionnent plus et doivent être régénérées. sshd gagne WarnWeakCrypto, actif par défaut, qui journalise un accord de clé non post-quantique.\n\nLWN note que le projet reçoit beaucoup de rapports assistés par IA. L’équipe dit les accueillir surtout quand un humain a trié, testé et proposé un correctif, et prévoit des publications plus fréquentes. L’option scp -R, qui copie entre deux hôtes distants, est en voie d’abandon : elle sera ignorée plus tard.\n\nPour un administrateur en France, le point immédiat est les clés. Un bastion qui a testé la signature expérimentale cassera à la montée de version si les clés ne sont pas refaites. La baisse d’efficacité de la compression se voit sur les liens lents. Les distributions mettront un temps variable à empaqueter la 10.6.\n\nÀ faire : inventorier les clés au suffixe @openssh.com avant de déployer. Lire les journaux WarnWeakCrypto une semaine, sans couper les anciens clients le jour même.",
+    "perspective": "Le correctif de compression réduit un canal, il ne le quantifie pas dans la note. Régénérer une clé expérimentale est le geste concret ; le reste est de la veille.",
+    "potentiel_business": "À placer dans le créneau d’automne des bastions. Le coût est une rotation de clés, pas un changement d’architecture réseau.",
+    "potentiel_perso": "Si vous avez généré une clé post-quantique expérimentale, refaites-la avant la mise à jour. Sinon, la 10.6 peut attendre le paquet de votre distribution.",
+    "date": "2026-10-06T15:16:00Z",
+    "urgence": "important",
+    "tags": [
+      "OpenSSH",
+      "post-quantique",
+      "SSH",
+      "compression",
+      "clés"
+    ],
+    "source_url": "https://lwn.net/Articles/1098980/"
+  },
+  {
+    "id": "2026-10-07-astuces-ninja-forms",
+    "titre": "WordPress : mettre à jour Ninja Forms ne retire pas la porte déjà posée",
+    "categorie": "Astuces",
+    "resume": "Des failles XSS stockées dans Ninja Forms et WPC Product Bundles sont exploitées pour créer des administrateurs cachés. Les correctifs sont la 3.15.4 et la 8.6.7. Cherchez ensuite le greffon « WP Smart Thumbnails ».",
+    "contenu": "BleepingComputer a rapporté le 6 octobre une campagne contre deux greffons WordPress : Ninja Forms, versions 3.15.3 et plus anciennes, et WPC Product Bundles for WooCommerce, 8.6.6 et plus anciennes. Les failles, CVE-2026-94504 et CVE-2026-93836, sont des injections de script stockées. Elles demandent une session authentifiée. Le script s’exécute dans le navigateur d’un administrateur, récupère des jetons, et installe un greffon nommé « WP Smart Thumbnails » en version 1.2.4.\n\nCe greffon ouvre plusieurs portes : comptes administrateur visibles et cachés, une adresse de connexion secrète qui prend l’identité du plus ancien admin, et un gestionnaire de fichiers sans authentification. Le compte caché n’apparaît pas dans la liste des utilisateurs. Passer à Ninja Forms 3.15.4 et à WPC Product Bundles 8.6.7 bloque la nouvelle exploitation. Cela n’efface pas une porte déjà installée.\n\nPour un site en France, vitrine ou boutique, le geste utile est double. Mettre à jour, puis chercher le greffon cité, les administrateurs inconnus et une adresse de connexion inhabituelle. Un hébergeur mutualisé ne fait pas ce tri. Le compte caché peut rester après la mise à jour.\n\nÀ faire : mettre à jour les deux greffons, supprimer « WP Smart Thumbnails » s’il est là, puis forcer la réinitialisation des mots de passe administrateur.",
+    "perspective": "Le correctif ferme la voie d’entrée, pas le compte déjà créé. Sans recherche du greffon cité, la mise à jour donne une fausse sécurité.",
+    "potentiel_business": "Une boutique qui garde Ninja Forms non tenu à jour risque un détournement de paiement ou de contenu. Le contrôle prend une heure, pas un audit.",
+    "potentiel_perso": "Si votre site associatif utilise Ninja Forms, faites la mise à jour ce week-end et vérifiez les comptes admin.",
+    "date": "2026-10-06T15:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "WordPress",
+      "Ninja Forms",
+      "XSS",
+      "WooCommerce",
+      "porte dérobée"
+    ],
+    "source_url": "https://radar.offseq.com/threat/ninja-forms-plugin-flaw-exploited-to-hack-wordpress-sites-0e894b95759ce67d"
+  },
+  {
+    "id": "2026-10-07-nouveautes-steam-frame",
+    "titre": "Steam Frame : Valve règle le capteur de présence, puis enchaîne un petit correctif",
+    "categorie": "Nouveautés",
+    "resume": "SteamOS 0.4.4 bêta pour le Steam Frame ajoute un réglage de sensibilité du capteur de présence, utile avec des entretoises de lunettes. Une 0.4.5, présentée comme mineure, a suivi le 6 octobre.",
+    "contenu": "Valve a publié SteamOS 0.4.4 pour le canal bêta du Steam Frame, daté du 5 octobre sur le hub Steam. La nouveauté visible est un réglage de sensibilité du capteur de présence, dans les paramètres RV, démarrage et arrêt. L’option « haute sensibilité » garde les écrans allumés dans plus de cas, notamment avec des entretoises pour lunettes. La note ajoute des correctifs de fiabilité du streaming, dont l’erreur 17, qui demande aussi SteamVR bêta côté PC, et des soucis d’adaptateur sans fil dans certains pays. On peut désigner l’œil dominant, utilisé pour la vue spectateur et les captures.\n\nLe 6 octobre, Valve a enchaîné avec SteamOS 0.4.5 sur le même canal, présenté comme une petite mise à jour. La note publique ne détaille pas de fonction nouvelle. Le Frame reste un produit en bêta : ces canaux se choisissent dans Système, canal de mise à jour.\n\nPour un testeur en France, le réglage de présence est le point concret si le casque s’éteint avec des lunettes. Le streaming dépend du PC autant que du casque : sans SteamVR bêta, l’erreur 17 peut rester. Rien n’indique un changement de prix ou une date de sortie grand public dans ces notes.\n\nÀ faire : passer en haute sensibilité seulement si les écrans s’éteignent trop tôt. Garder le canal stable si vous n’êtes pas dans la bêta. Ne pas lire 0.4.5 comme une nouvelle génération du casque.",
+    "perspective": "Deux numéros en deux jours montrent un canal bêta actif, pas un produit figé. Le capteur de présence se règle ; il ne se remplace pas par une note de version.",
+    "potentiel_business": "Les studios qui visent le Frame doivent retester le streaming après 0.4.4, surtout l’erreur 17. La 0.4.5 ne change pas la cible tant que son contenu n’est pas détaillé.",
+    "potentiel_perso": "Si vous êtes dans la bêta et que le casque s’endort avec vos lunettes, le réglage est là. Sinon, ces notes ne vous concernent pas.",
+    "date": "2026-10-06T17:06:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Steam Frame",
+      "SteamOS",
+      "Valve",
+      "réalité virtuelle",
+      "bêta"
+    ],
+    "source_url": "https://store.steampowered.com/news/app/4165890/view/675133527946168306"
+  }
+]
