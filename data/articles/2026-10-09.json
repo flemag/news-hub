@@ -1,0 +1,244 @@
+[
+  {
+    "id": "2026-10-09-modeles-mistral-large-4",
+    "titre": "Mistral Large 4 : aperçu public, poids promis pour le 27 octobre",
+    "categorie": "Modèles IA",
+    "resume": "Mistral a ouvert le 6 octobre l’aperçu de Large 4, dit « le Chonk » : environ 1 000 milliards de paramètres, 49 milliards actifs, multimodal. Les poids doivent sortir le 27 octobre. La licence n’est pas encore publiée.",
+    "contenu": "Mistral AI a ouvert le 6 octobre l’aperçu public de Mistral Large 4, surnommé « le Chonk », code ML4. L’entreprise le décrit comme un modèle à mélange d’experts d’environ 1 000 milliards de paramètres, dont 49 milliards actifs par jeton, nativement multimodal (texte et image). L’entraînement annoncé a duré environ deux mois sur près de 4 000 GPU Grace Blackwell, dans les centres européens de Mistral, sur plus de 160 langues. L’API est joignable dans Mistral Studio sous le nom mistral-large-4. Une fiche tierce cite 1,36 dollar le million de jetons en entrée et 4,18 en sortie : prix d’annonce, pas un devis européen.\n\nLes poids sont annoncés pour le 27 octobre, après une période de tests avec des spécialistes de la cybersécurité et des autorités. La licence n’est pas publiée. Mistral revendique 61,7 % sur DeepSWE et 93 % sur Cybench. Ce sont des chiffres du fournisseur.\n\nPour une équipe en France, l’intérêt immédiat est l’hébergement européen de l’aperçu, pas le téléchargement. Tant que les poids ne sont pas là, on ne peut ni auditer le modèle ni le faire tourner hors du nuage Mistral. Le report du haut risque de l’AI Act ne dispense pas des obligations déjà dues sur les modèles à usage général.\n\nÀ faire : tester sur un jeu d’exemples internes, noter la licence le 27 octobre, et ne pas figer un contrat sur des benchmarks non reproduits.",
+    "modele_enjeu": "Aperçu API d’un mélange d’experts d’environ 1 000 milliards de paramètres, 49 milliards actifs, contexte annoncé à 1 million de jetons. Enjeu : les poids arrivent le 27 octobre sous une licence encore inconnue, donc l’auto-hébergement reste théorique.",
+    "perspective": "« Parmi les meilleurs ouverts » est une phrase de lancement. Sans poids publics ni banc indépendant, le classement ne se vérifie pas encore.",
+    "potentiel_business": "Utile pour comparer un fournisseur européen sur la cyber et le code. Inutile comme socle interne avant la licence et un essai hors démo.",
+    "potentiel_perso": "L’aperçu Studio suffit pour juger le français et le code. Attendre les poids si vous visez une machine locale.",
+    "date": "2026-10-06T13:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "Mistral",
+      "Large 4",
+      "poids ouverts",
+      "Europe",
+      "cybersécurité"
+    ],
+    "source_url": "https://venturebeat.com/technology/mistral-debuts-large-4-le-chonk-a-1-trillion-parameter-text-output-model-with-high-benchmarks-planned-for-open-weights-release"
+  },
+  {
+    "id": "2026-10-09-hack-chrome-155",
+    "titre": "Chrome 155 corrige 247 failles, dont quatre critiques hors bac à sable",
+    "categorie": "Hack & Console",
+    "resume": "Google a publié Chrome 155.0.8059.39 et .40, avec 247 correctifs : 4 critiques, 53 élevés. Les critiques sont des use-after-free. Google dit n’avoir vu aucune exploitation active. Deux critiques viennent d’un chercheur assisté de Claude.",
+    "contenu": "Google a livré le 7 octobre Chrome 155 en versions 155.0.8059.39 et 155.0.8059.40 pour Windows et macOS, et 155.0.8059.39 pour Linux. Le bulletin compte 247 failles corrigées : 4 critiques, 53 de sévérité haute, le reste moyenne ou basse. Les quatre critiques sont des use-after-free, une classe où le programme réutilise une zone mémoire déjà libérée. Elles touchent Chromecast (CVE-2026-106382), le composant Browser (CVE-2026-106197), Navigation (CVE-2026-106358) et Track (CVE-2026-106347). Des enrichissements CISA leur attribuent un CVSS 9,6. Google indique ne pas avoir observé d’exploitation dans la nature.\n\nDeux des critiques, Navigation et Track, ont été signalées par Xinyang Ge, chercheur chez Anthropic, avec l’aide de Claude. Le même binôme a aussi soumis une dizaine de failles hautes. C’est un canal de signalement parmi d’autres, pas une preuve générale.\n\nPour un parc en France, Chrome et les navigateurs dérivés de Chromium (Edge, Brave, Opera, selon leur cadence) partagent souvent le moteur. Un poste non mis à jour reste exposé à une page web piégée, même sans exploit public connu. Le RGPD n’est pas le sujet : c’est l’exécution de code avec les droits de l’utilisateur.\n\nÀ faire : vérifier chrome://settings/help, imposer la mise à jour sur les postes gérés, et relancer le navigateur. L’absence d’exploitation active ne justifie pas d’attendre.",
+    "perspective": "247 correctifs, c’est un volume, pas 247 attaques en cours. Le point dur est le score critique et la sortie du bac à sable, pas le décompte.",
+    "potentiel_business": "Un script d’inventaire de versions Chrome et Edge évite le correctif au cas par cas. Priorité aux postes qui ouvrent la messagerie.",
+    "potentiel_perso": "Ouvrir À propos de Chrome, puis relancer. Deux minutes suffisent pour appliquer le correctif du jour.",
+    "date": "2026-10-07T16:00:00Z",
+    "urgence": "breaking",
+    "tags": [
+      "Chrome",
+      "CVE",
+      "use-after-free",
+      "Chromium",
+      "correctif"
+    ],
+    "source_url": "https://dailysecurityreview.com/resources/chrome-155-patches-247-vulnerabilities-including-four-critical/"
+  },
+  {
+    "id": "2026-10-09-gaming-dragons-dogma-dark-arisen",
+    "titre": "Dragon’s Dogma 2 : Dark Arisen sort aujourd’hui, aussi sur Switch 2",
+    "categorie": "Gaming",
+    "resume": "Capcom lance le 9 octobre l’extension Dark Arisen de Dragon’s Dogma 2, en contenu séparé pour qui possède déjà le jeu, et en édition complète. La version Switch 2 sort le même jour, selon la boutique Nintendo.",
+    "contenu": "Capcom sort ce 9 octobre Dragon’s Dogma 2: Dark Arisen. L’annonce Steam du 9 juin fixait cette date. L’extension se vend de deux façons : en contenu téléchargeable pour qui possède déjà Dragon’s Dogma 2, et en lot avec le jeu de base. La boutique Nintendo UK indique la même date pour la version Switch 2, écrite 09/10/2026. PlayStation propose la précommande de l’édition complète et de l’extension sur PS5. Un calendrier américain notait parfois le 8 octobre sur Steam : l’écart vient du fuseau, pas d’un second lancement.\n\nLe mois est chargé. Planet Zoo 2 est daté du 13 octobre sur PC, PS5 et Xbox. Castlevania: Belmont’s Curse suit le 15, Call of Duty: Modern Warfare 4 le 23. Dark Arisen n’est donc pas le plus gros chiffre d’affaires attendu, mais c’est la sortie du jour pour un jeu déjà installé.\n\nPour un joueur en France, le point concret est le support. L’extension seule évite de racheter le jeu. La version Switch 2 intéresse surtout si le PC ou la PS5 ne sont pas le support principal. Les prix européens ne figurent pas dans les annonces anglo-saxonnes consultées : la fiche Steam ou PlayStation en euros fait foi, pas le tarif américain.\n\nÀ faire : vérifier que le jeu de base est bien lié au compte avant d’acheter le seul contenu additionnel, et contrôler la date affichée en heure de Paris.",
+    "perspective": "Une extension de jeu déjà sorti n’est pas un nouveau standard technique. L’intérêt se juge au contenu ajouté, pas au calendrier d’octobre.",
+    "potentiel_business": "Faible hors des médias jeux. Le signal utile est la cadence Switch 2 : les ports suivent de près les sorties PC et consoles.",
+    "potentiel_perso": "Si vous avez déjà Dragon’s Dogma 2, l’extension seule suffit. Sinon, comparer le lot et l’achat séparé en euros.",
+    "date": "2026-10-09T06:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Capcom",
+      "Dragon's Dogma 2",
+      "Switch 2",
+      "extension",
+      "PS5"
+    ],
+    "source_url": "https://playobservatory.com/radar/october-2026-release-dates-steam-day-early/"
+  },
+  {
+    "id": "2026-10-09-ia-nasa-ibm-lune",
+    "titre": "IBM et la NASA ouvrent un modèle de fondation pour la Lune",
+    "categorie": "IA",
+    "resume": "IBM et la NASA publient le NASA-IBM Lunar Foundation Model, ouvert, entraîné sur des observations lunaires. Ils annoncent jusqu’à 23 % de mieux que des méthodes courantes pour repérer glace, cratères et formations volcaniques.",
+    "contenu": "IBM et la NASA ont annoncé la mise à disposition ouverte du NASA-IBM Lunar Foundation Model, présenté comme l’un des premiers modèles de fondation publics pour l’exploration scientifique de la Lune. Il rejoint la famille Prithvi, déjà déclinée en géospatial, météo et héliophysique. Le modèle a été entraîné sur un corpus d’observations lunaires sélectionné par des chercheurs des deux organismes. L’objectif affiché : transformer des décennies de données multi-instruments en indices pour une présence humaine durable, notamment les dépôts de glace potentiels, les cratères et les formations volcaniques.\n\nLe chiffre mis en avant est un gain allant jusqu’à 23 % face à des méthodes largement utilisées pour identifier ces reliefs. C’est une comparaison des auteurs, pas un banc tiers. Le communiqué ne détaille ni le nombre de paramètres, ni la licence exacte, ni le dépôt de téléchargement dans les dépêches reprises en français.\n\nPour un laboratoire ou une PME en France, le parallèle n’est pas la Lune. C’est le geste : un modèle spécialisé, ouvert, entraîné sur un corpus métier, qui bat un pipeline classique sur une tâche étroite. Un jeu de données d’imagerie industrielle ou agricole peut suivre la même logique, sans viser un modèle généraliste.\n\nÀ faire : lire la licence et le jeu d’évaluation avant tout usage. Un gain de 23 % sur des cartes lunaires ne se transpose pas à vos images.",
+    "perspective": "Ouvrir un modèle scientifique accélère la reprise par d’autres labos. Cela ne prouve pas qu’il généralise hors du corpus lunaire.",
+    "potentiel_business": "Piste pour qui vend de l’imagerie spécialisée : un fondation model ouvert sur un domaine étroit peut coûter moins qu’un appel à un modèle généraliste.",
+    "potentiel_perso": "Sans données lunaires, aucun usage direct. Intéressant comme exemple de modèle ouvert hors du chat généraliste.",
+    "date": "2026-10-09T04:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "NASA",
+      "IBM",
+      "Prithvi",
+      "open source",
+      "Lune"
+    ],
+    "source_url": "https://bourse.fortuneo.fr/actualites/ibm-et-la-nasa-offrent-la-lune-dans-un-modele-d-ia-open-source-2229105"
+  },
+  {
+    "id": "2026-10-09-dev-llamacpp-moe-cache",
+    "titre": "llama.cpp garde en GPU les experts MoE récents, jusqu’à 2,2 fois plus vite",
+    "categorie": "Dev",
+    "resume": "Le 7 octobre, llama.cpp a fusionné un cache GPU pour les modèles à mélange d’experts dont les poids restent en mémoire centrale. Sur une RTX 5090, la génération irait jusqu’à 2,2 fois plus vite. Le cache est un LRU.",
+    "contenu": "Le 7 octobre, le projet llama.cpp a fusionné une demande d’intégration qui ajoute un cache GPU pour les modèles à mélange d’experts (MoE) lorsque les experts résident en mémoire centrale. La piste vient de qvac-fabric, la variante publiée par Tether. Le principe : les produits matriciels des experts encore côté processeur s’exécutent sur le GPU, et un cache LRU ne transfère que les experts absents. ActuIA cite une accélération allant jusqu’à 2,2 fois la génération sur une RTX 5090.\n\nUn MoE n’active qu’une fraction de ses paramètres à chaque jeton. Si la carte graphique ne peut pas tout contenir, le goulet devient le va-et-vient entre mémoire centrale et GPU. Garder les experts récemment utilisés évite de recharger les mêmes blocs. Le gain dépend donc du modèle, de la carte et du fait que les mêmes experts reviennent souvent.\n\nPour un développeur en France qui sert un modèle ouvert trop gros pour sa carte, c’est un levier gratuit avant d’acheter du matériel. Ce n’est pas une promesse sur tous les MoE : un cache LRU se trompe si le routage change à chaque jeton. La mesure citée est un plafond sur une 5090, pas une moyenne.\n\nÀ faire : mettre à jour llama.cpp, comparer jetons par seconde avant et après sur votre modèle, et ne pas extrapoler le 2,2 à une carte plus ancienne.",
+    "perspective": "Le correctif attaque un goulet réel, le transfert d’experts. Le facteur 2,2 est un cas favorable, pas la nouvelle normale.",
+    "potentiel_business": "Pour un service local de modèles ouverts, retester le débit avant de louer un second GPU. Le gain peut reculer un achat.",
+    "potentiel_perso": "Si vous faites tourner un MoE trop grand pour votre carte, une mise à jour de llama.cpp vaut un essai ce week-end.",
+    "date": "2026-10-07T18:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "llama.cpp",
+      "MoE",
+      "GPU",
+      "RTX 5090",
+      "inférence"
+    ],
+    "source_url": "https://www.actuia.com/veille/2026-10-08/"
+  },
+  {
+    "id": "2026-10-09-societe-manus-levee",
+    "titre": "Manus lève plus de 500 millions après l’abandon du rachat par Meta",
+    "categorie": "Société & Politique",
+    "resume": "Butterfly Effect, maison mère de Manus, a annoncé le 8 octobre une levée de plus de 500 millions de dollars, menée par Boyu et IDG. Pékin avait ordonné en avril de défaire le rachat par Meta, annoncé à plus de 2 milliards.",
+    "contenu": "Butterfly Effect, maison mère du laboratoire chinois Manus, a indiqué jeudi 8 octobre dans un message WeChat avoir bouclé une levée de plus de 500 millions de dollars. Reuters et TechCrunch rapportent un tour co-mené par Boyu Capital et IDG Capital, avec Tencent, HSG (ex-Sequoia Chine) et ZhenFund. La valorisation n’est pas donnée. Le mois précédent, des discussions évoquaient 500 millions pour 4 milliards : ce chiffre reste une rumeur de presse, pas un terme publié.\n\nMeta avait annoncé en décembre 2025 un rachat de plus de 2 milliards. En avril, les autorités chinoises ont ordonné de le défaire, dans un contexte de contrôle des investissements américains dans l’IA avancée. Manus a dit en août reprendre une activité indépendante et effacer certaines données utilisateurs liées à la séparation. Une introduction à Hong Kong n’est pas attendue avant 2027, selon une source de Reuters.\n\nPour une entreprise en France, le sujet n’est pas d’investir. C’est la dépendance à un agent dont la maison mère change de tutelle et doit supprimer des données. Un outil branché sur vos dossiers clients devient un sous-traitant au sens du RGPD, même s’il est « autonome ».\n\nÀ surveiller : la localisation des traitements et le sort des comptes ouverts pendant la parenthèse Meta.",
+    "perspective": "Une levée après un rachat défait montre que le produit a des clients. Elle ne dit rien sur la stabilité juridique du siège ni sur la conservation des données.",
+    "potentiel_business": "Avant de brancher un agent Manus sur des données clients, exiger le lieu d’hébergement et la clause de sous-traitance. Le financement ne remplace pas le contrat.",
+    "potentiel_perso": "Si vous aviez un compte à l’époque Meta, vérifier ce qui a été effacé. Ne pas y remettre des documents professionnels.",
+    "date": "2026-10-08T07:22:00Z",
+    "urgence": "important",
+    "tags": [
+      "Manus",
+      "Meta",
+      "levée",
+      "Chine",
+      "agents"
+    ],
+    "source_url": "https://www.reuters.com/world/china/manus-raises-more-than-500-million-after-meta-exit-2026-10-08/"
+  },
+  {
+    "id": "2026-10-09-web-textgrain-ue",
+    "titre": "OpenAI active textGrain, filigrane invisible du texte, d’abord dans l’UE",
+    "categorie": "Web",
+    "resume": "Depuis le 5 octobre, l’API OpenAI peut activer un filigrane statistique du texte, éteint par défaut. ChatGPT et Codex le recevront dans les semaines qui viennent, uniquement dans l’Union européenne, au titre de l’article 50.",
+    "contenu": "OpenAI a publié le 5 octobre sa méthode de provenance du texte, textGrain, en réponse à l’article 50 du règlement européen sur l’IA. Le filigrane n’est pas un logo : il biaise légèrement le choix des mots pour laisser un signal statistique. Un détecteur cherche ce signal. OpenAI dit qu’il ne identifie pas l’utilisateur et qu’il n’a pas mesuré de baisse notable de qualité. Le rapport technique, coécrit avec des chercheurs de Pennsylvanie et de Yale, doit être complété.\n\nCôté calendrier : les clients de l’API, partout dans le monde, peuvent activer le marquage sur certains modèles depuis le 5 octobre. Il reste éteint par défaut. Sur ChatGPT et Codex, le déploiement concerne les semaines qui viennent, tous les forfaits, mais seulement dans l’Union. Ce n’est pas un réglage mondial. Les systèmes déjà sur le marché avant le 2 août ont jusqu’au 2 décembre 2026 pour le marquage lisible par machine.\n\nPour un site francophone qui republie des réponses de ChatGPT, le signal voyage avec le copier-coller, selon OpenAI. Il ne remplace pas une mention visible pour le lecteur. Un détecteur propriétaire ne constitue pas non plus une preuve opposable : OpenAI n’a pas publié un vérificateur tiers indépendant.\n\nÀ faire : si vous passez par l’API, décider explicitement d’activer ou non le filigrane, et garder une mention humaine pour les textes publiés.",
+    "perspective": "Un signal statistique se dégrade si le texte est fortement réécrit. Ce n’est pas une signature infalsifiable, et le détecteur reste celui du fournisseur.",
+    "potentiel_business": "Utile pour tracer des sorties d’API dans un flux éditorial. Insuffisant comme seule preuve devant un client ou un régulateur.",
+    "potentiel_perso": "Dans l’UE, une partie de vos réponses ChatGPT sera marquée sans réglage de votre part. Le texte reste lisible normalement.",
+    "date": "2026-10-05T12:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "OpenAI",
+      "textGrain",
+      "AI Act",
+      "filigrane",
+      "article 50"
+    ],
+    "source_url": "https://openai.com/index/eu-text-provenance/"
+  },
+  {
+    "id": "2026-10-09-modeles-liquid-d1",
+    "titre": "Liquid AI publie deux petits modèles de décision, dont un à 16 ms",
+    "categorie": "Modèles IA",
+    "resume": "Le 7 octobre, Liquid AI a publié les poids de d1-3B et d1-omni-600M, modèles de décision multimodaux, sous licence LFM 1.0. Le 3B répondrait en 16 millisecondes sur un Jetson AGX Thor.",
+    "contenu": "Le 7 octobre, Liquid AI a publié les poids de deux modèles orientés décision, d1-3B et d1-omni-600M, sous sa licence LFM 1.0. ActuIA les décrit comme multimodaux. Le chiffre mis en avant : d1-3B répond en 16 millisecondes sur un Jetson AGX Thor, carte embarquée de Nvidia. C’est une latence de démonstration sur un matériel précis, pas un débit garanti sur un PC grand public.\n\nUn modèle de décision n’est pas un chat généraliste. Il est taillé pour choisir une action à partir d’un état, souvent en robotique ou en interface temps réel. Trois milliards de paramètres, c’est assez petit pour tenir hors d’un centre de calcul, assez gros pour ne pas tourner sur n’importe quel microcontrôleur. La licence LFM 1.0 n’est pas l’Apache 2.0 : il faut la lire avant un produit commercial.\n\nPour un indie ou un labo en France, l’intérêt est la latence sur matériel embarqué, pas le classement des grands modèles. Un agent qui doit réagir en dessous de 50 millisecondes n’a pas le même cahier des charges qu’un assistant de rédaction. Le Jetson n’est pas un achat anodin : le prix et l’export du matériel Nvidia restent des contraintes.\n\nÀ faire : tester la licence LFM 1.0 sur votre cas, mesurer la latence sur votre carte, et ne pas prendre les 16 ms comme un SLA.",
+    "modele_enjeu": "Deux modèles ouverts de décision, 3 milliards et 600 millions de paramètres, licence LFM 1.0. Enjeu : la latence embarquée (16 ms annoncées sur Jetson) ne vaut que si la licence autorise votre produit.",
+    "perspective": "Publier des poids ne dit pas si le modèle décide mieux qu’une règle métier. La milliseconde se mesure, la qualité de décision aussi.",
+    "potentiel_business": "Piste pour un prototype robot ou interface temps réel, après lecture de la licence. Pas un remplacement d’un modèle de chat.",
+    "potentiel_perso": "Sans carte embarquée, l’essai local sera plus lent. Utile seulement si vous bricolez déjà un Jetson.",
+    "date": "2026-10-07T15:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Liquid AI",
+      "d1",
+      "embarqué",
+      "Jetson",
+      "licence"
+    ],
+    "source_url": "https://www.actuia.com/veille/2026-10-08/"
+  },
+  {
+    "id": "2026-10-09-astuces-verifier-chrome",
+    "titre": "Vérifier que Chrome a bien pris la 155, en trois gestes",
+    "categorie": "Astuces",
+    "resume": "La 155 corrige des failles critiques. Le numéro à voir est 155.0.8059.39 ou .40 sur Windows et macOS, .39 sur Linux. Relancer le navigateur après la mise à jour, sinon l’ancien processus reste en mémoire.",
+    "contenu": "Le correctif Chrome 155 ne s’applique que si le processus a redémarré. Ouvrir chrome://settings/help affiche la version et lance la recherche. Sur Windows et macOS, les builds corrigées sont 155.0.8059.39 et 155.0.8059.40. Sur Linux, 155.0.8059.39. Un numéro plus ancien, même en 154, n’inclut pas ce lot. Après téléchargement, le bouton Relancer est le geste qui compte : un onglet laissé ouvert garde l’ancien binaire.\n\nSur un poste d’entreprise, la mise à jour peut être bloquée par une stratégie. Dans ce cas, chrome://policy indique si les mises à jour sont gérées. Forcer à la main ne sert à rien si l’administrateur a épinglé une version. Edge, Brave et les autres dérivés de Chromium ne suivent pas le même jour : il faut leur propre numéro de version, pas celui de Chrome.\n\nEn France, le même réflexe vaut pour le portable professionnel et la machine personnelle qui ouvre la messagerie. Une faille de navigation se déclenche par une page, pas par une pièce jointe. Google dit n’avoir vu aucune exploitation active : ce n’est pas une raison de rester en 154.\n\nÀ faire : contrôler le numéro, relancer, puis vérifier une seconde fois. Si la version ne bouge pas, ce n’est pas un bug d’affichage, c’est une politique ou un paquet Linux non mis à jour.",
+    "perspective": "Le menu À propos suffit sur un poste personnel. Il ne remplace pas l’inventaire quand des dizaines de machines sont en jeu.",
+    "potentiel_business": "Ajouter le numéro de build Chrome au tableau de parc évite de découvrir la 154 lors d’un incident. Le contrôle prend une requête, pas un projet.",
+    "potentiel_perso": "Une minute dans À propos de Chrome. Si vous êtes déjà en 155 et que le navigateur a redémarré, c’est bon.",
+    "date": "2026-10-09T06:15:00Z",
+    "urgence": "important",
+    "tags": [
+      "Chrome",
+      "mise à jour",
+      "version",
+      "Chromium",
+      "poste"
+    ],
+    "source_url": "https://techgig.com/news/cybersecurity/chrome-155-update-patches-247-vulnerabilities-including-critical-use-after-free-flaws/134778882"
+  },
+  {
+    "id": "2026-10-09-ia-telecoms-open-source",
+    "titre": "89 % des opérateurs télécoms jugent l’open source décisif pour l’IA",
+    "categorie": "IA",
+    "resume": "L’enquête Nvidia State of AI in Telecommunications 2026 indique que 89 % des opérateurs voient l’open source comme un pilier. SoftBank, AT&T et Indosat combinent modèles ouverts et fermés selon la tâche.",
+    "contenu": "Nvidia, dans son enquête State of AI in Telecommunications 2026, écrit que 89 % des opérateurs jugent les logiciels open source déterminants pour leur stratégie d’IA. Le basculement décrit n’est pas un abandon des modèles fermés : ceux-ci restent pour les tâches les plus complexes. Les modèles ouverts servent à automatiser le réseau et le suivi client, là où l’opérateur veut garder la main sur les poids et les données.\n\nTrois exemples sont cités. SoftBank a construit un Large Telecom Model sur la famille Nemotron, nourri d’années de données d’exploitation. AT&T dit apparier chaque charge au bon mélange de performance, de coût et de contrôle. Indosat Ooredoo Hutchison est aussi engagé. Ce sont des cas mis en avant par Nvidia, vendeur des puces et de Nemotron : l’enquête n’est pas un panel indépendant.\n\nPour un opérateur ou un intégrateur en France, le schéma est transposable. Un modèle ouvert affiné sur des tickets internes évite d’envoyer le journal réseau à un API américain. Le modèle fermé garde un rôle sur le raisonnement rare. Le coût se joue au jeton et à la carte, pas au slogan open source.\n\nÀ faire : classer les flux selon qu’ils peuvent quitter le réseau ou non. Le 89 % ne dit pas quel modèle tenir en production.",
+    "perspective": "Une enquête d’un vendeur de GPU survalorise l’open source qu’il pousse. Le partage ouvert et fermé, lui, se retrouve chez plusieurs opérateurs.",
+    "potentiel_business": "Utile pour justifier un pilote interne sur tickets et alarmes. Le modèle fermé reste pertinent si la qualité prime sur le contrôle.",
+    "potentiel_perso": "Rien à installer. Le parallèle : ne pas envoyer vos journaux perso à un chat si un petit modèle local suffit.",
+    "date": "2026-10-08T05:24:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Nvidia",
+      "télécoms",
+      "open source",
+      "Nemotron",
+      "AT&T"
+    ],
+    "source_url": "https://android-mt.ouest-france.fr/news/ces-geants-economiques-qui-misent-sur-lia-open-source/224915/"
+  },
+  {
+    "id": "2026-10-09-nouveautes-unsloth-decision",
+    "titre": "Unsloth 0.1.904 transforme un modèle texte ou vision en modèle de décision",
+    "categorie": "Nouveautés",
+    "resume": "Le 7 octobre, Unsloth a publié la 0.1.904 bêta. Elle entraîne un grand modèle texte ou vision en modèle de décision, et annonce jusqu’à 4,1 fois plus vite le QLoRA de Qwen3.5-35B-A3B.",
+    "contenu": "Unsloth a publié le 7 octobre la version 0.1.904-bêta de son outil d’affinage et d’exécution locale. La nouveauté citée par ActuIA : entraîner n’importe quel grand modèle texte ou vision en modèle de décision. Le même billet annonce une accélération allant jusqu’à 4,1 fois sur le QLoRA de Qwen3.5-35B-A3B. QLoRA est un affinage quantifié : on adapte le modèle sans charger tous les poids en pleine précision, ce qui tient sur moins de mémoire.\n\nPasser d’un modèle de chat à un modèle de décision, c’est changer l’objectif d’entraînement : choisir une action plutôt que produire un paragraphe. La bêta ne garantit pas que tous les modèles suivent. Le facteur 4,1 est un plafond sur un modèle précis, pas une moyenne de la suite.\n\nPour un développeur en France qui affine déjà en local, la piste est de réutiliser un modèle ouvert déjà téléchargé au lieu d’en louer un autre. La mémoire reste le mur : un 35 milliards, même en mélange d’experts et en QLoRA, ne tient pas sur une carte de 8 Go. L’outil ne dispense pas de données d’actions propres, ni d’une licence du modèle de base compatible avec un usage commercial.\n\nÀ faire : rester sur la bêta en essai, mesurer le temps d’affinage sur votre carte, et figer la version avant un pipeline de production.",
+    "perspective": "Une bêta qui accélère un affinage ne valide pas la qualité des décisions produites. Le gain de temps se mesure, le taux d’erreur aussi.",
+    "potentiel_business": "Intéressant si vous avez déjà un jeu d’actions étiquetées. Inutile sans données : l’outil n’invente pas le métier à votre place.",
+    "potentiel_perso": "Si vous affinez avec Unsloth, la mise à jour vaut un essai. Sinon, pas de raison de l’installer pour ce seul chiffre.",
+    "date": "2026-10-07T16:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Unsloth",
+      "QLoRA",
+      "affinage",
+      "Qwen",
+      "bêta"
+    ],
+    "source_url": "https://www.actuia.com/veille/2026-10-08/"
+  },
+  {
+    "id": "2026-10-09-nouveautes-dgx-station-windows",
+    "titre": "Nvidia montre une DGX Station pour Windows, 748 Go de mémoire cohérente",
+    "categorie": "Nouveautés",
+    "resume": "Nvidia a présenté en avant-première une DGX Station pour Windows, sur puce GB300, avec 748 Go de mémoire cohérente. C’est une préversion, pas une fiche de prix ni une date de disponibilité en Europe.",
+    "contenu": "Nvidia a montré en avant-première une DGX Station destinée à Windows, bâtie sur la puce GB300, avec 748 Go de mémoire cohérente. ActuIA le note dans sa veille du 8 octobre. Mémoire cohérente veut dire que processeur et GPU voient le même espace : on évite une partie des copies entre deux mémoires séparées. 748 Go, c’est l’ordre de grandeur d’un serveur, pas d’un PC de bureau classique.\n\nLa DGX Station est une machine de laboratoire, pensée pour développer et affiner des modèles à côté du bureau, sans réserver un créneau dans un centre. La version Windows élargit le public au-delà de l’image Linux habituelle de ces stations. Aucun prix, aucun délai européen, aucun détail de consommation ne figurent dans la brève.\n\nPour une équipe en France, le calcul utile est électrique et contractuel. Une station de ce gabarit change le devis de bureau, le bruit et le contrat de maintenance. Elle ne remplace pas un cluster si l’entraînement dure des semaines. Elle peut éviter de sortir des données vers un nuage hors UE, à condition que le modèle et les jeux tiennent dans ces 748 Go.\n\nÀ surveiller : le prix en euros, la disponibilité et la consommation réelle. Une avant-première n’est pas un bon de commande.",
+    "perspective": "Montrer une station Windows ne dit pas quand elle se commande. La mémoire cohérente est un vrai levier, le calendrier reste absent.",
+    "potentiel_business": "À inscrire dans une veille matériel si vous affinez en local des modèles trop gros pour une carte grand public. Pas un achat sur slide.",
+    "potentiel_perso": "Hors budget de laboratoire, aucun usage. Ce n’est pas une tour de jeu déguisée en station de travail.",
+    "date": "2026-10-08T06:33:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Nvidia",
+      "DGX Station",
+      "GB300",
+      "Windows",
+      "mémoire"
+    ],
+    "source_url": "https://www.actuia.com/veille/2026-10-08/"
+  }
+]
