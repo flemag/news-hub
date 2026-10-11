@@ -23,7 +23,6 @@ import {
 } from "@/lib/ranking";
 import { categorieAccent } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
-import Link from "next/link";
 
 type Props = {
   articles: Article[];
@@ -66,7 +65,8 @@ export default function HomeClient({ articles }: Props) {
   }, [week]);
 
   const categoryFiltered = useMemo(() => {
-    const base = active === "Tout" ? week : week.filter((a) => a.categorie === active);
+    const base =
+      active === "Tout" ? week : week.filter((a) => a.categorie === active);
     return base.filter((a) => a.id !== heroArticle?.id);
   }, [week, active, heroArticle]);
 
@@ -80,7 +80,6 @@ export default function HomeClient({ articles }: Props) {
       <Header />
       <Ticker articles={sorted} />
 
-      {/* Modes de lecture */}
       <div className="border-b border-line bg-base/90 backdrop-blur sticky top-0 z-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 flex gap-1 sm:gap-2 py-2 overflow-x-auto hscroll">
           {(
@@ -113,7 +112,6 @@ export default function HomeClient({ articles }: Props) {
       )}
 
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        {/* ——— Mode Semaine (défaut) ——— */}
         {mode === "semaine" && (
           <>
             {heroArticle && (
@@ -189,7 +187,6 @@ export default function HomeClient({ articles }: Props) {
           </>
         )}
 
-        {/* ——— Mode Récent 48 h ——— */}
         {mode === "recent" && (
           <section className="py-6 sm:py-8 md:py-10">
             {heroArticle && (
@@ -223,7 +220,6 @@ export default function HomeClient({ articles }: Props) {
           </section>
         )}
 
-        {/* ——— Mode Catégories ——— */}
         {mode === "categorie" && (
           <section className="py-6 sm:py-8 md:py-10">
             <h2 className="font-display text-xs sm:text-sm text-muted mb-3 sm:mb-4">
