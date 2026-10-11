@@ -8,6 +8,7 @@ import {
   Code2,
   Sparkles,
   Rocket,
+  Server,
   type LucideIcon,
 } from "lucide-react";
 import { Categorie } from "./types";
@@ -22,4 +23,5 @@ export const CATEGORY_ICON: Record<Categorie, LucideIcon> = {
   Dev: Code2,
   Astuces: Sparkles,
   Nouveautés: Rocket,
+  "Cloud & Infra": Server,
 };

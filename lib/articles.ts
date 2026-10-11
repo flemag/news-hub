@@ -28,6 +28,7 @@ export function resolvePerspective(article: Article): string {
     Dev: "L'important est le gain réel pour l'équipe : DX, perf, maintenance.",
     Astuces: "Une astuce n'a de valeur que si elle reste simple et robuste dans le temps.",
     Nouveautés: "Prix, disponibilité et compromis techniques décident de l'intérêt réel.",
+    "Cloud & Infra": "Un changement d'infra se juge sur le coût total, la latence réelle et le lock-in — pas sur le communiqué pricing du jour.",
   };
 
   return defaults[article.categorie];
@@ -38,15 +39,16 @@ export function resolvePotentielBusiness(article: Article): string {
     return article.potentiel_business;
   }
   const byCat: Record<Categorie, string> = {
-    IA: "Opportunités côté outils métier, automatisation de process et services managés. Attention aux coûts d'inférence et à la dépendance fournisseur.",
-    "Modèles IA": "Différenciation produit (meilleure qualité, coût/token, latence), revente d'API, fine-tuning vertical, ou remplacement d'un fournisseur plus cher.",
-    Web: "Gain de conversion, perf perçue, ou réduction du temps de dev front — à chiffrer avant d'adopter.",
-    Gaming: "Peu de monétisation directe hors éditeurs ; plutôt signal de marché et timing de contenu.",
-    "Hack & Console": "Peu de business « opportunité » ; plutôt coût évité (incident, conformité, réputation).",
-    "Société & Politique": "Anticiper la conformité et les contraintes produit avant qu'elles ne deviennent obligatoires.",
-    Dev: "Productivité équipe, time-to-market, dette technique — ROI mesurable sur un sprint pilote.",
-    Astuces: "Micro-gains de productivité ou réduction de friction client ; rarement un business model seul.",
-    Nouveautés: "Niche early-adopter, accessoires, contenus, ou services d'intégration autour du produit.",
+    IA: "Identifier un process métier borné (support, doc, triage) et mesurer coût + taux d'erreur avant tout déploiement large.",
+    "Modèles IA": "Comparer coût/token et qualité sur vos workloads réels ; piloter un remplacement de fournisseur sur un flux non critique.",
+    Web: "Chiffrer le gain (conversion, perf, temps de dev) sur une page ou un parcours avant d'adopter.",
+    Gaming: "Signal de marché et timing de contenu plus que monétisation directe hors éditeurs.",
+    "Hack & Console": "Coût évité : patch prioritaire, revue d'exposition, scénario d'incident documenté.",
+    "Société & Politique": "Anticiper la conformité produit avant que la règle ne devienne bloquante.",
+    Dev: "Mesurer le ROI sur un sprint pilote : DX, time-to-merge, incidents liés à l'outil.",
+    Astuces: "Micro-gain de productivité ; documenter si le geste devient un standard d'équipe.",
+    Nouveautés: "Niche early-adopter ou service d'intégration — valider dispo et prix réels.",
+    "Cloud & Infra": "Recalculer le TCO (compute, egress, support) et tester un plan de sortie du fournisseur avant d'étendre le contrat.",
   };
   return byCat[article.categorie];
 }
@@ -57,14 +59,15 @@ export function resolvePotentielPerso(article: Article): string {
   }
   const byCat: Record<Categorie, string> = {
     IA: "Tester sur un usage personnel borné (notes, code, rédaction) avant d'en faire un standard d'équipe.",
-    "Modèles IA": "Comparer sur vos prompts réels (code, rédaction, agent). Noter coût, qualité et garde-fous avant d'en faire le défaut.",
+    "Modèles IA": "Comparer sur 3 de vos prompts réels ; noter coût, qualité et garde-fous avant de changer le défaut.",
     Web: "Prototyper sur un side-project pour valider DX et compatibilité.",
     Gaming: "Intérêt loisir / culture ; peu d'impact craft pro sauf si vous développez des jeux.",
-    "Hack & Console": "Mettre à jour, auditer ses propres stacks, documenter une checklist de défense.",
+    "Hack & Console": "Mettre à jour, auditer vos comptes exposés, activer le MFA partout où c'est encore optionnel.",
     "Société & Politique": "Suivre le calendrier si vous construisez un produit touché par la règle.",
-    Dev: "Intégrer dans un workflow perso (CI, snippets, agents) sur un repo non critique.",
+    Dev: "Intégrer dans un workflow perso (CI, snippets) sur un repo non critique.",
     Astuces: "Appliquer tout de suite sur un outil du quotidien si le gain est clair.",
-    Nouveautés: "Attendre tests terrain ; utile pour benchmark concurrentiel si vous concevez des produits.",
+    Nouveautés: "Attendre tests terrain ; utile pour benchmark si vous concevez des produits.",
+    "Cloud & Infra": "Sur un projet perso : comparer la facture mensuelle et la complexité ops avant de migrer.",
   };
   return byCat[article.categorie];
 }
@@ -131,6 +134,11 @@ export function resolveAnalyse(article: Article): {
       "Prix, dispo, alternatives.",
       "Compromis techniques.",
       "Attendre tests d'usage réel.",
+    ],
+    "Cloud & Infra": [
+      "Impact facture (compute, stockage, egress).",
+      "Région de disponibilité et SLA régionaux.",
+      "Plan de sortie / multi-cloud réaliste ou acceptation du lock-in.",
     ],
   };
 

@@ -57,6 +57,7 @@ export const CATEGORY_COLOR: Record<Categorie, string> = {
   Dev: "#2FD9A5",
   Astuces: "#F5D547",
   Nouveautés: "#4C8DFF",
+  "Cloud & Infra": "#38BDF8",
 };
 
 export function categorieAccent(categorie: Categorie): string {
@@ -67,6 +68,7 @@ export const CATEGORIES: Categorie[] = [
   "IA",
   "Modèles IA",
   "Web",
+  "Cloud & Infra",
   "Gaming",
   "Hack & Console",
   "Société & Politique",
@@ -74,3 +76,17 @@ export const CATEGORIES: Categorie[] = [
   "Astuces",
   "Nouveautés",
 ];
+
+/** Tags recommandés pour élargir sans multiplier les catégories. */
+export const SUGGESTED_TAGS = [
+  "cloud",
+  "open-source",
+  "mobile",
+  "levée",
+  "régulation",
+  "emploi",
+  "recherche",
+  "gpu",
+  "sécurité",
+  "api",
+] as const;

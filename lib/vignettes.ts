@@ -11,6 +11,7 @@ export const CATEGORY_VIGNETTE: Record<Categorie, string> = {
   Dev: "/vignettes/cat-dev.svg",
   Astuces: "/vignettes/cat-astuces.svg",
   Nouveautés: "/vignettes/cat-nouveautes.svg",
+  "Cloud & Infra": "/vignettes/cat-cloud.svg",
 };
 
 export function resolveVignette(
