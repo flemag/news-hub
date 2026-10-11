@@ -58,6 +58,11 @@ export default function ArticlePage({ params }: Props) {
   const fiab = resolveFiabilite(article);
   const fiabMeta = FIABILITE_META[fiab];
 
+  const fiabHint =
+    fiab === "a_surveiller"
+      ? "Signal encore fragile : croiser d'autres sources avant d'en tirer une décision."
+      : "Source sérieuse, mais des détails peuvent encore bouger.";
+
   return (
     <main className="min-h-screen bg-base">
       <Header />
@@ -117,9 +122,7 @@ export default function ArticlePage({ params }: Props) {
             <span className="font-medium" style={{ color: fiabMeta.color }}>
               {fiabMeta.label}.{" "}
             </span>
-            {fiab === "a_surveiller"
-              ? "Signal encore fragile : croiser d’autres sources avant d’en tirer une décision.
-              : "Source sérieuse, mais des détails peuvent encore bouger."}
+            {fiabHint}
           </p>
         )}
 
