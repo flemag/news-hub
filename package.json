@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "node scripts/generate-articles-index.mjs",
     "dev": "node scripts/generate-articles-index.mjs && next dev",
-    "build": "next build",
+    "build": "node scripts/generate-articles-index.mjs && next build",
     "start": "next start",
     "lint": "next lint",
     "gen:articles": "node scripts/generate-articles-index.mjs"
