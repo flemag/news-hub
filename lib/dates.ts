@@ -3,8 +3,26 @@ import { Categorie } from "./types";
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 export function isWithinLast24h(dateIso: string, now: Date = new Date()): boolean {
+  return isWithinLastMs(dateIso, DAY_MS, now);
+}
+
+export function isWithinLastMs(
+  dateIso: string,
+  windowMs: number,
+  now: Date = new Date()
+): boolean {
   const then = new Date(dateIso).getTime();
-  return now.getTime() - then <= DAY_MS && then <= now.getTime();
+  const t = now.getTime();
+  return t - then <= windowMs && then <= t;
+}
+
+/** Fenêtre glissante en jours (ex. 7 = semaine). */
+export function isWithinLastDays(
+  dateIso: string,
+  days: number,
+  now: Date = new Date()
+): boolean {
+  return isWithinLastMs(dateIso, days * DAY_MS, now);
 }
 
 export function formatRelative(dateIso: string, now: Date = new Date()): string {

@@ -26,9 +26,9 @@ export default function Header() {
               Signal
             </h1>
           </div>
-          <p className="mt-1.5 sm:mt-3 text-xs sm:text-sm text-muted max-w-md leading-relaxed">
-            Ce qu'il ne fallait pas rater dans les dernières 24 heures — IA, web,
-            jeu vidéo, hack, société et développement.
+          <p className="mt-1.5 sm:mt-3 text-xs sm:text-sm text-muted max-w-lg leading-relaxed">
+            Briefing tech de la semaine — ce qui compte vraiment en IA, sécurité,
+            web, dev et société. Top 10 scoré, pas un flux infini.
           </p>
         </div>
         <div
