@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Toujours interpréter la palette comme sombre (évite inversion OS / liens navigateur). */
 html {
   color-scheme: dark;
   background-color: #0b0e1a;
@@ -10,16 +9,25 @@ html {
 
 body {
   background-color: #0b0e1a;
-  color: #f1f4fc;
+  color: #f4f6fc;
 }
 
-/* Liens : jamais la bleusaille navigateur (surtout desktop / historique). */
-a {
-  color: inherit;
-  text-decoration-color: currentColor;
+/* Liens : jamais bleu/noir navigateur (desktop + historique). */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #f4f6fc;
+  text-decoration-color: #5eebff;
 }
-a:visited {
-  color: inherit;
+
+/* Listes home : titres toujours clairs, résumés secondaires. */
+.signal-title {
+  color: #f4f6fc !important;
+}
+.signal-resume {
+  color: #c2c9dc !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -37,7 +45,6 @@ a:visited {
   color: #f1f4fc;
 }
 
-/* Lisibilité page article */
 .prose-signal p {
   color: #e8edf8;
   line-height: 1.75;

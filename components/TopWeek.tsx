@@ -22,6 +22,9 @@ function badge(
   return null;
 }
 
+const TITLE = "#F4F6FC";
+const RESUME = "#C2C9DC";
+
 export default function TopWeek({ articles }: { articles: Article[] }) {
   if (!articles.length) return null;
 
@@ -30,11 +33,12 @@ export default function TopWeek({ articles }: { articles: Article[] }) {
       <div className="flex items-baseline justify-between gap-3 mb-3 sm:mb-4">
         <h2
           id="top-semaine-heading"
-          className="font-display text-sm sm:text-base text-ink tracking-wide"
+          className="font-display text-sm sm:text-base tracking-wide"
+          style={{ color: TITLE }}
         >
           Top {articles.length} de la semaine
         </h2>
-        <p className="text-[11px] sm:text-xs text-muted">
+        <p className="text-[11px] sm:text-xs" style={{ color: RESUME }}>
           Importance (urgence × récence × confiance), pas seulement l&apos;heure
         </p>
       </div>
@@ -50,7 +54,8 @@ export default function TopWeek({ articles }: { articles: Article[] }) {
             <li key={a.id}>
               <Link
                 href={`/article/${a.id}`}
-                className="group grid grid-cols-[2.25rem_1fr] sm:grid-cols-[3rem_1fr_auto] gap-x-3 gap-y-1 px-3 sm:px-5 py-3 sm:py-3.5 no-underline text-ink hover:bg-panelAlt transition-colors items-start"
+                className="group grid grid-cols-[2.25rem_1fr] sm:grid-cols-[3rem_1fr_auto] gap-x-3 gap-y-1 px-3 sm:px-5 py-3 sm:py-3.5 no-underline hover:bg-panelAlt transition-colors items-start"
+                style={{ color: TITLE }}
               >
                 <span
                   className="font-display text-lg sm:text-2xl font-bold tabular-nums leading-none pt-0.5"
@@ -59,7 +64,7 @@ export default function TopWeek({ articles }: { articles: Article[] }) {
                   {rank}
                 </span>
 
-                <span className="min-w-0 text-ink">
+                <span className="min-w-0">
                   <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[11px] mb-1">
                     <Icon size={12} style={{ color: accent }} aria-hidden />
                     <span className="font-medium" style={{ color: accent }}>
@@ -73,19 +78,28 @@ export default function TopWeek({ articles }: { articles: Article[] }) {
                       </span>
                     )}
                     <FiabiliteBadge article={a} />
-                    <span className="text-muted sm:hidden">
+                    <span className="sm:hidden" style={{ color: RESUME }}>
                       {formatRelative(a.date)}
                     </span>
                   </span>
-                  <span className="block font-display text-sm sm:text-base font-medium leading-snug text-ink group-hover:underline decoration-1 underline-offset-2">
+                  <span
+                    className="signal-title block font-display text-sm sm:text-base font-medium leading-snug group-hover:underline decoration-1 underline-offset-2"
+                    style={{ color: TITLE }}
+                  >
                     {a.titre}
                   </span>
-                  <span className="mt-1 block text-xs sm:text-sm text-muted leading-relaxed line-clamp-2">
+                  <span
+                    className="signal-resume mt-1 block text-xs sm:text-sm leading-relaxed line-clamp-2"
+                    style={{ color: RESUME }}
+                  >
                     {a.resume}
                   </span>
                 </span>
 
-                <span className="hidden sm:block text-xs text-muted tabular-nums pt-1 shrink-0">
+                <span
+                  className="hidden sm:block text-xs tabular-nums pt-1 shrink-0"
+                  style={{ color: RESUME }}
+                >
                   {formatRelative(a.date)}
                 </span>
               </Link>

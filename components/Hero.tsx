@@ -7,6 +7,9 @@ import { CATEGORY_ICON } from "@/lib/icons";
 import { resolveVignette } from "@/lib/vignettes";
 import FiabiliteBadge from "@/components/FiabiliteBadge";
 
+const TITLE = "#F4F6FC";
+const RESUME = "#C2C9DC";
+
 export default function Hero({ article }: { article: Article }) {
   const accent = categorieAccent(article.categorie);
   const Icon = CATEGORY_ICON[article.categorie];
@@ -17,8 +20,9 @@ export default function Hero({ article }: { article: Article }) {
   return (
     <Link
       href={`/article/${article.id}`}
-      className="group block relative overflow-hidden rounded-sm border border-line text-ink no-underline"
+      className="group block relative overflow-hidden rounded-sm border border-line no-underline"
       style={{
+        color: TITLE,
         background: `radial-gradient(1100px 320px at 15% 0%, ${accent}1f, transparent 60%), #12162A`,
       }}
     >
@@ -35,19 +39,27 @@ export default function Hero({ article }: { article: Article }) {
             {!showBreaking &&
               article.urgence === "important" &&
               isWithinLast24h(article.date) && (
-                <span className="ml-1 text-muted">Important</span>
+                <span className="ml-1" style={{ color: RESUME }}>
+                  Important
+                </span>
               )}
             <FiabiliteBadge article={article} />
-            <span className="text-muted ml-auto md:ml-4">
+            <span className="ml-auto md:ml-4" style={{ color: RESUME }}>
               {formatRelative(article.date)}
             </span>
           </div>
 
-          <h2 className="font-display text-xl sm:text-2xl md:text-4xl font-bold leading-snug md:leading-tight text-ink group-hover:opacity-90 transition-opacity">
+          <h2
+            className="signal-title font-display text-xl sm:text-2xl md:text-4xl font-bold leading-snug md:leading-tight group-hover:opacity-90 transition-opacity"
+            style={{ color: TITLE }}
+          >
             {article.titre}
           </h2>
 
-          <p className="mt-2.5 md:mt-4 text-sm md:text-base text-muted leading-relaxed max-w-xl line-clamp-3 md:line-clamp-none">
+          <p
+            className="signal-resume mt-2.5 md:mt-4 text-sm md:text-base leading-relaxed max-w-xl line-clamp-3 md:line-clamp-none"
+            style={{ color: RESUME }}
+          >
             {article.resume}
           </p>
 
@@ -56,7 +68,8 @@ export default function Hero({ article }: { article: Article }) {
               {article.tags.map((tag) => (
                 <li
                   key={tag}
-                  className="text-xs text-muted border border-line rounded-sm px-2 py-0.5"
+                  className="text-xs border border-line rounded-sm px-2 py-0.5"
+                  style={{ color: RESUME }}
                 >
                   {tag}
                 </li>
