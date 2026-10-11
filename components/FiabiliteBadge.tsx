@@ -21,11 +21,17 @@ export default function FiabiliteBadge({
   if (!force && !shouldShowFiabiliteBadge(level)) return null;
 
   const meta = FIABILITE_META[level];
-  const pad = size === "md" ? "px-2 py-0.5 text-[11px]" : "px-1.5 py-0.5 text-[10px]";
+  const pad =
+    size === "md" ? "px-2 py-0.5 text-[11px]" : "px-1.5 py-0.5 text-[10px]";
 
   return (
     <span
-      className={`inline-flex items-center rounded-sm border font-medium tracking-wide ${meta.className} ${pad}`}
+      className={`inline-flex items-center rounded-sm border font-medium tracking-wide ${pad}`}
+      style={{
+        color: meta.color,
+        borderColor: meta.color + "55",
+        backgroundColor: meta.color + "18",
+      }}
       title={meta.label}
     >
       {force ? meta.label : meta.short}

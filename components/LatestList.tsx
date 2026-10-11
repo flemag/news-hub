@@ -22,18 +22,18 @@ export default function LatestList({ articles }: { articles: Article[] }) {
             <li key={a.id}>
               <Link
                 href={`/article/${a.id}`}
-                className="group flex gap-2.5 px-3 sm:px-4 py-2.5 sm:py-3 no-underline text-ink hover:bg-panelAlt/80 transition-colors"
+                className="group flex gap-2.5 px-3 sm:px-4 py-2.5 sm:py-3 no-underline text-ink hover:bg-panelAlt transition-colors"
               >
                 <span className="text-[11px] text-muted tabular-nums w-4 shrink-0 pt-0.5">
                   {i + 1}
                 </span>
                 <span className="min-w-0 flex-1">
-                  <span className="block text-[13px] sm:text-sm leading-snug group-hover:underline decoration-1 underline-offset-2 line-clamp-2">
+                  <span className="block text-[13px] sm:text-sm leading-snug text-ink font-medium group-hover:underline decoration-1 underline-offset-2 line-clamp-2">
                     {a.titre}
                   </span>
                   <span className="mt-1 flex items-center gap-2 text-[10px] sm:text-[11px] text-muted">
                     <span style={{ color: accent }}>{a.categorie}</span>
-                    <span>·</span>
+                    <span aria-hidden>·</span>
                     <span>{formatRelative(a.date)}</span>
                   </span>
                 </span>

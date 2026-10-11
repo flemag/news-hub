@@ -42,7 +42,7 @@ export default function ArticleCard({
   if (featured) {
     const content = (
       <article
-        className="group flex flex-col rounded-sm border border-line bg-panel overflow-hidden h-full border-l-2 hover:border-white/20 transition-colors w-[min(78vw,280px)] md:w-80 shrink-0"
+        className="group flex flex-col rounded-sm border border-line bg-panel overflow-hidden h-full border-l-2 hover:border-white/25 transition-colors w-[min(78vw,280px)] md:w-80 shrink-0"
         style={{ borderLeftColor: accent }}
       >
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#0B1224]">
@@ -61,7 +61,9 @@ export default function ArticleCard({
         <div className="flex flex-col gap-1.5 p-3 md:p-4 flex-1">
           <div className="flex items-center gap-1.5 text-[11px] md:text-xs flex-wrap">
             <Icon size={12} style={{ color: accent }} aria-hidden />
-            <span style={{ color: accent }}>{article.categorie}</span>
+            <span className="font-medium" style={{ color: accent }}>
+              {article.categorie}
+            </span>
             {urg && <span className={urg.className}>{urg.label}</span>}
             <FiabiliteBadge article={article} />
             <span
@@ -95,7 +97,7 @@ export default function ArticleCard({
   }
 
   const content = (
-    <article className="group flex flex-row md:flex-col rounded-sm border border-line bg-panel overflow-hidden h-full hover:border-white/20 transition-colors">
+    <article className="group flex flex-row md:flex-col rounded-sm border border-line bg-panel overflow-hidden h-full hover:border-white/25 transition-colors">
       <div
         className="relative w-14 sm:w-16 shrink-0 flex md:hidden items-center justify-center"
         style={{
@@ -128,7 +130,7 @@ export default function ArticleCard({
             style={{ color: accent }}
             aria-hidden
           />
-          <span className="truncate" style={{ color: accent }}>
+          <span className="truncate font-medium" style={{ color: accent }}>
             {article.categorie}
           </span>
           {urg && <span className={urg.className}>{urg.label}</span>}

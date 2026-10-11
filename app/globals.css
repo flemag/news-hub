@@ -2,8 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Toujours interpréter la palette comme sombre (évite inversion OS / liens navigateur). */
+html {
+  color-scheme: dark;
+  background-color: #0b0e1a;
+}
+
+body {
+  background-color: #0b0e1a;
+  color: #f1f4fc;
+}
+
+/* Liens : jamais la bleusaille navigateur (surtout desktop / historique). */
+a {
+  color: inherit;
+  text-decoration-color: currentColor;
+}
+a:visited {
+  color: inherit;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -39,8 +61,12 @@
 }
 
 @keyframes ticker-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 .ticker-track {
   width: max-content;
