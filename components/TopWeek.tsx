@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Article } from "@/lib/types";
 import { categorieAccent, formatRelative } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
+import FiabiliteBadge from "@/components/FiabiliteBadge";
 
 function badge(urgence: Article["urgence"]): { label: string; cls: string } | null {
   if (urgence === "breaking")
@@ -26,7 +27,7 @@ export default function TopWeek({ articles }: { articles: Article[] }) {
           Top {articles.length} de la semaine
         </h2>
         <p className="text-[11px] sm:text-xs text-muted">
-          Classé par importance (urgence × récence), pas seulement par l&apos;heure
+          Importance (urgence × récence × confiance), pas seulement l&apos;heure
         </p>
       </div>
 
@@ -61,6 +62,7 @@ export default function TopWeek({ articles }: { articles: Article[] }) {
                         {b.label}
                       </span>
                     )}
+                    <FiabiliteBadge article={a} />
                     <span className="text-muted sm:hidden">
                       {formatRelative(a.date)}
                     </span>

@@ -10,6 +10,7 @@ import {
 } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
 import { resolveVignette } from "@/lib/vignettes";
+import FiabiliteBadge from "@/components/FiabiliteBadge";
 
 function urgenceDisplay(
   article: Article
@@ -38,7 +39,6 @@ export default function ArticleCard({
   const vignette = resolveVignette(article.categorie, article.image);
   const urg = urgenceDisplay(article);
 
-  /* ——— Carousel 24h : vignette 16:9 (assez large pour le SVG) ——— */
   if (featured) {
     const content = (
       <article
@@ -59,10 +59,11 @@ export default function ArticleCard({
           />
         </div>
         <div className="flex flex-col gap-1.5 p-3 md:p-4 flex-1">
-          <div className="flex items-center gap-1.5 text-[11px] md:text-xs">
+          <div className="flex items-center gap-1.5 text-[11px] md:text-xs flex-wrap">
             <Icon size={12} style={{ color: accent }} aria-hidden />
             <span style={{ color: accent }}>{article.categorie}</span>
             {urg && <span className={urg.className}>{urg.label}</span>}
+            <FiabiliteBadge article={article} />
             <span
               className="text-muted ml-auto"
               title={formatFullDate(article.date)}
@@ -93,10 +94,8 @@ export default function ArticleCard({
     );
   }
 
-  /* ——— Flux : bandeau icône mobile / vignette desktop ——— */
   const content = (
     <article className="group flex flex-row md:flex-col rounded-sm border border-line bg-panel overflow-hidden h-full hover:border-white/20 transition-colors">
-      {/* Mobile : pastille couleur + icône (pas de texte SVG coupé) */}
       <div
         className="relative w-14 sm:w-16 shrink-0 flex md:hidden items-center justify-center"
         style={{
@@ -111,7 +110,6 @@ export default function ArticleCard({
         <Icon size={22} style={{ color: accent }} strokeWidth={1.75} />
       </div>
 
-      {/* Desktop : vignette 16:9 complète */}
       <div className="relative hidden md:block w-full aspect-[16/9] overflow-hidden bg-[#0B1224]">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -123,7 +121,7 @@ export default function ArticleCard({
       </div>
 
       <div className="flex flex-col gap-1 p-3 md:gap-3 md:p-5 flex-1 min-w-0 justify-center">
-        <div className="flex items-center gap-1.5 text-[11px] md:text-xs">
+        <div className="flex items-center gap-1.5 text-[11px] md:text-xs flex-wrap">
           <Icon
             size={12}
             className="hidden md:block"
@@ -134,6 +132,7 @@ export default function ArticleCard({
             {article.categorie}
           </span>
           {urg && <span className={urg.className}>{urg.label}</span>}
+          <FiabiliteBadge article={article} />
           <span
             className="text-muted ml-auto shrink-0"
             title={formatFullDate(article.date)}

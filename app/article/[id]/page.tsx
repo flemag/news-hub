@@ -16,7 +16,9 @@ import {
 } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
 import { resolveVignette } from "@/lib/vignettes";
+import { FIABILITE_META, resolveFiabilite } from "@/lib/fiabilite";
 import Header from "@/components/Header";
+import FiabiliteBadge from "@/components/FiabiliteBadge";
 
 const urgenceLabel: Record<string, string> = {
   important: "Important",
@@ -53,6 +55,8 @@ export default function ArticlePage({ params }: Props) {
   const hasLongContenu =
     Boolean(article.contenu && article.contenu.trim().length > 40);
   const isModele = article.categorie === "Modèles IA";
+  const fiab = resolveFiabilite(article);
+  const fiabMeta = FIABILITE_META[fiab];
 
   return (
     <main className="min-h-screen bg-base">
@@ -82,6 +86,7 @@ export default function ArticlePage({ params }: Props) {
               · {urgenceLabel[article.urgence]}
             </span>
           )}
+          <FiabiliteBadge article={article} force size="md" />
           <span className="text-muted ml-auto text-xs md:text-sm">
             {formatRelative(article.date)} · {formatFullDate(article.date)}
           </span>
@@ -100,6 +105,23 @@ export default function ArticlePage({ params }: Props) {
             aria-hidden
           />
         </div>
+
+        {fiab !== "confirme" && (
+          <p
+            className="mt-4 text-sm leading-relaxed rounded-sm border px-3 py-2.5"
+            style={{
+              borderColor: fiabMeta.color + "44",
+              color: "#A8B0CC",
+            }}
+          >
+            <span className="font-medium" style={{ color: fiabMeta.color }}>
+              {fiabMeta.label}.{" "}
+            </span>
+            {fiab === "a_surveiller"
+              ? "Signal encore fragile : croiser d’autres sources avant d’en tirer une décision.
+              : "Source sérieuse, mais des détails peuvent encore bouger."}
+          </p>
+        )}
 
         <section className="mt-10 prose-signal">
           <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
@@ -172,13 +194,17 @@ export default function ArticlePage({ params }: Props) {
             <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
               Potentiel business
             </h2>
-            <p className="text-sm sm:text-base text-ink/95 leading-[1.7]">{business}</p>
+            <p className="text-sm sm:text-base text-ink/95 leading-[1.7]">
+              {business}
+            </p>
           </div>
           <div className="rounded-sm border border-line bg-panel p-5">
             <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
               Conception perso / pro
             </h2>
-            <p className="text-sm sm:text-base text-ink/95 leading-[1.7]">{perso}</p>
+            <p className="text-sm sm:text-base text-ink/95 leading-[1.7]">
+              {perso}
+            </p>
           </div>
         </section>
 

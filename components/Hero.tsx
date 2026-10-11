@@ -5,6 +5,7 @@ import { Article } from "@/lib/types";
 import { categorieAccent, formatRelative, isWithinLast24h } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
 import { resolveVignette } from "@/lib/vignettes";
+import FiabiliteBadge from "@/components/FiabiliteBadge";
 
 export default function Hero({ article }: { article: Article }) {
   const accent = categorieAccent(article.categorie);
@@ -23,7 +24,7 @@ export default function Hero({ article }: { article: Article }) {
     >
       <div className="grid md:grid-cols-[1.2fr_1fr] gap-0 items-stretch">
         <div className="relative px-4 py-5 sm:px-6 sm:py-8 md:px-10 md:py-14 max-w-3xl">
-          <div className="flex items-center gap-2 mb-3 md:mb-5 text-[11px] sm:text-xs">
+          <div className="flex items-center gap-2 mb-3 md:mb-5 text-[11px] sm:text-xs flex-wrap">
             <Icon size={13} style={{ color: accent }} aria-hidden />
             <span style={{ color: accent }}>{article.categorie}</span>
             {showBreaking && (
@@ -31,9 +32,12 @@ export default function Hero({ article }: { article: Article }) {
                 Dernière minute
               </span>
             )}
-            {!showBreaking && article.urgence === "important" && isWithinLast24h(article.date) && (
-              <span className="ml-1 text-muted">Important</span>
-            )}
+            {!showBreaking &&
+              article.urgence === "important" &&
+              isWithinLast24h(article.date) && (
+                <span className="ml-1 text-muted">Important</span>
+              )}
+            <FiabiliteBadge article={article} />
             <span className="text-muted ml-auto md:ml-4">
               {formatRelative(article.date)}
             </span>
