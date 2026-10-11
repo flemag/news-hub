@@ -4,6 +4,8 @@
  * La veille n'a qu'à déposer data/articles/YYYY-MM-DD.json
  */
 import a_2026_10_11 from "./2026-10-11.json";
+import a_2026_10_11_c from "./2026-10-11-c.json";
+import a_2026_10_11_b from "./2026-10-11-b.json";
 import a_2026_10_10 from "./2026-10-10.json";
 import a_2026_10_09 from "./2026-10-09.json";
 import a_2026_10_08 from "./2026-10-08.json";
@@ -55,6 +57,8 @@ import type { Article } from "@/lib/types";
 
 const MONTH_FILES: Article[][] = [
   a_2026_10_11 as Article[],
+  a_2026_10_11_c as Article[],
+  a_2026_10_11_b as Article[],
   a_2026_10_10 as Article[],
   a_2026_10_09 as Article[],
   a_2026_10_08 as Article[],
