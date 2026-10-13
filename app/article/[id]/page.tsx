@@ -25,6 +25,10 @@ const urgenceLabel: Record<string, string> = {
   breaking: "Dernière minute",
 };
 
+/** Couleurs forcées — évite les opacités Tailwind peu lisibles sur panel. */
+const TEXT_BODY = "#E8EDF8";
+const TEXT_TITLE = "#F4F6FC";
+
 type Props = { params: { id: string } };
 
 export function generateStaticParams() {
@@ -97,7 +101,10 @@ export default function ArticlePage({ params }: Props) {
           </span>
         </div>
 
-        <h1 className="font-display text-2xl sm:text-3xl md:text-[2.5rem] font-bold leading-tight text-ink tracking-tight">
+        <h1
+          className="font-display text-2xl sm:text-3xl md:text-[2.5rem] font-bold leading-tight tracking-tight"
+          style={{ color: TEXT_TITLE }}
+        >
           {article.titre}
         </h1>
 
@@ -130,7 +137,10 @@ export default function ArticlePage({ params }: Props) {
           <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
             En bref
           </h2>
-          <p className="text-base sm:text-lg text-ink leading-relaxed font-medium">
+          <p
+            className="text-base sm:text-lg leading-relaxed font-medium"
+            style={{ color: TEXT_TITLE }}
+          >
             {article.resume}
           </p>
         </section>
@@ -142,29 +152,44 @@ export default function ArticlePage({ params }: Props) {
 
           {hasLongContenu ? (
             <div className="rounded-sm border border-line bg-panel p-5 md:p-6 space-y-4">
-              <p className="text-base text-ink leading-[1.75] whitespace-pre-wrap">
+              <p
+                className="text-base leading-[1.75] whitespace-pre-wrap"
+                style={{ color: TEXT_BODY }}
+              >
                 {article.contenu}
               </p>
             </div>
           ) : (
             <div className="space-y-5">
               <div className="rounded-sm border border-line bg-panel p-5 md:p-6">
-                <h3 className="text-sm font-medium text-ink mb-2">Contexte</h3>
-                <p className="text-base text-ink/95 leading-[1.75]">
+                <h3
+                  className="text-sm font-medium mb-2"
+                  style={{ color: TEXT_TITLE }}
+                >
+                  Contexte
+                </h3>
+                <p
+                  className="text-base leading-[1.75]"
+                  style={{ color: TEXT_BODY }}
+                >
                   {analyse.contexte}
                 </p>
               </div>
 
               {analyse.points.length > 0 && (
                 <div className="rounded-sm border border-line bg-panel p-5 md:p-6">
-                  <h3 className="text-sm font-medium text-ink mb-3">
+                  <h3
+                    className="text-sm font-medium mb-3"
+                    style={{ color: TEXT_TITLE }}
+                  >
                     Points à retenir
                   </h3>
                   <ul className="space-y-3">
                     {analyse.points.map((p) => (
                       <li
                         key={p}
-                        className="flex gap-3 text-base text-ink/95 leading-relaxed"
+                        className="flex gap-3 text-base leading-relaxed"
+                        style={{ color: TEXT_BODY }}
                       >
                         <span
                           className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full"
@@ -186,7 +211,10 @@ export default function ArticlePage({ params }: Props) {
             <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
               Enjeu du modèle
             </h2>
-            <p className="text-base text-ink leading-[1.75] whitespace-pre-wrap">
+            <p
+              className="text-base leading-[1.75] whitespace-pre-wrap"
+              style={{ color: TEXT_BODY }}
+            >
               {article.modele_enjeu}
             </p>
           </section>
@@ -197,7 +225,10 @@ export default function ArticlePage({ params }: Props) {
             <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
               Potentiel business
             </h2>
-            <p className="text-sm sm:text-base text-ink/95 leading-[1.7]">
+            <p
+              className="text-sm sm:text-base leading-[1.7]"
+              style={{ color: TEXT_BODY }}
+            >
               {business}
             </p>
           </div>
@@ -205,7 +236,10 @@ export default function ArticlePage({ params }: Props) {
             <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
               Conception perso / pro
             </h2>
-            <p className="text-sm sm:text-base text-ink/95 leading-[1.7]">
+            <p
+              className="text-sm sm:text-base leading-[1.7]"
+              style={{ color: TEXT_BODY }}
+            >
               {perso}
             </p>
           </div>
@@ -225,7 +259,12 @@ export default function ArticlePage({ params }: Props) {
           >
             Perspective — pour relativiser
           </h2>
-          <p className="text-base text-ink leading-[1.75]">{perspective}</p>
+          <p
+            className="text-base leading-[1.75]"
+            style={{ color: TEXT_BODY }}
+          >
+            {perspective}
+          </p>
         </section>
 
         {article.tags?.length > 0 && (
@@ -233,7 +272,8 @@ export default function ArticlePage({ params }: Props) {
             {article.tags.map((tag) => (
               <li
                 key={tag}
-                className="text-sm text-ink/80 border border-line rounded-sm px-2.5 py-1 bg-panel"
+                className="text-sm border border-line rounded-sm px-2.5 py-1 bg-panel"
+                style={{ color: "#C2C9DC" }}
               >
                 {tag}
               </li>
@@ -246,8 +286,11 @@ export default function ArticlePage({ params }: Props) {
             <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-3">
               Source
             </h2>
-            <p className="text-base text-ink/90 mb-4 leading-relaxed">
-              Synthèse Signal. Pour le détail factuel d&apos;origine :
+            <p
+              className="text-base mb-4 leading-relaxed"
+              style={{ color: TEXT_BODY }}
+            >
+              Synthèse Signal. Pour le détail factuel d'origine :
             </p>
             <a
               href={article.source_url}
