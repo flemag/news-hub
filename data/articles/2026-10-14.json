@@ -1,1 +1,17 @@
-PLACEHOLDER_WILL_REPLACE
+[
+  {
+    "id": "2026-10-14-modeles-gemini-4-argon",
+    "titre": "Google ouvre Gemini 4 Argon au grand public : prix introductif et accès mondial",
+    "categorie": "Modèles IA",
+    "resume": "Le 13 octobre, Google a rendu Gemini 4 Argon disponible mondialement via l’API, l’app Gemini et Antigravity. Prix de lancement 2 $/10 $ par million de tokens, qui doublera après le 30 novembre. Le modèle vise le « deep work » en code, finance, droit et cybersécurité.",
+    "contenu": "Le 13 octobre 2026, Google a rendu Gemini 4 Argon disponible mondialement. Après une phase limitée aux défenseurs cyber via Fairwind, le modèle est accessible via l’API Gemini, aux abonnés Pro et Ultra dans l’app Gemini et AI Mode, et aux Ultra dans Antigravity. Prix de lancement : 2 dollars par million de tokens d’entrée et 10 dollars en sortie (cache à 95 % de réduction). Après le 30 novembre, les tarifs doublent à 4/20 dollars.\n\nGoogle le présente comme son modèle frontier pour le « deep work » : code long horizon, finance, droit, cybersécurité. Selon l’entreprise, il mène le Vals Index. Des clients comme Deloitte ou LexisNexis l’ont testé. En interne, des gains sont notés sur les soumissions de code agentique.\n\nPour un développeur ou une PME en France, le prix bas temporaire facilite la comparaison avec Claude ou GPT. Attention à la facture post-promo, aux politiques de données et à la conformité AI Act/RGPD pour les usages sensibles. L’intégration Google peut être un avantage ou un lock-in.\n\nÀ faire : tester sur vos tâches réelles pendant la promo, mesurer le coût par résultat utile, et vérifier les conditions d’usage européennes.",
+    "perspective": "Un retour de Google dans la course frontier est crédible, mais les benchmarks vendor et le pricing temporaire ne suffisent pas à juger la fiabilité en production européenne.",
+    "modele_enjeu": "Argon vise les workflows complexes plutôt que le chat simple. Utile pour des agents de code ou d’analyse, à condition d’accepter le lock-in Google et de surveiller le doublement de prix.",
+    "potentiel_business": "Lancer un pilote Argon vs votre modèle actuel sur 10 tâches métier (code, recherche, synthèse) avant la fin de la promo tarifaire.",
+    "potentiel_perso": "Si vous êtes abonné Gemini Pro/Ultra, activer Argon et comparer ses réponses sur une tâche de coding ou de recherche longue.",
+    "date": "2026-10-14T06:00:00Z",
+    "urgence": "breaking",
+    "tags": ["Google", "Gemini 4 Argon", "frontier", "API", "pricing"],
+    "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+  }
+]
