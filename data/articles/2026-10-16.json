@@ -1,1 +1,16 @@
-PLACEHOLDER_WILL_REPLACE
+[
+  {
+    "id": "2026-10-16-hack-gitlab-rce-cve",
+    "titre": "GitLab : RCE critique CVE-2026-97229, PoC public, patch immédiat requis",
+    "categorie": "Hack & Console",
+    "resume": "Une faille CVSS 10.0 dans le compilateur d’expressions régulières CI/CD de GitLab permet une exécution de code à distance non authentifiée sur les instances auto-hébergées. Correctifs disponibles depuis le 12 octobre ; PoC de Rapid7 et milliers d’hôtes exposés.",
+    "contenu": "GitLab a corrigé le 12 octobre 2026 la vulnérabilité CVE-2026-97229, un débordement d’entier dans le compilateur d’expressions régulières utilisé pour les configurations CI/CD. Le score CVSS atteint 10.0. Dans certaines conditions, un attaquant peut exécuter du code arbitraire sur le serveur GitLab sans authentification préalable, simplement en plaçant une expression régulière malveillante dans un fichier .gitlab-ci.yml d’un projet public.\n\nLe contexte est clair : Rapid7 a reproduit l’exécution de code sur une image officielle non patchée et publié un PoC. Censys recensait près de 26 000 hôtes exposés encore vulnérables. GitLab.com est déjà à jour ; les clients Dedicated n’ont rien à faire. Les versions concernées vont de 19.2 avant 19.2.8, 19.3 avant 19.3.5 et 19.4 avant 19.4.2.\n\nPour une équipe française qui maintient une instance GitLab auto-hébergée (souvent pour des clients ou des projets internes), le risque est direct : prise de contrôle du serveur, fuite de dépôts et accès aux runners. Les instances ouvertes à l’inscription publique ou exposées sur Internet sont prioritaires. La conformité NIS2 ou les audits clients exigent un délai de remédiation court.\n\nMettre à jour immédiatement vers 19.4.2, 19.3.5 ou 19.2.8. En attendant, restreindre la création de projets publics et l’accès anonyme. Vérifier la version avec gitlab-rake et planifier un redémarrage contrôlé.",
+    "perspective": "Un CVSS 10 avec PoC public n’est plus une alerte théorique. Les instances auto-hébergées non mises à jour deviennent des cibles faciles dans les prochains jours.",
+    "potentiel_business": "Audits express d’instances GitLab clients, contrats de maintenance prioritaire, offres de migration vers GitLab.com ou Dedicated pour réduire la surface.",
+    "potentiel_perso": "Si vous administrez un GitLab perso ou associatif, vérifiez la version aujourd’hui. Un patch de dix minutes évite une compromission.",
+    "date": "2026-10-16T07:00:00Z",
+    "urgence": "breaking",
+    "tags": ["GitLab", "CVE", "RCE", "CI/CD", "sécurité"],
+    "source_url": "https://www.cve.org/CVERecord?id=CVE-2026-97229"
+  }
+]
