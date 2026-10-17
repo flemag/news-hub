@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "ultra-ethernet-1-1-specification",
+    "titre": "L\u2019Ultra Ethernet Consortium publie la sp\u00e9cification 1.1 pour les r\u00e9seaux d\u2019IA",
+    "categorie": "Web",
+    "resume": "Le 12 octobre, l\u2019Ultra Ethernet Consortium a publi\u00e9 la version 1.1 de sa sp\u00e9cification, ajoutant le support des r\u00e9seaux scale-up, des collectives in-network et de meilleurs contr\u00f4les de congestion.",
+    "contenu": "L\u2019Ultra Ethernet Consortium (UEC) a publi\u00e9 le 12 octobre 2026 la sp\u00e9cification Ultra Ethernet 1.1, qui \u00e9tend la version 1.0 destin\u00e9e aux r\u00e9seaux Ethernet optimis\u00e9s pour l\u2019IA et le calcul haute performance. Les principales nouveaut\u00e9s concernent les r\u00e9seaux scale-up (interconnexions courtes entre acc\u00e9l\u00e9rateurs dans un rack ou un serveur) : un profil Unified Local simplifie le transport, un en-t\u00eate de forwarding unifi\u00e9 r\u00e9duit l\u2019overhead, et une r\u00e9duction de l\u2019inter-packet gap diminue les octets inutiles. La sp\u00e9cification introduit \u00e9galement les In-Network Collectives, qui d\u00e9chargent certaines op\u00e9rations de r\u00e9duction sur les switches, potentiellement doublant le d\u00e9bit pour certains patterns de communication. Enfin, Congestion Signaling (CSIG) et Programmable Congestion Management (PCM) offrent des signaux plus riches et des algorithmes adaptables. L\u2019UEC collabore avec l\u2019Open Compute Project pour int\u00e9grer ces technologies dans les sp\u00e9cifications ESUN. Pour les entreprises fran\u00e7aises ou europ\u00e9ennes qui construisent ou utilisent des clusters d\u2019IA, cela promet une meilleure interop\u00e9rabilit\u00e9 et une efficacit\u00e9 accrue des fabrics Ethernet.",
+    "perspective": "Une \u00e9volution technique importante pour standardiser les r\u00e9seaux d\u2019IA, mais l\u2019impact r\u00e9el d\u00e9pendra de l\u2019adoption par les fabricants de mat\u00e9riel et de la maturit\u00e9 des impl\u00e9mentations.",
+    "potentiel_business": "Op\u00e9rateurs de data centers et int\u00e9grateurs europ\u00e9ens peuvent anticiper des fabrics Ethernet plus efficaces pour leurs clusters GPU, r\u00e9duisant la d\u00e9pendance aux solutions ferm\u00e9es.",
+    "potentiel_perso": "Peu d\u2019impact direct, sauf pour les administrateurs de clusters ou les passionn\u00e9s de hardware qui suivent les standards ouverts.",
+    "date": "2026-10-17T08:00:00Z",
+    "urgence": "normal",
+    "tags": ["Ultra Ethernet", "r\u00e9seaux", "IA", "data center", "OCP"],
+    "source_url": "https://ultraethernet.org/ultra-ethernet-consortium-releases-specification-1-1-advancing-ai-and-hpc-networking/"
+  }
+]
