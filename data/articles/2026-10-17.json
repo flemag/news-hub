@@ -1,0 +1,17 @@
+[
+  {
+    "id": "meta-muse-spark-open-20261015",
+    "titre": "Meta publie Muse Spark Open, un mod\u00e8le open-weight de 816 milliards de param\u00e8tres",
+    "categorie": "Mod\u00e8les IA",
+    "resume": "Meta a lib\u00e9r\u00e9 les poids de Muse Spark Open le 15 octobre, un mod\u00e8le multimodal de 816 milliards de param\u00e8tres dont 42 milliards actifs, avec une fen\u00eatre d\u2019un million de tokens. Con\u00e7u pour le codage et les agents, il peut s\u2019ex\u00e9cuter sur deux Mac Studio M5 Ultra.",
+    "contenu": "Meta a annonc\u00e9 le 15 octobre 2026 la mise \u00e0 disposition des poids de Muse Spark Open, qu\u2019elle pr\u00e9sente comme le mod\u00e8le open-weight le plus capable issu d\u2019un laboratoire am\u00e9ricain \u00e0 ce jour. Il s\u2019agit d\u2019un mod\u00e8le de type mixture-of-experts (MoE) totalisant 816 milliards de param\u00e8tres, dont seulement 42 milliards sont actifs pour chaque token g\u00e9n\u00e9r\u00e9. Nativement multimodal, il accepte du texte, des images, de l\u2019audio et de la vid\u00e9o, et dispose d\u2019une fen\u00eatre de contexte d\u2019un million de tokens. Meta indique qu\u2019il est particuli\u00e8rement adapt\u00e9 aux t\u00e2ches de codage, d\u2019ing\u00e9nierie logicielle complexe et aux travaux d\u2019agents sur de longs horizons. Les poids sont disponibles sur Hugging Face, Amazon SageMaker, Google Cloud Model Garden et Microsoft Foundry, sous une licence Muse Model License qui autorise l\u2019usage, la modification et la redistribution, avec toutefois des conditions (mention \u00ab Built with Muse Spark Open \u00bb et accord s\u00e9par\u00e9 pour les vendeurs d\u2019API d\u00e9passant 20 millions de dollars de revenus). Meta met \u00e9galement en avant une configuration desktop : deux Mac Studio \u00e9quip\u00e9s de puces M5 Ultra reli\u00e9s via le framework MLX d\u2019Apple, permettant d\u2019atteindre environ un t\u00e9raoctet de m\u00e9moire unifi\u00e9e. Des optimisations pour SGLang et vLLM sont fournies, ainsi que des kernels Helion.",
+    "perspective": "Un mod\u00e8le open-weight am\u00e9ricain de cette taille est une avanc\u00e9e notable face \u00e0 la domination chinoise sur les poids libres, mais les benchmarks mixtes et la licence non standard invitent \u00e0 ne pas le consid\u00e9rer comme un remplacement imm\u00e9diat des mod\u00e8les ferm\u00e9s ou des meilleurs open chinois.",
+    "potentiel_business": "Entreprises fran\u00e7aises peuvent l\u2019h\u00e9berger pour des agents de codage internes, en gardant le contr\u00f4le des donn\u00e9es, ou l\u2019utiliser via des partenaires europ\u00e9ens pour r\u00e9duire la d\u00e9pendance aux API des grands labs.",
+    "potentiel_perso": "Sur un setup Mac haut de gamme, un d\u00e9veloppeur peut tester des agents longs localement sans envoyer de code sensible dans le cloud.",
+    "date": "2026-10-17T06:00:00Z",
+    "urgence": "breaking",
+    "tags": ["Meta", "open-weight", "Muse Spark", "agents", "codage"],
+    "source_url": "https://research.meta.ai/blog/muse-spark-open",
+    "modele_enjeu": "La licence Muse impose une mention visible et un accord pour les grands vendeurs d\u2019API, ce qui limite la libert\u00e9 pure d\u2019Apache 2.0. Les performances d\u00e9pendent fortement du hardware (deux Mac Studio ou clusters GPU) et les scores restent en de\u00e7\u00e0 de certains mod\u00e8les chinois sur le codage pur, ce qui relativise le \u00ab plus capable US \u00bb."
+  }
+]
