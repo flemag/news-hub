@@ -13,5 +13,19 @@
     "tags": ["Meta", "open-weight", "Muse Spark", "agents", "codage"],
     "source_url": "https://research.meta.ai/blog/muse-spark-open",
     "modele_enjeu": "La licence Muse impose une mention visible et un accord pour les grands vendeurs d\u2019API, ce qui limite la libert\u00e9 pure d\u2019Apache 2.0. Les performances d\u00e9pendent fortement du hardware (deux Mac Studio ou clusters GPU) et les scores restent en de\u00e7\u00e0 de certains mod\u00e8les chinois sur le codage pur, ce qui relativise le \u00ab plus capable US \u00bb."
+  },
+  {
+    "id": "anthropic-metr-acces-evaluateur-20261015",
+    "titre": "Anthropic ouvre un acc\u00e8s de niveau employ\u00e9 \u00e0 METR pour \u00e9valuer ses mod\u00e8les",
+    "categorie": "IA",
+    "resume": "Le 15 octobre, Anthropic a int\u00e9gr\u00e9 six employ\u00e9s de l\u2019\u00e9valuateur METR avec un acc\u00e8s comparable \u00e0 celui de ses \u00e9quipes internes de risque. METR pourra publier ses analyses sans veto d\u2019Anthropic, sous r\u00e9serve de redactions limit\u00e9es.",
+    "contenu": "Anthropic a annonc\u00e9 le 15 octobre 2026 qu\u2019elle a onboard\u00e9 six employ\u00e9s de METR (Model Evaluation and Threat Research), un organisme \u00e0 but non lucratif sp\u00e9cialis\u00e9 dans l\u2019\u00e9valuation des mod\u00e8les de pointe, en leur fournissant du mat\u00e9riel d\u2019entreprise, un espace de bureau et un acc\u00e8s aux outils internes comparable \u00e0 celui de ses propres \u00e9quipes d\u2019\u00e9valuation des risques. Cet acc\u00e8s exclut les donn\u00e9es clients, les informations prot\u00e9g\u00e9es par le secret professionnel et les d\u00e9tails d\u2019architecture des mod\u00e8les. METR pourra publier ses analyses sur les niveaux de risque, les incidents et les pratiques de s\u00e9curit\u00e9 sans qu\u2019Anthropic puisse opposer un veto. La soci\u00e9t\u00e9 se r\u00e9serve toutefois le droit d\u2019exiger des redactions dans des cat\u00e9gories pr\u00e9d\u00e9finies, que METR pourra contester publiquement. Anthropic structure d\u00e9sormais les \u00e9valuateurs en trois niveaux. Cette d\u00e9marche fait suite \u00e0 des engagements pris dans le cadre de l\u2019Accord de la Maison Blanche sur la superintelligence.",
+    "perspective": "C\u2019est un pas vers plus de redevabilit\u00e9, mais l\u2019acc\u00e8s reste limit\u00e9 \u00e0 six personnes silo\u00e9es, et Anthropic d\u00e9cide encore des redactions. Cela ne remplace pas une r\u00e9gulation externe contraignante.",
+    "potentiel_business": "Les \u00e9quipes conformit\u00e9 et risque des entreprises UE peuvent s\u2019appuyer sur les futures publications METR pour documenter leurs analyses de syst\u00e8mes d\u2019IA \u00e0 haut risque bas\u00e9s sur Claude.",
+    "potentiel_perso": "Un d\u00e9veloppeur qui d\u00e9ploie des agents Claude peut mieux comprendre les limites connues et les incidents document\u00e9s de mani\u00e8re ind\u00e9pendante.",
+    "date": "2026-10-17T06:30:00Z",
+    "urgence": "normal",
+    "tags": ["Anthropic", "METR", "s\u00e9curit\u00e9", "\u00e9valuation", "transparence"],
+    "source_url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
   }
 ]
