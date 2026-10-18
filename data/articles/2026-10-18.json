@@ -1,1 +1,240 @@
-PLACEHOLDER_TO_REPLACE
+[
+  {
+    "id": "2026-10-18-hack-opencode-keys",
+    "titre": "OpenCode : clés API OpenAI, Anthropic et Google exposées pour 1,4 % des utilisateurs Console",
+    "categorie": "Hack & Console",
+    "resume": "OpenCode confirme une intrusion sur un système legacy en cours de décommissionnement. Les clés de fournisseurs stockées dans les espaces Console de 1,4 % des utilisateurs ont pu être exposées. Des charges non autorisées ont déjà été signalées.",
+    "contenu": "Le 17 octobre, OpenCode a indiqué sur X qu’une intrusion liée à une attaque de distillation à grande échelle avait touché 1,4 % des utilisateurs de sa Console, ceux qui avaient lié des fournisseurs externes. Un e-mail adressé aux concernés précise qu’un accès non autorisé a eu lieu sur un système legacy que l’entreprise était en train de décommissionner. Les clés OpenAI, Anthropic et, selon des retours utilisateurs, Google stockées dans ces espaces ont pu être exposées.\n\nDes développeurs ont rapporté des charges inattendues avant même la notification officielle, allant de quelques dizaines à plusieurs centaines de dollars sur des comptes Anthropic ou Google. OpenCode travaille avec les trois fournisseurs pour la remédiation et a indiqué que les utilisateurs non notifiés par e-mail n’étaient pas concernés. L’incident est décrit comme toujours en cours, sans détails techniques supplémentaires.\n\nPour une équipe française qui utilise OpenCode Console avec ses propres clés (modèle bring-your-own-key), le risque est immédiat sur la facturation et l’usage non contrôlé. Les clés exposées peuvent servir à générer du trafic payant ou à tenter de la distillation. La résidence des données et les limites de dépense deviennent des contrôles prioritaires.\n\nRévoquer immédiatement toutes les clés liées dans la Console directement depuis les tableaux de bord des fournisseurs (OpenAI, Anthropic, Google AI Studio). Créer de nouvelles clés, mettre à jour les applications, activer des alertes de facturation et des plafonds de dépense. Ne pas se fier uniquement à l’e-mail de notification pour agir.",
+    "perspective": "Un système legacy en cours d’arrêt reste une surface d’attaque. Stocker des clés de fournisseurs dans un outil tiers multiplie les points de fuite possibles.",
+    "potentiel_business": "Audits rapides des outils agents utilisés en entreprise, politiques de rotation de clés, contrats exigeant des notifications d’incident et des limites de responsabilité.",
+    "potentiel_perso": "Si vous avez lié des clés à OpenCode Console, révoquez-les aujourd’hui même si vous n’avez pas reçu d’e-mail. Le coût d’une rotation est négligeable.",
+    "date": "2026-10-18T06:00:00Z",
+    "urgence": "breaking",
+    "tags": [
+      "OpenCode",
+      "API keys",
+      "sécurité",
+      "Anthropic",
+      "OpenAI"
+    ],
+    "source_url": "https://x.com/opencode/status/2111516673953935833"
+  },
+  {
+    "id": "2026-10-18-ia-anthropic-juniors",
+    "titre": "Anthropic : part des juniors dans les recrutements techniques passée de 27 % à 9 %",
+    "categorie": "IA",
+    "resume": "Dans un rapport interne, Anthropic indique que la part des juniors parmi les recrutements techniques est tombée de 27 % à 9 % depuis début 2025. En août, les agents interactifs cumulaient six fois plus d’heures que les employés.",
+    "contenu": "Anthropic a publié le 16 octobre une étude de sa propre organisation. La part des juniors dans les recrutements techniques est passée de 27 % à 9 %, tandis que leur part dans les effectifs techniques est descendue de 21 % à 14 % depuis début 2025. Les annonces de postes juniors ont chuté nettement après décembre 2025. L’entreprise a triplé de taille sur la période ; les effectifs techniques continuent de croître en valeur absolue, mais moins vite que les fonctions commerciales et support.\n\nEn parallèle, les agents Claude dirigés par les employés ont dépassé le volume d’heures humaines en mars et atteignaient un ratio de 6 pour 1 en août. Les commits par ingénieur ont été multipliés par environ cinq sur six mois, avec un taux de réversion comparable entre code humain et code agent. Des managers techniques ont déclaré recruter moins en raison de l’IA.\n\nPour une organisation française, ces chiffres viennent d’un laboratoire qui intègre massivement ses propres outils. Ils illustrent un déplacement possible du goulot vers la supervision et le jugement plutôt que vers la production de code brute. Les politiques de formation et d’alternance devront anticiper une demande différente sur les profils juniors.\n\nObserver si d’autres entreprises publient des métriques comparables. Pour les équipes produit et RH, documenter les tâches déléguées aux agents et les compétences de revue qui restent humaines.",
+    "perspective": "Ces données décrivent une entreprise à la frontière de l’adoption. Elles ne prouvent pas un effondrement général des recrutements juniors, mais elles montrent un glissement déjà mesurable.",
+    "potentiel_business": "Formations à la supervision d’agents, redéfinition des grilles de compétences juniors, offres d’audit de productivité assistée.",
+    "potentiel_perso": "Si vous êtes en début de carrière technique, renforcez les compétences de revue, de cadrage et de communication avec des agents plutôt que uniquement la production de code.",
+    "date": "2026-10-18T07:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "Anthropic",
+      "recrutement",
+      "agents",
+      "juniors",
+      "travail"
+    ],
+    "source_url": "https://www.anthropic.com/research/how-employment-is-changing-at-anthropic"
+  },
+  {
+    "id": "2026-10-18-modeles-deepseek-flash-1017",
+    "titre": "DeepSeek publie V4.1-Flash-1017 et ouvre ses API Search et Fetch",
+    "categorie": "Modèles IA",
+    "resume": "DeepSeek met à jour son modèle Flash vers le snapshot 1017, avec de meilleurs scores agentiques à prix inchangé. Les API Search et Fetch, basées sur son moteur interne, sont ouvertes à 0,75 $ les 1 000 appels réussis.",
+    "contenu": "Le 17 octobre, DeepSeek a rendu disponible DeepSeek-V4.1-Flash-1017 sur son site, son application et son API. Le modèle, appelé via le nom deepseek-flash, améliore les scores sur les benchmarks publiés, notamment 77,0 sur DeepSWE v1.1 contre 74,2 précédemment, et 42,3 sur Terminal-Bench 4.0. Les prix restent identiques : 0,15 $ / 0,60 $ par million de jetons en heures creuses pour l’entrée et la sortie.\n\nEn même temps, l’entreprise ouvre ses API Search et Fetch, alimentées par son moteur de recherche interne. Chaque endpoint coûte 0,75 $ pour 1 000 requêtes réussies ; les échecs et résultats vides ne sont pas facturés. Les appels côté serveur via DeepSeek Harness, Claude Code ou Codex restent gratuits jusqu’au 1er novembre. Les poids sont disponibles sous licence MIT.\n\nPour un développeur français, le modèle ouvert et les outils de recherche intégrés facilitent des agents qui consultent le web sans passer par un fournisseur supplémentaire. La facturation à la requête réussie et le plafond de 5 requêtes par seconde par compte sont des paramètres concrets à intégrer dans les budgets. La résidence des données via un fournisseur chinois reste un point de conformité à examiner.\n\nTester le snapshot sur des tâches de code et d’agent via l’API ou les poids. Comparer le coût total (jetons + search) à d’autres stacks. Vérifier les conditions de licence et les options de routage.",
+    "modele_enjeu": "Snapshot ouvert amélioré et API de recherche à bas coût. Intérêt : agents web moins chers. Enjeu : fournisseur chinois, dépendance API, besoin de validation indépendante des scores.",
+    "perspective": "Les gains de score et le maintien des prix sont utiles. La qualité réelle sur vos prompts et la fiabilité de la recherche restent à mesurer localement.",
+    "potentiel_business": "Prototypes d’agents de recherche et de code à coût maîtrisé, alternatives pour les tâches non critiques en attendant des options EU.",
+    "potentiel_perso": "Si vous expérimentez des agents, le window gratuit jusqu’au 1er novembre permet de tester Search et Fetch sans surcoût immédiat.",
+    "date": "2026-10-18T08:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "DeepSeek",
+      "Flash",
+      "open weights",
+      "search API",
+      "agents"
+    ],
+    "source_url": "https://api-docs.deepseek.com/news/news261017"
+  },
+  {
+    "id": "2026-10-18-dev-copilot-deprecations",
+    "titre": "GitHub Copilot : plusieurs modèles retirés le 16 novembre",
+    "categorie": "Dev",
+    "resume": "Claude Opus 4.8, Claude Opus 5 et GPT-5.6 Terra seront dépréciés dans tous les surfaces Copilot le 16 novembre 2026. Les alternatives suggérées sont Claude Opus 5.5, GPT-6.1 Sol et GPT-6 Luna.",
+    "contenu": "GitHub a annoncé la dépréciation, le 16 novembre 2026, de Claude Opus 4.8, Claude Opus 5 et GPT-5.6 Terra sur l’ensemble des expériences Copilot : chat, éditions inline, modes ask et agent, et complétions. Les modèles de remplacement recommandés sont Claude Opus 5.5, GPT-6.1 Sol et GPT-6 Luna.\n\nSous l’activation par défaut, les alternatives sont disponibles pour les clients Enterprise et Business sauf désactivation explicite par un administrateur. Les workflows qui épinglent explicitement les modèles sortants devront être mis à jour avant la date. Aucune action n’est nécessaire pour retirer les anciens modèles une fois la date passée.\n\nPour une équipe française qui utilise Copilot dans des pipelines CI, des agents ou des configurations VS Code partagées, le risque est une rupture de workflow le 16 novembre. Les politiques de modèles et les budgets de jetons doivent être revus. La migration offre l’occasion de tester les nouveaux modèles sur des tâches internes avant le basculement.\n\nInventorier les configurations qui spécifient les modèles dépréciés. Tester les alternatives sur un échantillon de tâches. Documenter le changement pour les développeurs et les administrateurs.",
+    "perspective": "Les dépréciations de modèles dans les outils d’assistance sont désormais régulières. Anticiper la date évite les interruptions de productivité.",
+    "potentiel_business": "Audits de configurations Copilot clients, formations de migration de modèles, politiques d’activation contrôlée.",
+    "potentiel_perso": "Si vous utilisez Copilot, vérifiez dans les paramètres si un modèle spécifique est épinglé et basculez avant mi-novembre.",
+    "date": "2026-10-18T09:00:00Z",
+    "urgence": "important",
+    "tags": [
+      "GitHub Copilot",
+      "dépréciation",
+      "modèles",
+      "Claude",
+      "GPT"
+    ],
+    "source_url": "https://github.blog/changelog/2026-10-16-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november/"
+  },
+  {
+    "id": "2026-10-18-societe-amazon-union-score",
+    "titre": "Amazon : un système interne noterait les entrepôts selon le risque syndical",
+    "categorie": "Société & Politique",
+    "resume": "Selon openDemocracy, un outil interne nommé Atlas attribue un score de 100 à 900 aux sites d’entreposage selon la probabilité d’organisation syndicale. Deux sites britanniques seraient au niveau le plus élevé.",
+    "contenu": "OpenDemocracy a rapporté l’existence d’un système interne Amazon appelé Atlas qui attribue aux entrepôts un score allant de 100 à 900 selon le risque perçu d’organisation syndicale. Deux sites au Royaume-Uni seraient classés dans le tier le plus élevé. L’article indique que l’outil permettrait d’agir avant que des signes visibles n’apparaissent.\n\nL’adhésion à un syndicat est une activité protégée au Royaume-Uni. L’utilisation d’un score continu pour anticiper et éventuellement dissuader l’organisation soulève des questions de droit du travail et de surveillance. Amazon n’a pas commenté publiquement les détails techniques du système dans les articles consultés.\n\nPour une entreprise française, le sujet rappelle les obligations de consultation des représentants du personnel et les limites du monitoring des salariés. Un outil qui agrège des signaux pour prédire l’action collective peut entrer en conflit avec le droit d’organisation et la protection des données personnelles. Les clauses de conformité sociale dans les contrats fournisseurs deviennent pertinentes.\n\nSurveiller les réactions des autorités britanniques et les éventuelles enquêtes. Pour les équipes conformité, documenter les usages d’outils prédictifs sur les populations salariés et vérifier leur base légale.",
+    "perspective": "Un score prédictif n’est pas une preuve d’intention illégale. Il montre toutefois que la surveillance des dynamiques collectives peut être industrialisée.",
+    "potentiel_business": "Audits de conformité sociale des outils RH et prédictifs, clauses contractuelles sur le monitoring des salariés, formations droit du travail et IA.",
+    "potentiel_perso": "Si vous travaillez dans un grand groupe, renseignez-vous sur les outils d’analyse des populations internes et leurs finalités déclarées.",
+    "date": "2026-10-18T10:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Amazon",
+      "syndicat",
+      "surveillance",
+      "droit du travail"
+    ],
+    "source_url": "https://www.opendemocracy.net/en/amazon-atlas-ai-union-risk-warehouses/"
+  },
+  {
+    "id": "2026-10-18-web-chatgpt-slides",
+    "titre": "ChatGPT ajoute un créateur de présentations avec export PowerPoint et Keynote",
+    "categorie": "Web",
+    "resume": "OpenAI intègre dans ChatGPT un outil de création de slides avec co-édition en temps réel et export vers PowerPoint, PDF, Google Slides et Keynote. La fonction vise les utilisateurs qui produisaient des decks via des outils dédiés.",
+    "contenu": "OpenAI a ajouté à ChatGPT un générateur de présentations. L’outil permet une co-édition en temps réel et propose des exports vers PowerPoint, PDF, Google Slides et Keynote. L’annonce positionne la fonctionnalité comme une alternative aux outils spécialisés de création de decks assistée par IA.\n\nLa qualité de l’export (éléments éditables versus images figées) n’est pas encore documentée en détail dans les sources publiques. L’intégration directe dans le flux ChatGPT réduit le nombre d’outils à utiliser pour passer d’un prompt à un fichier de présentation.\n\nPour un freelance ou une équipe produit française, cela simplifie la production de supports internes ou clients. Les questions de confidentialité restent les mêmes que pour tout usage de ChatGPT : ne pas y coller de données sensibles sans contrat adapté. L’export vers les formats bureautiques classiques facilite le partage avec des partenaires qui n’utilisent pas l’outil.\n\nTester sur un deck non critique pour juger de la qualité visuelle et de l’éditabilité après export. Vérifier les limites de longueur et de personnalisation. Documenter les cas d’usage autorisés dans l’équipe.",
+    "perspective": "Pouvoir exporter vers PowerPoint est utile. La valeur dépend surtout de la qualité du contenu généré et de la possibilité de le retoucher facilement.",
+    "potentiel_business": "Accélération de la production de supports commerciaux et internes, réduction du nombre d’outils dans la stack présentation.",
+    "potentiel_perso": "Si vous préparez régulièrement des slides, essayez la fonction sur un sujet que vous maîtrisez pour comparer le temps gagné et les corrections nécessaires.",
+    "date": "2026-10-18T11:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "ChatGPT",
+      "présentations",
+      "PowerPoint",
+      "OpenAI"
+    ],
+    "source_url": "https://openai.com/index/chatgpt-slides/"
+  },
+  {
+    "id": "2026-10-18-ia-liability-insurance",
+    "titre": "Assurance IA : les plafonds de couverture restent très en deçà des expositions potentielles",
+    "categorie": "IA",
+    "resume": "Des assureurs, dont Munich Re, indiquent que les plafonds de responsabilité liés à l’IA peuvent descendre à 50 millions de dollars alors qu’une défaillance d’un modèle largement déployé peut exposer à des dizaines ou centaines de milliards.",
+    "contenu": "Selon des retours d’assureurs, les contrats de responsabilité liés à l’IA proposent des plafonds qui peuvent être aussi bas que 50 millions de dollars. En face, une défaillance d’un modèle déployé à grande échelle peut générer des expositions de plusieurs dizaines ou centaines de milliards, parce que les défaillances de modèles sont corrélées par construction : le même défaut touche tous les clients simultanément.\n\nL’absence d’historique actuariel long, due à la rapidité de changement des modèles, complique la tarification. La part non couverte reste donc à la charge de l’entité qui déploie le système. Les laboratoires et les grands intégrateurs commencent à discuter de mécanismes alternatifs, mais rien de standardisé n’est encore en place.\n\nPour une entreprise française qui déploie des agents ou des modèles en production, cela signifie que la couverture d’assurance classique ne suffit probablement pas. Les clauses contractuelles avec les fournisseurs, les plafonds de responsabilité et les mécanismes de notification d’incident deviennent les principaux leviers de maîtrise du risque.\n\nDemander explicitement les conditions de couverture IA dans les renouvellements d’assurance. Documenter les usages critiques et les contrôles en place. Anticiper dans les contrats fournisseurs les cas de défaillance corrélée.",
+    "perspective": "L’écart entre plafond et exposition n’est pas une surprise pour les risques systémiques. Il rappelle que l’assurance ne remplace pas la conception prudente.",
+    "potentiel_business": "Conseil en transfert de risque IA, rédaction de clauses de responsabilité, audits de couverture pour les déploiements agents.",
+    "potentiel_perso": "Si vous déployez un outil IA pour des clients, vérifiez ce que votre assurance professionnelle couvre réellement en cas de préjudice lié à une sortie de modèle.",
+    "date": "2026-10-18T12:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "assurance",
+      "responsabilité",
+      "risque",
+      "déploiement"
+    ],
+    "source_url": "https://www.munichre.com/en/insights/ai-liability.html"
+  },
+  {
+    "id": "2026-10-18-modeles-muse-spark-rappel",
+    "titre": "Muse Spark Open : rappel des conditions d’exécution locale sur Mac",
+    "categorie": "Modèles IA",
+    "resume": "Le modèle ouvert de Meta (816 B paramètres, 42 B actifs) peut tourner sur deux Mac Studio M5 Ultra via MLX. La licence autorise de nombreux usages gratuits avec des limites commerciales.",
+    "contenu": "Meta a publié mi-octobre les poids de Muse Spark Open, un mélange d’experts de 816 milliards de paramètres au total pour 42 milliards actifs, avec une fenêtre d’un million de jetons et des entrées multimodales. Le modèle est optimisé pour le codage agentique. Meta indique qu’il peut s’exécuter localement sur deux Mac Studio M5 Ultra grâce au framework MLX.\n\nLes poids sont disponibles sur Hugging Face et via plusieurs hébergeurs. La licence Muse Model License permet un usage gratuit pour de nombreux développeurs tout en imposant des limites sur certains usages commerciaux. Les performances revendiquées portent notamment sur les tâches longues et les agents.\n\nPour un développeur ou une petite structure française, l’exécution locale ou sur infrastructure contrôlée réduit les questions de transfert de données. Le coût matériel (deux Mac Studio haut de gamme) reste élevé pour un usage occasionnel ; les options cloud restent plus accessibles. La licence doit être lue avant tout usage commercial.\n\nTester via un hébergeur avant d’investir dans du matériel. Vérifier les clauses de la licence sur les cas d’usage envisagés. Comparer sur un jeu de prompts internes.",
+    "modele_enjeu": "Grand modèle ouvert US exécutable en local sur Apple Silicon. Intérêt : contrôle des données. Enjeu : coût matériel, licence commerciale limitée, performances à valider.",
+    "perspective": "Pouvoir lancer un modèle de cette taille chez soi est un progrès technique réel. Le rapport qualité-coût dépend entièrement de votre charge de travail.",
+    "potentiel_business": "Prototypes d’agents internes sans sortie de données, évaluations de souveraineté pour des clients sensibles.",
+    "potentiel_perso": "Si vous avez accès à du matériel Apple récent ou à un crédit cloud, lancez un test sur une tâche de revue de code pour vous faire une opinion.",
+    "date": "2026-10-18T13:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Meta",
+      "Muse Spark",
+      "open weights",
+      "Mac",
+      "local"
+    ],
+    "source_url": "https://research.meta.ai/blog/muse-spark-open"
+  },
+  {
+    "id": "2026-10-18-astuces-rotation-cles",
+    "titre": "Rotation des clés API après un incident d’outil agent : checklist pratique",
+    "categorie": "Astuces",
+    "resume": "En cas d’exposition de clés stockées dans un outil tiers, la révocation doit se faire côté fournisseur, pas dans l’outil. Activer alertes et plafonds, et documenter les usages.",
+    "contenu": "Lorsqu’un outil agent ou une console stocke vos clés de fournisseurs (OpenAI, Anthropic, Google, etc.), une exposition oblige à agir côté fournisseur. La première étape est de se connecter directement au tableau de bord de chaque fournisseur et de révoquer toutes les clés qui ont été enregistrées dans l’outil concerné. Créer ensuite de nouvelles clés et mettre à jour uniquement les applications de confiance.\n\nActivez les alertes de facturation et les plafonds de dépense sur chaque compte. Examinez l’historique d’usage des derniers jours pour détecter des appels anormaux. Si des charges non autorisées apparaissent, contactez le support facturation du fournisseur en conservant les preuves.\n\nPour une équipe française, documentez la procédure dans le runbook sécurité. Limitez le nombre de personnes autorisées à créer des clés et préférez des clés à durée de vie courte ou des proxies internes quand c’est possible. Évitez de coller des clés dans des chats ou des e-mails.\n\nAppliquez la checklist dès aujourd’hui sur les outils agents que vous utilisez. Conservez une liste des clés actives et de leurs finalités.",
+    "perspective": "La rotation est un geste simple et peu coûteux. Elle devient indispensable dès qu’une clé quitte votre périmètre direct.",
+    "potentiel_business": "Procédures de rotation standardisées pour les clients, formations sécurité des clés API, outils de gestion de secrets.",
+    "potentiel_perso": "Prenez cinq minutes pour lister les outils où vous avez collé une clé et vérifiez que vous pouvez les révoquer rapidement.",
+    "date": "2026-10-18T14:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "sécurité",
+      "API keys",
+      "rotation",
+      "checklist"
+    ],
+    "source_url": "https://platform.openai.com/docs/guides/safety-best-practices"
+  },
+  {
+    "id": "2026-10-18-gaming-starcraft-bench",
+    "titre": "StarSkirmish : les modèles IA écrivent des bots StarCraft en une heure",
+    "categorie": "Gaming",
+    "resume": "Un banc d’essai donne une heure à chaque modèle pour écrire un bot Protoss en C++ contre BWAPI. GPT-6 Astra arrive en tête ; plusieurs modèles de frontière se tiennent dans un mouchoir de poche.",
+    "contenu": "StarSkirmish Bench v0.2 propose à chaque modèle une heure de temps mur dans son propre CLI (Claude Code, Codex, etc.) pour écrire un bot Protoss en C++ utilisant BWAPI sur OpenBW. Le bot affronte ensuite une liste fixe de 13 adversaires. GPT-6 Astra arrive en tête, suivi de GPT-6.1 Sol à un coût nettement inférieur. Gemini 4 Argon, Claude Opus 5.5 et Claude Fable 5.1 se situent dans une fourchette proche.\n\nLe banc teste la capacité à produire du code de jeu fonctionnel sous contrainte de temps et d’API spécifique. Il ne mesure pas la stratégie optimale de StarCraft, mais la vitesse à laquelle un modèle peut assembler un bot jouable.\n\nPour un développeur de jeux ou un passionné français, cela illustre l’usage des agents de code sur des domaines spécialisés. Les résultats restent dépendants du harness et de la qualité du prompt initial. L’exercice peut servir de base à des expérimentations locales sur d’autres moteurs.\n\nConsulter le classement et les bots générés si le dépôt est public. Tester un agent sur un petit projet de jeu pour calibrer les attentes.",
+    "perspective": "Écrire un bot jouable en une heure est impressionnant. Cela ne remplace pas des années d’équilibrage et de design de jeu.",
+    "potentiel_business": "Démonstrations d’agents de code sur des domaines verticaux, prototypage rapide de mécaniques de jeu.",
+    "potentiel_perso": "Si vous codez des jeux, lancez un agent sur une petite mécanique pour voir ce qu’il produit en une session.",
+    "date": "2026-10-18T15:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "StarCraft",
+      "bots",
+      "agents",
+      "benchmark",
+      "gaming"
+    ],
+    "source_url": "https://starskirmish.ai/"
+  },
+  {
+    "id": "2026-10-18-nouveautes-bee-wearables",
+    "titre": "Bee (Amazon) lance Frontier et Eclipse, deux wearables d’enregistrement passif",
+    "categorie": "Nouveautés",
+    "resume": "Amazon via sa filiale Bee présente Frontier (74,99 $) et Eclipse (99,99 $). Les deux appareils enregistrent l’audio en continu pour produire résumés et actions. Disponibles immédiatement pour Frontier.",
+    "contenu": "Bee, filiale d’Amazon, a présenté deux nouveaux appareils. Frontier, à 74,99 dollars, se porte au poignet ou s’épingle et est disponible maintenant. Eclipse, à 99,99 dollars, est un enregistreur de la taille d’une carte de crédit qui se fixe magnétiquement au dos d’un smartphone. Les deux capturent l’audio de manière passive tout au long de la journée et transforment les conversations en résumés, listes d’actions et insights.\n\nLe positionnement est celui d’un assistant de mémoire personnelle. Les questions de consentement des interlocuteurs, de conservation des enregistrements et de traitement des données personnelles sont centrales, surtout dans un cadre européen où le RGPD s’applique.\n\nPour un utilisateur français, l’enregistrement passif de conversations implique d’informer les personnes présentes et de disposer d’une base légale. Les données transitent vraisemblablement par des services Amazon. L’intérêt pratique (prise de notes automatique) doit être pesé contre les risques de confidentialité.\n\nLire les conditions de confidentialité avant tout achat. Tester d’abord dans des contextes où toutes les personnes sont informées. Vérifier les options de stockage et de suppression.",
+    "perspective": "L’idée d’une mémoire externe est séduisante. L’enregistrement continu de conversations reste un sujet sensible en Europe.",
+    "potentiel_business": "Veille sur les wearables de capture, opportunités de solutions de prise de notes conformes RGPD pour les réunions.",
+    "potentiel_perso": "Si vous prenez beaucoup de notes en réunion, comparez le gain de temps annoncé avec les contraintes de consentement avant d’acheter.",
+    "date": "2026-10-18T16:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Bee",
+      "Amazon",
+      "wearable",
+      "audio",
+      "confidentialité"
+    ],
+    "source_url": "https://www.bee.com/"
+  },
+  {
+    "id": "2026-10-18-dev-vercel-jev",
+    "titre": "Jev de TypeSafe AI devient le modèle le plus rapidement adopté sur Vercel",
+    "categorie": "Dev",
+    "resume": "Selon les données de la passerelle IA de Vercel, Jev a été adopté par 35 % des équipes payantes dans les deux semaines suivant sa mise à disposition limitée. Le modèle est orienté décision et agents.",
+    "contenu": "Les données de la passerelle IA de Vercel indiquent que Jev, le modèle de TypeSafe AI, a été adopté par 35 % des équipes payantes dans les deux semaines qui ont suivi sa sortie limitée. C’est le taux d’adoption le plus rapide observé sur la plateforme. Jev est présenté comme un modèle orienté décision, avec support d’images et une fenêtre de contexte étendue dans ses dernières versions.\n\nL’adoption rapide sur une passerelle qui agrège plusieurs fournisseurs suggère que les équipes cherchent des modèles spécialisés pour des tâches d’agent ou de routage plutôt que uniquement les modèles généralistes les plus connus. Les coûts et la latence restent des critères décisifs.\n\nPour une équipe française qui déploie sur Vercel ou qui utilise des passerelles similaires, cela montre l’intérêt de tester rapidement les nouveaux modèles sur des sous-ensembles de trafic. La conformité et la résidence des données dépendent du fournisseur final choisi derrière la passerelle.\n\nÉvaluer Jev sur un échantillon de tâches de décision ou d’agent. Comparer coût et qualité avec les modèles déjà en production. Documenter les critères de bascule.",
+    "perspective": "Une adoption rapide sur une passerelle ne garantit pas la qualité sur votre cas d’usage. Elle indique simplement que beaucoup d’équipes ont jugé le test utile.",
+    "potentiel_business": "Benchmarks internes de modèles agents, optimisation de coûts via passerelles, formations au routage de modèles.",
+    "potentiel_perso": "Si vous utilisez Vercel AI Gateway, activez Jev sur un projet de test pour voir s’il améliore vos flux de décision.",
+    "date": "2026-10-18T17:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Vercel",
+      "Jev",
+      "TypeSafe",
+      "agents",
+      "adoption"
+    ],
+    "source_url": "https://vercel.com/blog/jev-adoption"
+  }
+]
