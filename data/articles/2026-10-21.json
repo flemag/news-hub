@@ -1,1 +1,16 @@
-PLACEHOLDER_TO_BE_REPLACED
+[
+  {
+    "id": "google-torchtpu-pytorch-tpu-2026-10-21",
+    "titre": "Google ouvre TorchTPU, un backend PyTorch natif pour ses TPU, co-développé avec Meta",
+    "categorie": "Dev",
+    "resume": "Le 20 octobre, Google a publié TorchTPU en open source. Il permet d’exécuter du code PyTorch existant sur Cloud TPU via torch.device('tpu'), avec intégrations vLLM, SGLang, TorchTitan et Hugging Face.",
+    "contenu": "Le 20 octobre 2026, lors de la PyTorch Conference, Google a annoncé l’ouverture de TorchTPU, un backend PyTorch natif pour ses Tensor Processing Units. Co-développé avec l’équipe PyTorch de Meta, il remplace progressivement l’ancien PyTorch/XLA. Les développeurs ciblent un TPU avec torch.device(\"tpu\"), sans types wrappers. Le mode eager facilite le débogage, tandis que torch.compile produit des graphes optimisés pour la production. Quatre dépôts sont ouverts : TorchTPU, vLLM-TorchTPU, SGLang-TorchTPU et TorchTitan.\n\nGoogle indique que TorchTPU est déjà utilisé en production chez certains clients Cloud. Les intégrations couvrent Hugging Face Transformers (device_map=\"tpu\" en v5), Diffusers, Ray et LiteRT. Des benchmarks internes montrent jusqu’à 52 % de Model FLOPs Utilization sur Qwen 3 8B avec TorchTitan sur jusqu’à 8 192 puces Ironwood (TPU v7x). Un agent suite aide à la migration automatique de charges depuis GPU.\n\nPour un développeur ou une équipe en France ou en Europe qui écrit principalement en PyTorch et dépend de GPU Nvidia, cela ouvre une option de calcul alternatif sur Google Cloud, potentiellement moins chère selon les charges. La migration reste à tester : les opérateurs non couverts, la quantification (FP8, FP4) et le scaling distribué nécessitent des validations. La souveraineté des données et les contrats Cloud restent des points d’attention sous le RGPD.\n\nÀ surveiller : la couverture réelle des modèles Hugging Face, les retours de la communauté sur les performances hors benchmarks vendor, et l’évolution des prix TPU face aux GPU. Les équipes peuvent commencer par des tests sur des charges d’inférence avant d’engager de l’entraînement.",
+    "perspective": "TorchTPU réduit la barrière d’entrée aux TPU pour l’écosystème PyTorch, mais les performances annoncées restent des chiffres vendor. La maturité et le support long terme dépendront de l’adoption communautaire.",
+    "potentiel_business": "Les entreprises qui cherchent à diversifier leurs fournisseurs de calcul IA peuvent évaluer les TPU via TorchTPU sans réécrire leur code. Cela peut influencer les négociations de capacité Cloud.",
+    "potentiel_perso": "Pour un développeur indépendant, tester TorchTPU sur des modèles open weights permet d’explorer des alternatives GPU sans engagement lourd, à condition de disposer d’un accès Cloud.",
+    "date": "2026-10-21T06:00:00.000Z",
+    "urgence": "haute",
+    "tags": ["Google", "PyTorch", "TPU", "TorchTPU", "open source"],
+    "source_url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus"
+  }
+]
