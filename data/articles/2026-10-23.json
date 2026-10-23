@@ -1,0 +1,16 @@
+[
+  {
+    "id": "php2shell-cve-2026-109618-2026-10-23",
+    "titre": "PHP2Shell : deux failles critiques d'exécution de code à distance dans le moteur PHP",
+    "categorie": "Hack & Console",
+    "resume": "Le 21 octobre, PHP a publié des correctifs pour CVE-2026-109618 et CVE-2026-109619 (CVSS 9.2). Ces bugs de mémoire dans le moteur permettent une RCE non authentifiée. La plupart des versions depuis 5.4 sont concernées ; mise à jour immédiate.",
+    "contenu": "Le 21 octobre 2026, PHP a publié les versions 8.5.12, 8.4.27, 8.3.36 et 8.2.35 pour corriger CVE-2026-109618 et CVE-2026-109619, appelées PHP2Shell. Chaque vulnérabilité reçoit un score CVSS 4.0 de 9.2. Il s'agit de problèmes de corruption de mémoire dans le moteur PHP, indépendamment de l'application. Une requête réseau non authentifiée peut, sous certaines conditions, permettre l'exécution de code. Les versions concernées remontent à PHP 5.4.\n\nDes preuves de concept ont été montrées contre des installations par défaut, notamment sous mod_php. L'exploitation de masse n'est pas automatique, car elle exige des conditions spécifiques, mais des tentatives ont déjà été observées. Les sites WordPress ou Magento sont exposés même si leur code est propre. La mise à jour et le redémarrage des workers restent indispensables.\n\nPour une entreprise ou un freelance en France qui héberge des sites PHP, la priorité est de vérifier la version exacte. Les hébergeurs mutualisés et les images Docker doivent être contrôlés. Une surface aussi large peut alimenter des scans automatisés.\n\nÀ surveiller : la diffusion d'exploits plus fiables, la disponibilité des paquets et les signes d'exploitation dans les journaux. Les équipes doivent inventorier leurs instances PHP.",
+    "perspective": "La gravité est réelle car la faille est dans le moteur, mais les conditions d'exploitation limitent pour l'instant le risque de compromission massive automatique. La mise à jour reste indispensable.",
+    "potentiel_business": "Les hébergeurs et e-commerçants doivent accélérer les mises à jour pour éviter des incidents. Les prestataires de sécurité peuvent proposer des scans ciblés sur PHP.",
+    "potentiel_perso": "Si vous maintenez un site PHP, vérifiez votre version et celle de votre hébergeur. Un conteneur non mis à jour reste vulnérable.",
+    "date": "2026-10-23T06:00:00.000Z",
+    "urgence": "haute",
+    "tags": ["PHP", "sécurité", "RCE", "CVE-2026-109618", "PHP2Shell"],
+    "source_url": "https://research.jfrog.com/post/php2shell-all-you-need-to-know-about-cve-2026-109618-and-cve-2026-109619"
+  }
+]
