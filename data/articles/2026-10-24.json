@@ -1,15 +1,1 @@
-[{
-  "id": "kimi-k3-1-pro-moonshot-2026-10-24",
-  "titre": "Moonshot lance Kimi K3.1 Pro, modèle open-weight de 2,8 billions de paramètres avec contexte d’un million de tokens",
-  "categorie": "Modèles IA",
-  "resume": "Le 23 octobre, Moonshot AI a publié Kimi K3.1 Pro, un modèle Mixture-of-Experts de 2,8 T de paramètres totaux (104 B actifs) et un contexte d’un million de tokens. Disponible via API à 2 $/10 $ par million de tokens ; poids open prévus le 4 novembre.",
-  "contenu": "Moonshot AI a annoncé le 23 octobre Kimi K3.1 Pro, décrit comme son modèle open-weight le plus capable de la classe 3 T. Il s’agit d’un Mixture-of-Experts avec 2,8 billions de paramètres totaux et 104 milliards actifs, multimodal, et un contexte d’un million de tokens. Une variante Highspeed, deux à trois fois plus rapide, est également disponible. Les identifiants API sont kimi-k3.1-pro et kimi-k3.1-pro-highspeed, compatibles OpenAI. Le tarif est de 2 dollars l’entrée et 10 dollars la sortie par million de tokens (4 et 20 pour Highspeed).\\n\\nSelon Moonshot, le modèle atteint 65,7 % sur Terminal-Bench 4.0, juste derrière Claude Opus 5.5 (66,4 %) et devant GPT-6 Astra (58,2 %). Il mène sur SWE-Marathon et se rapproche des meilleurs modèles sur BenchCAD pour la modélisation 3D. Les poids seront publiés d’ici le 4 novembre. Moonshot a retiré des données cyber de la version open.\\n\\nPour un développeur ou une entreprise en France, l’API est immédiatement utilisable. Le modèle open de cette taille exigera toutefois des clusters importants (Moonshot recommande des supernodes de 64+ accélérateurs). La conformité RGPD reste à évaluer pour l’auto-hébergement.\\n\\nÀ surveiller : la publication effective des poids, les benchmarks indépendants et la disponibilité sur des plateformes européennes. Les équipes qui utilisent déjà Kimi peuvent tester Highspeed.",
-  "perspective": "Les scores auto-rapportés placent le modèle près de la frontière propriétaire, mais les évaluations indépendantes sont encore limitées. La taille rend l’exécution locale coûteuse pour la plupart des acteurs.",
-  "potentiel_business": "Les entreprises qui cherchent un modèle open-weight performant en code et en agents peuvent tester l’API maintenant et anticiper l’auto-hébergement après le 4 novembre.",
-  "potentiel_perso": "Pour un développeur individuel, l’API est accessible. L’exécution locale d’un modèle de cette taille restera hors de portée sans matériel spécialisé.",
-  "date": "2026-10-24T06:00:00.000Z",
-  "urgence": "breaking",
-  "tags": ["Kimi", "Moonshot", "modèle open", "Mixture-of-Experts", "contexte long"],
-  "source_url": "https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model/",
-  "modele_enjeu": "Kimi K3.1 Pro montre qu’un modèle chinois open-weight peut se rapprocher des meilleurs modèles fermés sur le code et les agents. L’enjeu est de savoir si les poids publiés le 4 novembre conserveront ces performances sans les données cyber retirées, et si l’exécution reste praticable hors des hyperscalers."
-}]
+$(cat /tmp/articles_2026-10-24.json)
