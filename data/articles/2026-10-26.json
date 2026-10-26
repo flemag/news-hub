@@ -1,1 +1,14 @@
-PLACEHOLDER_TO_REPLACE
+[{
+  "id": "suede-bloque-chatgpt-claude-copilot-2026-10-26",
+  "titre": "La Suède bloque ChatGPT et Claude sur les ordinateurs du gouvernement, conserve Copilot",
+  "categorie": "Société & Politique",
+  "resume": "À partir du 26 octobre, les bureaux du gouvernement suédois bloquent l'accès navigateur à ChatGPT et Claude sur les postes des agents. Microsoft Copilot reste autorisé après revue de sécurité. Motif : absence de contrat et risques pour les informations sensibles.",
+  "contenu": "Le 26 octobre 2026, les bureaux du gouvernement suédois (Regeringskansliet) bloquent l'accès navigateur à ChatGPT et Claude sur les ordinateurs de travail des agents. Cette décision, confirmée à SVT et rapportée par Sveriges Radio, oriente le personnel vers Microsoft Copilot, seul outil ayant passé une revue de sécurité interne avec renforcement des paramètres. Certaines personnes conservent l'accès aux modèles via la plateforme interne Intric. D'autres agences (impôts, soins institutionnels) ont déjà des restrictions similaires.\\n\\nLe directeur de la digitalisation, Mikael Wettercrantz, a souligné sur l'intranet que l'usage de services IA sans contrat formel peut compromettre la sécurité de l'information. Des cas d'utilisation problématique d'outils ouverts ont été observés, notamment sur la sensibilité des données saisies. La mesure ne constitue pas une interdiction nationale : les citoyens et entreprises restent libres.\\n\\nPour une administration française ou européenne, cela illustre la tension entre productivité et maîtrise des données. L'AI Act et les règles de confidentialité poussent vers des contrats, des paramètres contrôlés et des outils internes. Les freelances ou PME qui traitent des données sensibles doivent privilégier des offres entreprise avec DPA clair plutôt que des interfaces grand public.\\n\\nÀ surveiller : si d'autres États membres de l'UE suivent, et comment les éditeurs adaptent leurs offres publiques. Les équipes IT publiques peuvent auditer les usages non contractés.",
+  "perspective": "Le blocage est ciblé et justifié par l'absence de contrat, pas par un rejet des modèles. Il montre que la sécurité de l'information prime encore sur la facilité d'accès grand public.",
+  "potentiel_business": "Les prestataires d'IA entreprise et les éditeurs avec contrats publics peuvent gagner des parts. Les agences françaises peuvent s'inspirer pour formaliser leurs accès.",
+  "potentiel_perso": "Si vous travaillez dans le public ou avec des données sensibles, évitez les chatbots grand public pour les documents professionnels et préférez des outils sous contrat.",
+  "date": "2026-10-26T07:00:00.000Z",
+  "urgence": "breaking",
+  "tags": ["Suède", "ChatGPT", "Claude", "Copilot", "sécurité", "administration"],
+  "source_url": "https://decrypt.co/381763/sweden-government-offices-block-chatgpt-claude"
+}]
