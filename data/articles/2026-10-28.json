@@ -1,1 +1,16 @@
-PLACEHOLDER_TO_REPLACE
+[
+  {
+    "id": "2026-10-28-github-universe-agentic",
+    "titre": "GitHub Universe 2026 s'ouvre à San Francisco : l'ère des agents au cœur des annonces",
+    "categorie": "Dev",
+    "resume": "La conférence phare de GitHub démarre aujourd'hui au Fort Mason Center. Keynote à 9 h PT, focus sur les flux agentiques, la sécurité de la supply chain et la collaboration humain-agent. Accès virtuel gratuit disponible.",
+    "contenu": "GitHub Universe 2026 se tient les 28 et 29 octobre au Fort Mason Center à San Francisco, avec une option virtuelle gratuite. La keynote d'ouverture a lieu à 9 h heure du Pacifique le premier jour. L'événement rassemble des milliers de développeurs autour du thème de l'ère agentique : les sessions couvrent la vérification du code écrit par des agents, la sécurisation des dépendances npm, l'autorisation fine pour les serveurs MCP et la délégation de tâches complexes à Copilot.\n\nLe format évolue avec des sessions Ship & Tell plus rapides et une zone open source renforcée. Parmi les intervenants figurent des représentants d'Anthropic, OpenAI, Microsoft et de grandes entreprises. Les billets physiques sont épuisés, mais le pass virtuel reste ouvert.\n\nPour un développeur ou une équipe en France ou dans l'UE, l'enjeu est double. D'une part, les annonces sur la gouvernance des agents et la sécurité de la chaîne d'approvisionnement peuvent influencer les choix d'outils internes. D'autre part, la conformité RGPD et les questions de résidence des données restent centrales lorsque des agents manipulent du code sensible. Les démos en direct permettront de juger si les promesses d'orchestration se traduisent en pratiques auditables.\n\nÀ surveiller : les détails techniques sur les règlesets, les workflows Actions et les outils de scan IA pour les pull requests. Les enregistrements virtuels seront utiles pour adapter les politiques internes sans attendre le retour des participants.",
+    "perspective": "L'événement structure la conversation autour des agents, mais les implémentations concrètes et les garanties de sécurité prendront des mois à se diffuser dans les entreprises européennes.",
+    "potentiel_business": "Les équipes produit et sécurité peuvent identifier des patterns de gouvernance à tester immédiatement sur leurs dépôts, notamment autour des MCP et de la provenance des packages.",
+    "potentiel_perso": "Suivre les sessions virtuelles gratuites permet de calibrer son usage de Copilot et d'anticiper les changements d'interface agentique.",
+    "date": "2026-10-28T07:00:00Z",
+    "urgence": "breaking",
+    "tags": ["GitHub", "Universe", "agents", "DevOps", "sécurité"],
+    "source_url": "https://githubuniverse.com/"
+  }
+]
