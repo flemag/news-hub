@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sensetime-sensenova-loop-9b-2026",
+    "titre": "SenseTime open-source SenseNova-Loop-9B-Preview, un modèle multimodal bouclé",
+    "categorie": "Modèles IA",
+    "resume": "SenseTime publie les poids Apache 2.0 de SenseNova-Loop-9B-Preview, un modèle multimodal de ~9 milliards de paramètres qui réexécute un bloc de couches pour atteindre l’équivalent de 14,6 milliards en inférence. Conçu pour les workflows agents et le long contexte.",
+    "contenu": "Le 30 octobre 2026, SenseTime a mis en ligne sur Hugging Face et GitHub les poids de SenseNova-Loop-9B-Preview sous licence Apache 2.0. Le modèle compte environ 9 milliards de paramètres stockés, mais exécute 56 passages de couches par forward pass grâce à un bloc de 24 couches partagées qui tourne deux fois. Il accepte texte et images, génère du texte, et a été entraîné sur des contextes jusqu’à 262 144 tokens. L’architecture combine attention hybride (trois couches linéaires pour une pleine) et des connexions hyper-contraintes à double flux (mHC).\n\nSenseTime positionne ce modèle pour les tâches agents, l’analyse de documents et le code. Sur ses benchmarks internes, il dépasserait Qwen3.5-27B sur WorkBuddy, RaccoonPPT et AutomationBench, tout en restant plus léger en mémoire. Les gains de l’ablation mHC sont chiffrés : +4,42 points sur GPQA Diamond et +13,34 sur TeamBench. Le dépôt inclut des recettes d’entraînement et des exemples d’inférence avec Transformers et SGLang.\n\nPour une équipe française, l’intérêt est double : un modèle open weights relativement compact qui peut tourner en local après quantification, et une architecture originale qui explore le calcul en profondeur plutôt que la simple croissance des paramètres. La conformité reste à vérifier pour un usage commercial (Apache 2.0 est permissive, mais les données d’entraînement chinoises posent des questions RGPD/AI Act).\n\nÀ surveiller : les premières quantizations GGUF, les benchmarks indépendants de coding agents et la qualité réelle sur des documents techniques en français. Les développeurs qui construisent des agents locaux peuvent tester dès maintenant via Hugging Face.",
+    "perspective": "Architecture intéressante qui maximise le calcul par paramètre, mais les scores restent ceux de l’éditeur. L’ouverture réelle se mesurera à l’adoption et aux évaluations tierces.",
+    "potentiel_business": "Opportunité pour les freelances et PME qui veulent un modèle multimodal local pour l’analyse de documents ou les agents, sans dépendre uniquement des API américaines.",
+    "potentiel_perso": "Si vous avez une carte graphique de 16 Go ou plus, vous pourrez bientôt le faire tourner localement après quantification et comparer ses performances sur vos propres tâches.",
+    "modele_enjeu": "SenseNova-Loop montre que les architectures bouclées peuvent offrir plus de profondeur de calcul sans multiplier les poids. Pour l’Europe, c’est une alternative ouverte supplémentaire, même si l’origine chinoise impose de rester vigilant sur la souveraineté des données et la traçabilité.",
+    "date": "2026-11-01T07:00:00Z",
+    "urgence": "haute",
+    "tags": ["SenseTime", "SenseNova", "open weights", "multimodal", "agents"],
+    "source_url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview"
+  }
+]
