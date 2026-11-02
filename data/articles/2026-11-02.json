@@ -1,1 +1,22 @@
-PLACEHOLDER_TO_REPLACE
+[
+  {
+    "id": "2026-11-02-openai-quotas-partages",
+    "titre": "OpenAI fusionne les quotas ChatGPT et Codex dès décembre pour les abonnés Plus, Pro et Business",
+    "categorie": "Dev",
+    "resume": "À partir de décembre 2026, les plans Plus, Pro et Business d’OpenAI partageront un seul quota en tokens entre ChatGPT et Codex. Le chat Instant reste exclu. Les utilisateurs devront arbitrer entre codage intensif et conversations avancées.",
+    "contenu": "OpenAI a mis à jour le 31 octobre sa page d’aide : dès décembre, les abonnés Plus, Pro et Business disposeront d’un unique quota mesuré en tokens, partagé entre ChatGPT et Codex. Le mode Instant ne consommera pas ce quota. Aucune date précise ni volume de tokens par plan n’a encore été publié.\n\nJusqu’ici, le travail agentique (Codex et ChatGPT Work) puisait déjà dans un pool commun, tandis que le chat classique sur modèles avancés restait séparé. La fusion étend ce pool à l’essentiel des interactions payantes hors Instant. Les utilisateurs verront le quota restant et les heures de reset dans les paramètres, et pourront acheter des crédits une fois la limite atteinte.\n\nPour un développeur ou un freelance en France, l’impact est concret : une session longue de refactoring avec Codex peut épuiser le quota avant une analyse dans ChatGPT. Les estimations actuelles pour Plus donnent, sur cinq heures, environ 5 à 45 messages avec GPT-6 Astra contre 350 à 3 000 avec un modèle plus léger. Le choix du modèle devient un levier de budget.\n\nIl convient de mesurer dès maintenant sa consommation réelle, de prioriser les tâches critiques et de vérifier si le plan actuel reste adapté. Les comptes Enterprise et Edu ne sont pas concernés. La vérification dans les paramètres après le basculement sera le seul moyen fiable de calibrer ses habitudes.",
+    "perspective": "La mutualisation simplifie la facturation pour OpenAI mais transfère la gestion de la rareté aux utilisateurs. Sans chiffres exacts, difficile de juger si le quota global augmente ou diminue.",
+    "potentiel_business": "Les équipes produit et tech devront revoir leurs politiques d’usage interne et anticiper l’achat de crédits. Utile pour les outils qui orchestrent agents et chat.",
+    "potentiel_perso": "Suivre sa consommation dans les paramètres et basculer sur Instant pour les questions légères permet de préserver le quota pour le vrai travail de code.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "breaking",
+    "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Codex",
+      "quotas",
+      "développeurs"
+    ],
+    "source_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+  }
+]
