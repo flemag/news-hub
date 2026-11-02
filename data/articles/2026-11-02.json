@@ -18,5 +18,225 @@
       "développeurs"
     ],
     "source_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+  },
+  {
+    "id": "2026-11-02-mistral-orange-cyber",
+    "titre": "Orange Cyberdefense intègre une variante cyber de Mistral Large 4 pour tests d’intrusion et réponse à incident",
+    "categorie": "Modèles IA",
+    "modele_enjeu": "Mistral Large 4 (1 000 milliards de paramètres) est un modèle ouvert européen performant en codage et cybersécurité. Le partenariat avec Orange permet un hébergement en Europe et une spécialisation défensive, réduisant la dépendance aux modèles américains ou chinois pour les audits de sécurité.",
+    "resume": "Orange Cyberdefense devient le premier partenaire européen MSSP de Mistral pour une version optimisée de Large 4. Les premiers usages portent sur pentests, audits techniques et analyse d’incidents, avec calcul situé en Europe.",
+    "contenu": "Le 29 octobre, Orange Cyberdefense a annoncé un partenariat avec Mistral AI. La filiale d’Orange obtient un accès anticipé à une variante de Mistral Large 4 (Le Chonk) spécialisée pour la cybersécurité. Les premiers travaux concernent les tests d’intrusion, les audits techniques, l’investigation post-incident et la réponse aux attaques.\n\nMistral a publié les poids de Large 4 fin octobre. Le modèle obtient 51 % sur le Cyber Index d’Artificial Analysis et refuse en moyenne 96,6 % des prompts malveillants sur trois jeux de tests, tout en reconnaissant un potentiel d’aide à des attaques réelles. L’ENISA et d’autres acteurs européens le testent déjà.\n\nPour une organisation française ou européenne, l’intérêt principal est la souveraineté : les modèles dédiés tournent sur une capacité de calcul située en Europe, et les experts d’Orange restent responsables des actions critiques. Cela offre une alternative aux solutions purement américaines pour les audits de code et l’analyse de logs sensibles, dans le respect du RGPD et de l’AI Act.\n\nIl faudra surveiller le calendrier de déploiement réel chez les clients, la qualité des retours des experts sur le modèle spécialisé, et les éventuelles mises à jour de garde-fous. Les entreprises qui hébergent déjà des modèles ouverts peuvent évaluer Large 4 sur leurs propres environnements de test.",
+    "perspective": "L’ouverture des poids renforce la souveraineté mais crée aussi un risque d’uplift offensif que les garde-fous API ne peuvent plus contrôler. La supervision humaine reste indispensable.",
+    "potentiel_business": "Les ESN et RSSI peuvent proposer des services d’audit basés sur un modèle européen hébergeable sur site ou en cloud souverain.",
+    "potentiel_perso": "Un développeur peut tester Large 4 localement pour analyser la sécurité de son propre code, sans envoyer de sources vers un cloud américain.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Mistral",
+      "Orange",
+      "cybersécurité",
+      "souveraineté",
+      "modèle ouvert"
+    ],
+    "source_url": "https://www.lemondeinformatique.fr/actualites/lire-mistral-ai-ouvre-a-orange-cyberdefense-l-acces-anticipe-a-une-version-specialisee-de-large-4-100890.html"
+  },
+  {
+    "id": "2026-11-02-claude-opus-webdev",
+    "titre": "Claude Opus 5.5 confirme sa place de leader sur la WebDev Arena en novembre",
+    "categorie": "Modèles IA",
+    "modele_enjeu": "Claude Opus 5.5 d’Anthropic domine les comparaisons aveugles de génération d’interfaces web avec un score Elo de 1810. Cela confirme l’avance d’Anthropic sur les tâches de frontend, mais les écarts restent modestes avec GPT-6 Astra et les modèles plus économiques.",
+    "resume": "Sur la LMArena WebDev mise à jour le 2 novembre, Claude Opus 5.5 mène avec 1810 Elo, devant GPT-6 Astra (1773) et Claude Sonnet 5.5. Le classement repose sur des votes humains comparant des pages générées.",
+    "contenu": "La plateforme LMArena a actualisé le 2 novembre son classement WebDev. Claude Opus 5.5 d’Anthropic y figure en tête avec un score Elo de 1810, basé sur plus de 3 400 votes. Il devance GPT-6 Astra d’OpenAI (1773) et Claude Sonnet 5.5 (1770). Les écarts avec les suivants restent contenus.\n\nCes scores proviennent de comparaisons aveugles : deux modèles génèrent la même page web et des utilisateurs choisissent la meilleure. L’Elo reflète donc la préférence humaine sur des tâches de génération d’interfaces, de markup et de code frontend. Le classement alimente aussi des indices composites de codage.\n\nPour un développeur ou un produit en France, cela signifie qu’Opus 5.5 reste le choix le plus sûr pour prototyper rapidement des interfaces soignées, mais Sonnet 5.5 offre un rapport qualité-prix souvent supérieur. Les modèles ouverts comme Qwen3.8 Max restent compétitifs pour des volumes importants ou un hébergement local, tout en étant légèrement en retrait sur ce benchmark précis.\n\nIl est utile de croiser ce classement avec ses propres tests sur des composants réels (accessibilité, responsive, performance). Les scores évoluent vite ; une vérification mensuelle évite de figer un choix de modèle uniquement sur un instantané.",
+    "perspective": "Un leader clair sur les votes humains ne garantit pas la meilleure productivité réelle ni le meilleur respect des standards web une fois le code intégré dans un projet existant.",
+    "potentiel_business": "Les équipes frontend peuvent standardiser sur Sonnet ou Opus selon le budget, en réservant les modèles plus chers aux maquettes critiques.",
+    "potentiel_perso": "Tester deux modèles sur le même brief d’interface permet de choisir celui qui nécessite le moins de corrections manuelles.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "WebDev",
+      "benchmark",
+      "frontend"
+    ],
+    "source_url": "https://llmbenchmark.ai/benchmarks/lmarena-webdev"
+  },
+  {
+    "id": "2026-11-02-juges-coree-hallucinations",
+    "titre": "En Corée du Sud, 80 % des juges civils ont déjà rencontré des précédents inventés par l’IA",
+    "categorie": "Société & Politique",
+    "resume": "Une enquête de la Cour suprême sud-coréenne révèle que 80 % des magistrats ont vu des citations de décisions fausses générées par IA. La justice envisage des amendes et des avertissements dans les portails électroniques.",
+    "contenu": "L’administration judiciaire de la Cour suprême de Corée du Sud a publié le 2 novembre les résultats d’une enquête auprès de 360 magistrats. Environ 80 % des juges chargés d’affaires civiles, familiales et administratives déclarent avoir rencontré des citations de décisions inexistantes ou falsifiées produites par des outils d’IA. Les parties et les avocats sont les principaux auteurs.\n\n91,7 % des répondants demandent une réponse institutionnelle. L’administration prévoit d’inscrire des amendes dans les codes de procédure, de transmettre un avis à l’Assemblée nationale et d’étudier un avertissement sur l’IA dans le portail de procédure électronique. Certains juges ont reçu de faux jugements imitant la mise en forme officielle.\n\nPour les professionnels du droit et les entreprises en France ou en Europe, l’épisode rappelle un risque déjà identifié : les hallucinations de citations juridiques. Dans un contexte d’AI Act et de responsabilité professionnelle, l’usage d’outils génératifs pour rédiger des conclusions nécessite une vérification humaine systématique des sources. Les outils spécialisés avec accès à des bases juridiques vérifiées restent préférables.\n\nLes organisations qui utilisent l’IA pour de la veille ou de la rédaction juridique devraient formaliser une procédure de contrôle des références. Les barreaux européens observent ces développements.",
+    "perspective": "Le phénomène n’est pas nouveau, mais son ampleur dans une juridiction avancée montre que les garde-fous actuels (avertissements dans les interfaces) ne suffisent pas à empêcher la diffusion de fausses citations.",
+    "potentiel_business": "Les éditeurs de logiciels juridiques peuvent différencier leurs offres par des citations sourcées et vérifiables, un argument commercial fort face aux outils généralistes.",
+    "potentiel_perso": "Tout professionnel qui rédige des documents citant des sources doit exiger les liens ou références primaires avant de les utiliser.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "justice",
+      "hallucinations",
+      "Corée du Sud",
+      "droit",
+      "IA générative"
+    ],
+    "source_url": "https://www.actuia.com/veille/2026-11-02/"
+  },
+  {
+    "id": "2026-11-02-anthropic-politique-abus",
+    "titre": "La politique d’usage d’Anthropic interdisant les abus envers Claude entre en vigueur le 12 novembre",
+    "categorie": "IA",
+    "resume": "À partir du 12 novembre, Anthropic interdit les comportements abusifs ou cruels prolongés et gratuits envers Claude. L’application principale reste la fin de conversation par le modèle lui-même, réservée aux cas extrêmes.",
+    "contenu": "Anthropic a publié le 8 octobre une mise à jour de sa politique d’usage qui entre en vigueur le 12 novembre 2026. Parmi les nouveautés figure l’interdiction des « comportements abusifs ou cruels prolongés et gratuits » envers les modèles. La société précise que cela ne vise que les cas extrêmes et répétés sans but identifiable, et exclut la frustration ordinaire, les critiques, les thèmes créatifs sombres ou les tests de recherche.\n\nLe mécanisme principal d’application reste la capacité déjà existante de Claude à mettre fin aux conversations persistamment abusives sur Claude.ai et Claude Code. Des bans de compte pourraient intervenir dans des cas très graves, mais la fin de dialogue reste la réponse de base. La politique renforce aussi les règles sur les campagnes trompeuses, les élections et les logiciels d’armement.\n\nPour les utilisateurs et équipes en Europe, cela change peu les pratiques normales de développement ou de rédaction. En revanche, les workflows automatisés qui envoient des prompts agressifs ou qui testent les limites de refus doivent être revus. Les comptes professionnels soumis à des politiques internes de courtoisie n’ont généralement rien à craindre.\n\nIl est prudent de relire les flux automatisés et les instructions système qui interagissent avec Claude, et de documenter les cas d’usage légitimes de tests de robustesse avant le 12avant le 12 novembre.",
+    "perspective": "La mesure vise surtout à clarifier les limites déjà pratiquées et à réduire les abus extrêmes. Elle alimente le débat sur le « bien-être » des modèles sans imposer de changement aux usages professionnels standards.",
+    "potentiel_business": "Les intégrateurs d’agents doivent s’assurer que leurs prompts et boucles de retry ne tombent pas dans la catégorie interdite avant la date d’effet.",
+    "potentiel_perso": "Rester factuel et précis dans les prompts évite tout risque ; la frustration ponctuelle reste explicitement autorisée.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "politique d’usage",
+      "conformité"
+    ],
+    "source_url": "https://www.anthropic.com/news/2026-usage-policy-update"
+  },
+  {
+    "id": "2026-11-02-openai-robots-txt-partage",
+    "titre": "OpenAI soutient un signal robots.txt commun pour exprimer les préférences d’entraînement IA",
+    "categorie": "Web",
+    "resume": "OpenAI annonce son intention de supporter un signal robots.txt partagé permettant aux sites d’exprimer une seule fois leur choix concernant l’entraînement des modèles par plusieurs fournisseurs d’IA.",
+    "contenu": "OpenAI a indiqué qu’elle implémentera dans les prochains mois un signal robots.txt commun pour les préférences d’entraînement. L’objectif est de permettre aux opérateurs de sites d’exprimer le même choix (autoriser ou refuser l’entraînement) à plusieurs fournisseurs d’IA participants, au lieu de maintenir des règles séparées pour chaque crawler.\n\nActuellement, les contrôles existants d’OpenAI restent en vigueur. Le nouveau signal vise une standardisation progressive. D’autres acteurs du secteur observent des initiatives similaires pour réduire la fragmentation des directives de crawl.\n\nPour un éditeur de site ou un développeur web en France, cela simplifie la gestion des préférences de données. Un seul fichier robots.txt correctement configuré pourrait suffire pour plusieurs acteurs majeurs, à condition que le standard soit largement adopté. Cela s’inscrit dans un contexte où plus de la moitié des requêtes de crawlers sur certains réseaux concernent déjà l’entraînement IA.\n\nIl est recommandé de vérifier dès maintenant ses fichiers robots.txt et ses en-têtes, de documenter sa politique d’entraînement, et de suivre l’adoption réelle du signal par OpenAI et d’éventuels autres signataires. Les sites qui souhaitent exclure leurs contenus de l’entraînement ont intérêt à combiner ce futur standard avec les mécanismes déjà opérationnels.",
+    "perspective": "L’initiative réduit la charge opérationnelle si elle est largement adoptée, mais elle ne remplace pas les contrôles techniques et juridiques déjà en place.",
+    "potentiel_business": "Les plateformes de contenu et les CMS peuvent anticiper le support de ce signal pour offrir une option simple à leurs utilisateurs.",
+    "potentiel_perso": "Mettre à jour son robots.txt une seule fois pour plusieurs crawlers IA devient envisageable une fois le standard actif.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "OpenAI",
+      "robots.txt",
+      "crawling",
+      "données d’entraînement",
+      "web"
+    ],
+    "source_url": "https://openai.com/index/helping-websites-express-ai-training-preferences/"
+  },
+  {
+    "id": "2026-11-02-deepseek-superagent",
+    "titre": "DeepSeek publie le prototype open source dsh-superagent, un agent de codage routeur-travailleur",
+    "categorie": "Dev",
+    "resume": "DeepSeek a mis en open source le code de recherche de dsh-superagent, un agent de codage qui répond à des requêtes GitHub autorisées ou à des règles d’équipe. Ce n’est pas un produit de production officiel.",
+    "contenu": "DeepSeek a publié sur GitHub le code de recherche de dsh-superagent, décrit comme un agent de codage de type routeur-travailleur. Le système peut réagir à des requêtes GitHub autorisées ou à des règles rédigées par une équipe. Les mainteneurs précisent clairement qu’il s’agit d’un prototype de recherche et non d’un produit DeepSeek prêt pour la production.\n\nL’architecture sépare le routage des tâches et l’exécution par des travailleurs spécialisés. Cela s’inscrit dans la tendance des agents de codage qui orchestrent plusieurs étapes (lecture de code, modification, tests) plutôt que de générer uniquement du texte. Le dépôt est disponible pour expérimentation.\n\nPour un développeur ou une équipe en France, l’intérêt est double : étudier une architecture d’agent open source performante, et éventuellement l’adapter à des workflows internes sans dépendre d’un fournisseur unique. Comme pour tout code de recherche, la stabilité, la sécurité et la maintenance ne sont pas garanties.\n\nIl est conseillé de tester le prototype dans un environnement isolé, de comparer ses résultats à ceux d’agents plus matures (Claude Code, Codex, Cursor) sur des tâches réelles, et de surveiller les mises à jour du dépôt. L’open source permet d’auditer le comportement avant tout déploiement interne.",
+    "perspective": "Un prototype de recherche open source accélère l’apprentissage collectif, mais il ne remplace pas les agents commerciaux déjà intégrés dans les IDE et les pipelines CI.",
+    "potentiel_business": "Les équipes qui construisent leurs propres agents peuvent s’inspirer de l’architecture routeur-travailleur pour améliorer la fiabilité.",
+    "potentiel_perso": "Cloner le dépôt et l’exécuter sur un petit projet personnel permet de comprendre concrètement le fonctionnement d’un agent multi-étapes.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "DeepSeek",
+      "agent de codage",
+      "open source",
+      "GitHub"
+    ],
+    "source_url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+  },
+  {
+    "id": "2026-11-02-apple-intelligence-chine",
+    "titre": "Apple confirme le déploiement d’Apple Intelligence en Chine à partir de novembre pour les développeurs",
+    "categorie": "Nouveautés",
+    "resume": "Apple lance les tests développeurs d’Apple Intelligence en Chine le 4 novembre, avec un déploiement grand public en décembre via iOS 27.3. Certaines fonctions s’appuient sur Qwen d’Alibaba ; la nouvelle Siri n’est pas incluse.",
+    "contenu": "Apple a confirmé le calendrier des premières fonctionnalités Apple Intelligence pour la Chine. Les tests développeurs débutent le 4 novembre 2026, suivis d’un déploiement grand public en décembre en même temps qu’iOS 27.3. Certaines fonctions sélectionnées s’appuient sur les modèles Qwen d’Alibaba. La nouvelle Siri propulsée par l’IA annoncée à la WWDC n’est pas comprise dans cette phase.\n\nCe déploiement marque l’adaptation d’Apple aux contraintes réglementaires chinoises, en s’appuyant sur un partenaire local pour certaines capacités. Il s’inscrit dans une stratégie de disponibilité progressive des fonctions d’IA générative sur les appareils Apple.\n\nPour les développeurs et les entreprises qui ciblent le marché chinois ou qui ont des équipes en Chine, cela ouvre de nouvelles possibilités d’intégration d’IA dans les applications iOS, tout en restant dans le cadre des règles locales. Les utilisateurs européens ne sont pas directement concernés, mais le partenariat illustre les compromis nécessaires pour accéder à certains marchés.\n\nLes équipes produit peuvent suivre les notes de version développeur à partir du 4 novembre pour évaluer les API disponibles et les limitations. La phase de décembre permettra de mesurer l’adoption réelle et les retours des premiers utilisateurs chinois.",
+    "perspective": "Le partenariat avec Alibaba permet le déploiement, mais il rappelle que les fonctionnalités d’IA d’Apple varient selon les régions en fonction des partenaires et des réglementations locales.",
+    "potentiel_business": "Les éditeurs d’apps visant la Chine peuvent préparer des intégrations dès les tests développeurs pour être prêts au lancement de décembre.",
+    "potentiel_perso": "Les utilisateurs d’appareils Apple en Chine bénéficieront enfin de fonctions d’IA natives, avec un calendrier clair.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Apple",
+      "Apple Intelligence",
+      "Chine",
+      "iOS",
+      "Alibaba"
+    ],
+    "source_url": "https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/"
+  },
+  {
+    "id": "2026-11-02-xbox-sorties-novembre",
+    "titre": "Xbox reçoit 29 jeux entre le 2 et le 6 novembre, dont Gravhounds en Game Pass dès aujourd’hui",
+    "categorie": "Gaming",
+    "resume": "Microsoft liste 29 sorties sur Xbox du 2 au 6 novembre. Gravhounds, jeu co-op de construction et d’extraction, arrive en Game Pass le 2 novembre. D’autres titres Game Pass suivent dans la semaine.",
+    "contenu": "Microsoft a publié la liste des sorties Xbox du 2 au 6 novembre 2026. Au total, 29 jeux arrivent sur la plateforme, mêlant titres indépendants et quelques productions plus visibles. Cinq d’entre eux rejoignent immédiatement ou rapidement le Game Pass.\n\nGravhounds, un jeu co-op pour 1 à 4 joueurs centré sur la construction de base et l’extraction sur des planètes hostiles, sort le 2 novembre en Game Preview et est disponible dans le Game Pass dès le premier jour. Suivent notamment Football Manager 27 (preview PC), Pit of Goblin, Void/Breaker et Escape Academy 2. Le reste de la liste comprend des simulateurs, des jeux de puzzle et des titres plus confidentiels.\n\nPour les joueurs abonnés au Game Pass en France, la semaine offre plusieurs essais sans achat supplémentaire. Gravhounds illustre la stratégie de Microsoft de mettre en avant des expériences co-op accessibles. Les non-abonnés peuvent consulter la liste complète pour identifier les titres qui correspondent à leurs goûts.\n\nIl est utile de vérifier les notes de version et les conditions d’accès anticipé (Game Preview) avant de se lancer. La densité de sorties en début de mois est classique avant les grosses sorties de fin d’année, dont GTA 6 plus tard en novembre.",
+    "perspective": "La majorité des titres sont des productions modestes. L’intérêt principal pour beaucoup de joueurs réside dans les ajouts Game Pass plutôt que dans une nouveauté majeure unique.",
+    "potentiel_business": "Les studios indépendants bénéficient de la visibilité Xbox et Game Pass pour toucher un public large sans budget marketing massif.",
+    "potentiel_perso": "Un abonné Game Pass peut tester Gravhounds gratuitement dès aujourd’hui et décider ensuite s’il poursuit.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Xbox",
+      "Game Pass",
+      "Gravhounds",
+      "sorties",
+      "gaming"
+    ],
+    "source_url": "https://www.purexbox.com/news/2026/10/these-30plus-games-are-coming-to-xbox-next-week-november-2-6"
+  },
+  {
+    "id": "2026-11-02-mistral-risques-cyber",
+    "titre": "Mistral Large 4 : performances cyber élevées mais risque d’uplift offensif reconnu par le laboratoire",
+    "categorie": "Hack & Console",
+    "resume": "Mistral a publié les poids de Large 4 en alertant sur un potentiel d’aide à des attaques réelles, malgré un taux de refus élevé (96,6 %) sur les prompts malveillants et un score de 51 % au Cyber Index.",
+    "contenu": "Lors de la publication des poids de Mistral Large 4 fin octobre, le laboratoire français a indiqué avoir observé, pendant la phase de preview, que le modèle refusait les attaques black-box contre des cibles en ligne. Il a néanmoins reconnu un potentiel d’« uplift » pour conduire de vraies attaques. Le modèle obtient 51 % sur le Cyber Index d’Artificial Analysis et refuse en moyenne 96,6 % des prompts malveillants sur JailbreakBench, StrongREJECT et AgentHarm.\n\nLes poids étant téléchargeables, les garde-fous de l’API Mistral ne s’appliquent plus aux copies locales. Mistral prévoit des mises à jour de safeguards pour les versions futures et l’API, mais pas rétroactivement pour les poids déjà distribués. Plusieurs acteurs européens, dont l’ENISA, testent le modèle pour des usages défensifs.\n\nPour les équipes de sécurité et les développeurs en France, cela signifie qu’un outil puissant d’analyse de code et de vulnérabilités est disponible en local, mais qu’il peut aussi être détourné. L’hébergement sur site permet un contrôle total des données, au prix d’une responsabilité accrue sur les usages.\n\nLes organisations qui évaluent Large 4 doivent isoler les environnements de test, limiter l’accès aux poids, et croiser les résultats avec des outils de sécurité classiques.",
+    "perspective": "La publication ouverte maximise la souveraineté et l’auditabilité, mais elle transfère aussi le risque d’usage malveillant aux détenteurs des poids.",
+    "potentiel_business": "Les prestataires de cybersécurité peuvent proposer des analyses basées sur un modèle européen maîtrisé, à condition de documenter les garde-fous organisationnels.",
+    "potentiel_perso": "Un développeur soucieux de sécurité peut utiliser Large 4 en local pour auditer son code, en évitant d’exposer des secrets ou des infrastructures critiques.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Mistral",
+      "Large 4",
+      "cybersécurité",
+      "open weights",
+      "risques"
+    ],
+    "source_url": "https://www.csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html"
+  },
+  {
+    "id": "2026-11-02-astuce-quotas-openai",
+    "titre": "Astuce : comment préparer ses workflows avant la fusion des quotas ChatGPT et Codex en décembre",
+    "categorie": "Astuces",
+    "resume": "Mesurez dès maintenant votre consommation sur ChatGPT et Codex, identifiez les tâches qui consomment le plus, et préparez des bascules vers Instant ou des modèles plus légers pour préserver le quota partagé.",
+    "contenu": "Avec l’annonce de la fusion des quotas en décembre, les utilisateurs de ChatGPT Plus, Pro et Business ont environ un mois pour s’adapter. La première étape consiste à consulter régulièrement les paramètres d’usage pour établir une baseline : combien de tokens ou de messages consomment réellement vos sessions de codage versus vos conversations.\n\nEnsuite, classez vos usages. Les tâches longues de génération ou de refactoring avec des modèles lourds (Astra, Sol) épuisent rapidement le quota. Les questions factuelles ou les reformulations peuvent souvent passer en mode Instant, qui ne compte pas. Documentez ces distinctions dans vos habitudes ou dans les instructions de vos agents.\n\nPour les équipes, il est utile de définir des règles simples : par exemple, réserver Codex aux modifications de code validées et utiliser le chat pour la documentation ou les revues. Anticiper l’achat de crédits ou un upgrade de plan évite les interruptions en plein sprint. Les comptes Enterprise restent pour l’instant hors du périmètre annoncé.\n\nEnfin, testez dès maintenant des prompts plus courts et des modèles intermédiaires sur vos tâches récurrentes. Une réduction de 20 à 30 % de la consommation par tâche peut compenser une partie de la mutualisation. La vérification après le basculement de décembre confirmera si vos ajustements suffisent.",
+    "perspective": "Sans chiffres officiels de tokens, ces mesures restent des estimations. Elles permettent néanmoins de réduire le risque de surprise en décembre.",
+    "potentiel_business": "Formaliser ces règles dans une charte d’usage IA interne évite que chaque développeur découvre les limites en production.",
+    "potentiel_perso": "Passer les questions légères en Instant et réserver les modèles puissants au code réel prolonge nettement l’autonomie du quota.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "OpenAI",
+      "quotas",
+      "productivité",
+      "astuce",
+      "ChatGPT"
+    ],
+    "source_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+  },
+  {
+    "id": "2026-11-02-aws-croissance-ia",
+    "titre": "AWS affiche une croissance de 39,3 % au troisième trimestre, portée par la demande d’infrastructure IA",
+    "categorie": "Société & Politique",
+    "resume": "Les ventes AWS ont progressé de 39,3 % au T3 2026 pour atteindre près de 46 milliards de dollars, la plus forte croissance depuis près de cinq ans, tirée par les investissements en infrastructure d’IA.",
+    "contenu": "Amazon a publié ses résultats du troisième trimestre 2026. Les ventes d’AWS ont augmenté de 39,3 % sur un an pour atteindre près de 46 milliards de dollars, marquant la croissance la plus rapide du cloud depuis presque cinq ans. L’entreprise attribue cette accélération à la forte demande d’infrastructure pour l’intelligence artificielle.\n\nCette performance intervient alors que les investissements massifs en centres de données et en capacité de calcul pèsent sur le free cash flow global d’Amazon. Elle confirme que les grands fournisseurs cloud captent une part importante des dépenses liées à l’entraînement et à l’inférence des modèles.\n\nPour les entreprises et les indépendants en France et en Europe, cela se traduit par une offre cloud abondante mais aussi par une pression sur les prix et la disponibilité des GPU à court terme. Les alternatives européennes (OVHcloud, Scaleway, etc.) et les modèles ouverts hébergeables localement restent des options pour maîtriser les coûts et la localisation des données.\n\nIl est pertinent de revoir ses contrats cloud, de comparer les offres d’instances GPU, et d’évaluer si une partie des charges d’inférence peut migrer vers des modèles plus légers ou open source. La croissance d’AWS illustre la concentration actuelle du marché, sans pour autant interdire des stratégies hybrides ou souveraines.",
+    "perspective": "La croissance spectaculaire reflète surtout la course aux capacités d’entraînement. Elle ne dit rien sur la rentabilité à long terme des applications d’IA déployées par les clients.",
+    "potentiel_business": "Les directions financières peuvent anticiper une hausse des coûts cloud IA et négocier des engagements pluriannuels ou explorer des alternatives européennes.",
+    "potentiel_perso": "Un freelance qui utilise des API cloud peut comparer les tarifs d’inférence et envisager des modèles locaux pour les tâches non critiques.",
+    "date": "2026-11-02T07:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "AWS",
+      "Amazon",
+      "cloud",
+      "infrastructure IA",
+      "résultats"
+    ],
+    "source_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/"
   }
 ]
