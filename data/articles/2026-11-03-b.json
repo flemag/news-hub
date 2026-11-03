@@ -1,0 +1,122 @@
+[
+  {
+    "id": "2026-11-03-hellospot-mairies",
+    "titre": "HelloSpot veut permettre aux agents municipaux de créer des démarches administratives avec l’IA",
+    "categorie": "IA",
+    "resume": "La start-up rennaise HelloSpot, déjà utilisée par environ 750 mairies, étend son offre de gestion de la relation usager pour que les agents créent eux-mêmes des démarches avec une IA souveraine hébergée en France.",
+    "contenu": "HelloSpot, éditeur rennais de solutions de gestion de la relation usager (GRU) pour les collectivités, revendique environ 750 mairies clientes. Le 3 novembre, des articles relaient son ambition de permettre aux agents municipaux de créer eux-mêmes des démarches administratives assistées par IA, au-delà de la simple prise de rendez-vous et du tri de courriers. L’IA, propulsée par Mistral et hébergée en France (HDS, ISO 27001), est présentée comme souveraine et conforme RGPD et AI Act. Une version gratuite jusqu’à un certain volume de sollicitations est proposée.\n\nL’entreprise, issue de RDV360, a progressivement intégré l’IA pour qualifier et orienter les demandes (e-mails, formulaires, appels, guichet). Les agents conservent la décision finale. Des retours d’agents (notamment à Brest) indiquent un gain de temps sur le traitement des demandes répétitives et la préparation de conseils municipaux.\n\nPour une collectivité française, l’intérêt est double : souveraineté des données (hébergement France, modèle européen) et réduction de la charge administrative sans recruter massivement. Cela s’inscrit dans un contexte où les petites communes peinent à accéder à des outils d’IA adaptés et risquent de se tourner vers des solutions grand public américaines. L’Association des maires ruraux de France a d’ailleurs lancé des initiatives pour promouvoir des solutions souveraines.\n\nLes collectivités qui testent HelloSpot peuvent évaluer le taux de résolution automatique réel et la qualité des réponses avant de généraliser. Il reste essentiel de maintenir une supervision humaine sur les décisions sensibles (urbanisme, état civil, aides). Les agents doivent aussi être formés à la vérification des sorties de l’IA.",
+    "perspective": "L’offre répond à un besoin réel des collectivités, mais le succès dépendra de la qualité des réponses et de la capacité des agents à valider les démarches générées sans créer de risque juridique.",
+    "potentiel_business": "Les ESN spécialisées dans le secteur public peuvent s’associer à des solutions comme HelloSpot pour accompagner le déploiement de GRU augmentée par IA souveraine.",
+    "potentiel_perso": "Un agent territorial peut demander une démo pour mesurer le temps gagné sur le tri des demandes avant de recommander l’outil à sa hiérarchie.",
+    "date": "2026-11-03T08:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "HelloSpot",
+      "mairies",
+      "collectivités",
+      "IA souveraine",
+      "GRU"
+    ],
+    "source_url": "https://www.hellospot.com/"
+  },
+  {
+    "id": "2026-11-03-gemini-25-deprecation",
+    "titre": "Google déprécie Gemini 2.5 Pro et Flash : redirection automatique vers les modèles 3.x dès le 1er décembre",
+    "categorie": "Web",
+    "resume": "Selon le changelog Gemini API du 2 novembre, gemini-2.5-pro et gemini-2.5-flash sont dépréciés et disparaissent de Google AI Studio. À partir du 1er décembre, les appels sont automatiquement redirigés vers gemini-3.8-flash et gemini-3.5-flash-lite.",
+    "contenu": "Le changelog de l’API Gemini publié le 2 novembre indique que gemini-2.5-pro et gemini-2.5-flash sont dépréciés et ne sont plus sélectionnables dans Google AI Studio. À compter du 1er décembre 2026, les requêtes vers ces modèles seront automatiquement routées respectivement vers gemini-3.8-flash et gemini-3.5-flash-lite, et facturées aux tarifs de ces modèles cibles. Google recommande de mettre à jour les chaînes de modèles et de consulter les guides de migration avant cette date.\n\nDes changements d’API breaking sont listés sur les cibles : validation de function calling et thought_signature, remplacement de thinking_budget par thinking_level, suppression de certains paramètres d’échantillonnage et de tours pré-remplis. L’accès API aux modèles 2.5 était déjà limité aux utilisateurs qui les avaient activement utilisés. gemini-2.5-flash-lite n’est pas concerné par cette dépréciation.\n\nPour un développeur ou une équipe en France qui utilise encore Gemini 2.5 dans des workflows de production (via Google AI Studio ou Vertex), cela impose une migration planifiée. Les différences de comportement (raisonnement, coût, latence) entre 2.5 et 3.x peuvent affecter les applications existantes. Il est prudent de comparer les sorties sur un jeu de tests représentatifs et d’ajuster les prompts si nécessaire.\n\nIl convient de scanner les codebases pour les chaînes « gemini-2.5-pro » et « gemini-2.5-flash », de mettre à jour les clients et de surveiller les factures après le 1er décembre. Les équipes qui ont déjà migré vers Gemini 4 Argon ou 3.x peuvent ignorer l’alerte, mais doivent vérifier les dépendances transitives.",
+    "perspective": "La redirection automatique évite une rupture brutale, mais elle peut modifier silencieusement le comportement et le coût des applications qui n’ont pas été mises à jour.",
+    "potentiel_business": "Les équipes produit peuvent planifier une fenêtre de test avant le 1er décembre pour valider que les workflows critiques restent stables sur les modèles de remplacement.",
+    "potentiel_perso": "Vérifier dans ses scripts et notebooks si un modèle 2.5 est encore hardcodé évite une surprise de facturation ou de qualité en décembre.",
+    "date": "2026-11-03T08:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Google",
+      "Gemini",
+      "dépréciation",
+      "API",
+      "migration"
+    ],
+    "source_url": "https://theagenticweekly.com/news/gemini-2-5-pro-flash-deprecated-auto-route-december-1"
+  },
+  {
+    "id": "2026-11-03-anthropic-residency",
+    "titre": "Anthropic ouvre les candidatures pour sa Residency payée, destinée aux profils techniques seniors",
+    "categorie": "IA",
+    "resume": "Anthropic a ouvert le 2 novembre les candidatures pour sa Residency, programme de recherche payé de six semaines à six mois. Rémunération annualisée de 350 à 500 k$, ouverte aux professeurs, fondateurs techniques et ingénieurs staff, sans expérience préalable en machine learning. Clôture le 22 novembre.",
+    "contenu": "Anthropic a annoncé le 2 novembre l’ouverture des candidatures pour l’Anthropic Residency, un programme de recherche empirique payé et à durée déterminée (six semaines à six mois). La rémunération annualisée est de 350 000 à 500 000 dollars, proratisée. Aucune expérience préalable en machine learning n’est requise. Les profils ciblés sont des professeurs en disciplines quantitatives, des fondateurs techniques et des ingénieurs de niveau staff qui souhaitent basculer vers des travaux sur la sécurité et l’alignement de l’IA. Date limite : 22 novembre 2026.\n\nLes résidents travaillent sur des projets concrets (supervision scalable, robustesse adversariale, interprétabilité, red-teaming, etc.) avec mentoring d’équipes Anthropic, accès aux modèles Claude et à du calcul GPU. Le programme vise à ce que les participants puissent ensuite poursuivre des recherches en IA à temps plein, chez Anthropic ou ailleurs. Des placements hybrides ou à distance sont possibles selon la durée, avec des contraintes de présence en bureau pour certains rôles.\n\nPour un profil technique français ou européen (chercheur, fondateur, staff engineer), cela représente une opportunité rare de transition vers la recherche en sécurité de l’IA sans diplôme ML préalable. En revanche, la plupart des rôles à temps plein ultérieurs impliquent une relocalisation aux États-Unis (San Francisco ou New York), et le visa n’est garanti que pour les placements de trois mois ou plus. Le salaire élevé reflète le niveau senior recherché.\n\nLes candidats intéressés doivent évaluer la contrainte de mobilité et préparer un dossier mettant en avant des travaux techniques ambitieux dans leur domaine d’origine. La date limite du 22 novembre est ferme pour ce tour.",
+    "perspective": "Le programme élargit le vivier de chercheurs en sécurité au-delà des profils ML classiques, mais la barrière géographique et la compétitivité restent élevées.",
+    "potentiel_business": "Les entreprises qui souhaitent former des experts internes en sécurité de l’IA peuvent encourager des staff engineers à postuler, en anticipant un possible départ temporaire.",
+    "potentiel_perso": "Un ingénieur senior ou un chercheur quantitatif peut soumettre une candidature avant le 22 novembre si une transition vers la sécurité de l’IA l’intéresse.",
+    "date": "2026-11-03T08:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Anthropic",
+      "Residency",
+      "recherche",
+      "sécurité IA",
+      "recrutement"
+    ],
+    "source_url": "https://www.anthropic.com/news/anthropic-residency"
+  },
+  {
+    "id": "2026-11-03-itch-ai-games",
+    "titre": "Itch.io voit doubler le nombre de pages de jeux créées par jour, principalement des productions générées par IA",
+    "categorie": "Gaming",
+    "resume": "La plateforme de jeux indépendants Itch.io a indiqué que le nombre de pages de jeux créées quotidiennement a doublé. La hausse est largement attribuée à des productions générées ou assistées par IA, ce qui dégrade l’expérience de découverte.",
+    "contenu": "Itch.io, plateforme majeure de distribution de jeux indépendants, a signalé début novembre que le nombre de pages de jeux créées par jour avait doublé. Interrogée sur la cause, l’équipe a laissé entendre qu’il s’agissait de productions liées à l’IA. Des observateurs décrivent un afflux de jeux « vibe-codés », de clones et de contenus générés qui saturent les vitrines et rendent la découverte plus difficile pour les joueurs et les créateurs humains.\n\nLe phénomène s’inscrit dans une tendance plus large : les agents de codage (Claude Code, Codex) et les outils de génération d’assets permettent de produire rapidement des prototypes jouables. Sur Itch, le filtre de qualité et la modération peinent à suivre le volume. Des développeurs indépendants expriment la crainte de voir leurs travaux originaux noyés ou copiés.\n\nPour un créateur de jeux en France ou en Europe, cela signifie que la visibilité organique sur les plateformes ouvertes devient plus coûteuse. Il peut être nécessaire de renforcer les canaux directs (Discord, newsletter, Steam) et de documenter clairement le processus de création humaine. Les plateformes elles-mêmes sont poussées à améliorer la détection de contenus générés et les outils de curation.\n\nLes développeurs peuvent surveiller l’évolution des règles d’Itch et des autres plateformes (Steam, Epic) concernant la déclaration de l’usage d’IA. Tester un petit jeu généré pour comprendre les limites techniques (collision, équilibrage, narration) reste utile, mais le différenciateur reste souvent le design et le polissage humains.",
+    "perspective": "La facilité de production augmente le bruit, mais elle n’élimine pas la valeur du design original. Les plateformes qui sauront mieux filtrer ou labelliser les contenus générés gagneront en attractivité.",
+    "potentiel_business": "Les studios indés et les éditeurs peuvent investir dans des canaux de distribution directs et dans des outils de détection de clones pour protéger leurs IP.",
+    "potentiel_perso": "Un développeur solo peut utiliser l’IA pour prototyper rapidement, tout en réservant le temps de polissage et de narration originale qui différencie un jeu.",
+    "date": "2026-11-03T08:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Itch.io",
+      "jeux",
+      "IA générative",
+      "indépendants",
+      "découverte"
+    ],
+    "source_url": "https://games.slashdot.org/"
+  },
+  {
+    "id": "2026-11-03-astuce-quotas-agents",
+    "titre": "Astuce : arbitrer entre modèles légers et modèles avancés pour préserver les quotas d’agents",
+    "categorie": "Astuces",
+    "resume": "Avec la mutualisation progressive des quotas entre chat et agents chez plusieurs fournisseurs, il devient utile de router les tâches simples vers des modèles moins coûteux et de réserver les modèles frontier aux étapes critiques.",
+    "contenu": "Plusieurs fournisseurs (OpenAI avec la fusion des quotas ChatGPT/Codex en décembre, Anthropic avec ses plans Ultra, etc.) mutualisent ou restreignent les budgets de tokens entre conversation et agents. Une session longue de refactoring ou de navigation agentique peut épuiser le quota avant des analyses plus légères. La parade pratique consiste à introduire un routage explicite.\n\nConcrètement, on peut définir dans son harness ou son outil (Cursor, Claude Code, scripts custom) des règles simples : les tâches de lecture, de résumé ou de questions factuelles partent vers un modèle rapide et économique (Haiku, Flash, Instant, Terra) ; les étapes de modification de code critique, de debug complexe ou de génération d’architecture restent sur le modèle le plus capable. Certains outils permettent déjà de choisir le modèle par sous-agent ou par étape.\n\nPour un développeur ou un freelance en France, cela se traduit par une économie directe sur la facture et une meilleure prévisibilité. Il est utile de mesurer pendant une semaine la consommation réelle par type de tâche (via les dashboards des fournisseurs) puis d’ajuster les seuils. Les comptes Enterprise ou les abonnements avec crédits séparés offrent plus de marge, mais le principe de routage reste valable.\n\nMettre en place un petit script ou une instruction système qui force le modèle léger pour les pré-analyses, et ne bascule sur le modèle lourd que lorsque le score de confiance ou la complexité dépasse un seuil, suffit souvent. Surveiller les reset de quotas et les notifications de crédits restants évite les interruptions en milieu de tâche.",
+    "perspective": "Le routage manuel ou semi-automatique réduit le gaspillage, mais il demande une discipline initiale. Les outils qui automatiseront ce choix gagneront en popularité.",
+    "potentiel_business": "Les équipes qui orchestrent plusieurs agents peuvent formaliser une politique de routage de modèles pour maîtriser les coûts mensuels.",
+    "potentiel_perso": "Tester pendant quelques jours un modèle léger pour les questions de contexte et un modèle avancé uniquement pour les commits permet de voir immédiatement l’effet sur le quota.",
+    "date": "2026-11-03T08:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "quotas",
+      "agents",
+      "optimisation",
+      "coût",
+      "workflow"
+    ],
+    "source_url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+  },
+  {
+    "id": "2026-11-03-switch2-userland",
+    "titre": "Un exploit userland sur Switch 2 ouvre l’accès homebrew via un overflow dans un interpréteur",
+    "categorie": "Hack & Console",
+    "resume": "Des chercheurs ont démontré un exploit software sur Nintendo Switch 2 qui permet un accès homebrew en userland. Il repose sur un dépassement d’entier dans l’interpréteur SmileBasic et ne constitue pas un jailbreak complet du système.",
+    "contenu": "Fin octobre, des développeurs ont publié les détails d’un exploit userland sur la Nintendo Switch 2. Il s’appuie sur un dépassement d’entier (integer overflow) dans l’interpréteur SmileBasic, un langage de programmation disponible sur la console. L’exploit permet d’exécuter du code homebrew dans l’espace utilisateur, sans nécessiter de modification matérielle ni d’accès au kernel.\n\nCe n’est pas un jailbreak complet : les protections du système (secure boot, isolation des processus critiques) restent en place. L’intérêt principal pour la communauté homebrew est de pouvoir lancer des applications non signées et d’explorer les capacités de la console sans attendre un exploit plus profond. Nintendo a historiquement corrigé rapidement ce type de failles via des mises à jour système.\n\nPour un utilisateur ou un développeur en France, cela rappelle que les consoles modernes restent des cibles d’ingénierie inverse, même après le lancement. L’usage d’homebrew reste soumis aux conditions d’utilisation de Nintendo et peut entraîner un ban de compte ou une perte de garantie. En revanche, l’étude des exploits (overflows, interpréteurs) reste un exercice pédagogique intéressant pour les étudiants en sécurité.\n\nIl est recommandé de ne pas appliquer cet exploit sur une console principale utilisée pour des jeux en ligne. Les développeurs qui souhaitent expérimenter peuvent le faire sur une console secondaire et suivre les mises à jour de firmware. La publication d’exploits userland accélère souvent la réponse du constructeur.",
+    "perspective": "Un exploit userland facilite l’expérimentation homebrew, mais il ne compromet pas la sécurité du système au même titre qu’un jailbreak kernel. Nintendo corrigera probablement la faille rapidement.",
+    "potentiel_business": "Les équipes de sécurité produit peuvent utiliser ce cas pour illustrer l’importance de la validation des entrées dans les interpréteurs embarqués.",
+    "potentiel_perso": "Un amateur de homebrew peut suivre les dépôts concernés pour comprendre la technique, tout en évitant de l’appliquer sur sa console principale.",
+    "date": "2026-11-03T08:00:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Switch 2",
+      "homebrew",
+      "exploit",
+      "Nintendo",
+      "sécurité"
+    ],
+    "source_url": "https://arstechnica.com/gaming/"
+  }
+]
