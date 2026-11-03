@@ -1,1 +1,16 @@
-PLACEHOLDER_TO_REPLACE
+[
+  {
+    "id": "2026-11-03-openai-pando-git",
+    "titre": "OpenAI déploie Pando, un backend Git conçu pour le volume de commits généré par Codex",
+    "categorie": "Dev",
+    "resume": "OpenAI a publié le 2 novembre le détail de Pando, un backend Git compatible qui alimente désormais tout son monorepo. La latence médiane des pushes a chuté de près de 80 %, et le système sert presque un pétaoctet de données Git par jour.",
+    "contenu": "OpenAI a détaillé le 2 novembre son nouveau backend Git, baptisé Pando. Il conserve le protocole et le client Git standards, de sorte que les ingénieurs et les agents Codex continuent d’utiliser git push et git fetch comme avant. Seul le serveur a changé. En production depuis avril, Pando a réduit la latence médiane des pushes de près de 80 % (presque un facteur cinq) et délivre désormais près d’un pétaoctet de données Git par jour, avec un pic supérieur à 57 téraoctets en une heure, dont plus de 99 % servis depuis le cache disque local.\n\nLa pression vient de Codex. Les commits atterrissant sur master ont augmenté de 1 378 % entre le premier trimestre 2024 et le troisième trimestre 2026 ; l’estimation interne pour le quatrième trimestre atteint +2 442 %. Les pushes et fetches concurrentes saturaient l’ancien système, provoquant des fusions ratées et une fiabilité parfois inférieure à 90 %. Pando abandonne la cohérence globale du dépôt au profit d’une cohérence causale par branche : les mises à jour de branches distinctes s’exécutent en parallèle. Chaque push est stocké comme packfile immuable dans un blob store, et un service de cache régional (Express) renvoie les packs déjà disponibles.\n\nPour une équipe française ou européenne qui adopte des agents de codage à grande échelle, le signal est clair : le goulot d’étranglement se déplace vers l’infrastructure de contrôle de source. Un monorepo partagé entre humains et agents multiplie les branches, les CI et les clones. Pando, écrit en Rust et construit en dix semaines (conception humaine, implémentation largement agentique), montre qu’il faut anticiper le scaling des écritures concurrentes et du cache de packs. OpenAI n’ouvre pas le code de Pando, mais reverse plusieurs correctifs vers le projet Git upstream.\n\nLes organisations qui voient leur volume de commits agentiques croître devraient mesurer dès maintenant la latence de leurs pushes, le taux d’échec des merges et le coût des clones. Tester une architecture à cohérence par branche ou un cache de packs peut devenir nécessaire avant que la fiabilité ne se dégrade. Les contributions upstream de OpenAI méritent aussi d’être suivies dans les prochaines versions de Git.",
+    "perspective": "Pando résout un problème réel de scale, mais il reste un backend propriétaire. La leçon pour les autres est d’instrumenter tôt le volume de commits agents plutôt que d’attendre la saturation.",
+    "potentiel_business": "Les équipes plateforme et les ESN qui opèrent des monorepos partagés peuvent évaluer des caches de packs et une cohérence par branche avant que les agents saturent le Git classique.",
+    "potentiel_perso": "Si vous utilisez Codex ou Claude Code de façon intensive, surveillez la latence de vos git push ; un monorepo personnel peut déjà montrer les premiers signes de contention.",
+    "date": "2026-11-03T08:00:00Z",
+    "urgence": "breaking",
+    "tags": ["OpenAI", "Git", "Codex", "monorepo", "infrastructure"],
+    "source_url": "https://openai.com/index/scaling-git-at-openai/"
+  }
+]
