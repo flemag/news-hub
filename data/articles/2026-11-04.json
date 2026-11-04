@@ -1,16 +1,1 @@
-[
-  {
-    "id": "2026-11-04-nexus-mods-ai",
-    "titre": "Nexus Mods impose la déclaration d’usage d’IA pour les nouveaux mods, sans interdiction totale",
-    "categorie": "Gaming",
-    "resume": "Depuis le 3 novembre, tout nouvel upload sur Nexus Mods doit déclarer si de l’IA a été utilisée. Les mods existants ont jusqu’au 2 janvier 2027. La plateforme refuse un ban total, arguant qu’il découragerait la transparence.",
-    "contenu": "Nexus Mods a annoncé le 3 novembre 2026 une politique renforcée sur le contenu généré par IA. Les auteurs de nouveaux mods doivent désormais indiquer si de l’IA a servi à créer ou modifier des fichiers, assets ou documentation. Trois catégories sont distinguées : contenu généré par IA (code, voix, textures, scripts principaux), contenu assisté par IA (rôle de support comme upscaling), et média IA (images promotionnelles, vignettes, descriptions). Les mods assistés exigent une explication publique des outils et des parties concernées. Les tags IA deviennent plus visibles, juste après les tags de contenu adulte, et les utilisateurs pourront filtrer ces contenus.\n\nLa plateforme, qui se dit « pro-créativité humaine », exclut un ban total. Son argument : l’IA intervient à de nombreuses étapes (autocomplétion de scripts, génération de textures), rendant une ligne nette difficile à tracer. Un ban risquerait de pousser les auteurs à cacher l’usage plutôt qu’à le documenter. Nexus Mods s’engage aussi à ne pas utiliser les mods pour entraîner des modèles ni à les licencier à cet effet. Une période de grâce de 60 jours, jusqu’au 2 janvier 2027, s’applique aux mods existants.\n\nPour un joueur ou un moddeur francophone, cela améliore la visibilité et le choix, mais impose une charge de documentation supplémentaire. Les créateurs utilisant des outils comme Claude ou des générateurs d’assets devront adapter leurs processus de publication. En Europe, cela s’inscrit dans un contexte plus large de demandes de transparence (AI Act), sans pour autant résoudre les questions de copyright sur les données d’entraînement.\n\nLes moddeurs ont intérêt à documenter dès maintenant l’usage d’IA dans leurs projets et à vérifier les permissions de fork. Les joueurs peuvent déjà tester les filtres de préférence de contenu. Il faudra surveiller comment la communauté réagit et si d’autres plateformes (itch.io a déjà purgé du contenu IA) suivent le mouvement.",
-    "perspective": "La transparence est préférable à un ban inapplicable, mais l’absence de vérification automatique laisse une large place à l’auto-déclaration et à d’éventuels contournements.",
-    "potentiel_business": "Les studios et les plateformes de distribution de contenu peuvent s’inspirer de ce modèle de catégorisation et de filtres pour gérer le contenu IA sans interdiction radicale.",
-    "potentiel_perso": "Si vous publiez des mods, préparez dès maintenant une description claire de l’usage d’outils d’IA pour éviter des retraits après la période de grâce.",
-    "date": "2026-11-04T08:00:00Z",
-    "urgence": "breaking",
-    "tags": ["Nexus Mods", "IA", "modding", "transparence", "gaming"],
-    "source_url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures"
-  }
-]
+FULL_CONTENT_FROM_ARTIFACTS
