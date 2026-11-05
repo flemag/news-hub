@@ -11,7 +11,32 @@
     "modele_enjeu": "La séparation Flare/Sunburst et le paramètre de complexité optimisent coût et qualité, mais les GIF restent limités en durée et résolution par rapport aux modèles vidéo dédiés.",
     "date": "2026-11-05T07:00:00Z",
     "urgence": "breaking",
-    "tags": ["OpenAI", "Images", "GIF", "API", "ChatGPT"],
+    "tags": [
+      "OpenAI",
+      "Images",
+      "GIF",
+      "API",
+      "ChatGPT"
+    ],
     "source_url": "https://openai.com/index/introducing-images-2-6/"
+  },
+  {
+    "id": "2026-11-05-kimi-k31-pro-open-weights",
+    "titre": "Kimi K3.1 Pro : poids ouverts sur Hugging Face",
+    "categorie": "Modèles IA",
+    "resume": "Moonshot AI publie les poids ouverts de Kimi K3.1 Pro, un modèle de 1T paramètres avec focus sur le raisonnement long contexte et le code.",
+    "contenu": "Moonshot AI a mis en ligne les poids ouverts de Kimi K3.1 Pro sur Hugging Face. Le modèle de 1 trillion de paramètres se distingue par ses capacités de raisonnement sur de longs contextes et ses performances en code. La version open weights permet aux développeurs de l’héberger localement ou de l’affiner. Pour la communauté francophone, cela offre une alternative open source performante aux modèles propriétaires pour des tâches complexes. Les benchmarks publiés montrent des gains notables sur les tâches de coding et de raisonnement multi-étapes par rapport aux versions précédentes.",
+    "perspective": "L’ouverture des poids accélère l’innovation locale et réduit la dépendance aux API cloud.",
+    "potentiel_business": "Startups et équipes R&D peuvent déployer des solutions privées sans coûts API récurrents.",
+    "potentiel_perso": "Possibilité d’expérimenter un modèle de pointe sur matériel personnel ou cloud privé.",
+    "date": "2026-11-05T07:10:00Z",
+    "urgence": "high",
+    "tags": [
+      "Kimi",
+      "Moonshot",
+      "open weights",
+      "Hugging Face"
+    ],
+    "source_url": "https://huggingface.co/moonshotai"
   }
 ]
