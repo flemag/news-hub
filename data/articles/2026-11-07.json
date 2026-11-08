@@ -1,1 +1,87 @@
-See full content in local artifacts - 12 articles ready
+[
+  {
+    "id": "2026-11-07-inkling-2-small",
+    "titre": "Inkling 2 Small : Thinking Machines sort un MoE 594B, poids Apache 2.0 promis",
+    "categorie": "Modèles IA",
+    "resume": "Thinking Machines Lab (Mira Murati) lance Inkling 2 Small, un modèle sparse MoE de 594 milliards de paramètres (17B actifs) avec contexte 1M tokens et entrée image. Les poids sous Apache 2.0 sont annoncés pour la semaine suivante après tests de sécurité.",
+    "contenu": "Thinking Machines Lab, fondée par l’ancienne CTO d’OpenAI Mira Murati, a publié Inkling 2 Small le 7 novembre 2026. Il s’agit d’un modèle mixture-of-experts de 594 milliards de paramètres totaux dont seulement 17 milliards sont activés par token, avec une fenêtre de contexte d’un million de tokens et une capacité multimodale image. Le modèle est déjà disponible en inférence et fine-tuning sur la plateforme Tinker de la société. Les poids complets sous licence Apache 2.0 sont promis pour la semaine suivante, une fois les évaluations de sécurité externes terminées. Sur les benchmarks internes, Inkling 2 Small affiche 86,3 % sur SWE-Bench Pro v2 Hard et un score Artificial Analysis Intelligence Index de 31, ce qui le placerait parmi les meilleurs modèles open-weight non chinois une fois libéré. Pour les équipes européennes, l’intérêt est double : un modèle de très grande capacité potentiellement hébergeable en propre et une licence permissive qui facilite les usages commerciaux. Il faudra toutefois attendre la sortie réelle des poids et les premiers retours indépendants sur la qualité du raisonnement long contexte et du code.",
+    "perspective": "Si les poids arrivent vraiment sous Apache 2.0 et tiennent les performances annoncées, Inkling 2 Small pourrait devenir une référence open-weight sérieuse face aux modèles chinois dominants.",
+    "potentiel_business": "Startups et scale-ups européennes peuvent anticiper un modèle puissant hébergeable en Europe, réduisant la dépendance aux API américaines et les risques de souveraineté.",
+    "potentiel_perso": "Développeurs et chercheurs pourront fine-tuner un modèle de frontière sur leurs propres données une fois les poids disponibles.",
+    "modele_enjeu": "La promesse de poids ouverts après seulement une semaine de tests de sécurité est ambitieuse. La communauté jugera sur la transparence réelle des évaluations et la qualité effective du modèle une fois téléchargé.",
+    "date": "2026-11-07T08:00:00Z",
+    "urgence": "breaking",
+    "tags": ["Thinking Machines", "Inkling", "MoE", "open weights", "Mira Murati"],
+    "source_url": "https://aitoolsrecap.com/Blog/ai-news-november-07-2026"
+  },
+  {
+    "id": "2026-11-07-claude-personal-finance",
+    "titre": "Claude Personal Finance : Anthropic ouvre l’accès en lecture seule aux comptes bancaires US",
+    "categorie": "IA",
+    "resume": "Anthropic lance en bêta Claude Personal Finance pour les abonnés Pro, Max et Ultra aux États-Unis. Via Plaid, Claude peut lire jusqu’à deux ans de transactions bancaires sans pouvoir effectuer de mouvements d’argent.",
+    "contenu": "Le 7 novembre 2026, Anthropic a ouvert la bêta de Claude Personal Finance aux abonnés Pro, Max et Ultra résidant aux États-Unis. Grâce à une intégration Plaid, l’utilisateur peut connecter jusqu’à 16 banques américaines. Claude accède en lecture seule à un historique de transactions allant jusqu’à deux ans et peut répondre à des questions sur les dépenses, les budgets ou les tendances. L’agent ne peut ni initier de virements, ni gérer de placements, ni investir. Les conversations liées à la finance personnelle sont exclues de l’entraînement et Anthropic s’engage à n’afficher aucune publicité ni recommandation sponsorisée. Pour le marché européen, cette fonctionnalité reste pour l’instant inaccessible, mais elle donne une indication claire de la direction prise par Anthropic : transformer Claude en assistant personnel de confiance sur des données sensibles. Les enjeux de conformité RGPD et de responsabilité en cas d’erreur d’analyse seront déterminants si une version européenne voit le jour.",
+    "perspective": "L’accès aux données bancaires est un test de confiance majeur. Si Anthropic gère correctement la sécurité et la transparence, d’autres acteurs suivront rapidement.",
+    "potentiel_business": "Les fintechs et banques européennes peuvent s’inspirer pour proposer des assistants d’analyse de dépenses plus puissants, à condition de respecter le cadre réglementaire strict.",
+    "potentiel_perso": "Les utilisateurs US peuvent désormais interroger leur historique bancaire en langage naturel. Les Européens devront attendre une version conforme.",
+    "date": "2026-11-07T08:15:00Z",
+    "urgence": "high",
+    "tags": ["Anthropic", "Claude", "finance", "Plaid", "vie privée"],
+    "source_url": "https://aitoolsrecap.com/Blog/ai-news-november-07-2026"
+  },
+  {
+    "id": "2026-11-07-openai-hacktron",
+    "titre": "OpenAI s’associe à Hacktron pour tester ses propres systèmes",
+    "categorie": "Hack & Console",
+    "resume": "OpenAI a annoncé un partenariat avec la société de sécurité Hacktron afin de faire tester en profondeur ses propres systèmes et intégrations tierces par des red-teamers externes spécialisés.",
+    "contenu": "Le 7 novembre 2026, OpenAI a officialisé un partenariat avec Hacktron, une société spécialisée dans les tests offensifs assistés par IA. L’objectif est d’élargir le périmètre de recherche de vulnérabilités au-delà des équipes internes, en se concentrant particulièrement sur les interactions entre les services OpenAI et les plateformes tierces. Cette annonce intervient dans un contexte où OpenAI a récemment publié GPT-6 Cyber, un modèle classé « Critical » capable de découvrir des centaines de failles, et où la surface d’attaque des écosystèmes d’agents IA s’élargit rapidement. Pour les entreprises qui intègrent les API OpenAI, cette initiative est un signal positif : le fournisseur prend au sérieux la sécurité de la chaîne d’approvisionnement. Elle rappelle aussi que la confiance dans les modèles frontière dépend désormais autant de la qualité des red-teams externes que des évaluations internes.",
+    "perspective": "Ouvrir ses systèmes à un red-team externe est une bonne pratique qui devrait se généraliser. La question reste la transparence sur les résultats et les délais de correction.",
+    "potentiel_business": "Les entreprises qui s’appuient sur OpenAI peuvent renforcer leur propre posture de sécurité en s’alignant sur les mêmes standards de test offensif.",
+    "potentiel_perso": "Les chercheurs en sécurité indépendants verront peut-être de nouvelles opportunités de collaboration ou de bug-bounty élargies.",
+    "date": "2026-11-07T08:30:00Z",
+    "urgence": "high",
+    "tags": ["OpenAI", "Hacktron", "sécurité", "red team", "vulnérabilités"],
+    "source_url": "https://openai.com"
+  },
+  {
+    "id": "2026-11-07-metr-anthropic",
+    "titre": "Rapport METR : les modèles d’Anthropic progressent deux fois plus vite",
+    "categorie": "Société & Politique",
+    "resume": "Après onze semaines d’investigation interne, METR estime qu’Anthropic a réalisé environ deux années de progrès historiques en un an. Le rythme d’amélioration des modèles aurait approximativement doublé.",
+    "contenu": "L’organisation de recherche en sécurité de l’IA METR a publié le 6-7 novembre 2026 un rapport détaillé issu d’une enquête de onze semaines menée au sein d’Anthropic. Selon ses conclusions, les modèles de la société progressent désormais environ deux fois plus vite qu’il y a un an. Les scores de benchmarks suggèrent qu’Anthropic a accompli l’équivalent de deux années de progrès historiques au cours des douze derniers mois. Le rapport note également qu’Anthropic a terminé l’entraînement de trois modèles non encore publiés. Ces constats interviennent alors qu’Anthropic appelle publiquement à une régulation plus prudente du développement de l’IA. Pour les décideurs européens et les équipes de conformité, le rapport METR alimente le débat sur l’écart croissant entre le rythme réel d’innovation et la capacité des cadres réglementaires à suivre. Il renforce aussi les arguments de ceux qui demandent davantage de transparence sur les capacités internes des laboratoires frontière.",
+    "perspective": "Le décalage entre le discours public de prudence et l’accélération interne mesurée par METR pose une question de crédibilité pour l’ensemble du secteur.",
+    "potentiel_business": "Les entreprises qui construisent sur Claude doivent anticiper des sauts de capacité plus rapides que prévu dans leurs roadmaps produit.",
+    "potentiel_perso": "Les utilisateurs avancés de Claude peuvent s’attendre à des améliorations notables dans les prochains mois, y compris sur des tâches encore difficiles aujourd’hui.",
+    "date": "2026-11-07T08:45:00Z",
+    "urgence": "high",
+    "tags": ["METR", "Anthropic", "sécurité IA", "rythme d’innovation", "régulation"],
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development"
+  },
+  {
+    "id": "2026-11-07-gpt6-cyber-linux",
+    "titre": "GPT-6 Cyber : 948 failles d’élévation de privilèges trouvées dans le kernel Linux",
+    "categorie": "Hack & Console",
+    "resume": "OpenAI annonce que GPT-6 Cyber a identifié 948 vulnérabilités d’élévation de privilèges locaux dans le kernel Linux (scan mi-octobre 2026) et a généré des patches examinés par des humains.",
+    "contenu": "OpenAI a révélé que son modèle GPT-6 Cyber, classé « Critical » dans son Preparedness Framework, a autonomement scanné le kernel Linux (version mi-octobre 2026) et découvert 948 vulnérabilités d’élévation de privilèges locaux. Le système a également produit des correctifs qui ont ensuite été revus par des chercheurs humains. Le modèle a par ailleurs contribué à l’identification de 81 failles inédites de sévérité élevée dans Firefox. Sur le benchmark ExploitGym, GPT-6 Cyber obtient 48,5 %, contre 32,1 % pour son prédécesseur. Ces résultats illustrent à la fois le potentiel défensif des modèles spécialisés en cybersécurité et le risque d’accélération des capacités offensives. Pour les mainteneurs open-source et les équipes sécurité des distributions Linux, l’arrivée de tels outils change la donne : le volume de failles potentiellement découvrables augmente brutalement, ce qui impose des processus de triage et de patch plus rapides.",
+    "perspective": "Les modèles cyber frontière deviennent des multiplicateurs de force aussi bien pour les défenseurs que pour les attaquants. La coordination avec les projets open-source est désormais critique.",
+    "potentiel_business": "Les éditeurs de solutions de sécurité peuvent intégrer des agents d’audit de code basés sur ces modèles pour accélérer les revues et réduire les risques résiduels.",
+    "potentiel_perso": "Les administrateurs systèmes et mainteneurs de paquets doivent renforcer leur veille CVE et leurs processus de mise à jour.",
+    "date": "2026-11-07T09:00:00Z",
+    "urgence": "breaking",
+    "tags": ["OpenAI", "GPT-6 Cyber", "Linux", "kernel", "vulnérabilités"],
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1028970/openai-says-it-found-948-local-privilege-escalation-vulnerabilities-in-the-linux-kernel"
+  },
+  {
+    "id": "2026-11-07-google-a2a-stable",
+    "titre": "Google ADK 2.14 : le protocole A2A passe en version stable",
+    "categorie": "Dev",
+    "resume": "Google marque le protocole Agent-to-Agent (A2A) comme stable dans ADK 2.14.0. Les agents peuvent désormais communiquer de façon standardisée entre frameworks et fournisseurs.",
+    "contenu": "Dans la version 2.14.0 de son Agent Development Kit, Google a officiellement déclaré stable le protocole Agent-to-Agent (A2A). Ce protocole permet à des agents construits sur des stacks différentes de s’échanger des messages, des outils et du contexte de manière interopérable. La stabilisation est un signal important pour l’écosystème : les développeurs peuvent désormais s’appuyer sur A2A sans craindre des changements de rupture majeurs à court terme. Pour les équipes produit européennes qui construisent des systèmes multi-agents (support client, automatisation interne, agents de recherche), l’existence d’un standard de communication réduit le risque de lock-in et facilite les architectures hybrides. La documentation et les exemples fournis par Google couvrent désormais des cas d’usage plus complexes, ce qui devrait accélérer l’adoption.",
+    "perspective": "La stabilisation d’A2A est une étape nécessaire vers un écosystème d’agents réellement interopérable. Reste à voir si d’autres grands acteurs l’adopteront comme référence.",
+    "potentiel_business": "Les éditeurs de plateformes d’agents et les intégrateurs peuvent standardiser leurs connecteurs sur A2A et réduire les coûts d’intégration multi-fournisseurs.",
+    "potentiel_perso": "Les développeurs d’agents peuvent expérimenter des architectures multi-agents plus facilement sans réinventer les protocoles de communication.",
+    "date": "2026-11-07T09:15:00Z",
+    "urgence": "normal",
+    "tags": ["Google", "ADK", "A2A", "agents", "interopérabilité"],
+    "source_url": "https://aitoolsrecap.com/Blog/ai-news-november-08-2026"
+  }
+]
