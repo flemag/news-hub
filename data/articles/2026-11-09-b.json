@@ -1,0 +1,44 @@
+[
+  {
+    "id": "2026-11-09-apple-siri-agentique",
+    "titre": "Apple pousse pour une Siri plus agentique sous la direction de John Ternus",
+    "categorie": "Nouveautés",
+    "resume": "Bloomberg rapporte que le CEO John Ternus accélère la stratégie IA d’Apple pour rendre Siri nettement plus agentique. Une preview développeur dans iOS 27.3 ouvre déjà App Intents à toutes les applications.",
+    "contenu": "Apple a commencé à ouvrir Siri aux développeurs via App Intents dans les betas d’iOS 27.3. Parallèlement, des sources internes indiquent que John Ternus fait pression pour une ambition plus forte : transformer Siri en véritable agent capable d’enchaîner des actions complexes.\n\nAprès des années de retard perçu sur les assistants conversationnels, Apple tente de rattraper le terrain en s’appuyant sur son écosystème matériel et sur une intégration native plus profonde que celle des concurrents cloud-first.",
+    "perspective": "Si Apple réussit, l’agent personnel intégré au système d’exploitation pourrait devenir un différenciateur plus puissant que les modèles purement cloud.",
+    "potentiel_business": "Opportunité majeure pour les apps qui s’intègrent tôt via App Intents. Risque pour les assistants tiers sur iOS.",
+    "potentiel_perso": "À suivre de près si vous êtes dans l’écosystème Apple : les prochains mois pourraient changer l’utilité réelle de Siri.",
+    "date": "2026-11-09T05:30:00Z",
+    "urgence": "important",
+    "tags": ["Apple", "Siri", "agentique", "App Intents", "iOS"],
+    "source_url": "https://news-insight-ai.web.app/en/news/20261109_ai-news-weekly"
+  },
+  {
+    "id": "2026-11-09-rebellions-nvlink-fusion",
+    "titre": "Rebellions et SK Telecom s’allient à NVIDIA via NVLink Fusion pour 2028",
+    "categorie": "Nouveautés",
+    "resume": "NVIDIA, Rebellions et SK Telecom collaborent pour connecter les prochains processeurs R200 de Rebellions à NVLink Fusion. Les systèmes devraient être déployables en 2028.",
+    "contenu": "La startup coréenne Rebellions, spécialisée dans les accélérateurs IA, va connecter sa future génération R200 à l’écosystème NVLink Fusion de NVIDIA. SK Telecom est également partie prenante. L’objectif est de construire une infrastructure d’IA souveraine coréenne capable de coexister avec les GPU NVIDIA.\n\nC’est un exemple concret de stratégie « best of both worlds » : garder la compatibilité avec l’écosystème dominant tout en développant des puces nationales.",
+    "perspective": "Les architectures d’interconnexion ouvertes (ou semi-ouvertes) deviennent un enjeu géopolitique autant que technique.",
+    "potentiel_business": "Signal positif pour les acteurs qui misent sur l’interopérabilité plutôt que sur des silos fermés.",
+    "potentiel_perso": "Impact à horizon 2028. Utile à connaître si vous suivez les stacks d’IA souveraines asiatiques.",
+    "date": "2026-11-09T05:00:00Z",
+    "urgence": "normal",
+    "tags": ["Rebellions", "SK Telecom", "NVIDIA", "NVLink Fusion", "Corée"],
+    "source_url": "https://aienews.org/companies.html"
+  },
+  {
+    "id": "2026-11-09-h100-prix-location",
+    "titre": "Les prix de location annuelle des H100 ont grimpé de 21 % depuis mars",
+    "categorie": "Nouveautés",
+    "resume": "SemiAnalysis rapporte que les contrats de location d’un an sur H100 ont augmenté d’environ 21 % depuis mars 2026. Les clients s’engagent désormais sur ces tarifs pour douze mois.",
+    "contenu": "Le marché de la location de GPU reste tendu. Selon SemiAnalysis, les prix des contrats annuels sur H100 ont progressé de 21 % depuis le début de l’année. Les clients acceptent de s’engager sur la durée pour sécuriser la capacité.\n\nParallèlement, la firme estime que seulement 2 à 3 GW sur les ~50 GW de capacité data center prévue pour 2027 sont réellement menacés d’annulation. La demande reste structurellement supérieure à l’offre sur le haut de gamme.",
+    "perspective": "Même avec les nouvelles générations (Blackwell, Rubin…), le marché secondaire et la location restent sous pression.",
+    "potentiel_business": "Les opérateurs qui ont sécurisé de la capacité tôt conservent un avantage concurrentiel. Les nouveaux entrants paient plus cher.",
+    "potentiel_perso": "Si vous louez du compute, renégociez ou sécurisez vos contrats avant de nouvelles hausses.",
+    "date": "2026-11-09T04:30:00Z",
+    "urgence": "normal",
+    "tags": ["H100", "location", "SemiAnalysis", "prix", "GPU"],
+    "source_url": "https://dentro.de/ai/news/"
+  }
+]
