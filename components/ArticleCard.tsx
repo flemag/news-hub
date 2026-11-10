@@ -2,42 +2,33 @@
 
 import Link from "next/link";
 import { Article } from "@/lib/types";
+import type { ArticleScore } from "@/lib/score";
 import {
   categorieAccent,
   formatFullDate,
   formatRelative,
-  isWithinLast24h,
 } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
 import { resolveVignette } from "@/lib/vignettes";
 import FiabiliteBadge from "@/components/FiabiliteBadge";
+import ImportanceChip from "@/components/ImportanceChip";
 
 const TITLE = "#F4F6FC";
 const RESUME = "#C2C9DC";
 
-function urgenceDisplay(
-  article: Article
-): { label: string; className: string } | null {
-  if (article.urgence === "breaking" && isWithinLast24h(article.date)) {
-    return { label: "Dernière minute", className: "text-amber" };
-  }
-  if (article.urgence === "breaking" || article.urgence === "important") {
-    return { label: "Important", className: "text-cyan/90" };
-  }
-  return null;
-}
-
 export default function ArticleCard({
   article,
   featured = false,
+  score,
 }: {
   article: Article;
   featured?: boolean;
+  score?: ArticleScore;
 }) {
   const accent = categorieAccent(article.categorie);
   const Icon = CATEGORY_ICON[article.categorie];
   const vignette = resolveVignette(article.categorie, article.image);
-  const urg = urgenceDisplay(article);
+  const showScore = score != null && score.total >= 44;
 
   if (featured) {
     return (
@@ -66,7 +57,7 @@ export default function ArticleCard({
               <span className="font-medium" style={{ color: accent }}>
                 {article.categorie}
               </span>
-              {urg && <span className={urg.className}>{urg.label}</span>}
+              {showScore && score && <ImportanceChip score={score} compact />}
               <FiabiliteBadge article={article} />
               <span
                 className="ml-auto"
@@ -139,7 +130,7 @@ export default function ArticleCard({
             <span className="truncate font-medium" style={{ color: accent }}>
               {article.categorie}
             </span>
-            {urg && <span className={urg.className}>{urg.label}</span>}
+            {showScore && score && <ImportanceChip score={score} compact />}
             <FiabiliteBadge article={article} />
             <span
               className="ml-auto shrink-0"

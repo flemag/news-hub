@@ -2,30 +2,22 @@
 
 import Link from "next/link";
 import { Article } from "@/lib/types";
+import type { ArticleScore } from "@/lib/score";
 import { categorieAccent, formatRelative } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
 import FiabiliteBadge from "@/components/FiabiliteBadge";
-
-function badge(
-  urgence: Article["urgence"]
-): { label: string; cls: string } | null {
-  if (urgence === "breaking")
-    return {
-      label: "Breaking",
-      cls: "text-amber bg-amber/15 border-amber/40",
-    };
-  if (urgence === "important")
-    return {
-      label: "Important",
-      cls: "text-cyan bg-cyan/15 border-cyan/35",
-    };
-  return null;
-}
+import ImportanceChip from "@/components/ImportanceChip";
 
 const TITLE = "#F4F6FC";
 const RESUME = "#C2C9DC";
 
-export default function TopWeek({ articles }: { articles: Article[] }) {
+export default function TopWeek({
+  articles,
+  scores,
+}: {
+  articles: Article[];
+  scores: Map<string, ArticleScore>;
+}) {
   if (!articles.length) return null;
 
   return (
@@ -38,8 +30,8 @@ export default function TopWeek({ articles }: { articles: Article[] }) {
         >
           Top {articles.length} de la semaine
         </h2>
-        <p className="text-[11px] sm:text-xs" style={{ color: RESUME }}>
-          Importance (urgence × récence × confiance), pas seulement l&apos;heure
+        <p className="text-[11px] sm:text-xs max-w-[16rem] sm:max-w-none text-right" style={{ color: RESUME }}>
+          Indice 0–100 · portée, fraîcheur, substance, confiance
         </p>
       </div>
 
@@ -47,7 +39,7 @@ export default function TopWeek({ articles }: { articles: Article[] }) {
         {articles.map((a, i) => {
           const accent = categorieAccent(a.categorie);
           const Icon = CATEGORY_ICON[a.categorie];
-          const b = badge(a.urgence);
+          const score = scores.get(a.id);
           const rank = i + 1;
 
           return (
@@ -70,13 +62,7 @@ export default function TopWeek({ articles }: { articles: Article[] }) {
                     <span className="font-medium" style={{ color: accent }}>
                       {a.categorie}
                     </span>
-                    {b && (
-                      <span
-                        className={`px-1.5 py-0.5 rounded-sm border text-[10px] ${b.cls}`}
-                      >
-                        {b.label}
-                      </span>
-                    )}
+                    {score && <ImportanceChip score={score} />}
                     <FiabiliteBadge article={a} />
                     <span className="sm:hidden" style={{ color: RESUME }}>
                       {formatRelative(a.date)}

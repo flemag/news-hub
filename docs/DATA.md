@@ -37,12 +37,15 @@ data/articles/
   "potentiel_perso": "Impact pour le lecteur individuel (optionnel).",
   "date": "2026-11-09T08:00:00Z",
   "urgence": "normal | important | breaking",
+  "fiabilite": "confirme | probable | a_surveiller",
   "tags": ["tag1", "tag2"],
   "source_url": "https://…"
 }
 ```
 
-Catégories autorisées : `IA`, `Modèles IA`, `Web`, `Gaming`, `Hack & Console`, `Société & Politique`, `Dev`, `Astuces`, `Nouveautés`.
+Catégories autorisées : `IA`, `Modèles IA`, `Web`, `Cloud & Infra`, `Gaming`, `Hack & Console`, `Société & Politique`, `Dev`, `Astuces`, `Nouveautés`.
+
+`urgence` accepte aussi des alias historiques (`haute`, `normale`, `high`, `low`…). Le site les ramène à un niveau, puis calcule un **indice 0–100** (voir [CHARTE_VEILLE.md](CHARTE_VEILLE.md)). Ne pas ajouter un champ `score` dans le JSON : il est dérivé à l’affichage. Renseigner `fiabilite` explicitement dès que la source est tranchée.
 
 ---
 

@@ -15,6 +15,10 @@ data/articles/
 - Au 1er du mois suivant : créer `YYYY-MM.json` + l'importer dans `index.ts`.
 - Détails : [docs/DATA.md](docs/DATA.md).
 
+## Indice d'importance
+
+Le classement (hero, top semaine, tri par catégorie, archive du jour) utilise un indice 0–100 : niveau rédigé normalisé, portée du sujet, fraîcheur (demi-vie 30 h), substance actionnable, confiance de la source. Le détail s’affiche sur chaque article. Voir [docs/CHARTE_VEILLE.md](docs/CHARTE_VEILLE.md).
+
 ## Navigation
 
 - Accueil : flux, hero, filtres.

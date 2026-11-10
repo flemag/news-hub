@@ -2,20 +2,28 @@
 
 import Link from "next/link";
 import { Article } from "@/lib/types";
-import { categorieAccent, formatRelative, isWithinLast24h } from "@/lib/dates";
+import type { ArticleScore } from "@/lib/score";
+import { PALIER_META } from "@/lib/score";
+import { categorieAccent, formatRelative } from "@/lib/dates";
 import { CATEGORY_ICON } from "@/lib/icons";
 import { resolveVignette } from "@/lib/vignettes";
 import FiabiliteBadge from "@/components/FiabiliteBadge";
+import ImportanceChip from "@/components/ImportanceChip";
 
 const TITLE = "#F4F6FC";
 const RESUME = "#C2C9DC";
 
-export default function Hero({ article }: { article: Article }) {
+export default function Hero({
+  article,
+  score,
+}: {
+  article: Article;
+  score?: ArticleScore;
+}) {
   const accent = categorieAccent(article.categorie);
   const Icon = CATEGORY_ICON[article.categorie];
   const vignette = resolveVignette(article.categorie, article.image);
-  const showBreaking =
-    article.urgence === "breaking" && isWithinLast24h(article.date);
+  const meta = score ? PALIER_META[score.palier] : null;
 
   return (
     <Link
@@ -31,18 +39,7 @@ export default function Hero({ article }: { article: Article }) {
           <div className="flex items-center gap-2 mb-3 md:mb-5 text-[11px] sm:text-xs flex-wrap">
             <Icon size={13} style={{ color: accent }} aria-hidden />
             <span style={{ color: accent }}>{article.categorie}</span>
-            {showBreaking && (
-              <span className="ml-1 px-1.5 py-0.5 rounded-sm bg-amber/15 text-amber tracking-wide text-[10px] sm:text-xs">
-                Dernière minute
-              </span>
-            )}
-            {!showBreaking &&
-              article.urgence === "important" &&
-              isWithinLast24h(article.date) && (
-                <span className="ml-1" style={{ color: RESUME }}>
-                  Important
-                </span>
-              )}
+            {score && <ImportanceChip score={score} />}
             <FiabiliteBadge article={article} />
             <span className="ml-auto md:ml-4" style={{ color: RESUME }}>
               {formatRelative(article.date)}
@@ -63,6 +60,12 @@ export default function Hero({ article }: { article: Article }) {
             {article.resume}
           </p>
 
+          {meta && (
+            <p className="mt-3 text-xs leading-relaxed max-w-xl" style={{ color: RESUME }}>
+              {meta.hint}
+            </p>
+          )}
+
           {article.tags?.length > 0 && (
             <ul className="hidden sm:flex flex-wrap gap-2 mt-4 md:mt-6">
               {article.tags.map((tag) => (
@@ -78,7 +81,7 @@ export default function Hero({ article }: { article: Article }) {
           )}
 
           <p className="mt-3 md:mt-6 text-xs sm:text-sm text-cyan/90">
-            Lire la perspective →
+            Lire l’indice et la perspective →
           </p>
         </div>
 

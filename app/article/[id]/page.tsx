@@ -17,13 +17,11 @@ import {
 import { CATEGORY_ICON } from "@/lib/icons";
 import { resolveVignette } from "@/lib/vignettes";
 import { FIABILITE_META, resolveFiabilite } from "@/lib/fiabilite";
+import { scoreArticle } from "@/lib/score";
 import Header from "@/components/Header";
 import FiabiliteBadge from "@/components/FiabiliteBadge";
-
-const urgenceLabel: Record<string, string> = {
-  important: "Important",
-  breaking: "Dernière minute",
-};
+import ImportanceChip from "@/components/ImportanceChip";
+import ScorePanel from "@/components/ScorePanel";
 
 /** Couleurs forcées — évite les opacités Tailwind peu lisibles sur panel. */
 const TEXT_BODY = "#E8EDF8";
@@ -61,6 +59,7 @@ export default function ArticlePage({ params }: Props) {
   const isModele = article.categorie === "Modèles IA";
   const fiab = resolveFiabilite(article);
   const fiabMeta = FIABILITE_META[fiab];
+  const score = scoreArticle(article);
 
   const fiabHint =
     fiab === "a_surveiller"
@@ -84,17 +83,7 @@ export default function ArticlePage({ params }: Props) {
           <span className="font-medium" style={{ color: accent }}>
             {article.categorie}
           </span>
-          {article.urgence !== "normal" && (
-            <span
-              className={
-                article.urgence === "breaking"
-                  ? "text-amber font-medium"
-                  : "text-ink/80"
-              }
-            >
-              · {urgenceLabel[article.urgence]}
-            </span>
-          )}
+          <ImportanceChip score={score} />
           <FiabiliteBadge article={article} force size="md" />
           <span className="text-muted ml-auto text-xs md:text-sm">
             {formatRelative(article.date)} · {formatFullDate(article.date)}
@@ -144,6 +133,8 @@ export default function ArticlePage({ params }: Props) {
             {article.resume}
           </p>
         </section>
+
+        <ScorePanel score={score} />
 
         <section className="mt-10">
           <h2 className="font-display text-xs uppercase tracking-[0.12em] text-cyan mb-4">

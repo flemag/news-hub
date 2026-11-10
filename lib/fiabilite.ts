@@ -29,10 +29,10 @@ const WEAK_MARKERS =
   /\b(rumeur|rumeurs|sources?\s+proches?|selon\s+des\s+sources|non\s+confirmé|allègue|aurait|pourrait\s+avoir|fuite\s+non|unverified|allegedly)\b/i;
 
 const PRIMARY_HOSTS =
-  /github\.com|arxiv\.org|openai\.com|anthropic\.com|blog\.google|cloud\.google|aws\.amazon|microsoft\.com|azure\.microsoft|developer\.mozilla|cve\.mitre|nvd\.nist|europa\.eu|legifrance\.gouv|cloudflare\.com|vercel\.com|huggingface\.co/i;
+  /github\.com|arxiv\.org|openai\.com|anthropic\.com|blog\.google|deepmind\.google|cloud\.google|aws\.amazon|microsoft\.com|azure\.microsoft|developer\.mozilla|cve\.mitre|nvd\.nist|nist\.gov|europa\.eu|legifrance\.gouv|elysee\.fr|gouvernement\.fr|anssi\.gouv|cnil\.fr|cloudflare\.com|vercel\.com|huggingface\.co|mistral\.ai|nvidia\.com|apple\.com/i;
 
 const SERIOUS_PRESS =
-  /reuters\.com|ft\.com|wsj\.com|nytimes\.com|bloomberg\.com|techcrunch\.com|theverge\.com|wired\.com|arstechnica\.com|lemonde\.fr|lesechos\.fr|sifted\.eu/i;
+  /reuters\.com|ft\.com|wsj\.com|nytimes\.com|bloomberg\.com|techcrunch\.com|theverge\.com|wired\.com|arstechnica\.com|theguardian\.com|bbc\.com|bbc\.co\.uk|lemonde\.fr|lesechos\.fr|usine-digitale\.fr|sifted\.eu/i;
 
 /**
  * Infère un niveau si le champ fiabilite est absent (anciens JSON).

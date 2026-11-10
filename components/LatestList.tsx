@@ -2,12 +2,20 @@
 
 import Link from "next/link";
 import { Article } from "@/lib/types";
+import type { ArticleScore } from "@/lib/score";
 import { categorieAccent, formatRelative } from "@/lib/dates";
+import ImportanceChip from "@/components/ImportanceChip";
 
 const TITLE = "#F4F6FC";
 const RESUME = "#C2C9DC";
 
-export default function LatestList({ articles }: { articles: Article[] }) {
+export default function LatestList({
+  articles,
+  scores,
+}: {
+  articles: Article[];
+  scores?: Map<string, ArticleScore>;
+}) {
   if (!articles.length) return null;
 
   return (
@@ -26,6 +34,7 @@ export default function LatestList({ articles }: { articles: Article[] }) {
       <ol className="divide-y divide-line flex-1">
         {articles.map((a, i) => {
           const accent = categorieAccent(a.categorie);
+          const score = scores?.get(a.id);
           return (
             <li key={a.id}>
               <Link
@@ -51,6 +60,9 @@ export default function LatestList({ articles }: { articles: Article[] }) {
                     style={{ color: RESUME }}
                   >
                     <span style={{ color: accent }}>{a.categorie}</span>
+                    {score && score.total >= 44 && (
+                      <ImportanceChip score={score} compact />
+                    )}
                     <span aria-hidden>·</span>
                     <span>{formatRelative(a.date)}</span>
                   </span>

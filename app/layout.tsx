@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -17,6 +17,10 @@ const body = IBM_Plex_Sans({
 const description =
   "IA, Web, Gaming, Hack & Console, Société, Dev — ce qu'il ne fallait pas rater dans les dernières 24 heures.";
 
+export const viewport: Viewport = {
+  themeColor: "#0B0E1A",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://news-hub.vercel.app"),
   title: {
@@ -24,7 +28,6 @@ export const metadata: Metadata = {
     template: "%s · Signal",
   },
   description,
-  themeColor: "#0B0E1A",
   openGraph: {
     title: "Signal — l'essentiel des dernières 24h",
     description,

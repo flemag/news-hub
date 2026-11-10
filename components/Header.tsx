@@ -27,8 +27,8 @@ export default function Header() {
             </h1>
           </div>
           <p className="mt-1.5 sm:mt-3 text-xs sm:text-sm text-muted max-w-lg leading-relaxed">
-            Briefing tech de la semaine — ce qui compte vraiment en IA, sécurité,
-            web, dev et société. Top 10 scoré, pas un flux infini.
+            Briefing tech — classé par indice (portée, fraîcheur, substance,
+            confiance), pas seulement par l’heure.
           </p>
         </div>
         <div

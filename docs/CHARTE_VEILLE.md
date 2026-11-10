@@ -53,9 +53,29 @@ Laisser **vide** si rien de concret.
 
 ## Urgence
 
+Valeurs canoniques (à préférer) :
+
 - `breaking` : vraie dernière minute (1 max / jour sauf crise)
 - `important` : impact net cette semaine
 - `normal` : le reste
+
+Alias acceptés à la lecture (le site les normalise, inutile d’en inventer de nouveaux) : `haute` / `high` → important, `normale` → normal, `moyenne` / `medium` → intermédiaire, `basse` / `low` → faible.
+
+## Indice Signal (classement)
+
+Le Top 10, le hero et le tri « Importance » ne suivent pas le champ `urgence` seul. Chaque article reçoit un indice **0–100** à l’affichage, somme de cinq parts plafonnées :
+
+| Part | Max | Ce que ça mesure |
+|------|-----|------------------|
+| Niveau rédigé | 32 | `breaking` 32, important 23, intermédiaire 16, normal 10, faible 4 |
+| Portée | 28 | Mots du titre, du résumé et des tags (incident, régulation, levée, emploi…) + léger biais de catégorie. Minorée si le signal est fragile. |
+| Fraîcheur | 20 | Décroissance continue, demi-vie 30 h, nulle après 14 jours |
+| Substance | 12 | Geste business/perso concret, enjeu modèle, perspective, analyse |
+| Confiance | 8 | `confirme` 8, `probable` 5, `a_surveiller` 1 |
+
+Paliers affichés : Critique ≥ 80, Majeure ≥ 68, Élevée ≥ 56, Notable ≥ 44, Courante ≥ 32, Discrète ≥ 20, sinon Bruit de fond.
+
+Le hero est le plus fort indice sur 72 h (plus le premier `breaking` de la liste). Le top semaine garde au plus 2 articles par catégorie et 3 breaking.
 
 ## Volume
 
