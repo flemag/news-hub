@@ -13,20 +13,5 @@
     "urgence": "breaking",
     "tags": ["Anthropic", "Claude", "modèles IA", "codage", "agents"],
     "source_url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-10-2026/"
-  },
-  {
-    "id": "2026-11-10-02",
-    "titre": "Meta présente Muse Ember, modèle compact à 0,10 dollar le million de jetons",
-    "categorie": "Modèles IA",
-    "resume": "Meta a lancé Muse Ember le 9 novembre, son plus petit modèle de la famille Muse. Conçu pour les tâches répétitives d’agents (appels d’outils, sous-tâches de code, extraction), il coûte 0,10 $/M en entrée et 0,50 $/M en sortie.",
-    "contenu": "Le 9 novembre, Meta a publié Muse Ember (muse-ember-1.0), son modèle le plus compact. Il cible les tâches que les agents répètent : appels d’outils, sous-tâches de codage, routage, extraction et traitement de longs documents. Contexte de 1 million de jetons, sortie jusqu’à 512 000. Entrées multimodales. Tarif : 0,10 $ par million en entrée et 0,50 $ en sortie.\n\nMeta indique qu’il égale Claude Haiku 5.5 sur certains scores Artificial Analysis à environ un tiers du coût et surpasse les réglages de GPT-6 Luna. Des tests Cloudflare montrent des latences p95 de 2,2 secondes, 4 à 13 fois plus rapides que des modèles open-weight, avec moins de jetons de sortie. Disponible via Meta Model API, Muse Code et Google Cloud.\n\nPour les équipes françaises, intéressant pour les pipelines à fort volume. Vérifier localisation, clauses de non-entraînement et conformité AI Act. Le positionnement « premier modèle entraîné avec Muse Wonder Full » mérite un regard sur la transparence.\n\nComparer le coût réel par tâche résolue sur un jeu de tests interne avant de remplacer un Haiku ou un petit modèle open-weight.",
-    "perspective": "Un modèle à très bas coût change la rentabilité des agents, pas forcément leur fiabilité sur les cas limites. La situation évolue rapidement et mérite un suivi attentif.",
-    "potentiel_business": "Baisse significative du coût des agents de support, d’extraction et de sous-tâches de code. À valider sur des flux métier réels.",
-    "potentiel_perso": "Peu utile pour un usage conversationnel grand public. Intéressant pour des scripts personnels à fort volume de jetons.",
-    "modele_enjeu": "Muse Ember vise le volume et la latence plutôt que le plafond de performance. Enjeu : industrialisation des agents à faible coût, avec un contexte long et une entrée multimodale.",
-    "date": "2026-11-10T06:15:00Z",
-    "urgence": "important",
-    "tags": ["Meta", "Muse", "modèles IA", "agents", "tarifs"],
-    "source_url": "https://aitimeline.news/en/Daily/2026-11-10-X%E6%97%A5%E6%8A%A5/"
   }
 ]
