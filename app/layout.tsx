@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://news-hub.vercel.app"),
+  metadataBase: new URL("https://news-hub-mocha-psi.vercel.app"),
   title: {
     default: "Signal — l'essentiel des dernières 24h",
     template: "%s · Signal",
