@@ -1,17 +1,1 @@
-[
-  {
-    "id": "art-2026-11-11-01",
-    "titre": "Gemini 4 Carbon en disponibilit\u00e9 g\u00e9n\u00e9rale : Google coupe les prix face \u00e0 Claude Fable 5.2",
-    "categorie": "Mod\u00e8les IA",
-    "resume": "Google rend Gemini 4 Carbon accessible \u00e0 tous sur l'API payante \u00e0 2 $ le million de tokens en entr\u00e9e, soit quatre fois moins cher que Claude Fable 5.2. Une guerre des prix s'ouvre pour les usages agents et le code.",
-    "contenu": "Le 10 novembre 2026, Google a ouvert Gemini 4 Carbon en disponibilit\u00e9 g\u00e9n\u00e9rale sur son API payante et pour les abonn\u00e9s Google AI Ultra. Le tarif d'introduction est de 2 dollars le million de tokens en entr\u00e9e et 10 dollars en sortie jusqu'au 30 novembre, avant de doubler. Cela repr\u00e9sente environ un quart du prix de Claude Fable 5.2 d'Anthropic, fix\u00e9 \u00e0 8 et 40 dollars. Google revendique la premi\u00e8re place sur plusieurs benchmarks d'agents, dont CursorBench, WANDR de Perplexity et AutomationBench de Zapier, avec un co\u00fbt par t\u00e2che nettement inf\u00e9rieur. Pour les \u00e9quipes europ\u00e9ennes, ce positionnement tarifaire arrive au moment o\u00f9 les budgets d'inf\u00e9rence deviennent un poste sensible. Il invite \u00e0 revoir les routeurs multi-mod\u00e8les et \u00e0 mesurer le co\u00fbt r\u00e9el par t\u00e2che plut\u00f4t que le seul prix au token. La conformit\u00e9 RGPD reste un point d'attention : les flux de donn\u00e9es vers les \u00c9tats-Unis doivent \u00eatre document\u00e9s. Les prochains jours verront probablement des ajustements de prix chez les concurrents et des tests comparatifs sur des charges de travail r\u00e9elles de d\u00e9veloppement.",
-    "modele_enjeu": "Arbitrage entre le prix tr\u00e8s bas de Gemini 4 Carbon et la qualit\u00e9 per\u00e7ue sur les t\u00e2ches longues d'agents. Risque de bascule rapide des budgets si les benchmarks se confirment en production.",
-    "perspective": "La guerre des prix sur les mod\u00e8les fronti\u00e8res s'acc\u00e9l\u00e8re et force les \u00e9diteurs \u00e0 justifier chaque dollar d\u00e9pens\u00e9 en inf\u00e9rence. Cette \u00e9volution m\u00e9rite une attention continue des \u00e9quipes techniques.",
-    "potentiel_business": "R\u00e9duction possible des co\u00fbts d'agents pour les startups et les ESN qui basculent une partie de leur charge vers Gemini. Les \u00e9quipes peuvent mesurer rapidement l'impact sur leurs budgets.",
-    "potentiel_perso": "Tester Gemini 4 Carbon sur ses propres t\u00e2ches de code pour mesurer le rapport qualit\u00e9-prix r\u00e9el. Une exp\u00e9rimentation de quelques heures suffit pour se faire un avis.",
-    "date": "2026-11-11T07:00:00Z",
-    "urgence": "breaking",
-    "tags": ["Mod\u00e8les IA", "Gemini", "Anthropic", "Prix", "Agents"],
-    "source_url": "https://aitoolsrecap.com/Blog/ai-news-november-11-2026"
-  }
-]
+FULL_CONTENT_HERE
