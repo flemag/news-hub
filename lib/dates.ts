@@ -1,6 +1,8 @@
 import { Categorie } from "./types";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
+/** Horodatages un peu en avance (édition du jour) restent visibles. */
+const FUTURE_SKEW_MS = 6 * 60 * 60 * 1000;
 
 export function isWithinLast24h(dateIso: string, now: Date = new Date()): boolean {
   return isWithinLastMs(dateIso, DAY_MS, now);
@@ -13,7 +15,8 @@ export function isWithinLastMs(
 ): boolean {
   const then = new Date(dateIso).getTime();
   const t = now.getTime();
-  return t - then <= windowMs && then <= t;
+  if (!Number.isFinite(then)) return false;
+  return then <= t + FUTURE_SKEW_MS && t - then <= windowMs;
 }
 
 /** Fenêtre glissante en jours (ex. 7 = semaine). */

@@ -12,19 +12,37 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dir = path.join(__dirname, "..", "data", "articles");
 const outFile = path.join(dir, "index.ts");
 
+function readArticleFile(filePath) {
+  const raw = fs.readFileSync(filePath, "utf8").trim();
+  if (!raw || raw === "[]" || /PLACEHOLDER/i.test(raw)) return null;
+  const parse = (text) => {
+    const data = JSON.parse(text);
+    return Array.isArray(data) && data.length > 0 ? data : null;
+  };
+  try {
+    return parse(raw);
+  } catch {
+    const start = raw.indexOf("[");
+    const end = raw.lastIndexOf("]");
+    if (start === -1 || end <= start) return null;
+    try {
+      const data = parse(raw.slice(start, end + 1));
+      if (data) {
+        console.warn(
+          `[generate-articles-index] texte après le JSON ignoré : ${path.basename(filePath)}`
+        );
+      }
+      return data;
+    } catch {
+      return null;
+    }
+  }
+}
+
 const files = fs
   .readdirSync(dir)
   .filter((f) => f.endsWith(".json"))
-  .filter((f) => {
-    try {
-      const raw = fs.readFileSync(path.join(dir, f), "utf8").trim();
-      if (!raw || raw === "[]" || /PLACEHOLDER/i.test(raw)) return false;
-      const data = JSON.parse(raw);
-      return Array.isArray(data) && data.length > 0;
-    } catch {
-      return false;
-    }
-  })
+  .filter((f) => readArticleFile(path.join(dir, f)))
   // Plus récents d'abord (2026-09-22 > 2026-09-l > 2026-09-b)
   .sort((a, b) => b.localeCompare(a));
 

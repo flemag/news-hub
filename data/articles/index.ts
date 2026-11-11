@@ -3,6 +3,7 @@
  * Source : scripts/generate-articles-index.mjs (npm run prebuild)
  * La veille n'a qu'à déposer data/articles/YYYY-MM-DD.json
  */
+import a_2026_11_11 from "./2026-11-11.json";
 import a_2026_11_10 from "./2026-11-10.json";
 import a_2026_11_09 from "./2026-11-09.json";
 import a_2026_11_09_b from "./2026-11-09-b.json";
@@ -98,6 +99,7 @@ import a_2026_09_22 from "./2026-09-22.json";
 import type { Article } from "@/lib/types";
 
 const MONTH_FILES: Article[][] = [
+  a_2026_11_11 as Article[],
   a_2026_11_10 as Article[],
   a_2026_11_09 as Article[],
   a_2026_11_09_b as Article[],
