@@ -1,0 +1,31 @@
+[
+  {
+    "id": "epic-ai-megajam-2026-11-12",
+    "titre": "Epic AI MegaJam démarre aujourd’hui sur le thème Director’s Cut",
+    "categorie": "Gaming",
+    "resume": "La jam Epic débute le 12 novembre pour quatre jours. Thème Director’s Cut, prix cash et grants jusqu’à 50 000 $, IA optionnelle. Unreal 5.9 Preview et agents intégrés sont disponibles pour les participants.",
+    "contenu": "Epic lance aujourd’hui l’AI MegaJam 2026, qui se tient du 12 au 15 novembre. Le thème, révélé la veille, est Director’s Cut : les équipes doivent livrer leur vision finale, les mécaniques coupées ou les idées gardées en réserve. Jusqu’à cinq humains peuvent participer, avec autant d’agents que souhaité, sur Unreal Engine ou UEFN. Les prix principaux atteignent 7 500 $ par catégorie (Unreal, UEFN, étudiant), plus des awards secondaires et des grants de continuité jusqu’à 50 000 $ pour les projets retenus.\n\nL’événement arrive au moment où Epic publie la Preview 5.9 MegaJam, première version du moteur construite majoritairement avec des workflows agentiques. Unreal Assistant permet de brancher Claude Code, Codex, Cursor ou OpenCode directement dans l’éditeur via Unreal MCP étendu. Le support navigateur (WebAssembly + WebGPU) est également présent en prototype.\n\nPour un public français, l’intérêt est double : tester les agents dans un cadre compétitif sans obligation d’IA, et évaluer le coût réel d’une semaine intensive (tokens, temps de revue). Les règles précisent que le gameplay, les niveaux et l’art doivent être créés pendant la jam. Les participants en ligne ou sur place à San Francisco sont jugés de la même manière.\n\nÀ surveiller : la qualité des soumissions le 15 novembre, les retours sur la Preview 5.9 (bugs, stabilité des agents) et l’usage réel des grants. Les freelances et petites équipes y trouvent un terrain d’expérimentation à faible risque juridique immédiat, à condition de documenter les prompts et les actifs préexistants.",
+    "perspective": "La jam teste si les agents réduisent le temps de prototype sans dégrader la jouabilité. Les résultats serviront de référence pour les studios qui hésitent encore sur l’intégration d’agents.",
+    "potentiel_business": "Opportunité de visibilité et de financement de suite pour les équipes qui livrent un prototype jouable. Les grants peuvent financer une phase de polish post-jam.",
+    "potentiel_perso": "Quatre jours pour pousser une mécanique personnelle avec des agents, sans pression de production. Utile pour constituer un portfolio agentique documenté.",
+    "date": "2026-11-12T08:00:00Z",
+    "urgence": "breaking",
+    "tags": ["Unreal", "MegaJam", "agents", "IA", "jeu"],
+    "source_url": "https://www.unrealengine.com/news/2026-epic-ai-megajam"
+  },
+  {
+    "id": "claude-fable-52-anthropic",
+    "titre": "Claude Fable 5.2 : Anthropic livre un modèle plus rapide et moins cher pour les tâches longues",
+    "categorie": "Modèles IA",
+    "resume": "Fable 5.2 sort le 9 novembre avec contexte 1 M, sortie 128 K, tarifs 8 $/40 $ par million de tokens. Mode rapide optionnel à 16 $/80 $. Même modèle sous-jacent que Mythos, avec gardes renforcées côté Fable.",
+    "contenu": "Anthropic a publié Claude Fable 5.2 le 9 novembre 2026. Le modèle vise les travaux de raisonnement exigeants et les sessions agentiques longues (plusieurs heures). Il offre une fenêtre de contexte d’un million de tokens et une sortie maximale de 128 000 tokens. Le tarif standard est de 8 $ par million de tokens d’entrée et 40 $ en sortie, soit une baisse par rapport à la génération précédente. Un mode rapide optionnel accélère la génération jusqu’à 2,5 fois pour 16 $/80 $.\n\nFable 5.2 et Mythos 5.2 partagent le même modèle de base. Fable intègre des gardes plus strictes en cybersécurité et biologie pour une disponibilité générale ; Mythos reste accessible sur programme pour des usages vérifiés. Les tests internes citent des gains en codage, raisonnement et vision, ainsi qu’une génération jusqu’à 30 % plus rapide que Fable 5.1.\n\nPour les développeurs et freelances francophones, le point d’attention est le coût des sessions longues. À 8 $/40 $, une migration ou une analyse multi-jours reste moins chère qu’avec les tarifs précédents, mais le mode rapide double la facture. La disponibilité sur Claude Platform, AWS Bedrock, Google Cloud et Microsoft Foundry facilite l’intégration dans les stacks existantes. La conformité UE (AI Act) reste à surveiller pour les usages à risque systémique.\n\nÀ faire : tester le modèle sur des tâches réelles de migration ou de revue de code, comparer le coût total avec Opus 5.5 ou Gemini 4 Carbon, et surveiller les retours de stabilité sur les sessions de plus de 24 heures.",
+    "perspective": "Fable 5.2 positionne Anthropic sur le créneau des agents longs et des travaux techniques complexes, avec un prix d’appel plus agressif.",
+    "potentiel_business": "Réduction du coût des pipelines agentiques lourds (migrations, audits). Intéressant pour les équipes qui facturent au temps ou au livrable technique.",
+    "potentiel_perso": "Accès à un modèle capable de tenir une session de plusieurs heures pour un projet personnel ou un prototype complexe, à un tarif plus accessible.",
+    "modele_enjeu": "Fable 5.2 abaisse le prix d’entrée des modèles de frontière tout en ciblant explicitement les sessions agentiques longues. L’enjeu est de savoir si la baisse tarifaire se traduit par une adoption réelle hors des grands comptes.",
+    "date": "2026-11-12T08:00:00Z",
+    "urgence": "haute",
+    "tags": ["Anthropic", "Claude", "Fable", "modèle", "tarifs"],
+    "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+  }
+]
