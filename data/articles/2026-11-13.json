@@ -1,1 +1,16 @@
-PLACEHOLDER_TO_BE_REPLACED
+[
+  {
+    "id": "2026-11-13-societe-nvidia-huang-demission",
+    "titre": "Nvidia : Jensen Huang démissionne, Colette Kress assure l’intérim",
+    "categorie": "Société & Politique",
+    "resume": "Le 12 novembre, Jensen Huang a démissionné de ses fonctions de président, PDG et administrateur de Nvidia avec effet immédiat. La directrice financière Colette Kress prend l’intérim. L’action a chuté, soulevant des questions sur le financement de l’IA et les relations avec la Chine.",
+    "contenu": "Nvidia a annoncé le 12 novembre que Jensen Huang, cofondateur et PDG depuis 1993, démissionnait de ses postes de président, directeur général et membre du conseil, avec effet immédiat. Colette Kress, directrice financière depuis 2013, assure l’intérim tout en conservant son rôle de CFO. Harvey C. Jones devient le premier président du conseil. L’action a perdu jusqu’à 13 % en séance avant de limiter les dégâts autour de 4-5 %.\n\nLe départ intervient après des révélations sur des relations extraconjugales, dont une avec une femme d’affaires soupçonnée d’espionnage pour la Chine. Huang avait défendu l’accès de Nvidia au marché chinois. Les investisseurs s’interrogent sur la capacité de l’entreprise à continuer de financer des infrastructures d’IA et de négocier des contrats d’envergure.\n\nPour les acteurs français et européens, la question est double : stabilité des approvisionnements en GPU et évolution des contrôles d’exportation américains. Un changement de direction pourrait durcir ou assouplir les flux vers l’UE selon les priorités politiques de Washington.\n\nSurveiller les résultats du 17 novembre et les déclarations de Kress sur la feuille de route produits et les engagements clients. Les contrats d’infrastructure signés sous Huang restent valides, mais les négociations en cours méritent un suivi renforcé.",
+    "perspective": "Le départ d’Huang n’arrête pas les puces déjà livrées. Il ouvre une période où le financement et la géopolitique des GPU deviennent plus incertains.",
+    "potentiel_business": "Revoir les clauses de continuité dans les contrats Nvidia, diversifier les fournisseurs GPU, préparer des scénarios d’approvisionnement pour les clusters européens.",
+    "potentiel_perso": "Si vous utilisez des outils basés sur des GPU Nvidia via un cloud, le service ne s’arrête pas demain. L’impact se verra sur les prix à moyen terme.",
+    "date": "2026-11-12T18:00:00Z",
+    "urgence": "breaking",
+    "tags": ["Nvidia", "Jensen Huang", "Colette Kress", "IA", "gouvernance"],
+    "source_url": "https://www.lefigaro.fr/secteur/high-tech/affaire-nvidia-l-action-du-geant-americain-de-la-tech-plonge-de-13-apres-la-demission-de-son-patron-jensen-huang-20261112"
+  }
+]
