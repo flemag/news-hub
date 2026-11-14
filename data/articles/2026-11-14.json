@@ -1,1 +1,16 @@
-PLACEHOLDER_TO_REPLACE
+[
+  {
+    "id": "2026-11-14-ia-chatgpt-wallet-agents-achats",
+    "titre": "OpenAI lance ChatGPT Wallet : les agents peuvent désormais finaliser des achats sécurisés",
+    "categorie": "IA",
+    "resume": "OpenAI déploie ChatGPT Wallet pour ses agents Dots. Les abonnés Pro américains peuvent laisser l'agent préparer et valider des achats via tokenisation, sans exposer les données de carte. Chaque transaction exige une validation biométrique de l'utilisateur.",
+    "contenu": "OpenAI a lancé vendredi ChatGPT Wallet, une fonctionnalité qui permet à ses agents appelés Dots de préparer et de finaliser des achats au nom de l'utilisateur. Disponible initialement pour un nombre limité d'abonnés ChatGPT Pro aux États-Unis, âgés de 18 ans ou plus et titulaires d'une carte éligible Visa, Mastercard ou American Express, le système repose sur une tokenisation des paiements.\n\nL'agent peut rechercher des produits, constituer un panier et proposer une commande, mais l'utilisateur doit examiner le détail, le montant total et la carte sélectionnée avant d'approuver via Face ID ou empreinte. Après validation, le réseau de paiement fournit un jeton temporaire qui remplace les données réelles de la carte. Les récompenses et les protections en cas de litige restent préservées.\n\nPour les utilisateurs et développeurs en France et en Europe, cette avancée illustre le passage des agents conversationnels à des agents transactionnels. Elle soulève toutefois des questions de conformité au RGPD, de responsabilité en cas d'erreur de l'agent et de disponibilité hors des États-Unis. Les entreprises qui conçoivent des agents devront anticiper des mécanismes similaires d'approbation humaine et de tokenisation.\n\nIl convient de surveiller l'extension géographique, les partenariats marchands et les retours sur les premiers incidents de paiement pour mesurer la fiabilité.",
+    "perspective": "Le passage des agents à des capacités de paiement renforce leur utilité pratique tout en multipliant les risques de dépense non contrôlée et de litiges. La tokenisation et l'approbation systématique.",
+    "potentiel_business": "Équipes produit et e-commerce | Évaluer l'intégration de plugins d'agents capables d'interagir avec un panier sous 30 jours | Risque de concurrence sur les parcours d'achat automatisés.",
+    "potentiel_perso": "Tester les agents actuels sur des tâches de recherche de prix avant d'envisager tout achat automatisé.",
+    "date": "2026-11-14T06:00:00Z",
+    "urgence": "breaking",
+    "tags": ["openai", "chatgpt", "wallet", "agents", "paiement"],
+    "source_url": "https://openai.com/index/introducing-chatgpt-wallet/"
+  }
+]
