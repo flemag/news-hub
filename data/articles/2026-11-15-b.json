@@ -1,1 +1,244 @@
-PLACEHOLDER_TO_REPLACE
+[
+  {
+    "id": "2026-11-15-b-opus-55-default",
+    "titre": "Claude Opus 5.5 devient le modèle par défaut sur les plans payants",
+    "categorie": "Modèles IA",
+    "resume": "Anthropic a basculé Claude Opus 5.5 en modèle par défaut pour les plans Pro, Max, Ultra et Team. Le guide associé recommande d’abandonner les prompts « think hard » et de laisser le modèle gérer l’effort, avec un coût de 4 $/20 $ par million de tokens.",
+    "contenu": "Depuis le 12 novembre 2026 environ, Claude s’ouvre sur Opus 5.5 pour les utilisateurs des plans Pro, Max, Ultra et Team. Anthropic positionne ce modèle comme le daily driver pour le travail de connaissance : recherche, analyse, production de documents, slides et feuilles de calcul. Le prix API reste à 4 dollars d’entrée et 20 dollars de sortie par million de tokens, en baisse par rapport à Opus 5. Un guide publié le même jour explique que les habitudes de prompting héritées des générations précédentes freinent le modèle. En particulier, ajouter « think hard » ou « think carefully » n’apporte rien : Opus 5.5 pense toujours et ajuste l’effort selon la demande et le réglage Medium par défaut. Pour les équipes francophones, le changement signifie que le quota se consomme plus vite si l’on reste sur des tâches légères, mais que la qualité des sorties complexes peut compenser. Il est recommandé de mesurer la consommation réelle sur ses propres workloads plutôt que de se fier aux benchmarks internes. Fable 5.2 reste réservé aux tâches les plus longues et coûteuses. Les organisations européennes devront surveiller l’impact sur les budgets tokens et la conformité des données envoyées.",
+    "perspective": "Rendre le modèle le plus capable accessible par défaut change les habitudes, mais force aussi à revoir les prompts et le contrôle des coûts.",
+    "potentiel_business": "Équipes produit et ops peuvent gagner en qualité sur les livrables sans changer d’outil, à condition de former les utilisateurs sur le nouvel usage de l’effort.",
+    "potentiel_perso": "Tester Opus 5.5 sur une tâche d’analyse récurrente permet de voir si le gain de qualité justifie la consommation plus élevée.",
+    "modele_enjeu": "Opus 5.5 offre un meilleur rapport capacité/prix pour le travail quotidien, mais son thinking adaptatif exige d’abandonner les prompts de forçage d’effort qui n’ont plus d’effet.",
+    "date": "2026-11-15T08:00:00Z",
+    "urgence": "high",
+    "tags": [
+      "Claude",
+      "Opus 5.5",
+      "Anthropic",
+      "prompting",
+      "coûts"
+    ],
+    "source_url": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work"
+  },
+  {
+    "id": "2026-11-15-b-claude-manufacturing",
+    "titre": "Claude for Manufacturing : 17 compétences et 4 connecteurs pour les usines",
+    "categorie": "Nouveautés",
+    "resume": "Anthropic lance un plugin Claude pour l’industrie avec 17 skills couvrant devis, qualité, opérations et supply chain. Connecteurs vers Autodesk Fusion, Infor, Microsoft 365 et Oracle NetSuite ; validation humaine obligatoire avant envoi.",
+    "contenu": "Le 12 novembre 2026, Anthropic a publié Claude for Manufacturing, un plugin disponible pour les plans Team et Enterprise. Il regroupe 17 skills qui vont de la rédaction d’un devis à partir d’une demande client jusqu’au diagnostic d’une panne et à la rédaction de rapports de non-conformité. Quatre connecteurs officiels donnent accès aux données d’Autodesk Fusion (conception), Infor, Oracle NetSuite (commandes et stocks) et Microsoft 365. Pour les systèmes sans connecteur, l’export de fichiers vers 365 suffit. Claude prépare les documents mais s’arrête systématiquement pour une revue humaine avant tout envoi à un client ou fournisseur. Pour les industriels européens, cela ouvre une voie d’automatisation des tâches administratives sans perdre le contrôle. Les questions de souveraineté des données et de conformité RGPD restent à examiner selon les connecteurs utilisés et le lieu de traitement. Un standard matériel en preview séparé est en développement pour des équipements physiques, mais le plugin actuel ne pilote pas les machines. Les équipes peuvent commencer par un cas d’usage limité (devis ou rapports matinaux) pour mesurer le gain réel.",
+    "perspective": "L’IA entre dans les processus industriels avec des garde-fous explicites de validation humaine, ce qui peut accélérer l’adoption dans des secteurs réglementés.",
+    "potentiel_business": "PME industrielles peuvent réduire le temps passé sur les devis et les rapports qualité sans recruter, en connectant leurs outils existants.",
+    "potentiel_perso": "Les freelances qui accompagnent des usines peuvent proposer des workflows Claude + exports Excel/365 comme première étape.",
+    "date": "2026-11-15T08:05:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Claude",
+      "manufacturing",
+      "industrie",
+      "plugin",
+      "connecteurs"
+    ],
+    "source_url": "https://claude.com/resources/articles/claude-for-manufacturing"
+  },
+  {
+    "id": "2026-11-15-b-meta-conductor",
+    "titre": "Meta rachète Conductor, plateforme d’orchestration d’agents de code",
+    "categorie": "Dev",
+    "resume": "Meta a acquis Conductor, startup fondée en 2024 qui permet de lancer plusieurs agents de code (Claude Code, Codex…) en parallèle dans des espaces isolés. Le service cloud s’arrête le 20 novembre ; l’équipe rejoint Superintelligence Labs.",
+    "contenu": "Annoncé le 4 novembre 2026, le rachat de Conductor par Meta a été confirmé par les deux parties. La startup, fondée par Charlie Holtz et Jackson de Campos, proposait une interface pour déployer plusieurs agents de codage simultanément, chacun dans une copie isolée du dépôt. Les agents supportés venaient de tiers (Claude Code, Codex, Cursor, OpenCode). Conductor Cloud, la version hébergée, passe en lecture seule le 13 novembre et sera arrêtée le 20 novembre, avec suppression des données. L’application desktop continue de fonctionner pour les utilisateurs existants jusqu’à début 2027. Pour les développeurs francophones, cela illustre la course des grands labos pour posséder les outils d’orchestration d’agents. Les utilisateurs de Conductor Cloud doivent exporter leurs travaux avant le 20. Les implications pour l’écosystème open source et les alternatives restent à observer. Meta n’a pas détaillé le prix ni la roadmap publique.",
+    "perspective": "L’acquisition confirme que l’orchestration multi-agents devient un terrain stratégique. Les outils indépendants risquent d’être absorbés rapidement.",
+    "potentiel_business": "Équipes qui utilisaient Conductor doivent migrer leurs workflows multi-agents avant la coupure cloud et évaluer les alternatives.",
+    "potentiel_perso": "Tester des workflows parallèles avec Claude Code et des worktrees Git reste possible sans Conductor.",
+    "date": "2026-11-15T08:10:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Meta",
+      "Conductor",
+      "agents",
+      "orchestration",
+      "acquisition"
+    ],
+    "source_url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/"
+  },
+  {
+    "id": "2026-11-15-b-chatgpt-wallet",
+    "titre": "ChatGPT Wallet : les agents peuvent payer sans voir la carte",
+    "categorie": "IA",
+    "resume": "OpenAI lance ChatGPT Wallet le 13 novembre. Les agents dots peuvent effectuer des achats pour les abonnés Pro US après approbation Face ID ou empreinte. Partenariat Amex, Mastercard, Visa ; pas d’accès aux numéros de carte.",
+    "contenu": "Le 13 novembre 2026, OpenAI a annoncé ChatGPT Wallet. L’utilisateur ajoute une carte une fois ; ensuite un agent (dot) peut préparer un panier et déclencher le paiement après que l’utilisateur a revu le total et validé par Face ID ou empreinte. Le numéro de carte n’est jamais exposé à l’agent. Les protections et récompenses des cartes partenaires sont conservées. Le déploiement commence pour les abonnés ChatGPT Pro de 18 ans et plus aux États-Unis avec cartes US. Pour un public européen, la fonction n’est pas encore disponible et soulève des questions de conformité DSP2, RGPD et responsabilité en cas de litige. Les commerçants peuvent ajouter des plugins ou WebMCP pour être accessibles aux agents. Il faudra surveiller l’élargissement géographique et les retours des premiers utilisateurs sur les fraudes ou erreurs. Les alternatives locales ou européennes n’existent pas encore à cette échelle.",
+    "perspective": "Les paiements agentiques arrivent avec des garde-fous de confirmation humaine, mais le cadre réglementaire européen reste à clarifier.",
+    "potentiel_business": "E-commerçants peuvent préparer des interfaces agent-friendly (WebMCP) pour être prêts quand le service arrivera en Europe.",
+    "potentiel_perso": "Les utilisateurs US Pro peuvent tester des achats simples pour évaluer la fiabilité et le niveau de contrôle.",
+    "date": "2026-11-15T08:15:00Z",
+    "urgence": "normal",
+    "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Wallet",
+      "agents",
+      "paiements"
+    ],
+    "source_url": "https://openai.com/index/introducing-chatgpt-wallet/"
+  },
+  {
+    "id": "2026-11-15-b-vercel-ui-sdk",
+    "titre": "Vercel ouvre UI SDK : des comportements d’interface pour les agents",
+    "categorie": "Web",
+    "resume": "Vercel Labs a publié UI SDK en bêta sous Apache 2.0. Plus de 50 comportements (navigation clavier, focus, ARIA…) pour que les agents construisent des UI plus efficacement, avec des adapters React, Vue, Svelte.",
+    "contenu": "Le 12-13 novembre 2026, Vercel a mis en ligne UI SDK, une bibliothèque open source de comportements d’interface destinée aux agents de code. Au lieu de générer un composant Select complet, l’agent reçoit des briques : popup, modèle de sélection, typeahead, et le câblage ARIA associé. Six packages npm en 0.1.0-beta.1 couvrent le core et les adapters pour React 19+, Vue 3.5+, Svelte 5, Solid et Web Components. Selon un test interne de Vercel sur une tâche de paramètres, l’usage avec le bridge réduisait de 69 % les appels d’outils et de 61 % le temps. Pour les développeurs francophones qui construisent des interfaces avec des agents, cela peut réduire les allers-retours et les erreurs d’accessibilité. La maturité reste bêta ; il faut tester sur un projet réel et vérifier la compatibilité avec son stack. L’installation se fait via un prompt qui ajoute une note dans AGENTS.md et installe les skills.",
+    "perspective": "Fournir des primitives plutôt que des composants finis change la façon dont les agents produisent du front. La qualité d’accessibilité pourrait s’améliorer.",
+    "potentiel_business": "Équipes front peuvent accélérer le prototypage d’interfaces agent-générées tout en gardant le contrôle sur l’accessibilité.",
+    "potentiel_perso": "Installer le skill UI SDK dans Claude Code ou Cursor permet d’expérimenter sur un petit composant et de comparer le nombre d’itérations.",
+    "date": "2026-11-15T08:20:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Vercel",
+      "UI SDK",
+      "agents",
+      "front",
+      "open source"
+    ],
+    "source_url": "https://www.marktechpost.com/2026/11/13/vercel-ui-sdk-agent-ui-behaviors/"
+  },
+  {
+    "id": "2026-11-15-b-xcode-claude-plugin",
+    "titre": "Apple publie un plugin Xcode officiel pour Claude Code",
+    "categorie": "Dev",
+    "resume": "Un plugin Xcode signé Apple Inc. est disponible dans le marketplace officiel Claude Code depuis le 6 novembre. Il permet de builder, tester, prévisualiser SwiftUI, piloter simulateurs et lire les logs depuis Claude Code.",
+    "contenu": "Depuis le 6 novembre 2026, le marketplace officiel des plugins Claude Code liste un plugin Xcode dont l’auteur est Apple Inc. L’installation se fait avec /plugin install xcode@claude-plugins-official sur un Mac avec Xcode récent. Une fois activé (et après avoir autorisé les agents externes dans les réglages Intelligence de Xcode), Claude Code peut lancer des builds, des tests, rendre des previews SwiftUI, démarrer des simulateurs, lire les diagnostics et interroger la documentation Apple. Pour les développeurs iOS/macOS francophones, cela réduit la friction entre l’agent et l’environnement Apple. Les capacités reposent sur le MCP exposé par Xcode depuis les versions récentes. Il reste expérimental dans son usage quotidien ; une revue humaine du code généré reste indispensable, surtout pour les apps destinées à l’App Store. Les utilisateurs de Codex ou d’autres agents peuvent aussi utiliser le bridge MCP directement.",
+    "perspective": "L’arrivée officielle d’Apple dans le marketplace Claude Code normalise l’usage des agents pour le développement natif Apple.",
+    "potentiel_business": "Studios iOS peuvent intégrer Claude Code dans le flux Xcode pour accélérer les itérations sur les previews et les tests.",
+    "potentiel_perso": "Sur un projet personnel SwiftUI, tester le plugin donne une idée du gain sur le cycle build-preview.",
+    "date": "2026-11-15T08:25:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Apple",
+      "Xcode",
+      "Claude Code",
+      "plugin",
+      "Swift"
+    ],
+    "source_url": "https://fourweekmba.com/ai-apples-xcode-plugin-joins-claude-codes-317-plugin-lineup/"
+  },
+  {
+    "id": "2026-11-15-b-eslint-contributor-pool",
+    "titre": "ESLint ferme son pool de contributeurs payés face aux PR générées par IA",
+    "categorie": "Société & Politique",
+    "resume": "Après cinq ans et plus de 51 000 dollars versés, ESLint retire son programme de rémunération des contributeurs. La difficulté à distinguer les PR humaines des PR IA et les disputes associées ont rendu le programme ingérable.",
+    "contenu": "Le 13 novembre 2026, l’équipe ESLint a annoncé la fin immédiate de son contributor pool. Depuis 2021, le programme avait distribué plus de 51 000 dollars. À partir de 2025, le volume de pull requests générées par IA a explosé. L’équipe a d’abord exigé une déclaration d’usage d’IA, puis a dû consacrer de plus en plus de temps à vérifier l’origine des contributions. Les « AI monitors » (personnes qui signalaient des PR comme générées) ont ajouté des frictions. Devant l’impossibilité de maintenir une revue équitable et le plaisir du projet, la décision de fermer le pool a été prise. Pour l’écosystème open source francophone, cela illustre un problème structurel : les incitations financières deviennent difficiles à appliquer quand le coût de production d’une PR chute. D’autres projets (Rust, Godot, curl…) revoient également leurs politiques. Les mainteneurs peuvent s’attendre à plus de volume et moins de signal. Une politique claire de divulgation et de critères d’acceptation devient indispensable.",
+    "perspective": "L’IA force les projets open source à repenser leurs modèles de contribution et de rémunération. Le volume sans curation nuit à tous.",
+    "potentiel_business": "Entreprises qui sponsorisent l’open source peuvent orienter leurs fonds vers des programmes de revue humaine ou de bounties ciblées plutôt que des pools ouverts.",
+    "potentiel_perso": "Contributeurs peuvent continuer à participer, mais doivent déclarer clairement l’usage d’outils IA et viser des issues acceptées.",
+    "date": "2026-11-15T08:30:00Z",
+    "urgence": "normal",
+    "tags": [
+      "ESLint",
+      "open source",
+      "IA",
+      "contributions",
+      "politique"
+    ],
+    "source_url": "https://eslint.org/blog/2026/11/retiring-contributor-pool/"
+  },
+  {
+    "id": "2026-11-15-b-nvidia-anthropic-placement",
+    "titre": "Nvidia et six autres groupes engagent 26 milliards dans le placement privé d’Anthropic",
+    "categorie": "Société & Politique",
+    "resume": "Dans le cadre de l’IPO d’Anthropic, Nvidia, Google, Microsoft, AMD, Broadcom, Micron et TSMC prennent ensemble 26 milliards de dollars d’actions Class N non votantes au prix de l’introduction.",
+    "contenu": "Le prospectus et les reportages du 10-11 novembre confirment un placement privé de 26 milliards de dollars concomitant à l’IPO d’Anthropic. Nvidia y contribue environ 10 milliards ; les autres participants (Google, Microsoft, AMD, Broadcom, Micron, TSMC) se partagent le reste. Les actions Class N sont non votantes et achetées au prix de l’offre publique. Pour les observateurs européens, cela montre le degré d’interdépendance entre les labos d’IA et les fournisseurs de silicium et de cloud. Les risques de circularité (financement qui alimente la demande de puces) sont discutés dans la presse financière. Les conditions exactes et les lock-ups restent à suivre dans les filings définitifs. L’opération teste aussi la capacité des marchés à absorber une valorisation potentiellement supérieure à 1 trillion pour un pure-player IA. Les investisseurs institutionnels examineront les engagements de capacité de calcul long terme et la gouvernance du trust indépendant mentionné dans les documents.",
+    "perspective": "Les investissements croisés renforcent l’écosystème mais créent des conflits d’intérêts potentiels que les régulateurs pourraient examiner.",
+    "potentiel_business": "Partenaires Claude en Europe peuvent anticiper plus de ressources marketing, mais aussi une pression accrue sur les marges une fois coté.",
+    "potentiel_perso": "Suivre les filings SEC permet de comprendre les engagements de calcul et les risques listés par Anthropic.",
+    "date": "2026-11-15T08:35:00Z",
+    "urgence": "high",
+    "tags": [
+      "Anthropic",
+      "Nvidia",
+      "IPO",
+      "placement privé",
+      "finance"
+    ],
+    "source_url": "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/"
+  },
+  {
+    "id": "2026-11-15-b-gemini-4-hydrogen",
+    "titre": "Gemini 4 Hydrogen disponible pour tous : modèle rapide à 1,50 $/7,50 $",
+    "categorie": "Modèles IA",
+    "resume": "Google a rendu Gemini 4 Hydrogen généralement disponible le 12 novembre. Modèle rapide pour le codage et les workflows agents, tarif 1,50 $ / 7,50 $ par million de tokens, accessible même sur le tier gratuit via sélection automatique.",
+    "contenu": "Le 12 novembre 2026, Google a ouvert Gemini 4 Hydrogen à l’ensemble des utilisateurs de l’API Gemini, AI Studio, Gemini for business et de l’app Gemini (les utilisateurs gratuits y accèdent via la sélection automatique de modèle). Le tarif est de 1,50 dollar d’entrée et 7,50 dollars de sortie par million de tokens. Positionné comme un modèle rapide pour le quotidien et les agents, il se distingue de Gemini 4 Carbon (plus capable mais plus cher). Pour les développeurs francophones, cela offre une option compétitive face à Claude Sonnet 5.5 ou GPT mid-tier, surtout pour les tâches de codage et d’orchestration légère. Les performances exactes dépendent des benchmarks récents ; les équipes doivent tester sur leurs propres cas. L’accès via Antigravity pour les abonnés payants Google est également ouvert. Les questions de résidence des données et de conformité européenne restent celles habituelles de Google Cloud.",
+    "perspective": "Un modèle rapide et peu cher accessible largement accélère l’expérimentation agentique, mais la qualité sur les tâches complexes reste à comparer.",
+    "potentiel_business": "Startups et freelances peuvent réduire leurs coûts d’inférence sur les agents de routine en basculant vers Hydrogen après tests comparatifs sur leurs cas d’usage.",
+    "potentiel_perso": "Tester Hydrogen sur une tâche de refactoring donne une idée du rapport vitesse/qualité par rapport à Opus ou Fable.",
+    "modele_enjeu": "Hydrogen vise le sweet spot vitesse/coût pour les agents du quotidien ; son adoption dépendra de la fiabilité sur les tool calls et de la fenêtre de contexte réelle.",
+    "date": "2026-11-15T08:40:00Z",
+    "urgence": "normal",
+    "tags": [
+      "Gemini",
+      "Google",
+      "Hydrogen",
+      "modèles",
+      "tarifs"
+    ],
+    "source_url": "https://beevr.ai/blog/ai-model-releases-november-2026"
+  },
+  {
+    "id": "2026-11-15-b-astuce-opus-prompting",
+    "titre": "Astuce : comment prompter Opus 5.5 sans freiner le modèle",
+    "categorie": "Astuces",
+    "resume": "Anthropic recommande d’arrêter d’écrire « think hard » avec Opus 5.5. Le modèle pense toujours et choisit l’effort. Commencer à Medium, mesurer les tokens et ne forcer High que pour les tâches vraiment ouvertes.",
+    "contenu": "Avec le passage d’Opus 5.5 en défaut, Anthropic a publié un guide de prompting. La recommandation principale est de supprimer les phrases de forçage d’effort (« think hard », « think carefully », « step by step » inutiles). Le modèle dispose d’un thinking adaptatif toujours actif ; le réglage d’effort (Medium par défaut) suffit. Dans les tests internes, Medium égalait ou dépassait l’ancien Opus 5 à High sur les tâches de connaissance et de code. Pour un utilisateur francophone, cela signifie rédiger des demandes claires sur le résultat attendu (format, longueur, sources) plutôt que sur le processus de pensée. On peut toujours monter l’effort pour une recherche très ouverte, mais cela consomme plus de tokens. Mesurer la différence de coût et de qualité sur trois tâches représentatives de son quotidien est le meilleur moyen de calibrer. Les artefacts (docs, sheets) bénéficient particulièrement de cette approche plus directe.",
+    "perspective": "Les habitudes de prompting évoluent avec les modèles. Ce qui était utile hier peut aujourd’hui allonger inutilement les réponses.",
+    "potentiel_business": "Équipes peuvent réduire la consommation tokens de 10 à 30 % en nettoyant les prompts système et les habitudes individuelles.",
+    "potentiel_perso": "Réécrire trois prompts fréquents sans les mots d’effort et comparer les résultats prend moins de 30 minutes.",
+    "date": "2026-11-15T08:45:00Z",
+    "urgence": "normal",
+    "tags": [
+      "astuce",
+      "prompting",
+      "Opus 5.5",
+      "Claude",
+      "efficacité"
+    ],
+    "source_url": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work"
+  },
+  {
+    "id": "2026-11-15-b-cursor-security",
+    "titre": "Incident de sécurité Cursor : jusqu’à 5 000 développeurs exposés à un malware SSH",
+    "categorie": "Hack & Console",
+    "resume": "Une compromission de la chaîne d’approvisionnement a exposé jusqu’à 5 000 utilisateurs de Cursor à un backdoor SSH. L’incident, révélé mi-novembre, rappelle les risques des outils de développement assistés par IA.",
+    "contenu": "Selon les signalements de la mi-novembre 2026, une faille dans la chaîne d’approvisionnement de Cursor a permis la distribution d’un malware capable d’installer un backdoor SSH. Jusqu’à 5 000 développeurs auraient été touchés. Cursor a communiqué sur l’incident et les mesures de remédiation. Pour les équipes francophones qui utilisent des IDE agents (Cursor, Claude Code, etc.), cela souligne l’importance de la vérification des mises à jour, de l’isolation des environnements de développement et de la surveillance des clés SSH. Les outils qui exécutent du code ou accèdent aux dépôts amplifient les risques classiques de supply chain. Il est recommandé de vérifier les versions installées, de régénérer les clés si l’exposition est confirmée et de limiter les permissions des agents. Les éditeurs d’outils doivent renforcer la signature et la transparence des builds. Les développeurs individuels peuvent aussi isoler les projets sensibles dans des conteneurs ou des machines virtuelles dédiées.",
+    "perspective": "Plus les outils de développement deviennent puissants et connectés, plus une compromission a un impact large. La vigilance supply chain reste essentielle.",
+    "potentiel_business": "Équipes sécurité peuvent auditer l’usage des IDE agents et imposer des environnements isolés pour les projets sensibles.",
+    "potentiel_perso": "Vérifier les processus Cursor en cours et les clés SSH autorisées prend peu de temps et réduit le risque.",
+    "date": "2026-11-15T08:50:00Z",
+    "urgence": "high",
+    "tags": [
+      "Cursor",
+      "sécurité",
+      "supply chain",
+      "malware",
+      "SSH"
+    ],
+    "source_url": "https://daily.dev/highlights/vibes"
+  },
+  {
+    "id": "2026-11-15-b-gaming-megajam-entries",
+    "titre": "MegaJam : plusieurs prototypes Unreal agent-générés sortent le 14 novembre",
+    "categorie": "Gaming",
+    "resume": "Pendant l’Epic AI MegaJam, des titres comme Veto Protocol, FROGLINE ou Excavator’s Cut ont été publiés le 14 novembre. Ils documentent des workflows Claude Code ou Codex avec tests automatisés et builds navigateur expérimentaux.",
+    "contenu": "Le 14 novembre 2026, plusieurs entrées de l’Epic AI MegaJam ont été rendues publiques. Veto Protocol permet au joueur de modifier les plans d’attaque d’un boss en cours de combat ; son auteur a documenté un flux Claude Code avec previews déterministes et tests automatisés. FROGLINE transforme un prototype de grappling de grenouille en jeu 3D d’évasion. Excavator’s Cut ajoute des sets destructibles et un build WebGPU expérimental. Ces projets illustrent ce que des équipes réduites + agents peuvent produire en quelques jours dans Unreal ou en navigateur. Pour les développeurs francophones, les write-ups techniques (souvent partagés sur les pages itch ou blogs) offrent des recettes concrètes : comment structurer les prompts, gérer les crashes de packaging, itérer sur les playtests. La qualité reste variable et les risques IP existent, mais le volume de prototypes jouables augmente rapidement. Observer les votes et les retours joueurs après le jam permettra de voir lesquels tiennent au-delà de la démo.",
+    "perspective": "Le jam accélère la diffusion de workflows agents + moteur. Les projets qui documentent leurs limites sont les plus utiles pour la communauté.",
+    "potentiel_business": "Studios indépendants peuvent s’inspirer des stacks documentés (Claude Code + Unreal MCP) pour leurs propres prototypes et réduire le temps de mise en place.",
+    "potentiel_perso": "Jouer aux démos publiées et lire les post-mortems techniques donne des idées pour un side-project de week-end.",
+    "date": "2026-11-15T08:55:00Z",
+    "urgence": "normal",
+    "tags": [
+      "MegaJam",
+      "Unreal",
+      "jeux IA",
+      "prototypes",
+      "Claude Code"
+    ],
+    "source_url": "https://gameslash.app/en/journal"
+  }
+]
